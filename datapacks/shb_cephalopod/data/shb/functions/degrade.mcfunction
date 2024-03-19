@@ -15,5 +15,5 @@ execute store result storage shb:degrade Damage int 1 run scoreboard players add
 item modify entity @s armor.head shb:degrade
 
 # goofy ass gun game cephalopod
-execute if score %mode game matches 13 store result score #netherite game run clear @s #lobster:netherite{gungame:1b}
+execute if score %mode game matches 13 store result score #netherite game run clear @s #cc:netherite{gungame:1b}
 execute if score %mode game matches 13 if score #netherite game matches 1.. at @s run playsound minecraft:item.shield.break player @a ~ ~ ~

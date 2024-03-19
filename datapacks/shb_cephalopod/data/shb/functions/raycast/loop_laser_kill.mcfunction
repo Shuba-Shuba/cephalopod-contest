@@ -5,8 +5,8 @@ execute positioned ~ ~-1.5 ~ unless entity @a[tag=this,distance=..1] run particl
 scoreboard players remove .r raycast 1
 
 # entity checks
-execute as @a[tag=!out,tag=!ded,tag=!this,tag=!hit,dx=0] at @s run function lobster:hit_by_laser
-#execute as @e[tag=!this,dx=0,type=!#shb:protect,type=!player] run function lobster:landed_no_kb
+execute as @a[tag=!out,tag=!ded,tag=!this,tag=!hit,dx=0] at @s run function cc:hit_by_laser
+#execute as @e[tag=!this,dx=0,type=!#shb:protect,type=!player] run function cc:landed_no_kb
 #tag @e[tag=!this,dx=0,type=!#shb:protect] add hit
 
 # block checks

@@ -56,10 +56,10 @@ execute as @a[scores={gapple=1..,Kit_ID=14}] at @s run function battle:arrows/ga
 scoreboard players add @a freezetime 0
 
 # ender arrow
-#execute if score %mode game matches 21 run gamemode adventure @a[gamemode=spectator,predicate=!lobster:is_riding_ender_arrow]
-execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] at @s on origin unless predicate lobster:is_riding_ender_arrow run tp @s ~ ~ ~
-execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] at @s on origin unless predicate lobster:is_riding_ender_arrow run ride @s mount @e[type=arrow,limit=1,sort=nearest]
-execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] on origin run gamemode spectator @s[predicate=lobster:is_riding_ender_arrow]
+#execute if score %mode game matches 21 run gamemode adventure @a[gamemode=spectator,predicate=!cc:is_riding_ender_arrow]
+execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] at @s on origin unless predicate cc:is_riding_ender_arrow run tp @s ~ ~ ~
+execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] at @s on origin unless predicate cc:is_riding_ender_arrow run ride @s mount @e[type=arrow,limit=1,sort=nearest]
+execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] on origin run gamemode spectator @s[predicate=cc:is_riding_ender_arrow]
 execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] on origin run tag @s add ender_tp
 execute if score %mode game matches 21 run gamemode adventure @a[gamemode=spectator,tag=!ded,tag=!out,tag=!ender_tp]
 tag @a remove ender_tp

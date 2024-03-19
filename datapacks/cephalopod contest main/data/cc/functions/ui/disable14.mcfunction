@@ -1,0 +1,2 @@
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Pothead [OLD]"','{"text":"[DISABLED]","color":"dark_red","clickEvent":{"action":"run_command","value":"function cc:ui/enable14"}}','""']}} destroy
+tag @e[type=marker,tag=mode_rng,tag=mode14] remove enabled

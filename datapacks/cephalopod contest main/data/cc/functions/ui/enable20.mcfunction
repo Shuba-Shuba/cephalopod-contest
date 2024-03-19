@@ -1,0 +1,2 @@
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Improv Show"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function cc:ui/disable20"}}','""']}} destroy
+tag @e[type=marker,tag=mode_rng,tag=mode20] add enabled

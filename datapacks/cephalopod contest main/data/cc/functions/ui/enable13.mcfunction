@@ -1,0 +1,2 @@
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Gun Game"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function cc:ui/disable13"}}','""']}} destroy
+tag @e[type=marker,tag=mode_rng,tag=mode13] add enabled

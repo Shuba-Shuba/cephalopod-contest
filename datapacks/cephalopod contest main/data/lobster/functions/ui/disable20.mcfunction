@@ -1,2 +1,0 @@
-setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Improv Show"','{"text":"[DISABLED]","color":"dark_red","clickEvent":{"action":"run_command","value":"function lobster:ui/enable20"}}','""']}} destroy
-tag @e[type=marker,tag=mode_rng,tag=mode20] remove enabled

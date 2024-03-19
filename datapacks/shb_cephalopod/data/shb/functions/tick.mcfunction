@@ -19,17 +19,17 @@ execute if score .i_ticks config matches ..-1 run scoreboard players set .i_tick
 ## custom projectiles
 execute as @e[type=snowball,tag=!dodge,nbt={Item:{tag:{dodge:1b}}}] at @s run function shb:found_dodge
 kill @e[type=arrow,nbt={inGround:1b},tag=brick]
-kill @e[type=snowball,tag=brick,predicate=!lobster:is_riding_ender_arrow]
+kill @e[type=snowball,tag=brick,predicate=!cc:is_riding_ender_arrow]
 execute as @e[type=snowball,tag=!brick,nbt={Item:{tag:{brick:1b}}}] at @s run function shb:found_brick
 execute as @e[type=snowball,tag=!shb,nbt={Item:{tag:{shb:1b}}}] at @s run function shb:found_snowball
-execute as @e[type=marker,tag=dodge] unless predicate shb:is_riding_dodgeball at @s run function lobster:dodgeball_landed
+execute as @e[type=marker,tag=dodge] unless predicate shb:is_riding_dodgeball at @s run function cc:dodgeball_landed
 execute as @e[type=marker,tag=shb] unless predicate shb:is_riding_snowball at @s run function shb:explode
 execute as @e[type=snowball,tag=shb] run function shb:vis_fix
 execute as @e[type=tnt_minecart,tag=shb] run function shb:vis_fix
 execute as @e[type=arrow,tag=dodge] run function shb:vis_fix
 execute as @e[type=arrow,tag=brick] run function shb:vis_fix
 execute as @e[type=snowball,tag=brick] run function shb:vis_fix
-execute as @e[type=#lobster:broken_modem_stops,tag=broken_modem_stopped] run function shb:vis_fix
+execute as @e[type=#cc:broken_modem_stops,tag=broken_modem_stopped] run function shb:vis_fix
 execute at @e[type=snowball,tag=shb] run particle minecraft:small_flame ~ ~ ~ 0 0 0 0 1 normal @a
 scoreboard players operation .global visfix *= .-1 visfix
 

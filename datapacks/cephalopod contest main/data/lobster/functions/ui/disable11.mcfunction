@@ -1,2 +1,0 @@
-setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Quick Blocks"','{"text":"[DISABLED]","color":"dark_red","clickEvent":{"action":"run_command","value":"function lobster:ui/enable11"}}','""']}} destroy
-tag @e[type=marker,tag=mode_rng,tag=mode11] remove enabled

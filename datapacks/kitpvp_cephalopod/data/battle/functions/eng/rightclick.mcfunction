@@ -1,5 +1,5 @@
 # swap hands before function
-function lobster:swap_hands
+function cc:swap_hands
 
 # check if player is holding certain items and run corresponding function
 execute if score @s Kit_ID matches 23 if data entity @s {SelectedItem:{id:"minecraft:crafting_table"}} if score @s metal matches 20.. if score @s sentry_count matches ..3 at @s run function battle:eng/sentry/build
