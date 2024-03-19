@@ -3595,20 +3595,6 @@
     },
     "done": true
   },
-  "lobster:root": {
-    "criteria": {
-      "requirement": "2022-07-31 13:22:50 -0500"
-    },
-    "done": true
-  },
-  "lobster:shards": {
-    "criteria": {
-      "shard2": "2022-07-31 19:52:15 -0500",
-      "shard3": "2022-08-01 11:43:12 -0500",
-      "shard1": "2022-08-01 11:38:15 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/white_dye": {
     "criteria": {
       "has_bone_meal": "2022-08-01 12:02:42 -0500"
@@ -4068,12 +4054,6 @@
   "lobster:rightclick": {
     "criteria": {
       "requirement": "2022-08-11 18:28:29 -0500"
-    },
-    "done": true
-  },
-  "shb:nuclear_interception": {
-    "criteria": {
-      "requirement": "2022-08-12 14:53:33 -0500"
     },
     "done": true
   },
@@ -6495,12 +6475,6 @@
     },
     "done": true
   },
-  "lobster:portal": {
-    "criteria": {
-      "requirement": "2023-03-29 16:35:41 -0500"
-    },
-    "done": true
-  },
   "minecraft:husbandry/tame_an_animal": {
     "criteria": {
       "tamed_animal": "2023-04-08 00:34:57 -0500"
@@ -7335,5 +7309,5 @@
     },
     "done": true
   },
-  "DataVersion": 3700
+  "DataVersion": 3823
 }
