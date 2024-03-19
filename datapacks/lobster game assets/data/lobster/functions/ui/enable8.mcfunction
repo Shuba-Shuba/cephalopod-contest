@@ -1,2 +1,0 @@
-setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Dodgeball"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function lobster:ui/disable8"}}','""']}} destroy
-tag @e[type=marker,tag=mode_rng,tag=mode8] add enabled

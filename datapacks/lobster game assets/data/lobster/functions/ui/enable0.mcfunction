@@ -1,2 +1,0 @@
-setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Lights Out"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function lobster:ui/disable0"}}','""']}} destroy
-tag @e[type=marker,tag=mode_rng,tag=mode0] add enabled

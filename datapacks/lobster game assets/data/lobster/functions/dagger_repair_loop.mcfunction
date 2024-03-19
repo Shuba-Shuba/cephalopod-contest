@@ -1,3 +1,0 @@
-scoreboard players remove .r raycast 1
-setblock ~ ~ ~ tinted_glass keep
-execute if score .r raycast matches 1.. positioned ^ ^ ^0.5 run function lobster:dagger_repair_loop

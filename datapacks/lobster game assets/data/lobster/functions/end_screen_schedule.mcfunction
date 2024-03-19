@@ -1,1 +1,0 @@
-execute in sp:void run function lobster:end_screen

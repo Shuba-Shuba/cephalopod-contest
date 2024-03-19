@@ -1,0 +1,1 @@
+execute in cc:void run function cc:end_screen
