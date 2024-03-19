@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{placeholder:2b,CustomModelData:206,display:{Name:'{\"text\":\"Shotgun\",\"italic\":false}'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{placeholder:5b,CustomModelData:201,display:{Name:'{\"text\":\"shoddy shotty\",\"italic\":false}'}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{ammo:{type:1b},display:{Name:'{\"text\":\"Bullet\",\"italic\":false}'}}"
+        },
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 32,
+            "max": 64
+          }
+        }
+      ]
+    }
+  ]
+}

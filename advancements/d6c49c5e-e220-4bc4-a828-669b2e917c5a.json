@@ -1,0 +1,39 @@
+{
+  "delta:player_setup": {
+    "criteria": {
+      "requirement": "2023-12-18 15:03:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2023-12-18 15:03:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2023-12-18 15:03:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2023-12-18 15:03:49 +0000"
+    },
+    "done": false
+  },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2023-12-18 15:04:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/avoid_vibration": {
+    "criteria": {
+      "avoid_vibration": "2024-01-13 10:14:11 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 3700
+}

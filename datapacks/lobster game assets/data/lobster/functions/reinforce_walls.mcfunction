@@ -1,0 +1,2 @@
+execute if score %map game matches 0 unless blocks 279 6 -849 279 4 -792 279 -64 -849 all run fill 279 6 -849 279 4 -792 white_stained_glass
+execute if score %map game matches 0 unless blocks 251 6 -821 307 4 -821 251 -64 -821 all run fill 251 6 -821 307 4 -821 white_stained_glass

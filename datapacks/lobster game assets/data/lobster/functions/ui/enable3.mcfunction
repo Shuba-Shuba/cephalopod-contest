@@ -1,0 +1,2 @@
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Race"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function lobster:ui/disable3"}}','""']}} destroy
+tag @e[type=marker,tag=mode_rng,tag=mode3] add enabled

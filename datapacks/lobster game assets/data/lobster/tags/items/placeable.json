@@ -1,0 +1,10 @@
+{
+  "values":[
+  	"#minecraft:planks",
+    "minecraft:cobblestone",
+    "minecraft:lava_bucket",
+    "minecraft:water_bucket",
+    "minecraft:bucket",
+    "minecraft:flint_and_steel"
+  ]
+}

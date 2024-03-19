@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:fishing_bobber",
+    "nbt": "{OnGround:0b,Motion:[0.0d,0.0d,0.0d]}"
+  }
+}

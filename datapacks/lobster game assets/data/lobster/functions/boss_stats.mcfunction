@@ -1,0 +1,1 @@
+tellraw @a ["",{"selector":"@s"},": ",{"score":{"name":"@s","objective":"boss_points"}}," (",{"score":{"name":"@s","objective":"boss_damage"},"hoverEvent":{"action":"show_text","value":"Damage to dragon"}},"/",{"score":{"name":"@s","objective":"boss_kills"},"hoverEvent":{"action":"show_text","value":"Player kills"}},")"]

@@ -1,0 +1,47 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "rep_record": {
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "rep.recording"
+                  },
+                  "score": "config"
+                },
+                "range": 1
+              }
+            ]
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:player"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

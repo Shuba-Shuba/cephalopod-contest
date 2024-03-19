@@ -1,0 +1,18 @@
+{
+  "values":[
+    "minecraft:red_wool",
+    "minecraft:blue_wool",
+    "minecraft:green_wool",
+    "minecraft:yellow_wool",
+    "minecraft:red_bed",
+    "minecraft:blue_bed",
+    "minecraft:green_bed",
+    "minecraft:yellow_bed",
+    "minecraft:ladder",
+    "minecraft:cobblestone",
+    "minecraft:end_stone",
+    "minecraft:oak_planks",
+    "minecraft:obsidian",
+    "minecraft:fire"
+  ]
+}

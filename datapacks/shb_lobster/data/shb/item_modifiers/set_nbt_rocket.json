@@ -1,0 +1,62 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "22 splash damage (easy mode creeper)",
+          "color": "white",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "text": "Range varies",
+          "color": "white",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "nbt": "stats.name",
+        "storage": "shb:gun",
+        "interpret": true
+      },
+      {
+        "text": " | "
+      },
+      {
+        "nbt": "stats.ammo.count",
+        "storage": "shb:gun"
+      },
+      {
+        "text": "/"
+      },
+      {
+        "nbt": "stats.reload.mag",
+        "storage": "shb:gun"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "shb:gun"
+    },
+    "ops": [
+      {
+        "source": "stats",
+        "target": "stats",
+        "op": "replace"
+      }
+    ]
+  }
+]

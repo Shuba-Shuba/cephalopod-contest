@@ -1,0 +1,9 @@
+﻿{
+ "values": [
+ "battle:arrows/tick",
+ "battle:eng/tick",
+ "battle:copycat/tick",
+ "battle:pyro/tick",
+ "battle:build/tick"
+ ]
+}

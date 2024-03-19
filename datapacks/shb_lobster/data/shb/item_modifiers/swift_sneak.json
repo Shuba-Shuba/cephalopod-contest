@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{swift_sneak:1b}"
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:swift_sneak": 5
+    },
+    "add": true
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [],
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"bomb\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lobster:bomb_pass"
+  }
+}

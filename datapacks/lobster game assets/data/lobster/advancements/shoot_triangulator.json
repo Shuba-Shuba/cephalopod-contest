@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:item_durability_changed",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:bow"
+            ],
+            "durability": 1,
+            "nbt": "{CustomModelData:11}"
+          }
+        }
+      }
+    }
+  }
+  

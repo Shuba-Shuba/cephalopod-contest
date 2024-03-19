@@ -1,0 +1,12 @@
+scoreboard objectives add sentry_level dummy
+scoreboard objectives add metal dummy
+scoreboard objectives add eng_time dummy
+scoreboard objectives add builderUUID0 dummy
+scoreboard objectives add builderUUID1 dummy
+scoreboard objectives add builderUUID2 dummy
+scoreboard objectives add builderUUID3 dummy
+scoreboard objectives add upgrade_time dummy
+scoreboard objectives add sentry_kill dummy
+scoreboard objectives add sentry_age dummy
+scoreboard objectives add sentry_count dummy
+scoreboard objectives add join minecraft.custom:minecraft.leave_game

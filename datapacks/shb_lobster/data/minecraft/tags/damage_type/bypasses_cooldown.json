@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "shb:bullet",
+        "shb:explosion_mark",
+        "shb:fire"
+    ]
+}

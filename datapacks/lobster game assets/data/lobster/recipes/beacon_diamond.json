@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#$#",
+    "%%%"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "$": {
+      "item": "minecraft:diamond"
+    },
+    "%": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "minecraft:beacon"
+  }
+}

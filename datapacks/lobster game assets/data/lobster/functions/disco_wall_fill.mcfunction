@@ -1,0 +1,1 @@
+$execute if score %map game matches 0 in sp:void run fill -116 61 -116 -84 80 -84 $(block) outline

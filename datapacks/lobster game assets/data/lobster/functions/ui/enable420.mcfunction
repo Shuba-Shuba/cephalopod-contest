@@ -1,0 +1,2 @@
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Chungus"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function lobster:ui/disable420"}}','""']}} destroy
+tag @e[type=marker,tag=mode_rng,tag=mode420] add enabled

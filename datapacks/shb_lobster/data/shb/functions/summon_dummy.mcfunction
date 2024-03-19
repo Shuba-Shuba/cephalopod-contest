@@ -1,0 +1,1 @@
+execute align xyz run summon armor_stand ~.5 ~ ~.5 {Tags:["dummy"],Invulnerable:1b,NoGravity:1b,CustomNameVisible:1b,CustomName:'"Dummy"'}

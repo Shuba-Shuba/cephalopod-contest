@@ -1,0 +1,1 @@
+execute on passengers run data modify entity @s DisplayState.Properties.lit set value "true"

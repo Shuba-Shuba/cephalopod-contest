@@ -1,0 +1,4 @@
+execute as @e[type=armor_stand,tag=end_screen] at @s run tp @s ~ ~1 ~
+summon armor_stand 0 200 0 {ShowArms:1b,Tags:["end_screen","init"],Small:1b,Rotation:[45.0f,0.0f],HandItems:[{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:3}},{id:"minecraft:shield",Count:1b,tag:{Damage:0}}],Pos:[0.5d,200.0d,0.5d],Fire:-1s,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{Damage:0}},{id:"minecraft:leather_leggings",Count:1b,tag:{Damage:0}},{id:"minecraft:leather_chestplate",Count:1b,tag:{Damage:0}},{id:"minecraft:player_head",Count:1b}],Pose:{LeftArm:[0f,0f,-5f],RightArm:[0f,0f,5f]},NoBasePlate:1b,NoGravity:1b}
+item modify entity @e[type=armor_stand,tag=end_screen,tag=init,sort=nearest,limit=1] armor.head lobster:head
+tag @e[type=armor_stand,tag=init] remove init

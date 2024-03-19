@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "delta": -1,
+        "item": {
+          "items": [
+            "minecraft:netherite_shovel",
+            "minecraft:netherite_axe",
+            "minecraft:netherite_pickaxe"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lobster:mine"
+  }
+}

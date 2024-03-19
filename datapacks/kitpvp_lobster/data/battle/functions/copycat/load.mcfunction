@@ -1,0 +1,10 @@
+scoreboard objectives add selecteditem dummy
+scoreboard objectives add arrow_time dummy
+scoreboard objectives add arrow_count dummy
+scoreboard objectives add steak_count dummy
+scoreboard objectives add copy_ar dummy
+scoreboard objectives add copy_rocket dummy
+scoreboard objectives add copy_crafting dummy
+scoreboard objectives add copy_anvil dummy
+scoreboard objectives add copy_beacon dummy
+scoreboard objectives add copy_book dummy

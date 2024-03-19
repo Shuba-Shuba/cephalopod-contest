@@ -1,0 +1,2 @@
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Nun Run"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function lobster:ui/disable9"}}','""']}} destroy
+tag @e[type=marker,tag=mode_rng,tag=mode9] add enabled

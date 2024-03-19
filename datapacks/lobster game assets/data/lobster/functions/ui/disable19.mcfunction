@@ -1,0 +1,2 @@
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Admintato"','{"text":"[DISABLED]","color":"dark_red","clickEvent":{"action":"run_command","value":"function lobster:ui/enable19"}}','""']}} destroy
+tag @e[type=marker,tag=mode_rng,tag=mode19] remove enabled

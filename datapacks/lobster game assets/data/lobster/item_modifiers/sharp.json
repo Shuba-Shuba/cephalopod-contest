@@ -1,0 +1,114 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:sharpness": 1
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%red_sharp"
+          },
+          "score": "upgrade_bool"
+        },
+        "range": 1
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "team": "red"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:sharpness": 1
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%blue_sharp"
+          },
+          "score": "upgrade_bool"
+        },
+        "range": 1
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "team": "blue"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:sharpness": 1
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%green_sharp"
+          },
+          "score": "upgrade_bool"
+        },
+        "range": 1
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "team": "green"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:sharpness": 1
+    },
+    "add": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "%yellow_sharp"
+          },
+          "score": "upgrade_bool"
+        },
+        "range": 1
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "team": "yellow"
+        }
+      }
+    ]
+  }
+]

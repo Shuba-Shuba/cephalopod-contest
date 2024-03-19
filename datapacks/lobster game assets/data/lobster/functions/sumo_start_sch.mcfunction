@@ -1,0 +1,1 @@
+execute in sp:void run function lobster:sumo_start

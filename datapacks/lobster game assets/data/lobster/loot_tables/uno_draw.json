@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "minecraft:cards"
+              },
+              "ops": [
+                {
+                  "source": "hands[-1]",
+                  "target": "uno",
+                  "op": "replace"
+                },
+                {
+                  "source": "tmp.cmd",
+                  "target": "CustomModelData",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

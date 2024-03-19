@@ -1,0 +1,3 @@
+execute store result score @s arrow_count run clear @s tipped_arrow{custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b,duration:2}],display:{Name:'"Ender Arrow"'},HideFlags:32} 0
+give @s[scores={arrow_count=..2}] tipped_arrow{custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b,duration:2}],display:{Name:'"Ender Arrow"'},HideFlags:32}
+scoreboard players set %second2 arrow_time 0

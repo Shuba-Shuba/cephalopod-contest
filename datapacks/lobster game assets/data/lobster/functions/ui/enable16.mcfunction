@@ -1,0 +1,2 @@
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Nitro Boat Karts"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function lobster:ui/disable16"}}','""']}} destroy
+tag @e[type=marker,tag=mode_rng,tag=mode16] add enabled

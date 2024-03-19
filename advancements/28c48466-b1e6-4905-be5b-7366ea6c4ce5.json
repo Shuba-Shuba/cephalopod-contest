@@ -1,0 +1,27 @@
+{
+  "delta:player_setup": {
+    "criteria": {
+      "requirement": "2023-12-18 09:55:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2023-12-18 09:55:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2023-12-18 09:55:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2023-12-18 09:55:43 +0000"
+    },
+    "done": false
+  },
+  "DataVersion": 3578
+}

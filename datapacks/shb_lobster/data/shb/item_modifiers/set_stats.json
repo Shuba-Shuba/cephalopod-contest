@@ -1,0 +1,45 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "shb:gun"
+    },
+    "ops": [
+      {
+        "source": "stats",
+        "target": "stats",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "nbt": "stats.name",
+        "storage": "shb:gun",
+        "interpret": true
+      },
+      {
+        "text": " | "
+      },
+      {
+        "score": {
+          "name": ".ammo.count",
+          "objective": "stats"
+        }
+      },
+      {
+        "text": "/"
+      },
+      {
+        "score": {
+          "name": ".reload.mag",
+          "objective": "stats"
+        }
+      }
+    ]
+  }
+]
