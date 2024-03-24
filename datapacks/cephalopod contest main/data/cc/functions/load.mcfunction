@@ -220,5 +220,6 @@ scoreboard objectives add boss_damage dummy
 scoreboard objectives add boss_kills dummy
 scoreboard objectives add boss_points dummy
 data merge storage cc:disco {wool:["red_concrete","blue_concrete","cyan_concrete","gray_concrete","lime_concrete","pink_concrete","black_concrete","brown_concrete","green_concrete","orange_concrete","purple_concrete","white_concrete","yellow_concrete","magenta_concrete","light_blue_concrete","light_gray_concrete"]}
+scoreboard objectives add board_money dummy
 # put this comment and command at the bottom
 tellraw @a "Reloaded Cephalopod Contest."

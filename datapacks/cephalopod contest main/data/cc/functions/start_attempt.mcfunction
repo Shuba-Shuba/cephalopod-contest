@@ -10,4 +10,5 @@ execute if score %in game matches 0 run schedule function cc:countdown/3 2s
 execute if score %in game matches 0 run schedule function cc:countdown/2 3s
 execute if score %in game matches 0 run schedule function cc:countdown/1 4s
 execute if score %in game matches 0 run scoreboard players set %in game -1
-execute if score %in game matches 1 run tellraw @s {"text":"There is already a game currently in progress.","color":"red"}
+execute if score %in game matches 1 run tellraw @s {"text":"There is already a minigame round currently in progress.","color":"red"}
+execute if score %in game matches 2 run tellraw @s {"text":"You cannot manually start during the board game mode.","color":"red"}

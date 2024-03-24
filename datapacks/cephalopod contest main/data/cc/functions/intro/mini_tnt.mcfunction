@@ -30,3 +30,6 @@ execute as @a[scores={class=1}] run tellraw @a ["",{"selector":"@s"}," playing a
 execute as @a[scores={class=2}] run tellraw @a ["",{"selector":"@s"}," playing as: ",{"text":"Engineer","color":"yellow","bold":true}]
 execute as @a[scores={class=3}] run tellraw @a ["",{"selector":"@s"}," playing as: ",{"text":"Architect","color":"light_purple","bold":true}]
 execute if entity @a[tag=ded] run tellraw @a ["",{"selector":"@a[tag=ded]"}," spectating (LOL)"]
+
+# say this version of Mini TNT is outdated
+tellraw @a {"text":"NOTICE: The Cephalopod Contest version of Mini TNT will no longer receive updates because Mini TNT is now an addon for Duel TNT. The addon version of Mini TNT has more content and more powerful classes to match Duel TNT's classes.","color":"yellow"}
