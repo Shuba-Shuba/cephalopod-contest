@@ -4,7 +4,6 @@ execute in cc:void if score %map game matches 0 run tp -238.0 99 687.0
 #execute in cc:void if score %map game matches 1 run tp -683.0 110 711.0
 execute in cc:void if score %map game matches 1 run tp -956 113 633
 give @s iron_sword{Unbreakable:1b,CustomModelData:3}
-team join nun
 
 # abilities
 schedule function cc:return_ability 15s

@@ -1,7 +1,7 @@
 # clock
 execute as @a[scores={deaths=2},tag=!out,tag=!ded,predicate=cc:spawn] run function cc:death
 execute as @a[scores={deaths=1},tag=!out,tag=!ded] run function cc:death_nun_run
-execute as @a[scores={kills=1..},team=nun] run function cc:kill_nun_run
+execute as @a[scores={kills=1..},tag=nun] run function cc:kill_nun_run
 scoreboard players add %tick game 1
 execute if score %tick game matches 20.. run scoreboard players remove %second game 1
 execute if score %tick game matches 20.. run function cc:clock_min
@@ -13,12 +13,13 @@ execute unless score %replay game matches 1.. if score %second game matches ..0 
 execute if score %replay game matches 2 run function cc:end
 
 # nun run stuff
+execute as @a[tag=!out,tag=!winner,tag=!ded] if score @s prayers >= #win prayers run tellraw @a [{"selector":"@s","color":"aqua"}," is safe."]
 execute as @a[tag=!out,tag=!winner,tag=!ded] if score @s prayers >= #win prayers run tag @s add winner
 gamemode spectator @a[tag=winner,team=global,tag=!out,tag=!nun]
 kill @a[tag=!out,predicate=cc:trap1]
 execute as @e[type=fishing_bobber,predicate=cc:hooked] at @s run tag @p add hooked
-execute as @a[team=nun,scores={broken_rod=1..}] run function cc:indoctrination_fail
-execute unless entity @a[tag=!out,tag=!ded,team=nun] run scoreboard players add @a[tag=!out] prayers 5000
+execute as @a[tag=nun,scores={broken_rod=1..}] run function cc:indoctrination_fail
+execute unless entity @a[tag=!out,tag=!ded,tag=nun] run scoreboard players add @a[tag=!out] prayers 5000
 execute as @a[predicate=cc:sneaking] unless score @s sneak matches 1 at @s run function cc:sneak
 execute as @a[predicate=!cc:sneaking] if score @s sneak matches 1 run scoreboard players set @s sneak 0
 execute as @a at @s if block ~ ~-0.5 ~ verdant_froglight run effect give @s glowing 1 0 false

@@ -13,7 +13,7 @@ execute as @e[type=marker,tag=platform,tag=tmp_map,sort=random] at @s run functi
 
 # start round
 scoreboard players set %mode game 7
-scoreboard objectives setdisplay sidebar game
+scoreboard objectives setdisplay sidebar
 #tellraw @a "\nSussy Rocks:\n\"Rocks\" (platforms) will be destroyed every 30 ticks (1.5 seconds). TURN ON PARTICLES!\n"
 bossbar set cc:time max 50
 bossbar set cc:time value 50

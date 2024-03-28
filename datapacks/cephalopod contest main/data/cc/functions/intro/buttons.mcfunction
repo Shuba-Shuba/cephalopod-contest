@@ -4,7 +4,7 @@ scoreboard players set %map game 0
 # start round
 scoreboard players set %camera game 5
 gamemode spectator @a[tag=!out]
-scoreboard objectives setdisplay sidebar game
+scoreboard objectives setdisplay sidebar
 tp @a[tag=!out] 175 89 106
 #tellraw @a "\nSussy Buttons:\nwhen it is your turn, press a button. if you are bad and RNGSUS decides to kill you, cry about it\n"
 schedule function cc:mode/buttons 10s

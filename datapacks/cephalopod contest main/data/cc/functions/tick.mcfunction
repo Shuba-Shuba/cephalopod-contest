@@ -109,7 +109,7 @@ kill @e[type=command_block_minecart]
 # gun game portals
 effect give @a[predicate=cc:portal1] blindness 2 0 true
 effect give @a[predicate=cc:portal2] blindness 2 0 true
-effect give @a[predicate=cc:portal3] blindness 2 0 true
+#effect give @a[predicate=cc:portal3] blindness 2 0 true
 effect give @a[predicate=cc:portal3] resistance 2 255 true
 execute store result score #advancement game run gamerule announceAdvancements
 gamerule announceAdvancements true
