@@ -21,6 +21,23 @@ execute if score cc.one config matches 0 if score %winners game matches 1 run sc
 execute if score cc.one config matches 1 if score %winners game matches 1.. run scoreboard players add @a[tag=winner] event_money 1
 execute if score %winners game matches 0 run tellraw @a {"text":"You people suck. Nobody wins!!!","color":"red"}
 
+# board game rewards
+execute if score %board game matches 1 store result score .l calc if entity @a[tag=winner]
+execute if score %board game matches 1 run scoreboard players operation .l calc *= -1 calc
+execute if score %board game matches 1 run scoreboard players operation .l calc += .n calc
+execute if score %board game matches 1 run scoreboard players set #tmp calc 1600
+execute if score %board game matches 1 run scoreboard players operation #tmp calc *= .l calc
+execute if score %board game matches 1 run scoreboard players operation #tmp calc *= .l calc
+execute if score %board game matches 1 run scoreboard players operation #tmp calc /= .n calc
+execute if score %board game matches 1 run scoreboard players operation #tmp calc /= .n calc
+execute if score %board game matches 1 run scoreboard players operation #dec calc = #tmp calc
+execute if score %board game matches 1 run scoreboard players operation #floor calc = #tmp calc
+execute if score %board game matches 1 run scoreboard players operation #floor calc /= 100 calc
+execute if score %board game matches 1 run scoreboard players operation #dec calc %= 100 calc
+execute if score %board game matches 1 run scoreboard players operation @a[tag=winner] board_rewards += #tmp calc
+execute if score %board game matches 1 if score #dec calc matches 10.. if entity @a[tag=winner] run tellraw @a [{"selector":"@a[tag=winner]","color":"green"}," earned +$",{"score":{"name":"#floor","objective":"calc"}},".",{"score":{"name":"#dec","objective":"calc"}}]
+execute if score %board game matches 1 if score #dec calc matches ..9 if entity @a[tag=winner] run tellraw @a [{"selector":"@a[tag=winner]","color":"green"}," earned +$",{"score":{"name":"#floor","objective":"calc"}},".0",{"score":{"name":"#dec","objective":"calc"}}]
+
 # schedule reset
 schedule clear cc:mode/lights_out
 schedule clear cc:mode/parkour

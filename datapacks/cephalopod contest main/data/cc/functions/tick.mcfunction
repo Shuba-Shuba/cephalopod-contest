@@ -57,6 +57,7 @@ execute unless score cameras.enabled config matches 1 run scoreboard players set
 execute if score %in game matches 1 if score cameras.enabled config matches 1 in cc:void run function cc:camera
 
 # gameticks
+execute if score %in game matches 2 run function cc:board/tick
 execute if score %mode game matches -2 run function cc:end_animate
 execute if score %in game matches 1 if score %mode game matches -1 as @a[gamemode=!spectator,gamemode=!creative] at @s if block ~ ~-1 ~ barrier run function cc:landed_no_kb
 execute if score %in game matches 1 if score %mode game matches -1 run effect give @a resistance 1 255 true

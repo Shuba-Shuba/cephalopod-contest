@@ -19,6 +19,9 @@ execute as @a run scoreboard players operation @s event_money += @s gunclear
 execute as @a store result score @s gunclear run clear @s carrot_on_a_stick{shb:1b,stats:{ammo:{type:7b}}}
 execute as @a run scoreboard players operation @s event_money += @s gunclear
 
+# board game
+kill @e[type=armor_stand,tag=board_player]
+
 # forceload fix (yes run it twice)
 execute at @e[type=marker] run forceload add ~ ~
 execute at @e[type=marker] run forceload add ~ ~

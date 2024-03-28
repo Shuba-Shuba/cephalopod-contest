@@ -24,6 +24,8 @@
 	"minecraft:ladder",
 	"#minecraft:doors",
 	"#minecraft:replaceable",
+	"minecraft:lantern",
+	"minecraft:soul_lantern",
 	"#shb:partial"
   ]
 }

@@ -221,5 +221,14 @@ scoreboard objectives add boss_kills dummy
 scoreboard objectives add boss_points dummy
 data merge storage cc:disco {wool:["red_concrete","blue_concrete","cyan_concrete","gray_concrete","lime_concrete","pink_concrete","black_concrete","brown_concrete","green_concrete","orange_concrete","purple_concrete","white_concrete","yellow_concrete","magenta_concrete","light_blue_concrete","light_gray_concrete"]}
 scoreboard objectives add board_money dummy
+scoreboard objectives add board_stars dummy
+scoreboard objectives add board_roll dummy
+scoreboard objectives add board_turn dummy
+scoreboard objectives add board_fork trigger
+scoreboard objectives add board_await dummy
+scoreboard objectives add board_shop trigger
+scoreboard objectives add board_rewards dummy
+scoreboard objectives add board_display dummy
+execute unless score board.turns config = board.turns config run scoreboard players set board.turns config 20
 # put this comment and command at the bottom
 tellraw @a "Reloaded Cephalopod Contest."

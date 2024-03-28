@@ -1,0 +1,1 @@
+tellraw @a ["<",{"selector":"@s"},"> bro i got the good space"]

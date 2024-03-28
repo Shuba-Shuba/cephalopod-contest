@@ -17,6 +17,9 @@ scoreboard players set @a deaths 0
 scoreboard players set %bomb game 0
 scoreboard objectives setdisplay sidebar
 
+# player count, for board game rewards
+execute store result score .n calc if entity @a[tag=!out,tag=!ded]
+
 # mode rng
 function cc:next_round_rng
 execute if score %premode game matches 0 in cc:void run function cc:intro/lights_out
