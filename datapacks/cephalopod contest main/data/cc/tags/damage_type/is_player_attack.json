@@ -1,19 +1,5 @@
 {
-	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:entity_hurt_player",
-			"conditions": {
-				"damage": {
-					"type": {
-						"tags": [
-							{
-								"id": "cc:is_player_attack",
-								"expected": true
-							}
-						]
-					}
-				}
-			}
-		}
-	}
+	"values": [
+		"minecraft:player_attack"
+	]
 }
