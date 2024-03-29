@@ -1,9 +1,13 @@
 # backstabber used
-execute as @a[scores={class=0,backstab_break=1}] run function cc:backstab_used
+execute as @a[scores={class=0,backstab_break=1}] if score %in game matches 1 run function cc:backstab_used
+execute as @a[scores={class=0,backstab_break=1}] if score %in game matches 2 run function cc:backstab_used_board
 
 # backstab check
+tag @a remove backstab_valid
 scoreboard players set @a[scores={class=0}] backstab_valid 0
-execute as @a[tag=!out,tag=!ded] run function cc:backstab_check
+execute if score %in game matches 1 as @a[tag=!out,tag=!ded] run function cc:backstab_check
+execute if score %in game matches 2 as @a[tag=fight] run function cc:backstab_check
+# backstabber used (board game; after check b/c we look at who could've been hit)
 
 # backstabber item
 execute as @a[scores={backstab_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Backstab"]

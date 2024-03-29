@@ -1,5 +1,7 @@
 tellraw @s "Central Market - 33% star market share\nbuy something fucker"
 execute if score @s board_money matches 6.. run tellraw @s ["",{"text":"\n[Glue Trap]","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger board_shop set 200"},"hoverEvent":{"action":"show_text","value":"When used, places glue that stops whoever steps on it and skips their next turn"}}," - $6"]
-execute unless score @s board_money matches 6.. run tellraw @s [{"text":"\n[Glue Trap]","color":"red","hoverEvent":{"action":"show_text","value":"When used, places glue that stops whoever steps on it and skips their next turn"}}," - $6"]
-execute if score @s board_money matches 8.. run tellraw @s ["",{"text":"\n[Baseball Bat]","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger board_shop set 201"},"hoverEvent":{"action":"show_text","value":"Gives you a baseball bat during your next parking lot fight\nLasts 1 fight"}}," - $8"]
-execute unless score @s board_money matches 8.. run tellraw @s [{"text":"\n[Baseball Bat]","color":"red","hoverEvent":{"action":"show_text","value":"Gives you a baseball bat during your next parking lot fight\nLasts 1 fight"}}," - $8"]
+execute unless score @s board_money matches 6.. run tellraw @s [{"text":"\n[Glue Trap]","color":"red","hoverEvent":{"action":"show_text","value":"When used, places glue that stops whoever steps on it and skips their next turn\nYou can't afford this item"}}," - $6"]
+execute if score @s board_money matches 8.. run tellraw @s ["",{"text":"\n[Baseball Bat]","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger board_shop set 201"},"hoverEvent":{"action":"show_text","value":"Gives you a baseball bat during your next fight\nLasts 1 fight"}}," - $8"]
+execute unless score @s board_money matches 8.. run tellraw @s [{"text":"\n[Baseball Bat]","color":"red","hoverEvent":{"action":"show_text","value":"Gives you a baseball bat during your next fight\nLasts 1 fight\nYou can't afford this item"}}," - $8"]
+
+execute store result score #in_stock board_stars if score #pos board_stars matches 2..3

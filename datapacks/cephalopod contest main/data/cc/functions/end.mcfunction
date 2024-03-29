@@ -68,6 +68,9 @@ schedule clear cc:mode/mini_tnt
 schedule clear cc:mode/micro_battles
 
 ## individual gamemode resets
+# board reset
+kill @e[type=zombie]
+
 # boss fight reset
 kill @e[type=ender_dragon]
 scoreboard players set @a boss_damage 0
@@ -89,6 +92,8 @@ kill @e[type=marker,tag=micro_edge]
 kill @e[type=marker,tag=micro_lava]
 
 # mini tnt reset
+tag @a remove can_be_backstabbed
+tag @a remove backstab_valid
 scoreboard objectives setdisplay list hp
 kill @e[type=marker,tag=focus_tether]
 kill @e[type=marker,tag=laser_tether]

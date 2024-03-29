@@ -1,7 +1,6 @@
 # @s = player
 # wait for player's choice
-scoreboard players set @s board_await 200
-#tag @s add await_fork
+function cc:board/await_start {time:10}
 scoreboard players enable @s board_fork
 tellraw @a ["",{"selector":"@s"}," is picking a path"]
 tellraw @s "pick a direction to travel in:"

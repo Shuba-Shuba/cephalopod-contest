@@ -7,7 +7,7 @@ execute if score .ammo.count stats matches 1.. if score .semiauto stats matches 
 execute if score .ammo.type stats matches 7 unless score @s laser matches 1.. run function shb:shoot/laser
 
 # [CEPHALOPOD CONTEST] kitpvp rightclick ease of use for offhand-activated items
-execute if score @s offhand_carrot matches 1 unless score .ammo.type stats matches 1.. run function cc:swap_hands
+execute if score @s offhand_carrot matches 1 unless score .ammo.type stats matches 1.. unless score %mode game matches 24 unless score %in game matches 2 if data entity @s SelectedItem run function cc:swap_hands
 execute if score @s offhand_carrot matches 1 unless score .ammo.type stats matches 1.. run function cc:item_use
 
 advancement revoke @s only shb:rightclick

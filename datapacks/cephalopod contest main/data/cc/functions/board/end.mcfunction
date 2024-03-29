@@ -14,6 +14,7 @@ scoreboard players reset * board_roll
 scoreboard players reset * board_turn
 scoreboard players reset * board_fork
 scoreboard players reset * board_shop
+tag @a remove glued
 
 # go to lobby
 function cc:lobby

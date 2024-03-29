@@ -8,6 +8,9 @@ $summon zombie ~ ~ ~ {Tags:["board_player_placeholder","init"],NoAI:1b,Invulnera
 $scoreboard players operation @e[type=zombie,limit=1,sort=nearest,tag=init] board_turn = $(name) board_turn
 tag @e[type=zombie] remove init
 
+# auto-roll
+execute if score .start board_roll matches 1 run function cc:board/roll
+
 # auto-pick fork path
 $execute if score $(name) board_await matches 1.. if score $(name) board_fork = $(name) board_fork run function cc:board/leave/fork {name:"$(name)"}
 
