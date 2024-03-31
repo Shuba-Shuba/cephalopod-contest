@@ -1,10 +1,12 @@
 ## setup
+scoreboard players set .id itembox_cd 0
 execute store result score .id itembox_cd run data get entity @s Inventory[{Slot:-106b}].tag.nbk_id
 tag @s add this
 
 ## use item
 # nitro boat karts
 execute if score %mode game matches 16 if score .id itembox_cd matches 0 run schedule function cc:lightning_remove 1s
+execute if score %mode game matches 16 if score .id itembox_cd matches 0 run tellraw @s "Struck everyone with lightning"
 execute if score %mode game matches 16 if score .id itembox_cd matches 0 as @a[tag=!this] at @s positioned ~ ~0.5 ~ run function cc:item_lightning
 execute if score %mode game matches 16 if score .id itembox_cd matches 1 run function cc:item_blooper
 execute if score %mode game matches 16 if score .id itembox_cd matches 2 run function cc:item_coke

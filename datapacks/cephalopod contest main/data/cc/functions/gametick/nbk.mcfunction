@@ -14,6 +14,7 @@ execute if score %players game matches 0 run function cc:end
 execute if score %increment game matches -1 if score %second game matches 0 run function cc:end
 
 # nbk stuff
+effect give @a[tag=!out] resistance infinite 255 true
 kill @e[type=#minecraft:boats,predicate=!cc:boat_with_player]
 execute as @a[tag=!out,tag=!wait,tag=!ded,predicate=cc:is_riding_boat] at @s if block ~ ~-0.5 ~ netherite_block run function cc:lap
 execute as @a[tag=!out] at @s unless block ~ ~-0.5 ~ netherite_block run tag @s remove wait

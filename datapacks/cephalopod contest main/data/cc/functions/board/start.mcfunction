@@ -1,5 +1,8 @@
 tellraw @a {"text":"nah bruh fr bruh this is board game mode bruh!"}
 
+# reset mode rng pool
+tag @e[type=marker,tag=mode_rng] remove used
+
 # scoreboard setup
 scoreboard players set %in game 2
 scoreboard players set %board game 1

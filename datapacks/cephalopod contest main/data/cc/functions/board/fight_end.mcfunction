@@ -15,6 +15,6 @@ gamemode spectator @a[tag=fight]
 scoreboard players set %fight game 0
 schedule function cc:board/end_turn 2s
 
-# clean up fight
+# clean up
 tag @a remove fight
 tag @a remove fight_loser

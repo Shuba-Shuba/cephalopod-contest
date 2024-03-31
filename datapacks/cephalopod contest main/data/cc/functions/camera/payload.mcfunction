@@ -20,7 +20,7 @@ execute if score %map game matches 0 if score %camera1 game matches 234 run func
 scoreboard players add %camera1 game 1
 title @a[tag=!out] times 0 100 0
 title @a[tag=!out] title "Payload"
-execute if score %camera1 game matches 0..70 run title @a[tag=!out] subtitle ["",{"text":"BLU","color":"aqua"}," team ",{"text":"pushes","underlined":true}," the cart to the end to win"]
-execute if score %camera1 game matches 71..140 run title @a[tag=!out] subtitle ["",{"text":"RED","color":"red"}," team ",{"text":"stops","underlined":true}," the cart until time is out to win"]
-execute if score %camera1 game matches 141..190 run title @a[tag=!out] subtitle "Random kit from Kit PvP"
+execute if score %camera1 game matches 0..70 run title @a[tag=!out] subtitle ["",{"text":"BLU","color":"aqua"}," team ",{"text":"pushes","underlined":true}," the cart"]
+execute if score %camera1 game matches 71..140 run title @a[tag=!out] subtitle ["",{"text":"RED","color":"red"}," team ",{"text":"stops","underlined":true}," the cart"]
+execute if score %camera1 game matches 141..190 run title @a[tag=!out] subtitle "Random PvP kits"
 execute if score %camera1 game matches 191..240 run title @a[tag=!out] subtitle "Respawn = kit change"

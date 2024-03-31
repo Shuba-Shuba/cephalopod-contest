@@ -28,7 +28,7 @@ execute if score %fight game matches 1 as @a[scores={deaths=1..},tag=fight] run 
 execute if score %fight game matches 1 if entity @a[tag=fight] run scoreboard players add %tick game 1
 execute if score %fight game matches 1 if score %tick game matches 20.. run scoreboard players add %second game 1
 execute if score %fight game matches 1 if score %tick game matches 20.. run bossbar set cc:time name {"score":{"objective":"game","name":"%second"}}
-execute if score %fight game matches 1 if score %tick game matches 20.. if score %second game matches 3 run tellraw @a "Resistance and weakness have worn off."
+execute if score %fight game matches 1 if score %tick game matches 20.. if score %second game matches 5 run tellraw @a "Resistance and weakness have worn off."
 execute if score %fight game matches 1 if score %tick game matches 20.. run scoreboard players set %tick game 0
 execute if score %fight game matches 1 store result score %players game if entity @a[tag=fight,tag=!fight_loser]
 execute if score %fight game matches 1 if score %players game matches ..1 run function cc:board/fight_end

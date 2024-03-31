@@ -217,7 +217,7 @@ effect clear @a[tag=!out]
 scoreboard objectives setdisplay sidebar
 tag @a remove safe
 title @a[tag=!out] reset
-scoreboard players set @a[tag=!out] offhand_carrot 0
+scoreboard players set @a offhand_carrot 0
 scoreboard players set @a deaths 0
 scoreboard players set %team game 0
 scoreboard players operation %prev_mode game = %mode game

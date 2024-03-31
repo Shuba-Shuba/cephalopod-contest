@@ -16,4 +16,4 @@ execute unless score #tmp game matches ..1 if score %5 prng = %prev_mode game ru
 scoreboard players reset #tmp game
 
 ## [DEBUG] announce rng output
-tellraw @a[tag=debug] ["[DEBUG]: Mode RNG output = ",{"score":{"name":"%5","objective":"prng"}}]
+#tellraw @a[tag=debug] ["[DEBUG]: Mode RNG output = ",{"score":{"name":"%5","objective":"prng"}}]

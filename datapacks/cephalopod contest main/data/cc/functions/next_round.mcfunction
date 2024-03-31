@@ -15,6 +15,7 @@ scoreboard players set %mode game -1
 scoreboard players set @a kills 0
 scoreboard players set @a deaths 0
 scoreboard players set %bomb game 0
+scoreboard players set @a offhand_carrot 0
 scoreboard objectives setdisplay sidebar
 
 # player count, for board game rewards

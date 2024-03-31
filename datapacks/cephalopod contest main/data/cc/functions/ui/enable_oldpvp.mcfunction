@@ -1,0 +1,2 @@
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"1.8 Style PvP"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function cc:ui/disable_oldpvp"}}','""']}} destroy
+scoreboard players set 1.8pvp config 1

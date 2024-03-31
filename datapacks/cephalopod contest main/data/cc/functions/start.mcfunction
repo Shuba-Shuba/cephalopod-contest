@@ -28,5 +28,5 @@ execute at @e[type=marker] run forceload add ~ ~
 
 # start game
 tag @a remove ded
-tag @e[type=marker,tag=mode_rng] remove used
+execute unless score %board game matches 1 run tag @e[type=marker,tag=mode_rng] remove used
 function cc:next_round

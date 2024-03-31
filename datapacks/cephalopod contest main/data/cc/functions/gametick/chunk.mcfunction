@@ -15,4 +15,4 @@ gamemode survival @a[tag=!out,tag=!ded,gamemode=adventure]
 #execute unless score %arena game matches 1 run gamemode survival @a[tag=!out,tag=!ded,gamemode=adventure]
 #execute as @a[tag=!out,tag=!ded] if predicate cc:holding_unplaceable run item modify entity @s weapon.mainhand cc:placeable
 #execute as @a[tag=!out,tag=!ded] if predicate cc:holding_unmineable run item modify entity @s weapon.mainhand cc:mineable
-effect give @a haste 1 2 true
+execute if score %arena game matches 0 run effect give @a haste 1 2 true

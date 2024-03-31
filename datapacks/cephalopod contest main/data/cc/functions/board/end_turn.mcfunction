@@ -13,7 +13,7 @@ data modify entity @e[type=marker,tag=this,limit=1] data.Inventory set from enti
 execute as @a[tag=this] run function cc:board/update_display
 
 # make armor stand
-execute as @e[type=marker,tag=this] at @s run summon armor_stand ~ ~ ~ {Tags:["init","board_player"],NoBasePlate:1b,NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,ShowArms:1b}
+execute as @e[type=marker,tag=this] at @s run summon armor_stand ~ ~ ~ {Tags:["init","board_player"],NoBasePlate:1b,NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,ShowArms:1b,DisabledSlots:16191}
 data modify entity @e[type=armor_stand,limit=1,sort=nearest,tag=init] Rotation set from entity @e[type=marker,tag=this,limit=1] Rotation
 execute as @a[tag=this] run scoreboard players operation @e[type=armor_stand,limit=1,sort=nearest,tag=init] board_turn = @s board_turn
 execute as @a[tag=this] run loot replace entity @e[type=armor_stand,limit=1,sort=nearest,tag=init] armor.head loot cc:player_head

@@ -20,5 +20,3 @@ execute if score @s board_fork matches 3 as @e[type=marker,tag=this] at @s run t
 scoreboard players reset @s board_fork
 
 tag @e[type=marker] remove this
-
-say fork pick
