@@ -12,10 +12,13 @@ execute if score .anim board_roll matches 1.. as @e[type=marker,tag=board_player
 execute if score .anim board_roll matches 0.. run scoreboard players remove .anim board_roll 1
 execute if score .anim board_roll matches 0 as @e[type=marker,tag=board_player] if score @s board_turn = .i board_turn at @s run function cc:board/move_check
 
-# verify player list
-scoreboard players operation %board_players_prev game = %board_players game
-execute store result score %board_players game if entity @a[tag=!out]
-execute unless score %board_players_prev game = %board_players game run function cc:board/leave
+# if player leaves
+scoreboard players operation %board_players_online_prev game = %board_players_online game
+execute store result score %board_players_online game if entity @a[tag=!out,tag=!joining]
+execute if score %board_players_online game < %board_players_online_prev game run function cc:board/leave
+# special case: someone left same tick as someone else joined
+# solution: don't process joining players unless we know nobody left this tick
+execute unless score %board_players_online game < %board_players_online_prev game as @a[tag=joining] run function cc:board/join
 
 # no item dropping
 execute at @a[tag=!out] as @e[type=item,distance=..10] at @s on origin run data modify entity @e[type=item,sort=nearest,limit=1] Owner set from entity @s UUID

@@ -7,7 +7,7 @@ execute as @a[tag=!out] if score @s board_turn = .i board_turn run tellraw @a ["
 execute as @a[tag=!out] if score @s board_turn = .i board_turn run return 1
 
 # if we've reached the end of the player list, stop
-execute if score .i board_turn >= %board_players_first game run return fail
+execute if score .i board_turn >= %board_players_all game run return fail
 
 # otherwise, keep searching
 tellraw @a "skipping an absent player's turn..."

@@ -5,8 +5,8 @@ kill @e[type=armor_stand,tag=board_player]
 data remove storage cc:board players
 data remove storage cc:board tmp
 scoreboard players set %board game 0
-scoreboard players set %board_players game 0
-scoreboard players set %board_players_first game 0
+scoreboard players set %board_players_online game 0
+scoreboard players set %board_players_all game 0
 scoreboard players reset * board_await
 scoreboard players reset * board_money
 scoreboard players reset * board_stars

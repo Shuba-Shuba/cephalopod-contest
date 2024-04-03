@@ -35,7 +35,7 @@ scoreboard players operation .global visfix *= .-1 visfix
 
 ## custom damage
 # join game
-execute as @a unless score @s join matches 0 run function shb:join
+execute as @a unless score @s join matches 0 in cc:void run function shb:join
 
 # entity UUIDs
 execute as @e[type=!player,tag=!uuid_verified] run function shb:uuid

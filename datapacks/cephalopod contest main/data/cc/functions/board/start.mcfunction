@@ -6,8 +6,8 @@ tag @e[type=marker,tag=mode_rng] remove used
 # scoreboard setup
 scoreboard players set %in game 2
 scoreboard players set %board game 1
-scoreboard players set %board_players game 0
-scoreboard players set %board_players_first game 0
+scoreboard players set %board_players_online game 0
+scoreboard players set %board_players_all game 0
 scoreboard players reset * board_await
 scoreboard players reset * board_money
 scoreboard players reset * board_stars
