@@ -1,5 +1,5 @@
 clear @s iron_ingot 20
-summon skeleton ~ ~ ~ {DeathLootTable:"",CustomName:'{"text":"null"}',ArmorItems:[{},{},{},{id:"minecraft:golden_helmet",Count:1b,tag:{Unbreakable:1b}}],HandItems:[{},{}],Tags:["sentry"],Attributes:[{Base:40d,Name:"generic.max_health"}],Health:40f,NoAI:1b,PersistenceRequired:1b}
+summon skeleton ~ ~ ~ {DeathLootTable:"",CustomName:'{"text":"null"}',ArmorItems:[{},{},{},{id:"minecraft:golden_helmet",count:1,components:{"minecraft:unbreakable":{}}}],HandItems:[{},{}],Tags:["sentry"],Attributes:[{Base:40.0d,Name:"generic.max_health"}],Health:40.0f,NoAI:1b,PersistenceRequired:1b}
 tag @s add me
 data modify block 0 -63 0 front_text.messages[0] set value '["",{"selector":"@p[tag=me]"},"\'s Sentry"]'
 data modify entity @e[type=skeleton,tag=sentry,limit=1,sort=nearest] CustomName set from block 0 -63 0 front_text.messages[0]

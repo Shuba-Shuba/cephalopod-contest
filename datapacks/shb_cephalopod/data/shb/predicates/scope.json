@@ -7,7 +7,11 @@
     },
     "equipment": {
       "mainhand": {
-        "nbt": "{shb:1b}"
+        "predicates": {
+          "minecraft:custom_data": {
+            "shb":1
+          }
+        }
       }
     }
   }

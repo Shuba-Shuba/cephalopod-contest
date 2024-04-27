@@ -3,14 +3,14 @@ scoreboard players set @s Kit_ID 13
 tellraw @s "Now Using: Gapple Classic"
 
 # give the player the kit contents
-item replace entity @s armor.head with chainmail_helmet{Unbreakable:1b}
-item replace entity @s armor.feet with chainmail_boots{Unbreakable:1b}
-item replace entity @s armor.chest with leather_chestplate{Unbreakable:1b}
-item replace entity @s armor.legs with chainmail_leggings{Unbreakable:1b}
-give @s stone_sword{Unbreakable:1b}
+item replace entity @s armor.head with minecraft:chainmail_helmet[unbreakable={}]
+item replace entity @s armor.feet with minecraft:chainmail_boots[unbreakable={}]
+item replace entity @s armor.chest with minecraft:leather_chestplate[unbreakable={}]
+item replace entity @s armor.legs with minecraft:chainmail_leggings[unbreakable={}]
+give @s minecraft:stone_sword[unbreakable={}]
 give @s golden_apple 3
-give @s fishing_rod{Enchantments:[{id:"unbreaking",lvl:3}]}
-give @s bow{Unbreakable:1b}
+give @s minecraft:fishing_rod[enchantments={unbreaking:3}]
+give @s minecraft:bow[unbreakable={}]
 give @s arrow 3
 item replace entity @s weapon.offhand with cooked_beef 5
 scoreboard players set @s max_arrows 3

@@ -15,13 +15,13 @@ tellraw @s "Successfully selected kit."
 
 # give the player the kit contents
 
-item replace entity @s armor.head with minecraft:diamond_helmet{Enchantments:[{id:"protection",lvl:5},{id:"fire_protection",lvl:5},{id:"projectile_protection",lvl:5},{id:"unbreaking",lvl:10},{id:"mending",lvl:1},{id:"aqua_affinity",lvl:1},{id:"respiration",lvl:10}]}
-item replace entity @s armor.chest with minecraft:diamond_chestplate{Enchantments:[{id:"protection",lvl:5},{id:"fire_protection",lvl:5},{id:"projectile_protection",lvl:5},{id:"unbreaking",lvl:10},{id:"mending",lvl:1}]}
-item replace entity @s armor.legs with minecraft:diamond_leggings{Enchantments:[{id:"protection",lvl:5},{id:"fire_protection",lvl:5},{id:"projectile_protection",lvl:5},{id:"unbreaking",lvl:10},{id:"mending",lvl:1}]}
-item replace entity @s armor.feet with minecraft:diamond_boots{Enchantments:[{id:"protection",lvl:5},{id:"fire_protection",lvl:5},{id:"projectile_protection",lvl:5},{id:"unbreaking",lvl:10},{id:"mending",lvl:1},{id:"depth_strider",lvl:5}]}
-give @s stick{Enchantments:[{id:"knockback",lvl:10}]}
-give @s minecraft:diamond_sword{Enchantments:[{id:"sharpness",lvl:8},{id:"fire_aspect",lvl:32767},{id:"unbreaking",lvl:10},{id:"mending",lvl:1}]}
-give @s minecraft:diamond_axe{Enchantments:[{id:"sharpness",lvl:8},{id:"fire_aspect",lvl:32767},{id:"unbreaking",lvl:10},{id:"mending",lvl:1}]}
-give @s bow{Enchantments:[{id:"power",lvl:10},{id:"unbreaking",lvl:10},{id:"infinity",lvl:1},{id:"flame",lvl:1},{id:"mending",lvl:1}]}
+item replace entity @s armor.head with minecraft:diamond_helmet[enchantments={protection:5,fire_protection:5,projectile_protection:5,unbreaking:10,mending:1,aqua_affinity:1,respiration:10}]
+item replace entity @s armor.chest with minecraft:diamond_chestplate[enchantments={protection:5,fire_protection:5,projectile_protection:5,unbreaking:10,mending:1}]
+item replace entity @s armor.legs with minecraft:diamond_leggings[enchantments={protection:5,fire_protection:5,projectile_protection:5,unbreaking:10,mending:1}]
+item replace entity @s armor.feet with minecraft:diamond_boots[enchantments={protection:5,fire_protection:5,projectile_protection:5,unbreaking:10,mending:1,depth_strider:5}]
+give @s minecraft:stick[enchantments={knockback:10}]
+give @s minecraft:diamond_sword[enchantments={sharpness:8,fire_aspect:255,unbreaking:10,mending:1}]
+give @s minecraft:diamond_axe[enchantments={sharpness:8,fire_aspect:255,unbreaking:10,mending:1}]
+give @s minecraft:bow[enchantments={power:10,unbreaking:10,infinity:1,flame:1,mending:1}]
 give @s minecraft:enchanted_golden_apple 20
 give @s arrow

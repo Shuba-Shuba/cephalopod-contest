@@ -7,12 +7,12 @@ execute if entity @s[advancements={shb:killed_by_bomb=true}] run function shb:ki
 
 ### [CEPHALOPOD CONTEST] offhand carrot stick check
 execute if score @s offhand_carrot matches 1 unless predicate shb:carrot_stick_in_offhand run function shb:offhand_correct
-execute if score @s offhand_carrot matches 1 store result score #tmp offhand_carrot run clear @s carrot_on_a_stick{CustomModelData:199} 0
+execute if score @s offhand_carrot matches 1 store result score #tmp offhand_carrot run clear @s carrot_on_a_stick[custom_model_data=199] 0
 execute if score @s offhand_carrot matches 1 if score #tmp offhand_carrot matches 2.. run function shb:offhand_correct
 
 ### load nbt
 data remove storage shb:gun stats
-data modify storage shb:gun stats set from entity @s SelectedItem.tag.stats
+data modify storage shb:gun stats set from entity @s SelectedItem.components.minecraft:custom_data.stats
 
 execute store result score .id stats run data get storage shb:gun stats.id
 execute unless score .id stats = @s gunid run function shb:swapped
@@ -30,7 +30,7 @@ execute if entity @s[advancements={shb:rightclick=true}] run function shb:shoot/
 execute if entity @s[scores={carrot_click=1..}] run function shb:shoot/start
 
 ### scope/sights
-execute store result score @s cmd run data get entity @s SelectedItem.tag.CustomModelData
+execute store result score @s cmd run data get entity @s SelectedItem.components.minecraft:custom_model_data
 execute if predicate shb:scope if score @s cmd matches 201..299 run function shb:scope
 execute unless predicate shb:scope if score @s cmd matches 301..399 run function shb:unscope
 execute if predicate shb:scope if score @s cmd matches 301..399 run scoreboard players set @s scope 1
@@ -52,17 +52,17 @@ execute if score .save stats matches 1 run function shb:gun/set_stats
 scoreboard players set .loaded stats 0
 
 ### [CEPHALOPOD CONTEST] placeholder items
-execute store result score @s placeholder run clear @s carrot_on_a_stick{placeholder:1b}
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:1b}]
 execute if score @s placeholder matches 1 run function shb:give/carrot/pistol
-execute store result score @s placeholder run clear @s carrot_on_a_stick{placeholder:2b}
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:2b}]
 execute if score @s placeholder matches 1 run function shb:give/carrot/shotgun
-execute store result score @s placeholder run clear @s carrot_on_a_stick{placeholder:3b}
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:3b}]
 execute if score @s placeholder matches 1 run function shb:give/carrot/rocket
-execute store result score @s placeholder run clear @s carrot_on_a_stick{placeholder:4b}
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:4b}]
 execute if score @s placeholder matches 1 run function shb:give/carrot/assault_rifle
-execute store result score @s placeholder run clear @s carrot_on_a_stick{placeholder:5b}
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:5b}]
 execute if score @s placeholder matches 1 run function shb:give/carrot/pistol_bad
-execute store result score @s placeholder run clear @s carrot_on_a_stick{placeholder:6b}
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:6b}]
 execute if score @s placeholder matches 1 run function shb:give/carrot/sniper_bad
 
 # xp timers

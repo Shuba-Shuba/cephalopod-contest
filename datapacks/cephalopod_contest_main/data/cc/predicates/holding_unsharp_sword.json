@@ -1,0 +1,35 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "tag": "minecraft:swords"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "tag": "minecraft:swords",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantment": "minecraft:sharpness",
+                  "levels": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+]

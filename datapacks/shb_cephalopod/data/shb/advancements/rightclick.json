@@ -1,16 +1,17 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:using_item",
-      "conditions": {
-        "player": [],
-        "item": {
-          "items": [
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [
             "minecraft:ender_eye"
           ],
-          "nbt": "{shb:1b}"
-        }
-      }
-    }
-  }
+					"predicates": {
+						"minecraft:custom_data": "{shb:1b}"
+					}
+				}
+			}
+		}
+	}
 }

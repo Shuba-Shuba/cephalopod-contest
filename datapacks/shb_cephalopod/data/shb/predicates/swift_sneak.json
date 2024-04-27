@@ -1,11 +1,15 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "equipment": {
-      "legs": {
-        "nbt": "{swift_sneak:1b}"
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "legs": {
+          "predicates": {
+            "minecraft:custom_data": {"swift_sneak":1}
+          }
+        }
       }
     }
   }
-}
+]

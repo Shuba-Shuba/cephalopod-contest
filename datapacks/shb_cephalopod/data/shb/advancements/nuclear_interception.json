@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:tnt"
+      "id": "minecraft:tnt"
     },
     "title": "Nuclear Interception",
     "description": "Shoot a bomb out of the sky",

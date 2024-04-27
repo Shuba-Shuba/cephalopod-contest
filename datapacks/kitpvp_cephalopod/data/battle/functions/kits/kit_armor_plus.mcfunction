@@ -16,8 +16,8 @@ tellraw @s "Now Using: Kit Armor+"
 # give the player the kit contents
 
 item replace entity @s weapon.offhand with minecraft:cooked_beef 8
-give @s minecraft:wooden_shovel{Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;1672887746,-720354855,-1850184254,-2136929711],Slot:"mainhand"}]} 1
-item replace entity @s armor.head with diamond_helmet{Unbreakable:1b}
-item replace entity @s armor.chest with diamond_chestplate{Unbreakable:1b}
-item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
-item replace entity @s armor.feet with diamond_boots{Unbreakable:1b}
+give @s minecraft:wooden_shovel[unbreakable={},attribute_modifiers=[{operation:"add_value",type:"generic.attack_damage",amount:2,slot:"mainhand",name:"generic.attack_damage",uuid:[I;1672887746,-720354855,-1850184254,-2136929711]}]] 1
+item replace entity @s armor.head with minecraft:diamond_helmet[unbreakable={}]
+item replace entity @s armor.chest with minecraft:diamond_chestplate[unbreakable={}]
+item replace entity @s armor.legs with minecraft:diamond_leggings[unbreakable={}]
+item replace entity @s armor.feet with minecraft:diamond_boots[unbreakable={}]

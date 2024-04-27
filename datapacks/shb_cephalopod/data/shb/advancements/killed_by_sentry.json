@@ -1,21 +1,20 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:entity_killed_player",
-        "conditions": {
-          "entity": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type": "minecraft:skeleton",
-                "nbt": "{Tags:[\"sentry\"]}"
-              }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:skeleton",
+              "nbt": "{Tags:[\"sentry\"]}"
             }
-          ]
-        }
+          }
+        ]
       }
-    },
-    "rewards": {}
-  }
-  
+    }
+  },
+  "rewards": {}
+}

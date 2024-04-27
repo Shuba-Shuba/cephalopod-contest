@@ -1,7 +1,7 @@
 advancement revoke @s only shb:reload_gun
 advancement revoke @s only shb:reload_gun_carrot
 
-data modify storage shb:gun stats set from entity @s Inventory[{Slot:-106b}].tag.stats
+data modify storage shb:gun stats set from entity @s Inventory[{Slot:-106b}].components.minecraft:custom_data.stats
 execute store result score @s gunid run data get storage shb:gun stats.id
 function shb:gun/get_stats
 
@@ -14,4 +14,4 @@ scoreboard players operation @s reload.repeat /= .reload.per stats
 
 execute unless score @s offhand_carrot matches 1 run function cc:swap_hands
 
-# say reload
+#say reload

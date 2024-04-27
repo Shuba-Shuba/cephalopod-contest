@@ -1,3 +1,0 @@
-scoreboard players remove @s board_money 10
-tellraw @s "here's your shotgun. now get the fuck out\nnote - in case you didn't read the item description, this is only for parking lot fights"
-give @s minecraft:carrot_on_a_stick{CustomModelData:206,AttributeModifiers:[{AttributeName:"generic.attack_speed",Slot:"mainhand",Operation:0,Amount:-1000000,UUID:[I;923083048,1939549020,-393494939,-239439094]}],HideFlags:2,display:{Name:'{"text":"Shotgun","italic":false}'}}

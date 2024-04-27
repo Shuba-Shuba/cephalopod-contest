@@ -1,8 +1,14 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:wooden_axe",
-      "nbt": "{Enchantments:[{id:\"sharpness\",lvl:1}]}"
+      "id": "minecraft:wooden_axe",
+      "components": {
+        "minecraft:enchantments": {
+          "levels": {
+            "minecraft:sharpness": 1
+          }
+        }
+      }
     },
     "title": "Lumberjack Master",
     "description": "Break your axe while using kit lumberjack",

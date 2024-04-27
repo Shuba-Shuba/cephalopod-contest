@@ -11,7 +11,7 @@
           "italic": false
         },
         {
-          "text": " damage"
+          "text"  : " damage"
         }
       ],
       [
@@ -28,7 +28,7 @@
         }
       ]
     ],
-    "replace": true
+    "mode": "replace_all"
   },
   {
     "function": "minecraft:set_name",
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "function": "minecraft:copy_nbt",
+    "function": "minecraft:copy_custom_data",
     "source": {
       "type": "minecraft:storage",
       "source": "shb:gun"

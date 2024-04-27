@@ -34,8 +34,10 @@
           "name": "minecraft:wooden_sword",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Damage:49}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:damage": 49
+              }
             }
           ]
         }

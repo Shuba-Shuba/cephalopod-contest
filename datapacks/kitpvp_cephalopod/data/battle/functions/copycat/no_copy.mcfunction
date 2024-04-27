@@ -16,10 +16,10 @@
 #execute if score @s steak_count matches 4 run item replace entity @s hotbar.1 with cooked_beef 4
 #execute if score @s steak_count matches 5 run item replace entity @s hotbar.1 with cooked_beef 5
 #execute if score @s steak_count matches 6.. run item replace entity @s hotbar.1 with cooked_beef 6
-#item replace entity @s hotbar.2 with bow{Unbreakable:1b}
+#item replace entity @s hotbar.2 with minecraft:bow[unbreakable={}]
 
 # clear all items that can be in other kits to prevent players from keeping them
 clear @s #battle:in_kits
 
 title @s actionbar "Nobody to copy item from"
-item replace entity @s hotbar.0 with barrier{display:{Name:'{"text":"Copycat Slot","italic":false,"color":"red"}',Lore:['{"text":"This slot will copy the item the nearest","color":"gray"}','{"text":"player within 8 blocks is holding.","color":"gray"}','""','{"text":"This will usually be a melee weapon.","color":"gray"}']}}
+item replace entity @s hotbar.0 with minecraft:barrier[custom_name='{"text":"Copycat Slot","italic":false,"color":"red"}',lore=['{"text":"This slot will copy the item the nearest","color":"gray"}','{"text":"player within 8 blocks is holding.","color":"gray"}','""','{"text":"This will usually be a melee weapon.","color":"gray"}']]

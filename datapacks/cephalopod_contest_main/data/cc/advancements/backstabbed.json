@@ -1,0 +1,50 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "%in"
+                  },
+                  "score": "game"
+                },
+                "range": 2
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{Tags:[\"fight\"]}"
+                }
+              }
+            ]
+          }
+        ],
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"fight\",\"backstab_valid\"]}"
+          },
+          "type": {
+            "tags": [
+              {
+                "id": "cc:is_player_attack",
+                "expected": true
+              }
+            ],
+            "source_entity": {}
+          }
+        }
+      }
+    }
+  }
+}

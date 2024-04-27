@@ -1,6 +1,6 @@
 # always run
-execute positioned ~ ~-1.5 ~ unless entity @a[tag=this,distance=..1] run particle dust 1 0 0 1 ~ ~1.5 ~ 0 0 0 1 1 force @a
-execute positioned ~ ~-1.5 ~ unless entity @a[tag=this,distance=..1] run particle block redstone_block ~ ~1.5 ~ 0 0 0 1 2 normal @a
+execute positioned ~ ~-1.5 ~ unless entity @a[tag=this,distance=..1] run particle dust{color:[1,0,0],scale:1} ~ ~1.5 ~ 0 0 0 1 1 force @a
+execute positioned ~ ~-1.5 ~ unless entity @a[tag=this,distance=..1] run particle block{block_state:"redstone_block"} ~ ~1.5 ~ 0 0 0 1 2 normal @a
 #execute positioned ~ ~-1.5 ~ unless entity @a[tag=this,distance=..1] run particle minecraft:flame ~ ~1.5 ~ 0 0 0 0.1 1 normal @a
 scoreboard players remove .r raycast 1
 

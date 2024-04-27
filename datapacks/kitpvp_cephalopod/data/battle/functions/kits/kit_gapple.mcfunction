@@ -16,15 +16,15 @@ tellraw @s "Successfully selected kit."
 # give the player the kit contents
 
 give @s minecraft:enchanted_golden_apple 64
-give @s diamond_sword{Enchantments:[{id:"sharpness",lvl:2},{id:"fire_aspect",lvl:3},{id:"unbreaking",lvl:3}]}
-give @s diamond_helmet{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-give @s diamond_chestplate{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-give @s diamond_leggings{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-give @s diamond_boots{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-give @s potion{Potion:"strength"} 3
-give @s potion{Potion:"swiftness"} 3
-item replace entity @s armor.head with diamond_helmet{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-item replace entity @s armor.chest with diamond_chestplate{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-item replace entity @s armor.legs with diamond_leggings{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-item replace entity @s armor.feet with diamond_boots{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
+give @s minecraft:diamond_sword[enchantments={sharpness:2,fire_aspect:3,unbreaking:3}]
+give @s minecraft:diamond_helmet[enchantments={protection:2,unbreaking:3}]
+give @s minecraft:diamond_chestplate[enchantments={protection:2,unbreaking:3}]
+give @s minecraft:diamond_leggings[enchantments={protection:2,unbreaking:3}]
+give @s minecraft:diamond_boots[enchantments={protection:2,unbreaking:3}]
+give @s minecraft:potion[potion_contents={potion:"strength"}] 3
+give @s minecraft:potion[potion_contents={potion:"swiftness"}] 3
+item replace entity @s armor.head with minecraft:diamond_helmet[enchantments={protection:2,unbreaking:3}]
+item replace entity @s armor.chest with minecraft:diamond_chestplate[enchantments={protection:2,unbreaking:3}]
+item replace entity @s armor.legs with minecraft:diamond_leggings[enchantments={protection:2,unbreaking:3}]
+item replace entity @s armor.feet with minecraft:diamond_boots[enchantments={protection:2,unbreaking:3}]
 tellraw @s {"text":"Notice: This kit has more than what is contained in the hotbar.","color":"aqua"}

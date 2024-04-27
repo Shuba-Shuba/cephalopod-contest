@@ -1,4 +1,4 @@
-summon snowball ~ ~ ~ {Item:{id:"minecraft:tnt",Count:1b},Tags:["shb","init"],Passengers:[{id:"minecraft:marker",Tags:["shb","init"]}]}
+summon snowball ~ ~ ~ {Item:{id:"minecraft:tnt",count:1},Tags:["shb","init"],Passengers:[{id:"minecraft:marker",Tags:["shb","init"]}]}
 scoreboard players operation @e[type=marker,tag=shb,tag=init,limit=1] ownerUUID0 = @s ownerUUID0
 scoreboard players operation @e[type=marker,tag=shb,tag=init,limit=1] ownerUUID1 = @s ownerUUID1
 scoreboard players operation @e[type=marker,tag=shb,tag=init,limit=1] ownerUUID2 = @s ownerUUID2

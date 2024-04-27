@@ -1,7 +1,7 @@
 # @s = a sentry
 # get stats
 data remove storage shb:gun stats
-data modify storage shb:gun stats set from entity @s HandItems[0].tag.stats
+data modify storage shb:gun stats set from entity @s HandItems[0].components.minecraft:custom_data.stats
 execute store result score .id stats run data get storage shb:gun stats.id
 function shb:gun/get_stats
 

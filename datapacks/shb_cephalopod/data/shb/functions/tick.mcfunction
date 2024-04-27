@@ -17,11 +17,11 @@ execute if score .i_ticks config matches ..-1 run scoreboard players set .i_tick
 #execute if score .i_ticks config matches 10.. unless score dmg_stacking.enabled config matches 0 run scoreboard players set dmg_stacking.enabled config 0
 
 ## custom projectiles
-execute as @e[type=snowball,tag=!dodge,nbt={Item:{tag:{dodge:1b}}}] at @s run function shb:found_dodge
+execute as @e[type=snowball,tag=!dodge,nbt={Item:{components:{"minecraft:custom_data":{dodge:1b}}}}] at @s run function shb:found_dodge
 kill @e[type=arrow,nbt={inGround:1b},tag=brick]
 kill @e[type=snowball,tag=brick,predicate=!cc:is_riding_ender_arrow]
-execute as @e[type=snowball,tag=!brick,nbt={Item:{tag:{brick:1b}}}] at @s run function shb:found_brick
-execute as @e[type=snowball,tag=!shb,nbt={Item:{tag:{shb:1b}}}] at @s run function shb:found_snowball
+execute as @e[type=snowball,tag=!brick,nbt={Item:{components:{"minecraft:custom_data":{brick:1b}}}}] at @s run function shb:found_brick
+execute as @e[type=snowball,tag=!shb,nbt={Item:{components:{"minecraft:custom_data":{shb:1b}}}}] at @s run function shb:found_snowball
 execute as @e[type=marker,tag=dodge] unless predicate shb:is_riding_dodgeball at @s run function cc:dodgeball_landed
 execute as @e[type=marker,tag=shb] unless predicate shb:is_riding_snowball at @s run function shb:explode
 execute as @e[type=snowball,tag=shb] run function shb:vis_fix

@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "profile": "Shuba_Shuba",
+      "id": "minecraft:player_head"
+    },
+    "title": "Cephalopod Contest",
+    "description": "Easter egg advancements",
+    "background": "minecraft:textures/misc/enchanted_item_glint.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

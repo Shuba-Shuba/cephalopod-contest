@@ -1,0 +1,127 @@
+- function: cc:backstab_tick
+  - tag_references: errored while parsing
+- function: cc:board/add_name_to_list
+  - tag_references:
+    - line: 5
+      - path: Items[0].tag.SkullOwner.Name
+         fix: Items[0].components."minecraft:profile".name
+- function: cc:board/end_turn
+  - tag_references:
+    - line: 20
+      - path: ArmorItems[3].tag.SkullOwner.Name
+         fix: ArmorItems[3].components."minecraft:profile".name
+- function: cc:board/fight_prepare
+  - tag_references: errored while parsing
+- function: cc:board/retrieve_player
+  - tag_references:
+    - line: 13
+      - path: ArmorItems[3].tag.SkullOwner.Name
+         fix: ArmorItems[3].components."minecraft:profile".name
+- function: cc:board/rightclick
+  - tag_references:
+    - line: 5
+      - path: SelectedItem.tag.board
+         fix: SelectedItem.components."minecraft:custom_data".board
+- function: cc:board/tick
+  - tag_references: errored while parsing
+- function: cc:carpet_player_spawn
+  - tag_references: errored while parsing
+- function: cc:craft_makelist
+  - tag_references:
+    - line: 9
+      - path: Items[0].tag.display.Name
+         fix: Items[0].components."minecraft:custom_name"
+    - line: 10
+      - path: Items[1].tag.display.Name
+         fix: Items[1].components."minecraft:custom_name"
+    - line: 11
+      - path: Items[2].tag.display.Name
+         fix: Items[2].components."minecraft:custom_name"
+- function: cc:eng_scrap
+  - tag_references:
+    - line: 1
+      - path: SelectedItem.tag.Damage
+         fix: SelectedItem.components."minecraft:damage"
+- function: cc:explode
+  - tag_references: errored while parsing
+- function: cc:gametick/lights_out
+  - tag_references: errored while parsing
+- function: cc:gametick/nbk
+  - tag_references: errored while parsing
+- function: cc:gametick/nun_run
+  - tag_references: errored while parsing
+- function: cc:gametick/parkour
+  - tag_references: errored while parsing
+- function: cc:gametick/race
+  - tag_references: errored while parsing
+- function: cc:gametick/skywars
+  - tag_references: errored while parsing
+- function: cc:go_to_hell
+  - tag_references: errored while parsing
+- function: cc:item_use
+  - tag_references:
+    - line: 3
+      - path: Inventory[{Slot: -106b}].tag.nbk_id
+         fix: Inventory[{Slot: -106b}].components."minecraft:custom_data".nbk_id
+- function: cc:mode/admintato
+  - tag_references: errored while parsing
+- function: cc:mode/bomb_tag
+  - tag_references: errored while parsing
+- function: cc:mode/boss_fight
+  - tag_references: errored while parsing
+- function: cc:mode/buttons
+  - tag_references: errored while parsing
+- function: cc:mode/chunk
+  - tag_references: errored while parsing
+- function: cc:mode/dodgeball
+  - tag_references: errored while parsing
+- function: cc:mode/koth
+  - tag_references: errored while parsing
+- function: cc:mode/lights_out
+  - tag_references: errored while parsing
+- function: cc:mode/mini_tnt
+  - tag_references: errored while parsing
+- function: cc:mode/parkour
+  - tag_references: errored while parsing
+- function: cc:mode/race
+  - tag_references: errored while parsing
+- function: cc:mode/red_light_green_light
+  - tag_references: errored while parsing
+- function: cc:mode/rocks
+  - tag_references: errored while parsing
+- function: cc:mode/spleef
+  - tag_references: errored while parsing
+- function: cc:mode/sumo
+  - tag_references: errored while parsing
+- function: cc:mode/talent
+  - tag_references: errored while parsing
+- function: cc:next_round
+  - tag_references: errored while parsing
+- function: cc:sell_drugs
+  - tag_references:
+    - line: 2
+      - path: SelectedItem.tag.CustomModelData
+         fix: SelectedItem.components."minecraft:custom_model_data"
+- function: cc:skywars_start
+  - tag_references: errored while parsing
+- function: cc:spleef_start
+  - tag_references: errored while parsing
+- function: cc:stun_the_sinful
+  - tag_references: errored while parsing
+- function: cc:sumo_start
+  - tag_references: errored while parsing
+- function: cc:tick
+  - tag_references: errored while parsing
+- function: cc:tnt_rightclick
+  - tag_references:
+    - line: 1
+      - path: SelectedItem.tag.tnt
+         fix: SelectedItem.components."minecraft:custom_data".tnt
+- function: cc:uno/check_card
+  - tag_references:
+    - line: 2
+      - path: Item.tag.uno.id
+         fix: Item.components."minecraft:custom_data".uno.id
+    - line: 3
+      - path: Item.tag.uno.color
+         fix: Item.components."minecraft:custom_data".uno.color

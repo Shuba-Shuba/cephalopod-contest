@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:shield"
+      "id": "minecraft:shield"
     },
     "title": "The True Noob",
     "description": "Break your shield while using noob shield user",

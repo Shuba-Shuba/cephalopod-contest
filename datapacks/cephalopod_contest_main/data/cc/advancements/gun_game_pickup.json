@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:thrown_item_picked_up_by_player",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {"gungame":1}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cc:gun_game_pickup"
+  }
+}

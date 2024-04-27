@@ -15,12 +15,12 @@ tellraw @s "Successfully selected kit."
 
 # give the player the kit contents
 
-execute at @s run summon item ~ ~ ~ {Item:{id:"splash_potion",Count:32,tag:{Potion:"strong_healing"}}}
-execute at @s run summon item ~ ~ ~ {Item:{id:"potion",Count:2,tag:{Potion:"strength"}}}
-execute at @s run summon item ~ ~ ~ {Item:{id:"potion",Count:2,tag:{Potion:"swiftness"}}}
-give @s diamond_sword{Enchantments:[{id:"sharpness",lvl:2},{id:"fire_aspect",lvl:3},{id:"unbreaking",lvl:3}]}
-item replace entity @s armor.head with diamond_helmet{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-item replace entity @s armor.chest with diamond_chestplate{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-item replace entity @s armor.legs with diamond_leggings{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
-item replace entity @s armor.feet with diamond_boots{Enchantments:[{id:"protection",lvl:2},{id:"unbreaking",lvl:3}]}
+execute at @s run summon item ~ ~ ~ {Item:{id:"splash_potion",count:32,components:{"minecraft:potion_contents":{potion:"strong_healing"}}}}
+execute at @s run summon item ~ ~ ~ {Item:{id:"potion",count:2,components:{"minecraft:potion_contents":{potion:"strength"}}}}
+execute at @s run summon item ~ ~ ~ {Item:{id:"potion",count:2,components:{"minecraft:potion_contents":{potion:"swiftness"}}}}
+give @s minecraft:diamond_sword[enchantments={sharpness:2,fire_aspect:3,unbreaking:3}]
+item replace entity @s armor.head with minecraft:diamond_helmet[enchantments={protection:2,unbreaking:3}]
+item replace entity @s armor.chest with minecraft:diamond_chestplate[enchantments={protection:2,unbreaking:3}]
+item replace entity @s armor.legs with minecraft:diamond_leggings[enchantments={protection:2,unbreaking:3}]
+item replace entity @s armor.feet with minecraft:diamond_boots[enchantments={protection:2,unbreaking:3}]
 item replace entity @s weapon.offhand with minecraft:cooked_beef 64

@@ -13,7 +13,9 @@
                   "items": [
                     "minecraft:carrot_on_a_stick"
                   ],
-                  "nbt": "{shb:1b}"
+                  "predicates": {
+                    "minecraft:custom_data": "{shb:1b}"
+                  }
                 }
               }
             }

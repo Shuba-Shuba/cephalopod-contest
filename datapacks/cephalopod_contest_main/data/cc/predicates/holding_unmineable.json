@@ -1,0 +1,42 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "%arena"
+      },
+      "score": "game",
+      "scale": 1
+    },
+    "range": 1
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "components": {
+              "minecraft:custom_data": {"mineable":1}
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "tag": "cc:mineable"
+        }
+      }
+    }
+  }
+]

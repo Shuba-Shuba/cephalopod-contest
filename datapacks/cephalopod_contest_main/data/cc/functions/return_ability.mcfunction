@@ -1,0 +1,5 @@
+give @a[tag=nun,scores={ability=1}] minecraft:sugar[custom_name='"Super Nun"',custom_data={nbk:1b}]
+give @a[tag=nun,scores={ability=2}] minecraft:nether_star[custom_name='"Stun The Sinful"',custom_data={nbk:1b}]
+give @a[tag=nun,scores={ability=3}] minecraft:turtle_egg[custom_name='"Day Of Judgement"',custom_data={nbk:1b}]
+give @a[tag=nun,scores={ability=4}] minecraft:fishing_rod[custom_name='"Child Indoctrination Rod"',damage=64,custom_data={nbk:1b}]
+title @a[tag=nun] actionbar ["Press [",{"keybind":"key.use"},"] to use items"]

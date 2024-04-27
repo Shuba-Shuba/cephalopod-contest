@@ -1,0 +1,9 @@
+{
+  "function": "minecraft:set_damage",
+  "damage": {
+    "type": "minecraft:score",
+    "target": "this",
+    "score": "crossbow_time",
+    "scale": 0.01
+  }
+}

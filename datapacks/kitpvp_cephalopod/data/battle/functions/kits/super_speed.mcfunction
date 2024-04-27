@@ -8,5 +8,5 @@ effect give @s instant_damage 1 0 true
 effect give @s speed infinite 4 true
 effect give @s jump_boost infinite 2 true
 effect give @s invisibility infinite 0 true
-give @s wooden_hoe{Unbreakable:1b,Enchantments:[{id:"fire_aspect",lvl:1},{id:"sharpness",lvl:1}]}
+give @s minecraft:wooden_hoe[unbreakable={},enchantments={fire_aspect:1,sharpness:1}]
 give @s cooked_beef 5

@@ -15,8 +15,8 @@ tellraw @s "Now Using: Suicide Bomber"
 
 # give the player the kit contents
 
-give @s tnt{nbk:1b,display:{Name:'{"text":"Self Destruct","italic":false}'}}
-give @s wooden_sword{Damage:58}
+give @s minecraft:tnt[custom_name='{"text":"Self Destruct","italic":false}',custom_data={nbk:1b}]
+give @s minecraft:wooden_sword[damage=58]
 effect give @s speed infinite 0 true
 effect give @s minecraft:instant_damage 1 0
 

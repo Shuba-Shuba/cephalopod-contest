@@ -4051,12 +4051,6 @@
     },
     "done": true
   },
-  "shb:nuclear_interception": {
-    "criteria": {
-      "requirement": "2022-08-12 14:53:33 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/stripped_oak_wood": {
     "criteria": {
       "has_log": "2022-08-12 15:04:18 -0500"
@@ -6553,12 +6547,6 @@
     },
     "done": true
   },
-  "delta:player_setup": {
-    "criteria": {
-      "requirement": "2023-09-25 10:52:24 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/eye_armor_trim_smithing_template_smithing_trim": {
     "criteria": {
       "has_smithing_trim_template": "2023-09-25 14:57:43 -0500"
@@ -7315,5 +7303,11 @@
     },
     "done": true
   },
-  "DataVersion": 3700
+  "delta:player_setup": {
+    "criteria": {
+      "requirement": "2024-04-23 21:33:40 -0500"
+    },
+    "done": true
+  },
+  "DataVersion": 3837
 }
