@@ -233,3 +233,5 @@ execute if score autospawn.enabled config matches 1 unless entity Steve position
 execute if score autospawn.enabled config matches 1 unless entity Steve1 positioned 0 69 0 in cc:void as Shuba_Shuba run function cc:carpet_player_spawn
 execute if score autospawn.enabled config matches 1 unless entity Steve2 positioned 0 69 0 in cc:void as Shuba_Shuba run function cc:carpet_player_spawn
 execute if score autospawn.enabled config matches 1 unless entity steve3 positioned 0 69 0 in cc:void as Shuba_Shuba run function cc:carpet_player_spawn
+
+# bruh rbuhr bruh
