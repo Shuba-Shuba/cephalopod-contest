@@ -3,3 +3,8 @@
 xaeromap.txt
 carpet.conf
 spsSettings.json
+syncmatica/**
+scripts/**
+advancements/**
+playerdata/**
+stats/**
