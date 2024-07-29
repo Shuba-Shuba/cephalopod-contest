@@ -22,4 +22,4 @@ item replace entity @s hotbar.8 from block ~ ~ ~ container.17
 item replace entity @s weapon.offhand from block ~ ~ ~ container.18
 
 # get back of inventory (no fixed slots)
-loot give @s mine ~ ~ ~1 air[custom_data={drop_contents:1b}]
+loot give @s mine ~ ~ ~1 air[custom_data={drop_contents:1}]
