@@ -3930,12 +3930,6 @@
     },
     "done": true
   },
-  "lobster:rightclick": {
-    "criteria": {
-      "requirement": "2022-08-13 02:31:06 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/dark_oak_chest_boat": {
     "criteria": {
       "has_boat": "2022-08-13 02:31:23 +0000"
@@ -6378,12 +6372,6 @@
     },
     "done": true
   },
-  "lobster:portal": {
-    "criteria": {
-      "requirement": "2023-04-25 02:46:46 +0000"
-    },
-    "done": true
-  },
   "delta:player_setup": {
     "criteria": {
       "requirement": "2023-07-15 03:31:24 +0000"
@@ -7206,11 +7194,5 @@
     },
     "done": true
   },
-  "lobster:shards": {
-    "criteria": {
-      "shard1": "2023-11-07 04:24:08 +0000"
-    },
-    "done": false
-  },
-  "DataVersion": 3700
+  "DataVersion": 3953
 }

@@ -4221,12 +4221,6 @@
     },
     "done": true
   },
-  "lobster:rightclick": {
-    "criteria": {
-      "requirement": "2022-08-17 00:27:38 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/purpur_slab": {
     "criteria": {
       "has_purpur_block": "2022-09-05 19:57:30 +0000"
@@ -6423,12 +6417,6 @@
     },
     "done": true
   },
-  "lobster:portal": {
-    "criteria": {
-      "requirement": "2023-04-26 00:58:08 +0000"
-    },
-    "done": true
-  },
   "minecraft:adventure/ol_betsy": {
     "criteria": {
       "shot_crossbow": "2023-05-06 03:27:18 +0000"
@@ -6440,12 +6428,6 @@
       "shot_trident": "2023-05-06 03:35:51 +0000"
     },
     "done": true
-  },
-  "lobster:shards": {
-    "criteria": {
-      "shard2": "2023-05-11 23:11:21 +0000"
-    },
-    "done": false
   },
   "delta:player_setup": {
     "criteria": {
@@ -7257,5 +7239,41 @@
     },
     "done": true
   },
-  "DataVersion": 3700
+  "minecraft:recipes/building_blocks/waxed_oxidized_copper_grate": {
+    "criteria": {
+      "has_waxed_oxidized_copper": "2026-03-28 03:48:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/waxed_oxidized_copper_bulb": {
+    "criteria": {
+      "has_waxed_oxidized_copper": "2026-03-28 03:48:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_oxidized_chiseled_copper_from_waxed_oxidized_copper_stonecutting": {
+    "criteria": {
+      "has_waxed_oxidized_copper": "2026-03-28 03:48:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_oxidized_copper_grate_from_waxed_oxidized_copper_stonecutting": {
+    "criteria": {
+      "has_waxed_oxidized_copper": "2026-03-28 03:48:37 +0000"
+    },
+    "done": true
+  },
+  "shb:nuclear_interception": {
+    "criteria": {
+      "requirement": "2026-03-29 06:24:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_oxidized_chiseled_copper_from_waxed_oxidized_cut_copper_stonecutting": {
+    "criteria": {
+      "has_waxed_oxidized_cut_copper": "2026-03-30 04:41:12 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 3953
 }
