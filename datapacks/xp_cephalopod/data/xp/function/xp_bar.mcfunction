@@ -1,4 +1,4 @@
-# for x = xp levels, xp points = 
+# for x = xp levels, xp points =
 # x < 15    2x+7
 # x = 15    37
 # 15<x<31   5x-38

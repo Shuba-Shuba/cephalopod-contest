@@ -16,7 +16,7 @@ gamerule mobGriefing true
 scoreboard players set %mode game 24
 scoreboard players reset * lives
 scoreboard objectives setdisplay sidebar lives
-scoreboard objectives setdisplay list lives 
+scoreboard objectives setdisplay list lives
 kill @e[type=snowball]
 kill @e[type=marker,tag=bomb_level_init]
 kill @e[type=marker,tag=laser_tether]
@@ -61,7 +61,7 @@ item replace entity @a[scores={class=0}] hotbar.1 with dirt
 item replace entity @a[scores={class=0}] hotbar.2 with minecraft:bow[custom_name='{"text":"Basic Ass TNT Bow","italic":false}',enchantments={punch:1},unbreakable={}]
 scoreboard players set @a[scores={class=0}] jump_cd 1
 item replace entity @a[scores={class=0}] hotbar.4 with minecraft:golden_pickaxe[enchantments={efficiency:255},can_break={predicates:[{blocks:"#cc:all"}],show_in_tooltip:0b}]
- 
+
 # technician
 item replace entity @a[scores={class=1}] hotbar.0 with minecraft:crossbow[custom_name='{"text":"Golden Gun","italic":false}',enchantments={punch:1,quick_charge:1},unbreakable={}]
 item replace entity @a[scores={class=1}] hotbar.1 with minecraft:stick[custom_name='{"text":"Broken Modem","italic":false}',custom_data={tnt:1b}]

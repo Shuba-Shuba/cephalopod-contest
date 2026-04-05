@@ -7,7 +7,7 @@ execute positioned ^ ^1 ^2 facing ^ ^-1 ^5.5 run function cc:dagger_cast
 execute positioned ^ ^-1 ^2 facing ^ ^1 ^5.5 run function cc:dagger_cast
 
 # launch hit players
-execute positioned ^ ^ ^9.5 run tp @a[tag=dagger_hit] ~ ~-2 ~ 
+execute positioned ^ ^ ^9.5 run tp @a[tag=dagger_hit] ~ ~-2 ~
 summon tnt ^ ^ ^8.5
 
 # hover

@@ -4,7 +4,7 @@ scoreboard players set @s warp_cd 20
 
 # teleport to tagged block/entity
 execute positioned as @e[type=slime,tag=arc_tagged] run tp @s ~ ~1 ~
-execute positioned as @a[tag=arc_tagged,limit=1] run tp @s ~ ~ ~ 
+execute positioned as @a[tag=arc_tagged,limit=1] run tp @s ~ ~ ~
 tp @s @s
 
 # sound

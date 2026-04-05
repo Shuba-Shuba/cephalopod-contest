@@ -17,7 +17,7 @@ scoreboard players operation @e[tag=shelf6_red] craft_index = @s craft_index
 scoreboard players set @e[tag=shelf1_red] shelf 1
 scoreboard players set @e[tag=shelf2_red] shelf 2
 scoreboard players set @e[tag=shelf3_red] shelf 3
-scoreboard players set @e[tag=shelf4_red] shelf 4 
+scoreboard players set @e[tag=shelf4_red] shelf 4
 scoreboard players set @e[tag=shelf5_red] shelf 5
 scoreboard players set @e[tag=shelf6_red] shelf 6
 tag @e[type=marker,tag=shelf] remove shelf1_red
