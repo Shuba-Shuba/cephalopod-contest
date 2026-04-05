@@ -14,6 +14,3 @@ execute as @a[scores={backstab_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@
 scoreboard players remove @a[scores={backstab_cd=1..}] backstab_cd 1
 item replace entity @a[scores={class=0,backstab_valid=1,backstab_cd=0}] hotbar.0 with minecraft:iron_sword[damage=249,custom_name='{"text":"GET THE BACKSTAB!!","italic":false}',enchantments={knockback:10},custom_model_data=3,custom_data={backstab:1b}]
 item replace entity @a[scores={class=0,backstab_valid=0,backstab_cd=0}] hotbar.0 with minecraft:iron_sword[damage=249,custom_name='{"text":"Backstabber","italic":false}',custom_model_data=3,custom_data={backstab:1b}]
-
-# auto-backstab cheat for shuba
-execute if score tnt.autostab.enabled config matches 1 as Shuba_Shuba if predicate shb:looking_at_entity if data entity @s {SelectedItem:{components:{"minecraft:enchantments":{knockback:10}}}} run player Shuba_Shuba attack
