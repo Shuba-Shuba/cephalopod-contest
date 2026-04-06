@@ -8,7 +8,7 @@
           "minecraft:carrot_on_a_stick"
         ],
         "components": {
-          "minecraft:custom_model_data": 199
+          "item_model": "shb:item/invisible"
         }
       }
     }

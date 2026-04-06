@@ -33,4 +33,4 @@ item modify entity @s armor.head cc:prot
 item modify entity @s armor.chest cc:prot
 item modify entity @s armor.legs cc:prot
 item modify entity @s armor.feet cc:prot
-item replace entity @s hotbar.0 with minecraft:wooden_sword[unbreakable={},can_break={predicates:[{blocks:"#cc:placeable"}],show_in_tooltip:0b}]
+item replace entity @s hotbar.0 with minecraft:wooden_sword[unbreakable={},can_break={blocks:"#cc:placeable"}]

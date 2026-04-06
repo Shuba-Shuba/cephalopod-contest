@@ -3,13 +3,13 @@
     "requirement": {
       "trigger": "minecraft:item_durability_changed",
       "conditions": {
+        "durability": 1,
         "item": {
           "items": [
             "minecraft:bow"
           ],
-          "durability": 1,
           "components": {
-            "minecraft:custom_model_data": 11
+            "minecraft:item_model": "cc:item/holy_bow/bow"
           }
         }
       }

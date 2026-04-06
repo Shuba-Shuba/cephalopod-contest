@@ -1,18 +1,18 @@
 # PRESIDENT'S DAY IN MAY EVENT
 execute as @a store result score @s event_money run clear @s emerald
 
-execute as @a store result score @s gunclear run clear @s carrot_on_a_stick[custom_model_data=201]
+execute as @a store result score @s gunclear run clear @s carrot_on_a_stick[item_model="shb:item/pistol"]
 execute as @a run scoreboard players operation @s event_money += @s gunclear
 
-execute as @a store result score @s gunclear run clear @s carrot_on_a_stick[custom_model_data=206]
+execute as @a store result score @s gunclear run clear @s carrot_on_a_stick[item_model="shb:item/shotgun"]
 execute as @a run scoreboard players operation @s gunclear *= 2 calc
 execute as @a run scoreboard players operation @s event_money += @s gunclear
 
-execute as @a store result score @s gunclear run clear @s carrot_on_a_stick[custom_model_data=204]
+execute as @a store result score @s gunclear run clear @s carrot_on_a_stick[item_model="shb:item/assault_rifle"]
 execute as @a run scoreboard players operation @s gunclear *= 3 calc
 execute as @a run scoreboard players operation @s event_money += @s gunclear
 
-execute as @a store result score @s gunclear run clear @s carrot_on_a_stick[custom_model_data=203]
+execute as @a store result score @s gunclear run clear @s carrot_on_a_stick[item_model="shb:item/rocket_launcher"]
 execute as @a run scoreboard players operation @s gunclear *= 4 calc
 execute as @a run scoreboard players operation @s event_money += @s gunclear
 

@@ -123,7 +123,7 @@ execute as @e[type=marker,tag=tnt_drill] at @s run function cc:move_drill
 # NUL dispenser - accelerates arrow reload, prioritizes engineers
 execute as @a[scores={build_dispenser=1}] run function cc:build_dispenser
 execute as @e[type=skeleton,tag=dispenser] at @s as @a[tag=!out,tag=!ded,distance=..6] run function cc:dispense
-item replace entity @a[scores={build_dispenser_cd=1}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Passengers:[{id:"minecraft:arrow"}],Invulnerable:1b,CustomName:'{"text":"Dispenser"}',ArmorItems:[{},{},{},{id:"minecraft:furnace",count:1b}],Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]},can_place_on={predicates:[{blocks:"#cc:all"}],show_in_tooltip:0b},custom_name='{"text":"Build Dispenser","italic":false}']
+item replace entity @a[scores={build_dispenser_cd=1}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Passengers:[{id:"minecraft:arrow"}],Invulnerable:1b,CustomName:'{"text":"Dispenser"}',ArmorItems:[{},{},{},{id:"minecraft:furnace",count:1b}],Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]},can_place_on={blocks:"#cc:all"},custom_name='{"text":"Build Dispenser","italic":false}']
 scoreboard players remove @a[scores={build_dispenser_cd=1..}] build_dispenser_cd 1
 
 # ENG metal miner
@@ -133,7 +133,7 @@ scoreboard players set @a[scores={class=2,metal_mine=2..}] metal_mine 0
 scoreboard players set @a[scores={class=2,break_pick=1..}] metal_mine_cd 60
 scoreboard players set @a[scores={class=2,break_pick=1..}] break_pick 0
 execute as @a[scores={break_pick=1..}] unless score @s class matches 2 run scoreboard players set @s break_pick 0
-item replace entity @a[scores={class=2,metal_mine_cd=1}] hotbar.4 with minecraft:golden_pickaxe[custom_name='{"text":"Metal Miner","italic":false}',enchantments={efficiency:255},can_break={predicates:[{blocks:"#cc:all"}],show_in_tooltip:0b},custom_data={tnt:18b}]
+item replace entity @a[scores={class=2,metal_mine_cd=1}] hotbar.4 with minecraft:golden_pickaxe[custom_name='{"text":"Metal Miner","italic":false}',enchantments={efficiency:255},can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
 scoreboard players remove @a[scores={metal_mine_cd=1..}] metal_mine_cd 1
 
 # ENG sentry
@@ -158,7 +158,7 @@ scoreboard players remove @a[scores={build_creeper_cd=1..}] build_creeper_cd 1
 execute as @a[advancements={cc:shoot_triangulator=true}] at @s run function cc:shoot_triangulator
 execute as @e[type=arrow,tag=init_triangulator,nbt={LeftOwner:1b}] run data modify entity @s Owner set value [I;0,0,0,0]
 execute as @e[type=arrow,tag=init_triangulator,nbt={LeftOwner:1b}] run tag @s remove init_triangulator
-item replace entity @a[scores={triangulator_cd=1}] hotbar.1 with minecraft:bow[custom_name='{"text":"Triangulator","italic":false}',custom_model_data=11,damage=383,enchantments={"minecraft:infinity":1}]
+item replace entity @a[scores={triangulator_cd=1}] hotbar.1 with minecraft:bow[custom_name='{"text":"Triangulator","italic":false}',item_model="cc:item/holy_bow",damage=383,enchantments={"minecraft:infinity":1}]
 scoreboard players remove @a[scores={triangulator_cd=1..}] triangulator_cd 1
 item replace entity @a[scores={class=3,arrow_count=0},nbt={SelectedItemSlot:1}] container.35 with arrow
 item replace entity @a[scores={class=3},nbt=!{SelectedItemSlot:1,SelectedItem:{id:"minecraft:bow"}}] container.35 with air

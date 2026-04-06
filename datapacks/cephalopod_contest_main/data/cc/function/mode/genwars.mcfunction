@@ -44,7 +44,7 @@ item replace entity @a[tag=!out,tag=!ded] armor.head with minecraft:leather_helm
 item replace entity @a[tag=!out,tag=!ded] armor.chest with minecraft:leather_chestplate[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
 item replace entity @a[tag=!out,tag=!ded] armor.legs with minecraft:leather_leggings[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
 item replace entity @a[tag=!out,tag=!ded] armor.feet with minecraft:leather_boots[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @a[tag=!out,tag=!ded] hotbar.0 with minecraft:wooden_sword[unbreakable={},can_break={predicates:[{blocks:"#cc:placeable"}],show_in_tooltip:0b}]
+item replace entity @a[tag=!out,tag=!ded] hotbar.0 with minecraft:wooden_sword[unbreakable={},can_break={blocks:"#cc:placeable"}]
 scoreboard players set rep.recording config 1
 execute as @a[tag=!out,tag=!ded] run function cc:clear_enderchest
 

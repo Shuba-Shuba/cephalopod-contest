@@ -8,7 +8,7 @@ playsound minecraft:music_disc.ward music @a[tag=!out,tag=!ded] 0 69 0 1 0 1
 effect give @a[tag=!out,tag=!ded] blindness infinite 0 true
 effect give @a[tag=!out,tag=!ded] regeneration 5 255 true
 execute store result score .out prng run random value 0..4
-execute if score .out prng matches 0 as @a[tag=!out,tag=!ded] run give @s minecraft:wooden_sword[unbreakable={},custom_model_data=3]
+execute if score .out prng matches 0 as @a[tag=!out,tag=!ded] run give @s minecraft:wooden_sword[unbreakable={},item_model="cc:item/bat"]
 execute if score .out prng matches 1 as @a[tag=!out,tag=!ded] run function shb:give/pistol
 execute if score .out prng matches 2 as @a[tag=!out,tag=!ded] run function shb:give/shotgun
 execute if score .out prng matches 3 as @a[tag=!out,tag=!ded] run function shb:give/musket
