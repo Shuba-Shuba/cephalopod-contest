@@ -13,7 +13,7 @@ execute if block ~ ~ ~ honey_block run return run function cc:board/block/glue
 execute if block ~ ~-2 ~ pink_concrete as @p[tag=this] run return run function cc:board/block/fork
 execute if block ~ ~-2 ~ pink_concrete run return run function cc:board/block/fork_auto
 # fork skips step count because it doesn't consume one
-tellraw @a {"score":{"name":".steps","objective":"board_roll"}}
+tellraw @a {score:{name:".steps",objective:"board_roll"}}
 execute if block ~ ~-2 ~ yellow_concrete as @p[tag=this] run return run function cc:board/block/shop
 
 # non-passable events

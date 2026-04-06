@@ -8,6 +8,6 @@ scoreboard players operation %second_clock game = %second game
 scoreboard players operation %second_clock game %= 60 calc
 
 # set clock
-execute if score .payload_setup game matches 0 if score %second_clock game matches ..9 run bossbar set cc:time name ["Payload Progress | ",{"score":{"objective":"game","name":"%minute"}},":0",{"score":{"objective":"game","name":"%second_clock"}}]
-execute if score .payload_setup game matches 0 if score %second_clock game matches 10.. run bossbar set cc:time name ["Payload Progress | ",{"score":{"objective":"game","name":"%minute"}},":",{"score":{"objective":"game","name":"%second_clock"}}]
-execute if score .payload_setup game matches 1 run bossbar set cc:time name ["Setup: ",{"score":{"objective":"game","name":"%second"}}]
+execute if score .payload_setup game matches 0 if score %second_clock game matches ..9 run bossbar set cc:time name ["Payload Progress | ",{score:{objective:"game",name:"%minute"}},":0",{score:{objective:"game",name:"%second_clock"}}]
+execute if score .payload_setup game matches 0 if score %second_clock game matches 10.. run bossbar set cc:time name ["Payload Progress | ",{score:{objective:"game",name:"%minute"}},":",{score:{objective:"game",name:"%second_clock"}}]
+execute if score .payload_setup game matches 1 run bossbar set cc:time name ["Setup: ",{score:{objective:"game",name:"%second"}}]

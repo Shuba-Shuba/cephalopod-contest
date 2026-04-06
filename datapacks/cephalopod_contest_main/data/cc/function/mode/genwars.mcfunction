@@ -38,8 +38,8 @@ scoreboard players set %red_haste upgrade_bool 0
 scoreboard players set %blue_haste upgrade_bool 0
 scoreboard players set %green_haste upgrade_bool 0
 scoreboard players set %yellow_haste upgrade_bool 0
-execute at @e[type=marker,tag=upgrade_forge] run data modify block ~ ~ ~ front_text.messages[2] set value '"Cost: 4 Diamonds"'
-execute at @e[type=marker,tag=upgrade_armor] run data modify block ~ ~ ~ front_text.messages[2] set value '"Cost: 5 Diamonds"'
+execute at @e[type=marker,tag=upgrade_forge] run data modify block ~ ~ ~ front_text.messages[2] set value "Cost: 4 Diamonds"
+execute at @e[type=marker,tag=upgrade_armor] run data modify block ~ ~ ~ front_text.messages[2] set value "Cost: 5 Diamonds"
 item replace entity @a[tag=!out,tag=!ded] armor.head with minecraft:leather_helmet[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
 item replace entity @a[tag=!out,tag=!ded] armor.chest with minecraft:leather_chestplate[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
 item replace entity @a[tag=!out,tag=!ded] armor.legs with minecraft:leather_leggings[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]

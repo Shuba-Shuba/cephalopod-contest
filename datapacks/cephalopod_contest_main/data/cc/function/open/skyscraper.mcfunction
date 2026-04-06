@@ -1,5 +1,5 @@
 scoreboard players set .skyscraper heist 0
-execute in cc:void run data merge block 271 123 771 {Text4:'"NOT STARTED"'}
+execute in cc:void run data merge block 271 123 771 {Text4:"NOT STARTED"}
 execute in cc:void run fill 269 124 769 269 122 772 minecraft:bone_block[axis=y]
 execute in cc:void run fill 269 124 770 269 122 771 minecraft:air
 execute in cc:void run playsound minecraft:block.piston.extend master @a 269 122 771.0 1 0.75

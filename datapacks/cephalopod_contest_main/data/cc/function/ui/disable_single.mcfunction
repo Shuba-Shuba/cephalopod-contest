@@ -1,2 +1,2 @@
-setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Only 1 Round"','{"text":"[DISABLED]","color":"dark_red","clickEvent":{"action":"run_command","value":"function cc:ui/enable_single"}}','""']}} destroy
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:["","Only 1 Round",{text:"[DISABLED]",color:"dark_red",click_event:{action:"run_command",command:"function cc:ui/enable_single"}},""]}} destroy
 scoreboard players set cc.one config 0

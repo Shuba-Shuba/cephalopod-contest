@@ -1,7 +1,7 @@
 # clock
 scoreboard players add %tick game 1
 execute if score %tick game matches 20.. run scoreboard players operation %second game += %increment game
-execute if score %tick game matches 20.. run bossbar set cc:time name {"score":{"objective":"game","name":"%second"}}
+execute if score %tick game matches 20.. run bossbar set cc:time name {score:{objective:"game",name:"%second"}}
 execute if score %tick game matches 20.. if score %increment game matches -1 store result bossbar cc:time value run scoreboard players get %second game
 execute if score %tick game matches 20.. run scoreboard players set %tick game 0
 

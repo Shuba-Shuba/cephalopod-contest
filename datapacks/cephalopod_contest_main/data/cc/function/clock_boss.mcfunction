@@ -5,7 +5,7 @@ execute if score .boss_setup game matches 0 run scoreboard players add %second g
 
 # refresh clock display
 execute if score .boss_setup game matches 1 run bossbar set cc:time players @a
-execute if score .boss_setup game matches 1 run bossbar set cc:time name ["Setup: ",{"score":{"objective":"game","name":"%second"}}]
+execute if score .boss_setup game matches 1 run bossbar set cc:time name ["Setup: ",{score:{objective:"game",name:"%second"}}]
 
 # end conditions
 execute if score %second game matches ..0 run function cc:boss_start

@@ -4,7 +4,7 @@ $tellraw @a "$(name) left, finishing their turn automatically; their future turn
 scoreboard players set .auto board_turn 1
 
 # summon placeholder zombie to represent position
-$summon zombie ~ ~ ~ {Tags:["board_player_placeholder","init"],NoAI:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:turtle_helmet",count:1,components:{"minecraft:unbreakable":{}}}],CustomNameVisible:1b,CustomName:'"$(name) (OFFLINE)"'}
+$summon zombie ~ ~ ~ {Tags:["board_player_placeholder","init"],NoAI:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:turtle_helmet",count:1,components:{"minecraft:unbreakable":{}}}],CustomNameVisible:1b,CustomName:"$(name) (OFFLINE)"}
 $scoreboard players operation @e[type=zombie,limit=1,sort=nearest,tag=init] board_turn = $(name) board_turn
 tag @e[type=zombie] remove init
 

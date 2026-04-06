@@ -3,7 +3,7 @@ scoreboard players set @s Kit_ID 25
 tellraw @s "Now Using: Copycat"
 
 # give the player the kit contents
-give @s minecraft:barrier[custom_name='{"text":"Copycat Slot","italic":false,"color":"red"}',lore=['{"text":"This slot will copy the item the nearest","color":"gray"}','{"text":"player within 8 blocks is holding.","color":"gray"}','""','{"text":"This will usually be a melee weapon.","color":"gray"}']]
+give @s minecraft:barrier[custom_name={text:"Copycat Slot",italic:false,color:"red"},lore=[{text:"This slot will copy the item the nearest",color:"gray"},{text:"player within 8 blocks is holding.",color:"gray"},"",{text:"This will usually be a melee weapon.",color:"gray"}]]
 give @s cooked_beef 6
 give @s minecraft:bow[unbreakable={}]
 give @s arrow 3

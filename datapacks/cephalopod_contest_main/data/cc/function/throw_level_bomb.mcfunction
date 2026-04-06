@@ -8,7 +8,7 @@ data modify entity @e[type=snowball,limit=1,sort=nearest,tag=level_bomb_carrier]
 #execute as @e[type=snowball,limit=1,sort=nearest,tag=level_bomb_carrier] on passengers run tag @s add init
 #scoreboard players operation #tmp bomb_level = @s bomb_level
 #execute store result entity @e[type=marker,tag=init,limit=1] data.level int 1 run scoreboard players get @s bomb_level
-#data modify block 0 -63 0 front_text.messages[0] set value '[{"text":"Level ","italic":false},{"score":{"name":"#tmp","objective":"bomb_level"}}," Bomb"]'
+#data modify block 0 -63 0 front_text.messages[0] set value [{text:"Level ",italic:false},{score:{name:"#tmp",objective:"bomb_level"}}," Bomb"]
 #data modify entity @e[type=marker,tag=init,limit=1] CustomName set from block 0 -63 0 front_text.messages[0]
 #tag @e[type=marker] remove init
 clear @s creeper_spawn_egg

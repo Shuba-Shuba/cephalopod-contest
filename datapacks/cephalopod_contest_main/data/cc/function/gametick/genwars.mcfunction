@@ -6,9 +6,9 @@ execute if score %tick game matches 20.. run scoreboard players add %second game
 execute if score %tick game matches 20.. as @a[scores={death_time=0}] run function cc:respawn_genwars
 execute if score %tick game matches 20.. as @a[scores={death_time=1..}] run function cc:death_time_genwars
 execute if score %tick game matches 20.. run scoreboard players remove %diamond game 1
-execute if score %tick game matches 20.. as @e[type=minecraft:text_display,tag=text_diamond] run data modify entity @s text set value '{"score":{"name":"%diamond","objective":"game"}}'
+execute if score %tick game matches 20.. as @e[type=minecraft:text_display,tag=text_diamond] run data modify entity @s text set value {score:{name:"%diamond",objective:"game"}}
 execute if score %tick game matches 20.. run scoreboard players remove %emerald game 1
-execute if score %tick game matches 20.. as @e[type=minecraft:text_display,tag=text_emerald] run data modify entity @s text set value '{"score":{"name":"%emerald","objective":"game"}}'
+execute if score %tick game matches 20.. as @e[type=minecraft:text_display,tag=text_emerald] run data modify entity @s text set value {score:{name:"%emerald",objective:"game"}}
 execute if score %tick game matches 20.. run function cc:clock_min
 
 ## genwars stuff

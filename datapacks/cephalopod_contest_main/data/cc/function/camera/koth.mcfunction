@@ -11,4 +11,4 @@ scoreboard players add %camera1 game 1
 title @a[tag=!out] times 0 100 0
 title @a[tag=!out] title "King Of The Hill"
 execute if score %camera1 game matches 0..80 run title @a[tag=!out] subtitle "Stay in the middle for points, and punch others"
-execute if score %camera1 game matches 81..160 run title @a[tag=!out] subtitle ["Whoever has the least after ",{"score":{"name":"time.koth","objective":"config"}}," seconds loses"]
+execute if score %camera1 game matches 81..160 run title @a[tag=!out] subtitle ["Whoever has the least after ",{score:{name:"time.koth",objective:"config"}}," seconds loses"]

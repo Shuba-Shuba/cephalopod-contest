@@ -7,7 +7,7 @@ tag @a remove cop
 tag @r[tag=!out] add cop
 team join red @a[tag=!cop,tag=!out]
 team join blue @a[tag=cop]
-tellraw @a [{"selector":"@a[tag=cop]","color":"red"}," is the cop."]
+tellraw @a [{"selector":"@a[tag=cop]",color:"red"}," is the cop."]
 team modify red friendlyFire true
 team modify blue friendlyFire true
 schedule function cc:mode/drugs 5s

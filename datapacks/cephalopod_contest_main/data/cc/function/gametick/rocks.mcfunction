@@ -6,7 +6,7 @@ execute if score %players game matches 2.. if score %tick game matches 20.. run 
 execute if score %players game matches 2.. if score %tick game matches 20.. run scoreboard players set %tick game 0
 execute if score %players game matches 1 if score %tick game matches 10.. run scoreboard players remove %second game 1
 execute if score %players game matches 1 if score %tick game matches 10.. run scoreboard players set %tick game 0
-bossbar set cc:time name {"score":{"objective":"game","name":"%second"}}
+bossbar set cc:time name {score:{objective:"game",name:"%second"}}
 execute store result bossbar cc:time value run scoreboard players get %second game
 execute if score %second game matches 0 if score %tick game matches 0 run tag @a[tag=!out,tag=!ded] add winner
 execute if score %second game matches 0 if score %tick game matches 0 run function cc:end

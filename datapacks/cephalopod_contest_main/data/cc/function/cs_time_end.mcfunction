@@ -1,6 +1,6 @@
 # win
 tag @a[team=red] add winner
-tellraw @a [{"text":"Time ran out - ","color":"green"},{"text":"RED","color":"red"}," team wins!"]
+tellraw @a [{text:"Time ran out - ",color:"green"},{text:"RED",color:"red"}," team wins!"]
 
 # end
 function cc:end

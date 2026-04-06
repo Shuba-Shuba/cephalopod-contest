@@ -1,5 +1,5 @@
 scoreboard players set .bank heist 0
-execute in cc:void run data merge block 239 123 790 {Text4:'"NOT STARTED"'}
+execute in cc:void run data merge block 239 123 790 {Text4:"NOT STARTED"}
 execute in cc:void run fill 241 124 791 241 122 788 minecraft:bone_block[axis=y]
 execute in cc:void run fill 241 122 790 241 124 789 minecraft:air
 execute in cc:void run playsound minecraft:block.piston.extend master @a 240 122 790 1 0.75

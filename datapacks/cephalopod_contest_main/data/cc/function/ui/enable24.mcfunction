@@ -1,2 +1,2 @@
-setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Mini TNT"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function cc:ui/disable24"}}','""']}} destroy
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:["","Mini TNT",{text:"[ENABLED]",color:"green",click_event:{action:"run_command",command:"function cc:ui/disable24"}},""]}} destroy
 tag @e[type=marker,tag=mode_rng,tag=mode24] add enabled

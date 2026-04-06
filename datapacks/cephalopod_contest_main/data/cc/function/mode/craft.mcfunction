@@ -19,7 +19,7 @@ give @a[tag=!out] minecraft:netherite_shovel[enchantments={"minecraft:efficiency
 execute in cc:void run function cc:craft_makelist
 execute as @e[type=marker,tag=craft_storage] run data modify entity @s data.craft set from storage cc:craft recipes
 execute as @e[type=marker,tag=craft_storage] run data modify entity @s data.names set from storage cc:craft names
-execute as @a at @s run tellraw @s ["Items to craft: ",{"nbt":"data.names[]","entity":"@e[type=marker,tag=craft_storage,limit=1,sort=nearest]","interpret":true}]
+execute as @a at @s run tellraw @s ["Items to craft: ",{nbt:"data.names[]",entity:"@e[type=marker,tag=craft_storage,limit=1,sort=nearest]","interpret":true}]
 
 scoreboard players set %mode game 12
 scoreboard players set %second game 0
@@ -29,4 +29,4 @@ execute store result score #dwb game run worldborder get
 scoreboard players remove #dwb game 59999968
 scoreboard players operation #dwb game *= -1 calc
 worldborder set 59999968
-tellraw @a ["total load time: ",{"score":{"name":"#dwb","objective":"game"}}," ms"]
+tellraw @a ["total load time: ",{score:{name:"#dwb",objective:"game"}}," ms"]

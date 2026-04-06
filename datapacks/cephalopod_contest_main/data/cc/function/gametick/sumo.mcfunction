@@ -13,7 +13,7 @@ tag @a[tag=loser] remove ded
 execute store result score %players game if entity @a[tag=sumo]
 #execute store result score %tmp_ded game if entity @a[tag=ded]
 #execute store result score %tmp_on_deck game if entity @a[tag=on_deck]
-#tellraw @a ["sumo: ",{"score":{"name":"%players","objective":"game"}},"\nded: ",{"score":{"name":"%tmp_ded","objective":"game"}},"\non_deck: ",{"score":{"name":"%tmp_on_deck","objective":"game"}}]
+#tellraw @a ["sumo: ",{score:{name:"%players",objective:"game"}},"\nded: ",{score:{name:"%tmp_ded",objective:"game"}},"\non_deck: ",{score:{name:"%tmp_on_deck",objective:"game"}}]
 execute if score %players game matches ..1 unless score %replay game matches 1.. run function cc:sumo_end
 execute if score %replay game matches 2 run function cc:end
 execute if score %replay game matches 3 run function cc:sumo_start

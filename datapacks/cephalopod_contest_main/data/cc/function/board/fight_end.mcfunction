@@ -1,5 +1,5 @@
 # winner
-execute if entity @a[tag=fight,tag=!fight_loser] run tellraw @a ["",{"selector":"@a[tag=fight,tag=!fight_loser]"}," stole $",{"score":{"name":"fight.bounty","objective":"board_turn"}}," from ",{"selector":"@a[tag=fight_loser]"}]
+execute if entity @a[tag=fight,tag=!fight_loser] run tellraw @a ["",{"selector":"@a[tag=fight,tag=!fight_loser]"}," stole $",{score:{name:"fight.bounty",objective:"board_turn"}}," from ",{"selector":"@a[tag=fight_loser]"}]
 execute unless entity @a[tag=fight,tag=!fight_loser] run tellraw @a "Nobody won the fight"
 
 # steal from losers

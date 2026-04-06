@@ -12,4 +12,4 @@ tellraw @s "Successfully selected kit."
 
 # give the player the kit contents
 
-give @s minecraft:soul_lantern[custom_name='{"text":"Sabotage Lights","color":"red","italic":false}',lore=['{"text":"Inflicts blindness on other kits","color":"gray"}'],custom_data={SabotageID:1}]
+give @s minecraft:soul_lantern[custom_name={text:"Sabotage Lights",color:"red",italic:false},lore=[{text:"Inflicts blindness on other kits",color:"gray"}],custom_data={SabotageID:1}]

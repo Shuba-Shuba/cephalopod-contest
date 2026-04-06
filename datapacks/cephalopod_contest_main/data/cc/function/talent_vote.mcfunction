@@ -2,7 +2,7 @@
 tag @a[tag=stage] add stage_done
 scoreboard players set @a[tag=stage] talent_rating 0
 scoreboard players operation @a[tag=stage] talent_rating += @a[tag=!stage,tag=!out] talent_vote
-tellraw @a ["",{"selector":"@a[tag=stage]"},"'s final rating: ",{"score":{"objective":"talent_rating","name":"@a[tag=stage,limit=1]"}}]
+tellraw @a ["",{"selector":"@a[tag=stage]"},"'s final rating: ",{score:{objective:"talent_rating",name:"@a[tag=stage,limit=1]"}}]
 
 # explode loser(s)
 scoreboard players set #least talent_rating 0

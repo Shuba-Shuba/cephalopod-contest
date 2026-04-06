@@ -21,4 +21,4 @@ tag @a remove winner
 tag @a remove bomb
 tag @r[tag=!out,tag=!ded] add bomb
 item replace entity @a[tag=bomb] armor.head with minecraft:tnt[enchantments={knockback:2,binding_curse:1}]
-tellraw @a {"text":"Bomb has been planted","color":"red"}
+tellraw @a {text:"Bomb has been planted",color:"red"}

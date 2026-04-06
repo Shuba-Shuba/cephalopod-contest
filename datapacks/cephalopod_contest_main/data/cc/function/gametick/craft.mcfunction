@@ -2,7 +2,7 @@
 execute as @a[scores={deaths=1..},tag=!out,tag=!ded] run function cc:death
 scoreboard players add %tick game 1
 execute if score %tick game matches 20.. run scoreboard players add %second game 1
-execute if score %tick game matches 20.. run bossbar set cc:time name {"score":{"objective":"game","name":"%second"}}
+execute if score %tick game matches 20.. run bossbar set cc:time name {score:{objective:"game",name:"%second"}}
 execute if score %tick game matches 20.. run scoreboard players set %tick game 0
 
 # craft stuff

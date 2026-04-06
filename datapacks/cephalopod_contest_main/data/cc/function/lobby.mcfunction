@@ -22,7 +22,7 @@ execute if score %board game matches 0 as @a[scores={event_money=1..}] run funct
 
 # continue board game
 execute if score %board game matches 1 run scoreboard players add .count board_turn 1
-execute if score %board game matches 1 run tellraw @a ["TURN ",{"score":{"name":".count","objective":"board_turn"}}]
+execute if score %board game matches 1 run tellraw @a ["TURN ",{score:{name:".count",objective:"board_turn"}}]
 execute if score %board game matches 1 if score .count board_turn = board.turns config run tellraw @a "FINAL TURN"
 execute if score %board game matches 1 as @a[tag=!out] run function cc:board/cash_rewards
 execute if score %board game matches 1 as @a[tag=!out] run function cc:board/update_display

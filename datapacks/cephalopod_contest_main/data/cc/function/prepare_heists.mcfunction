@@ -1,5 +1,5 @@
 # go to position
-tellraw @a ["(",{"score":{"name":".x","objective":"heist"}},",",{"score":{"name":".z","objective":"heist"}},")"]
+tellraw @a ["(",{score:{name:".x",objective:"heist"}},",",{score:{name:".z",objective:"heist"}},")"]
 execute if score .x heist matches 1.. at @s run function cc:go_to_x
 execute if score .z heist matches 1.. at @s run function cc:go_to_z
 

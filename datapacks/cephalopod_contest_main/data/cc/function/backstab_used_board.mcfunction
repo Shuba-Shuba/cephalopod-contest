@@ -1,14 +1,14 @@
 scoreboard players set @s backstab_break 0
 
 # miss
-title @s[scores={backstab_valid=0}] actionbar {"text":"MISSED BACKSTAB - No stars stolen","color":"red"}
+title @s[scores={backstab_valid=0}] actionbar {text:"MISSED BACKSTAB - No stars stolen",color:"red"}
 execute if score @s backstab_valid matches 0 run tellraw @a ["",{"selector":"@s"}," failed a backstab!"]
 
 # hit
 tag @s add this
 execute as @a[tag=can_be_backstabbed] at @s on attacker if entity @s[tag=this] run tag @p add backstabbed
 tag @s remove this
-title @s[scores={backstab_valid=1}] actionbar [{"text":"HIT - Star stolen from ","color":"green"},{"selector":"@a[tag=backstabbed]"}]
+title @s[scores={backstab_valid=1}] actionbar [{text:"HIT - Star stolen from ",color:"green"},{"selector":"@a[tag=backstabbed]"}]
 execute if score @s backstab_valid matches 1 run tellraw @a ["",{"selector":"@s"}," successfully backstabbed ",{"selector":"@a[tag=backstabbed]"},"!"]
 scoreboard players remove @a[tag=backstabbed] board_stars 1
 scoreboard players add @s[scores={backstab_valid=1}] board_stars 1

@@ -16,6 +16,6 @@ tag @s remove this
 # get items + dice
 scoreboard players set .multiplier board_roll 1
 function cc:board/get_items
-give @s minecraft:magenta_glazed_terracotta[custom_name='{"text":"Roll Dice","italic":false}',custom_data={board:1}]
+give @s minecraft:magenta_glazed_terracotta[custom_name={text:"Roll Dice",italic:false},custom_data={board:1}]
 
 execute if entity @s[tag=glued] run function cc:board/roll

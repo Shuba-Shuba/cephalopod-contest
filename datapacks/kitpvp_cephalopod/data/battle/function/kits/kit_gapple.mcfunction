@@ -24,4 +24,4 @@ item replace entity @s armor.head with minecraft:diamond_helmet[enchantments={pr
 item replace entity @s armor.chest with minecraft:diamond_chestplate[enchantments={protection:2,unbreaking:3}]
 item replace entity @s armor.legs with minecraft:diamond_leggings[enchantments={protection:2,unbreaking:3}]
 item replace entity @s armor.feet with minecraft:diamond_boots[enchantments={protection:2,unbreaking:3}]
-tellraw @s {"text":"Notice: This kit has more than what is contained in the hotbar.","color":"aqua"}
+tellraw @s {text:"Notice: This kit has more than what is contained in the hotbar.",color:"aqua"}

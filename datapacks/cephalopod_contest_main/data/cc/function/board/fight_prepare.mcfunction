@@ -17,7 +17,7 @@ execute if score item.backstab game matches 1.. run item replace entity @s hotba
 execute if score item.backstab game matches 1.. run scoreboard players set @s class 0
 execute if score item.backstab game matches 1.. run scoreboard players set @s backstab_break 0
 execute if score item.backstab game matches 1.. run scoreboard players set @s backstab_cd 0
-execute if score item.bat game matches 1.. run give @s minecraft:wooden_sword[item_model="cc:item/bat",unbreakable={},custom_name='{"text":"Baseball Bat","italic":false}']
+execute if score item.bat game matches 1.. run give @s minecraft:wooden_sword[item_model="cc:item/bat",unbreakable={},custom_name={text:"Baseball Bat",italic:false}]
 execute if score item.shotgun game matches 1.. run function shb:give/carrot/shotgun
 
 # free player

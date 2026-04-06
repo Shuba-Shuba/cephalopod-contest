@@ -10,6 +10,6 @@ execute if score %camera1 game matches 0 if score %map game matches 2 run summon
 scoreboard players add %camera1 game 1
 title @a[tag=!out] times 0 100 0
 title @a[tag=!out] title "Glass Jumps"
-execute if score %camera1 game matches 0..60 run title @a[tag=!out] subtitle ["You will have ",{"score":{"name":"time.glass_jumps","objective":"config"}}," seconds to get to the other side"]
+execute if score %camera1 game matches 0..60 run title @a[tag=!out] subtitle ["You will have ",{score:{name:"time.glass_jumps",objective:"config"}}," seconds to get to the other side"]
 execute if score %camera1 game matches 61..120 run title @a[tag=!out] subtitle "Each jump has 2 sides, but only 1 is safe"
 execute if score %camera1 game matches 121..180 run title @a[tag=!out] subtitle "Watch out! Players can punch each other"

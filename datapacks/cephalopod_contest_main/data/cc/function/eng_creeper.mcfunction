@@ -7,5 +7,5 @@ scoreboard players operation @e[type=creeper,limit=1,sort=nearest,tag=build] own
 scoreboard players operation @e[type=creeper,limit=1,sort=nearest,tag=build] ownerUUID3 = @s UUID3
 tag @e[type=creeper,tag=build] remove build
 clear @s iron_ingot 12
-item replace entity @s hotbar.3 with minecraft:rib_armor_trim_smithing_template[custom_name='{"text":"Explode Creeper","italic":false}',custom_data={tnt:12b}]
+item replace entity @s hotbar.3 with minecraft:rib_armor_trim_smithing_template[custom_name={text:"Explode Creeper",italic:false},custom_data={tnt:12b}]
 playsound minecraft:entity.snowball.throw master @a[distance=..80] ~ ~ ~ 1 0

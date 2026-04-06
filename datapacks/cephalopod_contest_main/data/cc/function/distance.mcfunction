@@ -5,4 +5,4 @@ execute store result storage cc:distance transformation[8] float 0.0000001 run d
 data modify entity 0000000d-0109-0097-0116-000000000104 transformation set from storage cc:distance transformation
 execute store result score .dist distance run data get entity 0000000d-0109-0097-0116-000000000104 transformation.scale[0] 1000
 data modify storage cc:distance distance set from entity 0000000d-0109-0097-0116-000000000104 transformation.scale[0]
-tellraw @s ["distance: ",{"nbt":"distance","storage":"cc:distance"}]
+tellraw @s ["distance: ",{nbt:"distance",storage:"cc:distance"}]

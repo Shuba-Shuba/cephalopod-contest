@@ -14,17 +14,17 @@ item replace entity @a[team=red] armor.chest with minecraft:leather_chestplate[u
 item replace entity @a[team=red] armor.legs with minecraft:leather_leggings[unbreakable={}]
 item replace entity @a[team=red] armor.feet with minecraft:leather_boots[unbreakable={}]
 execute as @a[team=red] run function shb:give/carrot/pistol_bad
-give @a[team=red] minecraft:iron_nugget[custom_name='{"text":"Bullet","italic":false}',custom_data={ammo:{type:1b}}] 128
+give @a[team=red] minecraft:iron_nugget[custom_name={text:"Bullet",italic:false},custom_data={ammo:{type:1b}}] 128
 
 # cop items
-give @a[tag=cop] minecraft:stone_sword[unbreakable={},custom_name='{"text":"Baton","italic":false}']
+give @a[tag=cop] minecraft:stone_sword[unbreakable={},custom_name={text:"Baton",italic:false}]
 item replace entity @a[tag=cop] armor.head with minecraft:chainmail_helmet[unbreakable={}]
 item replace entity @a[tag=cop] armor.chest with minecraft:chainmail_chestplate[unbreakable={}]
 item replace entity @a[tag=cop] armor.legs with minecraft:chainmail_leggings[unbreakable={}]
 item replace entity @a[tag=cop] armor.feet with minecraft:chainmail_boots[unbreakable={}]
 execute as @a[tag=cop] run function shb:give/carrot/pistol
 execute as @a[tag=cop] run function shb:give/taser
-give @a[tag=cop] minecraft:iron_nugget[custom_name='{"text":"Bullet","italic":false}',custom_data={ammo:{type:1b}}] 128
+give @a[tag=cop] minecraft:iron_nugget[custom_name={text:"Bullet",italic:false},custom_data={ammo:{type:1b}}] 128
 
 # reset money scoreboard
 scoreboard players reset * money

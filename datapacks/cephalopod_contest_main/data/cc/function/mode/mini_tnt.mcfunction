@@ -58,32 +58,32 @@ scoreboard players set @a cloak_cd 0
 # gardener
 item replace entity @a[scores={class=0}] hotbar.0 with dirt
 item replace entity @a[scores={class=0}] hotbar.1 with dirt
-item replace entity @a[scores={class=0}] hotbar.2 with minecraft:bow[custom_name='{"text":"Basic Ass TNT Bow","italic":false}',enchantments={punch:1},unbreakable={}]
+item replace entity @a[scores={class=0}] hotbar.2 with minecraft:bow[custom_name={text:"Basic Ass TNT Bow",italic:false},enchantments={punch:1},unbreakable={}]
 scoreboard players set @a[scores={class=0}] jump_cd 1
 item replace entity @a[scores={class=0}] hotbar.4 with minecraft:golden_pickaxe[enchantments={efficiency:255},can_break={blocks:"#cc:all"}]
 
 # technician
-item replace entity @a[scores={class=1}] hotbar.0 with minecraft:crossbow[custom_name='{"text":"Golden Gun","italic":false}',enchantments={punch:1,quick_charge:1},unbreakable={}]
-item replace entity @a[scores={class=1}] hotbar.1 with minecraft:stick[custom_name='{"text":"Broken Modem","italic":false}',custom_data={tnt:1b}]
+item replace entity @a[scores={class=1}] hotbar.0 with minecraft:crossbow[custom_name={text:"Golden Gun",italic:false},enchantments={punch:1,quick_charge:1},unbreakable={}]
+item replace entity @a[scores={class=1}] hotbar.1 with minecraft:stick[custom_name={text:"Broken Modem",italic:false},custom_data={tnt:1b}]
 execute as @a[scores={class=1}] at @s run function cc:give_level_bomb
 #scoreboard players set @a[scores={class=1}] freeze_cd 1
 #scoreboard players set @a[scores={class=1}] laser_cd 60
-#item replace entity @a[scores={class=1}] hotbar.3 with minecraft:tnt_minecart[custom_name='{"text":"Quick Bomb","italic":false}',custom_data={tnt:5b}]
-item replace entity @a[scores={class=1}] hotbar.3 with minecraft:hopper[custom_name='{"text":"Drill","italic":false}',custom_data={tnt:13b}]
+#item replace entity @a[scores={class=1}] hotbar.3 with minecraft:tnt_minecart[custom_name={text:"Quick Bomb",italic:false},custom_data={tnt:5b}]
+item replace entity @a[scores={class=1}] hotbar.3 with minecraft:hopper[custom_name={text:"Drill",italic:false},custom_data={tnt:13b}]
 
 # engineer
-item replace entity @a[scores={class=2}] hotbar.0 with minecraft:spire_armor_trim_smithing_template[custom_name='{"text":"[5] Shoot Arrow","italic":false}',custom_data={tnt:7b}]
-item replace entity @a[scores={class=2}] hotbar.1 with minecraft:tide_armor_trim_smithing_template[custom_name='{"text":"[10] Spawn Platform","italic":false}',custom_data={tnt:8b}]
-item replace entity @a[scores={class=2}] hotbar.2 with minecraft:ward_armor_trim_smithing_template[custom_name='{"text":"[12] Throw Sentry","italic":false}',custom_data={tnt:9b}]
-item replace entity @a[scores={class=2}] hotbar.3 with minecraft:wild_armor_trim_smithing_template[custom_name='{"text":"[12] Throw Creeper","italic":false}',custom_data={tnt:11b}]
-#item replace entity @a[scores={class=2}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Invulnerable:1b,CustomName:'{"text":"Dispenser"}',ArmorItems:[{},{},{},{id:"minecraft:furnace",count:1b}],HandItems:[{},{}],Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]},can_place_on={blocks:"#cc:all"},custom_name='{"text":"[FREE] Build Dispenser","italic":false}']
-item replace entity @a[scores={class=2}] hotbar.4 with minecraft:golden_pickaxe[custom_name='{"text":"Metal Miner","italic":false}',enchantments={efficiency:255},can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
+item replace entity @a[scores={class=2}] hotbar.0 with minecraft:spire_armor_trim_smithing_template[custom_name={text:"[5] Shoot Arrow",italic:false},custom_data={tnt:7b}]
+item replace entity @a[scores={class=2}] hotbar.1 with minecraft:tide_armor_trim_smithing_template[custom_name={text:"[10] Spawn Platform",italic:false},custom_data={tnt:8b}]
+item replace entity @a[scores={class=2}] hotbar.2 with minecraft:ward_armor_trim_smithing_template[custom_name={text:"[12] Throw Sentry",italic:false},custom_data={tnt:9b}]
+item replace entity @a[scores={class=2}] hotbar.3 with minecraft:wild_armor_trim_smithing_template[custom_name={text:"[12] Throw Creeper",italic:false},custom_data={tnt:11b}]
+#item replace entity @a[scores={class=2}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Invulnerable:1b,CustomName:{text:"Dispenser"},ArmorItems:[{},{},{},{id:"minecraft:furnace",count:1b}],HandItems:[{},{}],Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]},can_place_on={blocks:"#cc:all"},custom_name={text:"[FREE] Build Dispenser",italic:false}]
+item replace entity @a[scores={class=2}] hotbar.4 with minecraft:golden_pickaxe[custom_name={text:"Metal Miner",italic:false},enchantments={efficiency:255},can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
 
 # architect
-item replace entity @a[scores={class=3}] hotbar.0 with minecraft:crossbow[custom_name='{"text":"Crystal Crafter","italic":false}',enchantments={quick_charge:2}]
-item replace entity @a[scores={class=3}] hotbar.1 with minecraft:bow[custom_name='{"text":"Triangulator","italic":false}',item_model="cc:item/holy_bow",damage=383,enchantments={infinity:1}]
-item replace entity @a[scores={class=3}] hotbar.2 with minecraft:silence_armor_trim_smithing_template[custom_name='{"text":"Cloak","italic":false}',custom_data={tnt:17b}]
-#item replace entity @a[scores={class=3}] hotbar.2 with minecraft:echo_shard[custom_name='{"text":"Dagger","italic":false}',custom_data={tnt:16b}]
-item replace entity @a[scores={class=3}] hotbar.3 with minecraft:eye_armor_trim_smithing_template[custom_name='{"text":"Decrystalize","italic":false}',custom_data={tnt:15b}]
-item replace entity @a[scores={class=3}] hotbar.4 with minecraft:netherite_upgrade_smithing_template[custom_name='{"text":"Warp","italic":false}',custom_data={tnt:14b}] 3
+item replace entity @a[scores={class=3}] hotbar.0 with minecraft:crossbow[custom_name={text:"Crystal Crafter",italic:false},enchantments={quick_charge:2}]
+item replace entity @a[scores={class=3}] hotbar.1 with minecraft:bow[custom_name={text:"Triangulator",italic:false},item_model="cc:item/holy_bow",damage=383,enchantments={infinity:1}]
+item replace entity @a[scores={class=3}] hotbar.2 with minecraft:silence_armor_trim_smithing_template[custom_name={text:"Cloak",italic:false},custom_data={tnt:17b}]
+#item replace entity @a[scores={class=3}] hotbar.2 with minecraft:echo_shard[custom_name={text:"Dagger",italic:false},custom_data={tnt:16b}]
+item replace entity @a[scores={class=3}] hotbar.3 with minecraft:eye_armor_trim_smithing_template[custom_name={text:"Decrystalize",italic:false},custom_data={tnt:15b}]
+item replace entity @a[scores={class=3}] hotbar.4 with minecraft:netherite_upgrade_smithing_template[custom_name={text:"Warp",italic:false},custom_data={tnt:14b}] 3
 item replace entity @a[scores={class=3}] hotbar.8 with arrow 2

@@ -87,5 +87,5 @@ execute if score %map game matches 5 if score %camera1 game matches 150 run func
 # titles (ends at 180)
 title @a[tag=!out] times 0 100 0
 title @a[tag=!out] title "Race"
-execute if score %camera1 game matches 0..120 run title @a[tag=!out] subtitle ["You will have ",{"score":{"name":"time.race","objective":"config"}}," seconds to get to the other side"]
+execute if score %camera1 game matches 0..120 run title @a[tag=!out] subtitle ["You will have ",{score:{name:"time.race",objective:"config"}}," seconds to get to the other side"]
 execute if score %camera1 game matches 121..180 run title @a[tag=!out] subtitle "Watch out! Players can punch each other"

@@ -6,7 +6,7 @@ scoreboard players add .clock board_await 1
 # visual
 execute if score .clock board_await matches 20 run bossbar set cc:time players @a
 execute if score .clock board_await matches 20 run scoreboard players remove .second board_await 1
-execute if score .clock board_await matches 20 run bossbar set cc:time name {"score":{"objective":"board_await","name":".second"}}
+execute if score .clock board_await matches 20 run bossbar set cc:time name {score:{objective:"board_await",name:".second"}}
 # sound
 execute if score .clock board_await matches 20 if score .second board_await matches ..5 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1
 scoreboard players operation .clock board_await %= integers.20 calc

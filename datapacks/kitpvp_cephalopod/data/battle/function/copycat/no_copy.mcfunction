@@ -22,4 +22,4 @@
 clear @s #battle:in_kits
 
 title @s actionbar "Nobody to copy item from"
-item replace entity @s hotbar.0 with minecraft:barrier[custom_name='{"text":"Copycat Slot","italic":false,"color":"red"}',lore=['{"text":"This slot will copy the item the nearest","color":"gray"}','{"text":"player within 8 blocks is holding.","color":"gray"}','""','{"text":"This will usually be a melee weapon.","color":"gray"}']]
+item replace entity @s hotbar.0 with minecraft:barrier[custom_name={text:"Copycat Slot",italic:false,color:"red"},lore=[{text:"This slot will copy the item the nearest",color:"gray"},{text:"player within 8 blocks is holding.",color:"gray"},"",{text:"This will usually be a melee weapon.",color:"gray"}]]

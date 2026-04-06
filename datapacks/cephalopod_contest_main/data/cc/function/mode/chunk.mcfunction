@@ -28,4 +28,4 @@ execute store result score #dwb game run worldborder get
 scoreboard players remove #dwb game 59999968
 scoreboard players operation #dwb game *= -1 calc
 worldborder set 59999968
-tellraw @a ["total load time: ",{"score":{"name":"#dwb","objective":"game"}}," ms"]
+tellraw @a ["total load time: ",{score:{name:"#dwb",objective:"game"}}," ms"]

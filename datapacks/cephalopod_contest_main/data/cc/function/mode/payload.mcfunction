@@ -11,7 +11,7 @@ scoreboard players set %mode game 26
 execute as @a[tag=!out,tag=!ded] at @s run function battle:kits/random
 
 # summon payload cart
-execute in cc:void run summon minecraft:armor_stand 427 90 472 {Rotation:[-90.0f,0.0f],CustomName:'"payload_cart.shb"',active_effects:[{id:"minecraft:glowing",duration:-1,amplifier:0b,show_particles:0b}],Marker:1b,NoBasePlate:1b,Invisible:1b,NoGravity:1b,Tags:["payload"],Passengers:[{id:"minecraft:furnace_minecart",CustomDisplayTile:1b,DisplayState:{Name:"minecraft:redstone_lamp",Properties:{lit:"false"}},DisplayOffset:4,Tags:["payload"],Invulnerable:1b}]}
+execute in cc:void run summon minecraft:armor_stand 427 90 472 {Rotation:[-90.0f,0.0f],CustomName:"payload_cart.shb",active_effects:[{id:"minecraft:glowing",duration:-1,amplifier:0b,show_particles:0b}],Marker:1b,NoBasePlate:1b,Invisible:1b,NoGravity:1b,Tags:["payload"],Passengers:[{id:"minecraft:furnace_minecart",CustomDisplayTile:1b,DisplayState:{Name:"minecraft:redstone_lamp",Properties:{lit:"false"}},DisplayOffset:4,Tags:["payload"],Invulnerable:1b}]}
 
 # reset payload progress counter
 scoreboard players set .payload_progress game 0

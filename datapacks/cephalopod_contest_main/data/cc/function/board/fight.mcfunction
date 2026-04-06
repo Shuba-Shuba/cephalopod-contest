@@ -18,7 +18,7 @@ scoreboard players set %fight game 1
 scoreboard players add fight.count board_turn 1
 scoreboard players operation fight.bounty board_turn = fight.count board_turn
 scoreboard players operation fight.bounty board_turn *= fight.bounty board_turn
-tellraw @a ["Last player alive steals $",{"score":{"name":"fight.bounty","objective": "board_turn"}}," from loser(s)"]
+tellraw @a ["Last player alive steals $",{score:{name:"fight.bounty",objective: "board_turn"}}," from loser(s)"]
 
 # remove armor stands on this space
 kill @e[type=armor_stand,distance=..1]

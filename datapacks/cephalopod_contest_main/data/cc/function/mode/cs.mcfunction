@@ -8,7 +8,7 @@ execute store result bossbar cc:time max run scoreboard players operation %secon
 clear @a[tag=!out]
 effect clear @a[tag=!out]
 scoreboard players set %mode game 27
-give @a[tag=!out,tag=!ded] minecraft:iron_sword[unbreakable={},enchantments={sharpness:1},item_model="cc:item/dagger",custom_name='{"text":"Knife","italic":false}',attribute_modifiers=[{operation:"add_multiplied_base",type:"movement_speed",amount:0.2d,slot:"mainhand",id:"speed"}]]
+give @a[tag=!out,tag=!ded] minecraft:iron_sword[unbreakable={},enchantments={sharpness:1},item_model="cc:item/dagger",custom_name={text:"Knife",italic:false},attribute_modifiers=[{operation:"add_multiplied_base",type:"movement_speed",amount:0.2d,slot:"mainhand",id:"speed"}]]
 give @a[tag=!out,tag=!ded] emerald 5
 item replace entity @a[team=red] armor.head with minecraft:leather_helmet[unbreakable={},dyed_color=16711680]
 item replace entity @a[team=red] armor.chest with minecraft:leather_chestplate[unbreakable={},dyed_color=16711680]

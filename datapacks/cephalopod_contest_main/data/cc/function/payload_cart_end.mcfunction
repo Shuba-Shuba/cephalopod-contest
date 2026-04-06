@@ -1,6 +1,6 @@
 # win
 tag @a[team=blue] add winner
-tellraw @a [{"text":"Payload cart pushed to the end - ","color":"green"},{"text":"BLU","color":"aqua"}," team wins!"]
+tellraw @a [{text:"Payload cart pushed to the end - ",color:"green"},{text:"BLU",color:"aqua"}," team wins!"]
 execute if score %map game matches 0 run tellraw @a "Tim Green: Owie my youchers! That bomb gave me a booboo..."
 
 # fx

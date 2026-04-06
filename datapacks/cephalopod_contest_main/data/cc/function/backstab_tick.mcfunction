@@ -12,5 +12,5 @@ execute if score %in game matches 2 as @a[tag=fight] run function cc:backstab_ch
 # backstabber item
 execute as @a[scores={backstab_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Backstab"]
 scoreboard players remove @a[scores={backstab_cd=1..}] backstab_cd 1
-item replace entity @a[scores={class=0,backstab_valid=1,backstab_cd=0}] hotbar.0 with minecraft:iron_sword[damage=249,custom_name='{"text":"GET THE BACKSTAB!!","italic":false}',enchantments={knockback:10},item_model="cc:item/dagger",custom_data={backstab:1b}]
-item replace entity @a[scores={class=0,backstab_valid=0,backstab_cd=0}] hotbar.0 with minecraft:iron_sword[damage=249,custom_name='{"text":"Backstabber","italic":false}',item_model="cc:item/dagger",custom_data={backstab:1b}]
+item replace entity @a[scores={class=0,backstab_valid=1,backstab_cd=0}] hotbar.0 with minecraft:iron_sword[damage=249,custom_name={text:"GET THE BACKSTAB!!",italic:false},enchantments={knockback:10},item_model="cc:item/dagger",custom_data={backstab:1b}]
+item replace entity @a[scores={class=0,backstab_valid=0,backstab_cd=0}] hotbar.0 with minecraft:iron_sword[damage=249,custom_name={text:"Backstabber",italic:false},item_model="cc:item/dagger",custom_data={backstab:1b}]

@@ -6,10 +6,10 @@ execute store result score @p[scores={kills=1..}] steal_iron run clear @s iron_i
 execute store result score @p[scores={kills=1..}] steal_gold run clear @s gold_ingot
 execute store result score @p[scores={kills=1..}] steal_diamond run clear @s diamond
 execute store result score @p[scores={kills=1..}] steal_emerald run clear @s emerald
-tellraw @p[scores={steal_iron=1..}] [{"text":"+","color":"green"},{"score":{"name":"*","objective":"steal_iron"}}," iron"]
-tellraw @p[scores={steal_gold=1..}] [{"text":"+","color":"green"},{"score":{"name":"*","objective":"steal_gold"}}," gold"]
-tellraw @p[scores={steal_diamond=1..}] [{"text":"+","color":"green"},{"score":{"name":"*","objective":"steal_diamond"}}," diamond"]
-tellraw @p[scores={steal_emerald=1..}] [{"text":"+","color":"green"},{"score":{"name":"*","objective":"steal_emerald"}}," emerald"]
+tellraw @p[scores={steal_iron=1..}] [{text:"+",color:"green"},{score:{name:"*",objective:"steal_iron"}}," iron"]
+tellraw @p[scores={steal_gold=1..}] [{text:"+",color:"green"},{score:{name:"*",objective:"steal_gold"}}," gold"]
+tellraw @p[scores={steal_diamond=1..}] [{text:"+",color:"green"},{score:{name:"*",objective:"steal_diamond"}}," diamond"]
+tellraw @p[scores={steal_emerald=1..}] [{text:"+",color:"green"},{score:{name:"*",objective:"steal_emerald"}}," emerald"]
 execute as @p[scores={kills=1..}] run loot give @s loot cc:steal
 scoreboard players set @a steal_iron 0
 scoreboard players set @a steal_gold 0

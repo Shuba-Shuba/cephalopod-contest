@@ -1,6 +1,6 @@
 # parse json text
 scoreboard players operation #tmp hp_dmg = @s hp_dmg
-data modify block 0 -63 0 front_text.messages[2] set value '[{"text":"-","color":"red"},{"score":{"name":"#tmp","objective":"hp_dmg"}}]'
+data modify block 0 -63 0 front_text.messages[2] set value [{text:"-",color:"red"},{score:{name:"#tmp",objective:"hp_dmg"}}]
 
 # rng
 execute store result score .out prng run random value 0..7

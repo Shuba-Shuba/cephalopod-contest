@@ -1,2 +1,2 @@
-setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Disco Party"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function cc:ui/disable29"}}','""']}} destroy
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:["","Disco Party",{text:"[ENABLED]",color:"green",click_event:{action:"run_command",command:"function cc:ui/disable29"}},""]}} destroy
 tag @e[type=marker,tag=mode_rng,tag=mode29] add enabled

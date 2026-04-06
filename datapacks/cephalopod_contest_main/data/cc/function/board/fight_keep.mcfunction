@@ -8,7 +8,7 @@ clear
 function cc:board/get_items
 
 # reinsert backstabber if they had it
-execute if score .item game matches 1.. run give @s minecraft:iron_sword[item_model="cc:item/dagger",unbreakable={},custom_name='{"text":"Backstabber","italic":false}']
+execute if score .item game matches 1.. run give @s minecraft:iron_sword[item_model="cc:item/dagger",unbreakable={},custom_name={text:"Backstabber",italic:false}]
 
 # save inv and clear
 data modify entity @e[type=marker,tag=this,limit=1] data.Inventory set from entity @s Inventory

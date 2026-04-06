@@ -22,7 +22,7 @@ give @a[tag=!out,tag=!ded] minecraft:stone_sword[unbreakable={}]
 give @a[tag=!out,tag=!ded] minecraft:bow[unbreakable={}]
 give @a[tag=!out,tag=!ded] cooked_beef 8
 give @a[tag=!out,tag=!ded] minecraft:stone_pickaxe[unbreakable={}]
-give @a[tag=!out,tag=!ded] minecraft:stone_axe[unbreakable={},attribute_modifiers=[{operation:"add_value",type:"attack_damage",amount:4,slot:"mainhand",id:"melee"}],custom_name='{"text":"Stone Axe (4 melee damage)","italic":false}']
+give @a[tag=!out,tag=!ded] minecraft:stone_axe[unbreakable={},attribute_modifiers=[{operation:"add_value",type:"attack_damage",amount:4,slot:"mainhand",id:"melee"}],custom_name={text:"Stone Axe (4 melee damage)",italic:false}]
 give @a[tag=!out,tag=!ded] minecraft:stone_shovel[unbreakable={}]
 give @a[tag=!out,tag=!ded] arrow 3
 execute if score %map game matches 0 run forceload remove 250 -850 310 -790

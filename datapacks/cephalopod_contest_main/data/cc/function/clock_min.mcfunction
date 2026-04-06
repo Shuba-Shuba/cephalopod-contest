@@ -9,6 +9,6 @@ scoreboard players operation %second_clock game = %second game
 scoreboard players operation %second_clock game %= 60 calc
 
 # set clock
-execute if score %second_clock game matches ..9 run bossbar set cc:time name ["",{"score":{"objective":"game","name":"%minute"}},":0",{"score":{"objective":"game","name":"%second_clock"}}]
-execute if score %second_clock game matches 10.. run bossbar set cc:time name ["",{"score":{"objective":"game","name":"%minute"}},":",{"score":{"objective":"game","name":"%second_clock"}}]
+execute if score %second_clock game matches ..9 run bossbar set cc:time name ["",{score:{objective:"game",name:"%minute"}},":0",{score:{objective:"game",name:"%second_clock"}}]
+execute if score %second_clock game matches 10.. run bossbar set cc:time name ["",{score:{objective:"game",name:"%minute"}},":",{score:{objective:"game",name:"%second_clock"}}]
 execute store result bossbar cc:time value run scoreboard players get %second game

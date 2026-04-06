@@ -18,10 +18,10 @@ execute if entity @p[tag=copy] unless score @s gravity matches 2 run title @s ac
 execute unless entity @p[tag=copy] run function battle:copycat/no_copy
 
 # replace certain items
-execute if entity @p[tag=copy_crafting] run item replace entity @s hotbar.0 with minecraft:crafting_table[custom_name='{"text":"Build Sentry [FREE]","italic":false,"color":"white"}',lore=['{"text":"Building sentries is completely free for copycats,","color":"gray"}','{"text":"but you can only build 1 at a time.","color":"gray"}']]
-execute if entity @p[tag=copy_anvil] run item replace entity @s hotbar.0 with minecraft:anvil[custom_name='{"text":"Upgrade Sentry [FREE]","italic":false,"color":"white"}',lore=['{"text":"Upgrading sentries is completely free for copycats.","color":"gray"}']]
-execute if entity @p[tag=copy_beacon] run item replace entity @s hotbar.0 with minecraft:beacon[custom_name='{"text":"Heal Sentry [FREE]","italic":false,"color":"white"}',lore=['{"text":"Healing sentries is completely free for copycats.","color":"gray"}']]
-execute if entity @p[tag=copy_book] run item replace entity @s hotbar.0 with minecraft:iron_hoe[unbreakable={},custom_name='{"text":"Random Item BE LIKE DOE","italic":false}']
+execute if entity @p[tag=copy_crafting] run item replace entity @s hotbar.0 with minecraft:crafting_table[custom_name={text:"Build Sentry [FREE]",italic:false,color:"white"},lore=[{text:"Building sentries is completely free for copycats,",color:"gray"},{text:"but you can only build 1 at a time.",color:"gray"}]]
+execute if entity @p[tag=copy_anvil] run item replace entity @s hotbar.0 with minecraft:anvil[custom_name={text:"Upgrade Sentry [FREE]",italic:false,color:"white"},lore=[{text:"Upgrading sentries is completely free for copycats.",color:"gray"}]]
+execute if entity @p[tag=copy_beacon] run item replace entity @s hotbar.0 with minecraft:beacon[custom_name={text:"Heal Sentry [FREE]",italic:false,color:"white"},lore=[{text:"Healing sentries is completely free for copycats.",color:"gray"}]]
+execute if entity @p[tag=copy_book] run item replace entity @s hotbar.0 with minecraft:iron_hoe[unbreakable={},custom_name={text:"Random Item BE LIKE DOE",italic:false}]
 
 # remove tags
 tag @a remove copy

@@ -65,18 +65,18 @@ scoreboard players remove @a[scores={gardener_jump=2..}] gardener_jump 1
 scoreboard players remove @a[scores={gardener_jump=1},nbt={OnGround:1b}] gardener_jump 1
 clear @a[scores={class=0,gardener_jump=1..}] stone_shovel
 clear @a[scores={class=0,gardener_jump=0}] diamond_shovel
-item replace entity @a[scores={class=0,gardener_jump=1..}] hotbar.1 with minecraft:diamond_shovel[unbreakable={},custom_name='{"text":"KB 10 ACTIVATED","color":"aqua","italic":false}',enchantments={knockback:10}]
-item replace entity @a[scores={class=0,gardener_jump=0}] hotbar.1 with minecraft:stone_shovel[unbreakable={},custom_name='{"text":"Market Gardener","color":"aqua","italic":false}']
+item replace entity @a[scores={class=0,gardener_jump=1..}] hotbar.1 with minecraft:diamond_shovel[unbreakable={},custom_name={text:"KB 10 ACTIVATED",color:"aqua",italic:false},enchantments={knockback:10}]
+item replace entity @a[scores={class=0,gardener_jump=0}] hotbar.1 with minecraft:stone_shovel[unbreakable={},custom_name={text:"Market Gardener",color:"aqua",italic:false}]
 
 # NUL freeze potion
 execute as @e[type=splash_potion,tag=!freeze,nbt={Item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:32b}]}}}}] run function cc:freeze_potion
 execute as @e[type=splash_potion,tag=freeze] run function shb:vis_fix
-item replace entity @a[scores={freeze_cd=1}] hotbar.3 with minecraft:splash_potion[custom_name='{"text":"Freeze Potion","italic":false}',potion_contents={custom_color:8911871,custom_effects:[{id:"minecraft:water_breathing",amplifier:32b,duration:500}]}]
+item replace entity @a[scores={freeze_cd=1}] hotbar.3 with minecraft:splash_potion[custom_name={text:"Freeze Potion",italic:false},potion_contents={custom_color:8911871,custom_effects:[{id:"minecraft:water_breathing",amplifier:32b,duration:500}]}]
 execute as @a[scores={freeze_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Freeze Potion"]
 scoreboard players remove @a[scores={freeze_cd=1..}] freeze_cd 1
 
 # GAR super jump
-item replace entity @a[scores={jump_cd=1}] hotbar.3 with minecraft:blaze_powder[custom_name='{"text":"Super Jump","italic":false}',custom_data={tnt:3b}]
+item replace entity @a[scores={jump_cd=1}] hotbar.3 with minecraft:blaze_powder[custom_name={text:"Super Jump",italic:false},custom_data={tnt:3b}]
 execute as @a[scores={jump_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Super Jump"]
 execute at @a[scores={jump_time=1..}] run particle minecraft:small_flame ~ ~ ~ 0 0 0 0 1 normal @a
 scoreboard players remove @a[scores={jump_cd=1..}] jump_cd 1
@@ -84,7 +84,7 @@ scoreboard players remove @a[scores={jump_time=2..}] jump_time 1
 scoreboard players remove @a[scores={jump_time=1},nbt={OnGround:1b}] jump_time 1
 
 # NUL laser cooldown
-#execute as @a[scores={laser_cd=1}] run item replace entity @s hotbar.3 with minecraft:carrot_on_a_stick[custom_name='{"text":"Laser","italic":false}',custom_data={stats:{ammo:{type:7b}}}]
+#execute as @a[scores={laser_cd=1}] run item replace entity @s hotbar.3 with minecraft:carrot_on_a_stick[custom_name={text:"Laser",italic:false},custom_data={stats:{ammo:{type:7b}}}]
 #execute as @a[scores={laser_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Laser"]
 #scoreboard players remove @a[scores={laser_cd=1..}] laser_cd 1
 
@@ -96,7 +96,7 @@ execute as @a[scores={broken_modem=1..}] at @s run tp @s @e[type=marker,limit=1,
 #execute as @a[scores={broken_modem=2}] at @s run tp @e[type=marker,limit=1,sort=nearest,tag=broken_modem_tether] ^ ^ ^-10
 execute as @a[scores={broken_modem=1}] at @s run kill @e[type=marker,limit=1,sort=nearest,tag=broken_modem_tether]
 scoreboard players remove @a[scores={broken_modem=1..}] broken_modem 1
-item replace entity @a[scores={broken_modem_cd=1}] hotbar.1 with minecraft:stick[custom_name='{"text":"Broken Modem","italic":false}',custom_data={tnt:1b}]
+item replace entity @a[scores={broken_modem_cd=1}] hotbar.1 with minecraft:stick[custom_name={text:"Broken Modem",italic:false},custom_data={tnt:1b}]
 execute as @a[scores={broken_modem_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Broken Modem"]
 scoreboard players remove @a[scores={broken_modem_cd=1..}] broken_modem_cd 1
 
@@ -110,12 +110,12 @@ execute as @a[scores={minecart_time=1..},predicate=cc:is_riding_recovery] rotate
 execute as @a[scores={minecart_time=1}] at @s run function cc:explode_minecart
 
 # NUL quick bomb
-item replace entity @a[scores={quick_bomb_cd=1}] hotbar.3 with minecraft:tnt_minecart[custom_name='{"text":"Quick Bomb","italic":false}',custom_data={tnt:5b}]
+item replace entity @a[scores={quick_bomb_cd=1}] hotbar.3 with minecraft:tnt_minecart[custom_name={text:"Quick Bomb",italic:false},custom_data={tnt:5b}]
 execute as @a[scores={quick_bomb_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Quick Bomb"]
 scoreboard players remove @a[scores={quick_bomb_cd=1..}] quick_bomb_cd 1
 
 # TEC drill
-item replace entity @a[scores={drill_cd=1}] hotbar.3 with minecraft:hopper[custom_name='{"text":"Drill","italic":false}',custom_data={tnt:13b}]
+item replace entity @a[scores={drill_cd=1}] hotbar.3 with minecraft:hopper[custom_name={text:"Drill",italic:false},custom_data={tnt:13b}]
 execute as @a[scores={drill_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Drill"]
 scoreboard players remove @a[scores={drill_cd=1..}] drill_cd 1
 execute as @e[type=marker,tag=tnt_drill] at @s run function cc:move_drill
@@ -123,7 +123,7 @@ execute as @e[type=marker,tag=tnt_drill] at @s run function cc:move_drill
 # NUL dispenser - accelerates arrow reload, prioritizes engineers
 execute as @a[scores={build_dispenser=1}] run function cc:build_dispenser
 execute as @e[type=skeleton,tag=dispenser] at @s as @a[tag=!out,tag=!ded,distance=..6] run function cc:dispense
-item replace entity @a[scores={build_dispenser_cd=1}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Passengers:[{id:"minecraft:arrow"}],Invulnerable:1b,CustomName:'{"text":"Dispenser"}',ArmorItems:[{},{},{},{id:"minecraft:furnace",count:1b}],Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]},can_place_on={blocks:"#cc:all"},custom_name='{"text":"Build Dispenser","italic":false}']
+item replace entity @a[scores={build_dispenser_cd=1}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Passengers:[{id:"minecraft:arrow"}],Invulnerable:1b,CustomName:{text:"Dispenser"},ArmorItems:[{},{},{},{id:"minecraft:furnace",count:1b}],Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]},can_place_on={blocks:"#cc:all"},custom_name={text:"Build Dispenser",italic:false}]
 scoreboard players remove @a[scores={build_dispenser_cd=1..}] build_dispenser_cd 1
 
 # ENG metal miner
@@ -133,14 +133,14 @@ scoreboard players set @a[scores={class=2,metal_mine=2..}] metal_mine 0
 scoreboard players set @a[scores={class=2,break_pick=1..}] metal_mine_cd 60
 scoreboard players set @a[scores={class=2,break_pick=1..}] break_pick 0
 execute as @a[scores={break_pick=1..}] unless score @s class matches 2 run scoreboard players set @s break_pick 0
-item replace entity @a[scores={class=2,metal_mine_cd=1}] hotbar.4 with minecraft:golden_pickaxe[custom_name='{"text":"Metal Miner","italic":false}',enchantments={efficiency:255},can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
+item replace entity @a[scores={class=2,metal_mine_cd=1}] hotbar.4 with minecraft:golden_pickaxe[custom_name={text:"Metal Miner",italic:false},enchantments={efficiency:255},can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
 scoreboard players remove @a[scores={metal_mine_cd=1..}] metal_mine_cd 1
 
 # ENG sentry
 scoreboard players remove @e[type=skeleton,tag=tnt_sentry,scores={gardener_jump=2..}] gardener_jump 1
 scoreboard players remove @e[type=skeleton,tag=tnt_sentry,scores={gardener_jump=1},nbt={OnGround:1b}] gardener_jump 1
 execute as @e[type=skeleton,tag=tnt_sentry,tag=!grounded,scores={gardener_jump=0},nbt={OnGround:1b}] run function cc:sentry_landed
-item replace entity @a[scores={build_sentry_cd=1}] hotbar.2 with minecraft:ward_armor_trim_smithing_template[custom_name='{"text":"[12] Throw Sentry","italic":false}',custom_data={tnt:9b}]
+item replace entity @a[scores={build_sentry_cd=1}] hotbar.2 with minecraft:ward_armor_trim_smithing_template[custom_name={text:"[12] Throw Sentry",italic:false},custom_data={tnt:9b}]
 scoreboard players remove @a[scores={build_sentry_cd=1..}] build_sentry_cd 1
 scoreboard players remove @e[type=skeleton,tag=tnt_sentry,scores={shoot_sentry_cd=1..}] shoot_sentry_cd 1
 execute as @e[type=skeleton,tag=tnt_sentry,scores={shoot_sentry_cd=0}] at @s if entity @a[tag=!out,tag=!ded,distance=..10] run function cc:sentry_shoot
@@ -151,14 +151,14 @@ execute as @e[type=skeleton,tag=tnt_sentry,scores={game=120..}] at @s run functi
 scoreboard players remove @e[type=creeper,tag=tnt_eng,scores={gardener_jump=2..}] gardener_jump 1
 scoreboard players remove @e[type=creeper,tag=tnt_eng,scores={gardener_jump=1},nbt={OnGround:1b}] gardener_jump 1
 execute as @e[type=creeper,tag=tnt_eng,tag=!grounded,scores={gardener_jump=0},nbt={OnGround:1b}] run function cc:sentry_landed
-item replace entity @a[scores={build_creeper_cd=1}] hotbar.3 with minecraft:wild_armor_trim_smithing_template[custom_name='{"text":"[12] Throw Creeper","italic":false}',custom_data={tnt:11b}]
+item replace entity @a[scores={build_creeper_cd=1}] hotbar.3 with minecraft:wild_armor_trim_smithing_template[custom_name={text:"[12] Throw Creeper",italic:false},custom_data={tnt:11b}]
 scoreboard players remove @a[scores={build_creeper_cd=1..}] build_creeper_cd 1
 
 # ARC triangulator
 execute as @a[advancements={cc:shoot_triangulator=true}] at @s run function cc:shoot_triangulator
 execute as @e[type=arrow,tag=init_triangulator,nbt={LeftOwner:1b}] run data modify entity @s Owner set value [I;0,0,0,0]
 execute as @e[type=arrow,tag=init_triangulator,nbt={LeftOwner:1b}] run tag @s remove init_triangulator
-item replace entity @a[scores={triangulator_cd=1}] hotbar.1 with minecraft:bow[custom_name='{"text":"Triangulator","italic":false}',item_model="cc:item/holy_bow",damage=383,enchantments={"minecraft:infinity":1}]
+item replace entity @a[scores={triangulator_cd=1}] hotbar.1 with minecraft:bow[custom_name={text:"Triangulator",italic:false},item_model="cc:item/holy_bow",damage=383,enchantments={"minecraft:infinity":1}]
 scoreboard players remove @a[scores={triangulator_cd=1..}] triangulator_cd 1
 item replace entity @a[scores={class=3,arrow_count=0},nbt={SelectedItemSlot:1}] container.35 with arrow
 item replace entity @a[scores={class=3},nbt=!{SelectedItemSlot:1,SelectedItem:{id:"minecraft:bow"}}] container.35 with air
@@ -187,18 +187,18 @@ scoreboard players remove @a[scores={focus_time=1..}] focus_time 1
 execute as @a[scores={shift_cd=1,class=3}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Focus (shift ability)"]
 
 # ARC decrystalize
-item replace entity @a[scores={reatomize_cd=1}] hotbar.3 with minecraft:eye_armor_trim_smithing_template[custom_name='{"text":"Decrystalize","italic":false}',custom_data={tnt:15b}]
+item replace entity @a[scores={reatomize_cd=1}] hotbar.3 with minecraft:eye_armor_trim_smithing_template[custom_name={text:"Decrystalize",italic:false},custom_data={tnt:15b}]
 execute as @a[scores={reatomize_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Decrystalize"]
 scoreboard players remove @a[scores={reatomize_cd=1..}] reatomize_cd 1
 
 # ARC dagger
-item replace entity @a[scores={dagger_cd=1}] hotbar.2 with minecraft:echo_shard[custom_name='{"text":"Dagger","italic":false}',custom_data={tnt:16b}]
+item replace entity @a[scores={dagger_cd=1}] hotbar.2 with minecraft:echo_shard[custom_name={text:"Dagger",italic:false},custom_data={tnt:16b}]
 execute as @a[scores={dagger_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Dagger"]
 scoreboard players remove @a[scores={dagger_cd=1..}] dagger_cd 1
 execute as @e[type=marker,tag=arc_dagger] at @s positioned ^ ^ ^ facing ^ ^ ^-5.5 run function cc:dagger_tick
 
 # ARC cloak cooldown
-item replace entity @a[scores={cloak_cd=1}] hotbar.2 with minecraft:silence_armor_trim_smithing_template[custom_name='{"text":"Cloak","italic":false}',custom_data={tnt:17b}]
+item replace entity @a[scores={cloak_cd=1}] hotbar.2 with minecraft:silence_armor_trim_smithing_template[custom_name={text:"Cloak",italic:false},custom_data={tnt:17b}]
 execute as @a[scores={cloak_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Cloak"]
 scoreboard players remove @a[scores={cloak_cd=1..}] cloak_cd 1
 execute as @e[type=marker,tag=arc_cloak] at @s positioned ^ ^ ^ run function cc:cloak_tick

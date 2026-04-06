@@ -15,7 +15,7 @@ scoreboard players operation @e[distance=..8,tag=!this] killerUUID2 = @s ownerUU
 scoreboard players operation @e[distance=..8,tag=!this] killerUUID3 = @s ownerUUID3
 
 # explosion
-summon creeper ~ ~ ~ {Fuse:0,ignited:1b,CustomName:'"bomb.shb"',ExplosionRadius:3b,Tags:["shb"]}
+summon creeper ~ ~ ~ {Fuse:0,ignited:1b,CustomName:"bomb.shb",ExplosionRadius:3b,Tags:["shb"]}
 
 # posthook
 schedule function shb:difficulty 2t

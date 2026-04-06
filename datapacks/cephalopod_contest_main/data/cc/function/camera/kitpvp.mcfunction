@@ -22,4 +22,4 @@ title @a[tag=!out] times 0 100 0
 title @a[tag=!out] title "Kit PvP"
 execute if score %camera1 game matches 0..50 run title @a[tag=!out] subtitle "Objective: Kill people"
 execute if score %camera1 game matches 51..100 run title @a[tag=!out] subtitle "Respawn or kill = change kit"
-execute if score %camera1 game matches 101..180 run title @a[tag=!out] subtitle ["Player w/ least kills after ",{"score":{"name":"time.kitpvp","objective":"config"}}," seconds loses"]
+execute if score %camera1 game matches 101..180 run title @a[tag=!out] subtitle ["Player w/ least kills after ",{score:{name:"time.kitpvp",objective:"config"}}," seconds loses"]

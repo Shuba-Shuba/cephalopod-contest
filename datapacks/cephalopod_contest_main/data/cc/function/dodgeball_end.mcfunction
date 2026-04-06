@@ -8,16 +8,16 @@ execute if score %mode game matches 8 store result score #tmp_blue game if entit
 # if red team wins
 execute if score #tmp_red game > #tmp_blue game run tag @a[team=red] remove ded
 execute if score #tmp_red game > #tmp_blue game run tag @a[team=red] add winner
-execute if score #tmp_red game > #tmp_blue game run tellraw @a {"text":"Red team wins!","color":"red"}
+execute if score #tmp_red game > #tmp_blue game run tellraw @a {text:"Red team wins!",color:"red"}
 
 # if blue team wins
 execute if score #tmp_red game < #tmp_blue game run tag @a[team=blue] remove ded
 execute if score #tmp_red game < #tmp_blue game run tag @a[team=blue] add winner
-execute if score #tmp_red game < #tmp_blue game run tellraw @a {"text":"Blue team wins!","color":"aqua"}
+execute if score #tmp_red game < #tmp_blue game run tellraw @a {text:"Blue team wins!",color:"aqua"}
 
 # if neither team wins
 execute if score #tmp_red game = #tmp_blue game run tag @a[tag=!out] add ded
-execute if score #tmp_red game = #tmp_blue game run tellraw @a {"text":"Both teams drew, everyone dies!","color":"yellow"}
+execute if score #tmp_red game = #tmp_blue game run tellraw @a {text:"Both teams drew, everyone dies!",color:"yellow"}
 
 # explode dead players
 execute as @a[tag=ded,gamemode=adventure] at @s run function sp:landed

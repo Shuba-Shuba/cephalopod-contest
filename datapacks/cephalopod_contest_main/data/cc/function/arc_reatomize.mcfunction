@@ -26,5 +26,5 @@ execute at @s as @e[type=end_crystal,tag=owned_crystal] run summon tnt ~ ~1.5 ~ 
 kill @e[type=end_crystal,tag=owned_crystal]
 
 # tell spectators
-execute if score @s crystal_count matches 1 run tellraw @a[tag=ded] ["",{"selector":"@s"}," used Decrystalize (",{"score":{"name":"@s","objective":"crystal_count"}}," crystal)"]
-execute unless score @s crystal_count matches 1 run tellraw @a[tag=ded] ["",{"selector":"@s"}," used Decrystalize (",{"score":{"name":"@s","objective":"crystal_count"}}," crystals)"]
+execute if score @s crystal_count matches 1 run tellraw @a[tag=ded] ["",{"selector":"@s"}," used Decrystalize (",{score:{name:"@s",objective:"crystal_count"}}," crystal)"]
+execute unless score @s crystal_count matches 1 run tellraw @a[tag=ded] ["",{"selector":"@s"}," used Decrystalize (",{score:{name:"@s",objective:"crystal_count"}}," crystals)"]

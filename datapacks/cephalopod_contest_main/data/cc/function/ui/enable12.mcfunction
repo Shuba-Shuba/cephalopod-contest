@@ -1,2 +1,2 @@
-setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:['""','"Quick Craft"','{"text":"[ENABLED]","color":"green","clickEvent":{"action":"run_command","value":"function cc:ui/disable12"}}','""']}} destroy
+setblock ~ ~ ~ birch_wall_sign[facing=north]{front_text:{messages:["","Quick Craft",{text:"[ENABLED]",color:"green",click_event:{action:"run_command",command:"function cc:ui/disable12"}},""]}} destroy
 tag @e[type=marker,tag=mode_rng,tag=mode12] add enabled

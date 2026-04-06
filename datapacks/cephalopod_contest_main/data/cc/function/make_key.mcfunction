@@ -6,5 +6,5 @@ setblock 108 63 -234 minecraft:black_concrete
 setblock 108 63 -231 minecraft:black_concrete
 setblock 108 63 -228 minecraft:black_concrete
 playsound minecraft:block.end_gateway.spawn master @a 104 63 -225 0.5 1 1
-summon item 104 63 -225 {Item:{id:"minecraft:tripwire_hook",count:1,components:{"minecraft:custom_name":'[{"text":"Key To ","italic":false},{"text":"YouAreCh eating","obfuscated":true}]'}}}
+summon item 104 63 -225 {Item:{id:"minecraft:tripwire_hook",count:1,components:{"minecraft:custom_name":[{text:"Key To ",italic:false},{text:"YouAreCh eating",obfuscated:true}]}}}
 particle minecraft:explosion 104 63 -225 1 1 1 0 100

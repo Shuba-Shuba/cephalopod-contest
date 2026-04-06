@@ -2,7 +2,7 @@ execute store result score .durability calc run data get entity @s SelectedItem.
 scoreboard players set .metal calc 35
 scoreboard players operation .metal calc -= .durability calc
 scoreboard players operation .metal calc /= 4 calc
-title @s actionbar ["+",{"score":{"name":".metal","objective":"calc"}}," metal"]
+title @s actionbar ["+",{score:{name:".metal",objective:"calc"}}," metal"]
 playsound minecraft:item.shield.break master @s ~ ~ ~ 1 1
 execute store result score @s arrow_count run clear @s iron_ingot 0
 execute if score @s arrow_count matches 0 run item replace entity @s hotbar.8 with iron_ingot

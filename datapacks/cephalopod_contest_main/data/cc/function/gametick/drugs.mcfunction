@@ -6,7 +6,7 @@ bossbar set cc:time players @a
 scoreboard players add %tick game 1
 execute if score %tick game matches 20.. run scoreboard players operation %second game += %increment game
 execute if score %tick game matches 20.. if score %increment game matches -1 store result bossbar cc:time value run scoreboard players get %second game
-execute if score %tick game matches 20.. run bossbar set cc:time name {"score":{"objective":"game","name":"%second"}}
+execute if score %tick game matches 20.. run bossbar set cc:time name {score:{objective:"game",name:"%second"}}
 execute if score %tick game matches 20.. run scoreboard players set %tick game 0
 
 # pothead stuff
@@ -37,5 +37,5 @@ tag @e[type=arrow,tag=!arrow_verified] add arrow_verified
 
 clear @a glass_bottle
 spreadplayers 257 762 1 32 under 125 false @a[tag=cop,scores={potion=1..}]
-give @a[tag=cop,scores={potion=1..}] minecraft:potion[custom_name='{"text":"Go To Spawn","italic":false}']
+give @a[tag=cop,scores={potion=1..}] minecraft:potion[custom_name={text:"Go To Spawn",italic:false}]
 scoreboard players set @a potion 0

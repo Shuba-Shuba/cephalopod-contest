@@ -17,6 +17,6 @@ execute positioned as @e[type=marker,tag=camera,limit=1] run tp @a[tag=!out] ~ ~
 # titles (ends at 180)
 title @a[tag=!out] times 0 100 0
 title @a[tag=!out] title "Red Light Green Light"
-execute if score %camera1 game matches 0..60 run title @a[tag=!out] subtitle ["You will have ",{"score":{"name":"time.rlgl","objective":"config"}}," seconds to get to the other side"]
+execute if score %camera1 game matches 0..60 run title @a[tag=!out] subtitle ["You will have ",{score:{name:"time.rlgl",objective:"config"}}," seconds to get to the other side"]
 execute if score %camera1 game matches 61..120 run title @a[tag=!out] subtitle "If you move on a red light, you will die"
 execute if score %camera1 game matches 121..180 run title @a[tag=!out] subtitle "Watch out! Players can punch each other"

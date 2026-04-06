@@ -1,5 +1,5 @@
 scoreboard players set .hotel heist 0
-execute in cc:void run data merge block 219 123 770 {Text4:'"NOT STARTED"'}
+execute in cc:void run data merge block 219 123 770 {Text4:"NOT STARTED"}
 execute in cc:void run fill 221 122 772 221 124 769 minecraft:bone_block[axis=y]
 execute in cc:void run fill 221 122 771 221 124 770 minecraft:air
 execute in cc:void run playsound minecraft:block.piston.extend master @a 220.0 122 770.0 1 0.75

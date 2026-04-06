@@ -11,5 +11,5 @@ execute if score %map game matches 2 run title @a[tag=!out] title "i forgot the 
 execute if score %map game matches 3 run title @a[tag=!out] title "its the chunk one"
 execute if score %map game matches 4 run title @a[tag=!out] title "that one game with chunks"
 execute if score %camera1 game matches 0..120 run title @a[tag=!out] subtitle "Everyone will spawn in a copy of the same chunk"
-execute if score %camera1 game matches 121..150 run title @a[tag=!out] subtitle ["You have ",{"score":{"name":"time.chunk","objective":"config"}}," seconds to collect resources"]
+execute if score %camera1 game matches 121..150 run title @a[tag=!out] subtitle ["You have ",{score:{name:"time.chunk",objective:"config"}}," seconds to collect resources"]
 execute if score %camera1 game matches 151..180 run title @a[tag=!out] subtitle "After the timer, players will fight in an arena"

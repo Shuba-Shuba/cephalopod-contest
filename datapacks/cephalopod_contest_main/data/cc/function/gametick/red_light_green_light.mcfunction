@@ -6,7 +6,7 @@ scoreboard players add %tick game 1
 execute if score %tick game matches 20.. run scoreboard players remove %second game 1
 execute if score %tick game matches 20.. unless score %tmp_light2 game matches 1.. run function cc:light_rng
 execute if score %tick game matches 20.. run scoreboard players set %tick game 0
-bossbar set cc:time name {"score":{"objective":"game","name":"%second"}}
+bossbar set cc:time name {score:{objective:"game",name:"%second"}}
 execute store result bossbar cc:time value run scoreboard players get %second game
 execute if score %second game matches ..0 run function cc:end
 execute unless score %tmp_light2 game matches ..0 run scoreboard players remove %tmp_light2 game 1

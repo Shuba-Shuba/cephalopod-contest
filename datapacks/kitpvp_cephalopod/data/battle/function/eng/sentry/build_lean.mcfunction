@@ -1,6 +1,6 @@
-summon skeleton ~ ~ ~ {DeathLootTable:"",CustomName:'{"text":"null"}',ArmorItems:[{},{},{},{id:"minecraft:netherite_helmet",count:1,components:{"minecraft:unbreakable":{}}}],HandItems:[{},{}],Tags:["sentry"],attributes:[{base:40.0d,id:"max_health"}],Health:40.0f,NoAI:1b,PersistenceRequired:1b}
+summon skeleton ~ ~ ~ {DeathLootTable:"",CustomName:{text:"null"},ArmorItems:[{},{},{},{id:"minecraft:netherite_helmet",count:1,components:{"minecraft:unbreakable":{}}}],HandItems:[{},{}],Tags:["sentry"],attributes:[{base:40.0d,id:"max_health"}],Health:40.0f,NoAI:1b,PersistenceRequired:1b}
 tag @s add me
-data modify block 0 -63 0 front_text.messages[0] set value '["",{"selector":"@p[tag=me]"},"\'s Tainted Sentry"]'
+data modify block 0 -63 0 front_text.messages[0] set value ["",{"selector":"@p[tag=me]"},"\'s Tainted Sentry"]
 data modify entity @e[type=skeleton,tag=sentry,limit=1,sort=nearest] CustomName set from block 0 -63 0 front_text.messages[0]
 tag @s remove me
 execute as @e[type=skeleton,tag=sentry,limit=1,sort=nearest] run function shb:give/sentry_lean
