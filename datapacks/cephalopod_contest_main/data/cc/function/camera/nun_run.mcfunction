@@ -29,6 +29,6 @@ title @a[tag=!out] times 0 100 0
 title @a[tag=!out] title "Nun Run"
 execute if score %camera1 game matches 0..70 run title @a[tag=!out] subtitle "1 person is the nun and everyone else runs"
 execute if score %camera1 game matches 71..140 run title @a[tag=!out] subtitle ["You have ",{score:{name:"time.nun_run",objective:"config"}}," seconds to get ",{score:{name:"#win",objective:"prayers"}}," prayers"]
-execute if score %camera1 game matches 141..210 run title @a[tag=!out] subtitle ["Runners pray by spamming [",{"keybind":"key.sneak"},"] on froglights"]
+execute if score %camera1 game matches 141..210 run title @a[tag=!out] subtitle ["Runners pray by spamming [",{keybind:"key.sneak"},"] on froglights"]
 execute if score %camera1 game matches 211..280 run title @a[tag=!out] subtitle "If you die, the nun gets your prayers and you lose"
 execute if score %camera1 game matches 281..350 run title @a[tag=!out] subtitle "The nun chooses a special ability and gets a sword"

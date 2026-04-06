@@ -23,4 +23,4 @@ title @a[tag=!out] title "Gun Game"
 execute if score %camera1 game matches 0..45 run title @a[tag=!out] subtitle "Shoot other players to upgrade your gun"
 execute if score %camera1 game matches 46..90 run title @a[tag=!out] subtitle "You will spectate after getting a knife kill"
 execute if score %camera1 game matches 91..135 run title @a[tag=!out] subtitle "Last player to get a knife kill loses"
-execute if score %camera1 game matches 136..180 run title @a[tag=!out] subtitle ["IMPORTANT: Press [",{"keybind":"key.use"},"] to shoot guns"]
+execute if score %camera1 game matches 136..180 run title @a[tag=!out] subtitle ["IMPORTANT: Press [",{keybind:"key.use"},"] to shoot guns"]
