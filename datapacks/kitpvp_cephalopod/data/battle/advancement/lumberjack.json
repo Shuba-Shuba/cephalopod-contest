@@ -4,9 +4,7 @@
       "id": "minecraft:wooden_axe",
       "components": {
         "minecraft:enchantments": {
-          "levels": {
-            "minecraft:sharpness": 1
-          }
+          "minecraft:sharpness": 1
         }
       }
     },
