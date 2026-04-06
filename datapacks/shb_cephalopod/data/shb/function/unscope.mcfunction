@@ -1,5 +1,5 @@
-execute store result storage shb:scope cmd int 1 run scoreboard players remove @s cmd 100
-item modify entity @s weapon.mainhand shb:scope
+data modify storage shb:scope model set string entity @s SelectedItem.components.minecraft:item_model 15
+function shb:unscope_macro with storage shb:scope
 scoreboard players set @s scope 0
 
 #clear @s chainmail_leggings[custom_data={shb:1b}]

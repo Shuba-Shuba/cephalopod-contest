@@ -30,11 +30,11 @@ execute if entity @s[advancements={shb:rightclick=true}] run function shb:shoot/
 execute if entity @s[scores={carrot_click=1..}] run function shb:shoot/start
 
 ### scope/sights
-execute store result score @s cmd run data get entity @s SelectedItem.components.minecraft:custom_model_data
-execute if predicate shb:scope if score @s cmd matches 201..299 run function shb:scope
-execute unless predicate shb:scope if score @s cmd matches 301..399 run function shb:unscope
-execute if predicate shb:scope if score @s cmd matches 301..399 run scoreboard players set @s scope 1
-execute unless predicate shb:scope if score @s cmd matches 201..299 run scoreboard players set @s scope 0
+execute store result score @s cmd if items entity @s weapon.mainhand *[custom_data~{scoped:true}]
+execute if predicate shb:scope if score @s cmd matches 0 run function shb:scope
+execute unless predicate shb:scope if score @s cmd matches 1 run function shb:unscope
+execute if predicate shb:scope if score @s cmd matches 1 run scoreboard players set @s scope 1
+execute unless predicate shb:scope if score @s cmd matches 0 run scoreboard players set @s scope 0
 execute as @s[scores={scope=1}] run function shb:tick_scope
 execute as @s[scores={scope=0}] run function shb:tick_unscope
 
