@@ -7,7 +7,6 @@ tag @s remove ender
 scoreboard players set @s Kit_ID 0
 attribute @s minecraft:max_health base set 20
 effect give @s minecraft:saturation 80 255 true
-scoreboard players set @s Deaths_3 0
 #tellraw @s "Successfully cleared kit."
 
 scoreboard players set @s offhand_carrot 0
