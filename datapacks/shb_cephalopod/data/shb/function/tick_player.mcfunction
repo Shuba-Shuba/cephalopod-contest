@@ -43,9 +43,6 @@ execute if score @s reload.repeat matches 1.. run function shb:reload/tick_playe
 # [CEPHALOPOD CONTEST] auto reload
 execute if score auto_reload.enabled config matches 1 if score .loaded stats matches 0 run function shb:gun/get_stats
 execute if score auto_reload.enabled config matches 1 if score .ammo.count stats matches 0 if score @s rightclick matches 0 if score @s reload.repeat matches 0 run function shb:reload/auto
-### crafting recipes
-execute store result score .c craft run clear @s knowledge_book
-execute if score .c craft matches 1.. run function shb:craft/craft
 
 ### save nbt
 execute if score .save stats matches 1 run function shb:gun/set_stats

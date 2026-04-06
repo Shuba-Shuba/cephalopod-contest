@@ -6,15 +6,9 @@
     "%%%"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:glass"
-    },
-    "$": {
-      "item": "minecraft:diamond"
-    },
-    "%": {
-      "item": "minecraft:obsidian"
-    }
+    "#": "minecraft:glass",
+    "$": "minecraft:diamond",
+    "%": "minecraft:obsidian"
   },
   "result": {
     "id": "minecraft:beacon"
