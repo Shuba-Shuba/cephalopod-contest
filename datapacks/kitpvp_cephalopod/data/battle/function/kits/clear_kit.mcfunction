@@ -2,8 +2,6 @@ clear @s
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow,nbt={inGround:1b}]
 effect clear @s
-tag @s remove ender_tp
-tag @s remove ender
 scoreboard players set @s Kit_ID 0
 attribute @s minecraft:max_health base set 20
 effect give @s minecraft:saturation 80 255 true
