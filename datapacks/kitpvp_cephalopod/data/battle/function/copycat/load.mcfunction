@@ -1,4 +1,3 @@
-scoreboard objectives add selecteditem dummy
 scoreboard objectives add arrow_time dummy
 scoreboard objectives add arrow_count dummy
 scoreboard objectives add steak_count dummy
