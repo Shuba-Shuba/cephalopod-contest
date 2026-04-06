@@ -69,8 +69,8 @@ item replace entity @a[scores={class=0,gardener_jump=1..}] hotbar.1 with minecra
 item replace entity @a[scores={class=0,gardener_jump=0}] hotbar.1 with minecraft:stone_shovel[unbreakable={},custom_name='{"text":"Market Gardener","color":"aqua","italic":false}']
 
 # NUL freeze potion
-execute as @e[type=potion,tag=!freeze,nbt={Item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:32b}]}}}}] run function cc:freeze_potion
-execute as @e[type=potion,tag=freeze] run function shb:vis_fix
+execute as @e[type=splash_potion,tag=!freeze,nbt={Item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:32b}]}}}}] run function cc:freeze_potion
+execute as @e[type=splash_potion,tag=freeze] run function shb:vis_fix
 item replace entity @a[scores={freeze_cd=1}] hotbar.3 with minecraft:splash_potion[custom_name='{"text":"Freeze Potion","italic":false}',potion_contents={custom_color:8911871,custom_effects:[{id:"minecraft:water_breathing",amplifier:32b,duration:500}]}]
 execute as @a[scores={freeze_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Freeze Potion"]
 scoreboard players remove @a[scores={freeze_cd=1..}] freeze_cd 1
