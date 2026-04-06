@@ -3,34 +3,34 @@ execute unless score %mode game matches 420 if score 1.8pvp config matches 1 as 
 execute unless score %mode game matches 420 if score 1.8pvp config matches 0 as @a run attribute @s minecraft:attack_speed base set 4
 execute unless score %mode game matches 420 unless score %mode game matches 15 unless score %mode game matches 25 unless score %mode game matches 28 run gamemode adventure @a[gamemode=survival,tag=!out]
 execute unless score %mode game matches 420 unless score %mode game matches 21 unless score %mode game matches 25 unless score %mode game matches 26 unless score %mode game matches 28 run effect give @a saturation infinite 255 true
-execute unless score %mode game matches 420 unless score %mode game matches 12 unless score %mode game matches 25 unless score %mode game matches 28 run gamerule doTileDrops false
-execute if score %mode game matches 12 run gamerule doTileDrops true
-execute if score %mode game matches 25 run gamerule doTileDrops true
-execute if score %mode game matches 28 run gamerule doTileDrops true
-execute if score %mode game matches 420 run gamerule doTileDrops true
-execute unless score %mode game matches 420 run gamerule doMobSpawning false
-execute if score %mode game matches 420 run gamerule doMobSpawning true
-# PRES. DAY GAMERULE KEEPINVENTORY FALSE WHEN LOBBY
-execute unless score %mode game matches 420 unless score %in game matches 0 run gamerule keepInventory true
-execute if score %mode game matches 420 run gamerule keepInventory false
-execute if score %in game matches 0 run gamerule keepInventory false
-execute unless score %mode game matches 13..15 unless score %mode game matches 0 unless score %mode game matches 9 unless score %mode game matches 27 run gamerule naturalRegeneration true
-execute if score %mode game matches 13..15 run gamerule naturalRegeneration false
-execute if score %mode game matches 0 run gamerule naturalRegeneration false
-execute if score %mode game matches 9 run gamerule naturalRegeneration false
-execute if score %mode game matches 27 run gamerule naturalRegeneration false
+execute unless score %mode game matches 420 unless score %mode game matches 12 unless score %mode game matches 25 unless score %mode game matches 28 run gamerule block_drops false
+execute if score %mode game matches 12 run gamerule block_drops true
+execute if score %mode game matches 25 run gamerule block_drops true
+execute if score %mode game matches 28 run gamerule block_drops true
+execute if score %mode game matches 420 run gamerule block_drops true
+execute unless score %mode game matches 420 run gamerule spawn_mobs false
+execute if score %mode game matches 420 run gamerule spawn_mobs true
+# PRES. DAY gamerule keep_inventory FALSE WHEN LOBBY
+execute unless score %mode game matches 420 unless score %in game matches 0 run gamerule keep_inventory true
+execute if score %mode game matches 420 run gamerule keep_inventory false
+execute if score %in game matches 0 run gamerule keep_inventory false
+execute unless score %mode game matches 13..15 unless score %mode game matches 0 unless score %mode game matches 9 unless score %mode game matches 27 run gamerule natural_health_regeneration true
+execute if score %mode game matches 13..15 run gamerule natural_health_regeneration false
+execute if score %mode game matches 0 run gamerule natural_health_regeneration false
+execute if score %mode game matches 9 run gamerule natural_health_regeneration false
+execute if score %mode game matches 27 run gamerule natural_health_regeneration false
 execute unless score %mode game matches 14 run scoreboard players set auto_reload.enabled config 1
 execute if score %mode game matches 14 run scoreboard players set auto_reload.enabled config 0
 execute unless score %mode game matches 14 run team modify red friendlyFire false
 execute if score %mode game matches 14 run team modify red friendlyFire true
 execute unless score %mode game matches 14 run team modify blue friendlyFire false
 execute if score %mode game matches 14 run team modify blue friendlyFire true
-execute unless score %mode game matches 13 unless score %mode game matches 21 unless score %mode game matches 26 unless score %mode game matches 27 unless score %mode game matches 420 run gamerule showDeathMessages false
-execute unless score #exploding stats matches 1 if score %mode game matches 13 run gamerule showDeathMessages true
-execute unless score #exploding stats matches 1 if score %mode game matches 21 run gamerule showDeathMessages true
-execute unless score #exploding stats matches 1 if score %mode game matches 26 run gamerule showDeathMessages true
-execute unless score #exploding stats matches 1 if score %mode game matches 27 run gamerule showDeathMessages true
-execute unless score #exploding stats matches 1 if score %mode game matches 420 run gamerule showDeathMessages true
+execute unless score %mode game matches 13 unless score %mode game matches 21 unless score %mode game matches 26 unless score %mode game matches 27 unless score %mode game matches 420 run gamerule show_death_messages false
+execute unless score #exploding stats matches 1 if score %mode game matches 13 run gamerule show_death_messages true
+execute unless score #exploding stats matches 1 if score %mode game matches 21 run gamerule show_death_messages true
+execute unless score #exploding stats matches 1 if score %mode game matches 26 run gamerule show_death_messages true
+execute unless score #exploding stats matches 1 if score %mode game matches 27 run gamerule show_death_messages true
+execute unless score #exploding stats matches 1 if score %mode game matches 420 run gamerule show_death_messages true
 execute if score %mode game matches 24 run team modify global collisionRule never
 execute if score .boss_setup game matches 1 run team modify global collisionRule never
 execute unless score %mode game matches 24 unless score .boss_setup game matches 1 run team modify global collisionRule always
@@ -112,11 +112,11 @@ effect give @a[predicate=cc:portal1] blindness 2 0 true
 effect give @a[predicate=cc:portal2] blindness 2 0 true
 #effect give @a[predicate=cc:portal3] blindness 2 0 true
 effect give @a[predicate=cc:portal3] resistance 2 255 true
-execute store result score #advancement game run gamerule announceAdvancements
-gamerule announceAdvancements true
+execute store result score #advancement game run gamerule show_advancement_messages
+gamerule show_advancement_messages true
 advancement grant @a[predicate=cc:portal1_trigger] only cc:portal
 advancement grant @a[predicate=cc:portal2_trigger] only cc:portal
-execute if score #advancement game matches 0 run gamerule announceAdvancements false
+execute if score #advancement game matches 0 run gamerule show_advancement_messages false
 execute as @a[predicate=cc:portal1_trigger] at @s run tp @s ~-51 ~ ~-33
 execute as @a[predicate=cc:portal2_trigger] at @s run tp @s ~51 ~ ~33
 execute as @a[predicate=cc:portal3_trigger] at @s run tp @s ~ ~71 ~

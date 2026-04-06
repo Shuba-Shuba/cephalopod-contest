@@ -16,7 +16,7 @@ scoreboard players set %choices button 5
 scoreboard players set condition.ded button 0
 scoreboard players set condition.press button 0
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 
 # choose map
 execute if score %map game matches 0 in cc:void run tp @a[tag=!out,tag=!button] 166 86 106

@@ -2,7 +2,7 @@
 function cc:camera_end
 kill @e[type=wolf]
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 
 # choose map
 execute if score %map game matches 0 in cc:void run tp @a[tag=!out] -215 119 1055 180 0

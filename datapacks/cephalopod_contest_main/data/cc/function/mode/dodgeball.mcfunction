@@ -8,7 +8,7 @@ execute store result bossbar cc:time max run scoreboard players get time.dodgeba
 execute store result bossbar cc:time value run scoreboard players get time.dodgeball config
 scoreboard players operation %second game = time.dodgeball config
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 
 # choose map
 scoreboard players set %team game 1

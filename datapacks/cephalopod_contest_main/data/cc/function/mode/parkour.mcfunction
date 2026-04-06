@@ -7,7 +7,7 @@ execute store result bossbar cc:time max run scoreboard players get time.glass_j
 execute store result bossbar cc:time value run scoreboard players get time.glass_jumps config
 scoreboard players operation %second game = time.glass_jumps config
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 
 # isolate jump markers
 tag @e[type=marker,tag=glass_jump] remove inverted

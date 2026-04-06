@@ -1,11 +1,11 @@
 # setup
 tag @s add this
-execute store result score #mobs stats run gamerule mobGriefing
-execute store result score #death_messages stats run gamerule showDeathMessages
+execute store result score #mobs stats run gamerule mob_griefing
+execute store result score #death_messages stats run gamerule show_death_messages
 execute store result score #difficulty stats run difficulty
 scoreboard players set #exploding stats 1
-gamerule mobGriefing false
-gamerule showDeathMessages false
+gamerule mob_griefing false
+gamerule show_death_messages false
 difficulty easy
 
 # record killer player

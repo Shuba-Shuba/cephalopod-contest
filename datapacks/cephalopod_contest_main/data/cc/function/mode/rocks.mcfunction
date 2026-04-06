@@ -22,7 +22,7 @@ effect give @a[tag=!out,tag=!ded] slowness 3 255 true
 effect give @a[tag=!out,tag=!ded] jump_boost 3 128 true
 tag @a remove tmp_teleported
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 
 # setup platforms
 execute as @e[type=marker,tag=platform,tag=tmp_map] at @s run summon marker ~ ~ ~ {Tags:["tmp_rock"]}

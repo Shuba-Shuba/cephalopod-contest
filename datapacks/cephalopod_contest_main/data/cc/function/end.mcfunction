@@ -118,7 +118,7 @@ execute in cc:void run fill 1230 -64 -151 1406 0 -322 air replace #cc:placeable
 execute in cc:void run fill 950 -64 -200 1050 50 -300 air replace #cc:placeable
 tag @a remove tmp_dead
 scoreboard players reset @a death_time
-gamerule mobGriefing false
+gamerule mob_griefing false
 
 # talent show reset
 tag @a remove stage
@@ -212,7 +212,7 @@ execute in cc:void run place template minecraft:arena 939 135 667
 
 ## posthook
 # end game or start next round
-gamerule fallDamage true
+gamerule fall_damage true
 effect clear @a[tag=!out]
 scoreboard objectives setdisplay sidebar
 tag @a remove safe

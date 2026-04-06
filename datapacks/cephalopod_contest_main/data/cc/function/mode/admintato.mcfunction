@@ -9,7 +9,7 @@ scoreboard players operation %second game = time.admintato config
 
 # setup
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 
 # hunter biden
 tag @a remove hunter

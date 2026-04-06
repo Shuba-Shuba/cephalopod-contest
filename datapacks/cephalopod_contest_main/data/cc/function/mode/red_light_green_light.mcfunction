@@ -6,7 +6,7 @@ execute if score %map game matches 0 in cc:void run tp @a[tag=!out] -163 53 16 0
 
 # start round
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 scoreboard players set %mode game 4
 #tellraw @a "\nRed Light Green Light:\n\"Green go. Red stay.\" -Lego Island Man\n"
 execute store result bossbar cc:time max run scoreboard players get time.rlgl config

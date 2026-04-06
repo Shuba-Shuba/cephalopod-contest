@@ -8,7 +8,7 @@ execute store result bossbar cc:time value run scoreboard players get time.talen
 # setup
 scoreboard players set %mode game 20
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 
 # start game
 tag @a remove stage

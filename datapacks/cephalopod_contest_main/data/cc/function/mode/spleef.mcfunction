@@ -14,5 +14,5 @@ scoreboard players operation %second game = time.spleef config
 # spleef stuff
 scoreboard players set %mode game 17
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 execute in cc:void run function cc:spleef_start

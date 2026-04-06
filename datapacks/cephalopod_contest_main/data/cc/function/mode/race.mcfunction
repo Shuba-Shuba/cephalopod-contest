@@ -4,7 +4,7 @@ function cc:camera_end
 
 # start round
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 execute store result bossbar cc:time max run scoreboard players get time.race config
 execute store result bossbar cc:time value run scoreboard players get time.race config
 scoreboard players operation %second game = time.race config

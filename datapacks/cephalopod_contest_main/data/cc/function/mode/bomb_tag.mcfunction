@@ -14,7 +14,7 @@ execute if score %map game matches 5 in cc:void run spreadplayers 247 609 5 10 u
 execute if score %map game matches 6 in cc:void run spreadplayers 261 39 5 10 under 110 false @a[tag=!out]
 scoreboard players set rep.recording config 1
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
+gamerule fall_damage false
 
 # bomb stuff
 tag @a remove winner

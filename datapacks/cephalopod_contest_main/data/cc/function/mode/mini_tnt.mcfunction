@@ -11,8 +11,8 @@ scoreboard players set %second game 0
 clear @a[tag=!out]
 effect clear @a[tag=!out]
 effect give @a[tag=!out] resistance infinite 255 true
-gamerule fallDamage false
-gamerule mobGriefing true
+gamerule fall_damage false
+gamerule mob_griefing true
 scoreboard players set %mode game 24
 scoreboard players reset * lives
 scoreboard objectives setdisplay sidebar lives
