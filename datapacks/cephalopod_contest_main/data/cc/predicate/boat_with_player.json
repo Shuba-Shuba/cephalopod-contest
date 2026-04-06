@@ -2,7 +2,7 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "type": "#minecraft:boat",
+    "type": "minecraft:oak_chest_boat",
     "passenger": {
       "type": "minecraft:player"
     }

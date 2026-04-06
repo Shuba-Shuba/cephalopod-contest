@@ -15,12 +15,12 @@ execute if score %increment game matches -1 if score %second game matches 0 run 
 
 # nbk stuff
 effect give @a[tag=!out] resistance infinite 255 true
-kill @e[type=#minecraft:boat,predicate=!cc:boat_with_player]
+kill @e[type=minecraft:oak_chest_boat,predicate=!cc:boat_with_player]
 execute as @a[tag=!out,tag=!wait,tag=!ded,predicate=cc:is_riding_boat] at @s if block ~ ~-0.5 ~ netherite_block run function cc:lap
 execute as @a[tag=!out] at @s unless block ~ ~-0.5 ~ netherite_block run tag @s remove wait
 execute as @a[tag=!out] at @s if entity @e[type=armor_stand,tag=itembox,distance=..1,scores={itembox_cd=0}] run function cc:itembox
 scoreboard players remove @e[type=armor_stand,tag=itembox,scores={itembox_cd=1..}] itembox_cd 1
 item replace entity @e[type=armor_stand,tag=itembox,scores={itembox_cd=1}] armor.head with minecraft:player_head[profile="MHF_Question"]
 execute as @a[tag=!out,predicate=cc:item_in_offhand] at @s run function cc:item_use
-execute as @e[type=#minecraft:boat] run data merge entity @s {FallDistance:0.0f}
+execute as @e[type=minecraft:oak_chest_boat] run data merge entity @s {FallDistance:0.0f}
 execute as @a[tag=!out,tag=!ded,tag=!winner,predicate=!cc:is_riding_boat] at @s run function cc:jail_nbk
