@@ -9,6 +9,6 @@ item replace entity @s armor.legs with minecraft:leather_leggings[unbreakable={}
 item replace entity @s armor.feet with minecraft:leather_boots[unbreakable={}]
 give @s minecraft:wooden_sword[unbreakable={}]
 give @s minecraft:bow[unbreakable={}]
-give @s minecraft:tipped_arrow[custom_name='"Ender Arrow"',potion_contents={custom_effects:[{id:"minecraft:water_breathing",amplifier:33b,duration:2}]},hide_additional_tooltip={}] 3
+give @s minecraft:tipped_arrow[custom_name='"Ender Arrow"',potion_contents={custom_effects:[{id:"minecraft:water_breathing",amplifier:33b,duration:2}]},tooltip_display={hidden_components:["potion_contents"]}] 3
 give @s golden_apple
 item replace entity @s weapon.offhand with minecraft:cooked_beef 3
