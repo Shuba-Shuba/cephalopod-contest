@@ -1,6 +1,6 @@
 # prepare the player for kit
 scoreboard players set @s Kit_ID 30
-attribute @s minecraft:generic.max_health base set 16
+attribute @s minecraft:max_health base set 16
 tellraw @s "Now Using: Baseball Player"
 
 # give the player the kit contents

@@ -10,7 +10,7 @@ execute if score %players game matches ..1 in cc:void run tp @a[tag=!out] 0 69 0
 execute if score %players game matches ..1 run function cc:end
 
 # chungus stuff
-execute as @a[tag=!out] run attribute @s minecraft:generic.attack_speed base set 4
+execute as @a[tag=!out] run attribute @s minecraft:attack_speed base set 4
 gamemode survival @a[tag=!out,tag=!ded,gamemode=adventure]
 #execute unless score %arena game matches 1 run gamemode survival @a[tag=!out,tag=!ded,gamemode=adventure]
 #execute as @a[tag=!out,tag=!ded] if predicate cc:holding_unplaceable run item modify entity @s weapon.mainhand cc:placeable

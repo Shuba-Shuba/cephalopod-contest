@@ -1,4 +1,4 @@
-execute anchored eyes run summon creeper ^ ^ ^ {Team:"no_pvp",Tags:["tnt_eng","build"],Invulnerable:1b,DeathLootTable:"",Attributes:[{Name:"generic.follow_range",Base:0},{Name:"generic.movement_speed",Base:0}],powered:1b,Fuse:32767s}
+execute anchored eyes run summon creeper ^ ^ ^ {Team:"no_pvp",Tags:["tnt_eng","build"],Invulnerable:1b,DeathLootTable:"",Attributes:[{Name:"follow_range",Base:0},{Name:"movement_speed",Base:0}],powered:1b,Fuse:32767s}
 execute as @e[type=creeper,limit=1,sort=nearest,tag=build] run function shb:launch {"vel":"2"}
 scoreboard players set @e[type=creeper,limit=1,sort=nearest,tag=build] gardener_jump 10
 scoreboard players operation @e[type=creeper,limit=1,sort=nearest,tag=build] ownerUUID0 = @s UUID0

@@ -1,6 +1,6 @@
 # prepare the player for kit
 scoreboard players set @s Kit_ID 5
-attribute @s minecraft:generic.max_health base set 20
+attribute @s minecraft:max_health base set 20
 tellraw @s "Now Using: Kit Armor"
 
 # give the player the kit contents

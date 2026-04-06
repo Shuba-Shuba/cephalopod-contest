@@ -1,6 +1,6 @@
 # prepare the player for kit
 scoreboard players set @s Kit_ID 16
-attribute @s minecraft:generic.max_health base set 40
+attribute @s minecraft:max_health base set 40
 effect give @s minecraft:instant_health 80 255 true
 tellraw @s "Now Using: Kit PRO"
 

@@ -26,7 +26,7 @@ scoreboard players remove @a[scores={tp_cd=1..}] tp_cd 1
 
 # lobby
 #scoreboard players enable @a NightVision
-execute as @a store result score @s max_hp run attribute @s minecraft:generic.max_health get
+execute as @a store result score @s max_hp run attribute @s minecraft:max_health get
 #tag @a remove lobby
 #tag @a[x=21,y=22,z=38,dx=10,dy=4,dz=26] add lobby
 #tag @a[x=84,y=21,z=-80,dx=10,dy=5,dz=10] add lobby
@@ -36,7 +36,7 @@ execute as @a store result score @s max_hp run attribute @s minecraft:generic.ma
 #gamemode adventure @a[gamemode=survival]
 #execute as @a unless score @s Kit_ID matches 2..3 unless score @s Kit_ID matches 15 unless score @s Kit_ID matches 25 run clear @s trident
 execute if score %in game matches 1 if score %mode game matches 21 run clear @a glass_bottle
-#execute as @a run attribute @s minecraft:generic.attack_speed base set 69
+#execute as @a run attribute @s minecraft:attack_speed base set 69
 #scoreboard players add @a kit_cooldown 0
 #execute as @a if score @s kit_cooldown matches 1.. run scoreboard players remove @s kit_cooldown 1
 #spawnpoint @a 87 23 -76 0.0

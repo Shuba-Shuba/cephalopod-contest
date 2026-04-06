@@ -1,6 +1,6 @@
 # prepare the player for kit
 scoreboard players set @s Kit_ID 37
-attribute @s minecraft:generic.max_health base set 24
+attribute @s minecraft:max_health base set 24
 tellraw @s "Now Using: Big Knockback"
 
 # give the player the kit contents

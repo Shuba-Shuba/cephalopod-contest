@@ -1,3 +1,3 @@
 scoreboard players remove @s board_money 10
 tellraw @s "here's your shotgun. now get the fuck out\nnote - in case you didn't read the item description, this is only for parking lot fights"
-give @s minecraft:carrot_on_a_stick[item_model="shb:item/shotgun",attribute_modifiers={modifiers:[{operation:"add_value",type:"generic.attack_speed",amount:-1000000,slot:"mainhand",id:"no_melee"}],show_in_tooltip:0b},custom_name='{"text":"Shotgun","italic":false}']
+give @s minecraft:carrot_on_a_stick[item_model="shb:item/shotgun",attribute_modifiers={modifiers:[{operation:"add_value",type:"attack_speed",amount:-1000000,slot:"mainhand",id:"no_melee"}],show_in_tooltip:0b},custom_name='{"text":"Shotgun","italic":false}']
