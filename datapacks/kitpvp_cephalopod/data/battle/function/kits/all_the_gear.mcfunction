@@ -9,7 +9,7 @@ item replace entity @s armor.legs with minecraft:chainmail_leggings[unbreakable=
 item replace entity @s armor.feet with minecraft:chainmail_boots[unbreakable={}]
 give @s minecraft:stone_sword[unbreakable={}]
 give @s minecraft:bow[unbreakable={}]
-give @s minecraft:trident[damage=0,max_damage=8,enchantments={loyalty:1},attribute_modifiers={modifiers:[{operation:"add_value",type:"attack_damage",amount:1d,id:"melee"}],show_in_tooltip:1b},custom_name='{"text":"Trident (1 melee damage)","italic":false}']
+give @s minecraft:trident[damage=0,max_damage=8,enchantments={loyalty:1},attribute_modifiers=[{operation:"add_value",type:"attack_damage",amount:1d,id:"melee"}],custom_name='{"text":"Trident (1 melee damage)","italic":false}']
 give @s minecraft:stick[enchantments={knockback:1}]
 give @s minecraft:cooked_beef 64
 give @s arrow 4
