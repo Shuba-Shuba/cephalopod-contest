@@ -40,10 +40,10 @@ scoreboard players set %green_haste upgrade_bool 0
 scoreboard players set %yellow_haste upgrade_bool 0
 execute at @e[type=marker,tag=upgrade_forge] run data modify block ~ ~ ~ front_text.messages[2] set value '"Cost: 4 Diamonds"'
 execute at @e[type=marker,tag=upgrade_armor] run data modify block ~ ~ ~ front_text.messages[2] set value '"Cost: 5 Diamonds"'
-item replace entity @a[tag=!out,tag=!ded] armor.head with minecraft:leather_helmet[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @a[tag=!out,tag=!ded] armor.chest with minecraft:leather_chestplate[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @a[tag=!out,tag=!ded] armor.legs with minecraft:leather_leggings[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @a[tag=!out,tag=!ded] armor.feet with minecraft:leather_boots[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
+item replace entity @a[tag=!out,tag=!ded] armor.head with minecraft:leather_helmet[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @a[tag=!out,tag=!ded] armor.chest with minecraft:leather_chestplate[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @a[tag=!out,tag=!ded] armor.legs with minecraft:leather_leggings[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @a[tag=!out,tag=!ded] armor.feet with minecraft:leather_boots[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
 item replace entity @a[tag=!out,tag=!ded] hotbar.0 with minecraft:wooden_sword[unbreakable={},can_break={blocks:"#cc:placeable"}]
 scoreboard players set rep.recording config 1
 execute as @a[tag=!out,tag=!ded] run function cc:clear_enderchest

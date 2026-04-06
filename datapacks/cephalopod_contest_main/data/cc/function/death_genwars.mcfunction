@@ -19,16 +19,16 @@ scoreboard players set @a kills 0
 
 # inventory reset
 clear @s
-item replace entity @s armor.head with minecraft:leather_helmet[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @s armor.chest with minecraft:leather_chestplate[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @s[scores={armor_level=1}] armor.legs with minecraft:leather_leggings[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @s[scores={armor_level=1}] armor.feet with minecraft:leather_boots[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @s[scores={armor_level=2}] armor.legs with minecraft:chainmail_leggings[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @s[scores={armor_level=2}] armor.feet with minecraft:chainmail_boots[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @s[scores={armor_level=3}] armor.legs with minecraft:iron_leggings[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @s[scores={armor_level=3}] armor.feet with minecraft:iron_boots[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @s[scores={armor_level=4}] armor.legs with minecraft:diamond_leggings[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
-item replace entity @s[scores={armor_level=4}] armor.feet with minecraft:diamond_boots[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:0b}]
+item replace entity @s armor.head with minecraft:leather_helmet[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s armor.chest with minecraft:leather_chestplate[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s[scores={armor_level=1}] armor.legs with minecraft:leather_leggings[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s[scores={armor_level=1}] armor.feet with minecraft:leather_boots[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s[scores={armor_level=2}] armor.legs with minecraft:chainmail_leggings[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s[scores={armor_level=2}] armor.feet with minecraft:chainmail_boots[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s[scores={armor_level=3}] armor.legs with minecraft:iron_leggings[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s[scores={armor_level=3}] armor.feet with minecraft:iron_boots[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s[scores={armor_level=4}] armor.legs with minecraft:diamond_leggings[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s[scores={armor_level=4}] armor.feet with minecraft:diamond_boots[unbreakable={},enchantments={"minecraft:binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
 item modify entity @s armor.head cc:prot
 item modify entity @s armor.chest cc:prot
 item modify entity @s armor.legs cc:prot
