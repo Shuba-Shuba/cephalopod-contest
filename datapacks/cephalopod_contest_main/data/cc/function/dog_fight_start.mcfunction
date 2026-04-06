@@ -1,5 +1,5 @@
 tag @s add init
-summon wolf ~ ~ ~ {Tags:["init"],CustomNameVisible:1b,CustomName:'"null"',Attributes:[{Name:"movement_speed",Base:0.5d}]}
+summon wolf ~ ~ ~ {Tags:["init"],CustomNameVisible:1b,CustomName:'"null"',attributes:[{id:"movement_speed",base:0.5d}]}
 #data modify entity @e[type=wolf,limit=1,tag=init] Owner set from entity @s UUID
 execute store result score @e[type=wolf,limit=1,tag=init] ownerUUID0 run data get entity @s UUID[0]
 execute store result score @e[type=wolf,limit=1,tag=init] ownerUUID1 run data get entity @s UUID[1]
