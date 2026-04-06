@@ -1,7 +1,7 @@
 {
     "values": [
         "#minecraft:impact_projectiles",
-        "minecraft:potion",
+        "minecraft:splash_potion",
         "minecraft:tnt",
         "minecraft:creeper"
     ]
