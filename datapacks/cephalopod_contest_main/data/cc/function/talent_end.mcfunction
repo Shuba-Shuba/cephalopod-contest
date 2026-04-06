@@ -14,8 +14,8 @@ scoreboard players operation %second game = time.talent config
 scoreboard players set @a talent_vote 0
 tellraw @a ["Now on stage: ",{"selector":"@a[tag=stage]"},{"text":"\n[Downvote]","color":"red","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger talent_vote set -1"},"hoverEvent":{"action":"show_text","value":"-1"}}," ",{"text":"[Unvote]","color":"yellow","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger talent_vote set 0"},"hoverEvent":{"action":"show_text","value":"0"}}," ",{"text":"[Upvote]","color":"green","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger talent_vote set 1"},"hoverEvent":{"action":"show_text","value":"+1"}}]
 place template minecraft:stage 576 81 502
-give @a[tag=stage] minecraft:netherite_pickaxe[unbreakable={},can_break={predicates:[{blocks:"#cc:all"}]},enchantments={efficiency:255}]
-give @a[tag=stage] minecraft:netherite_axe[unbreakable={},can_break={predicates:[{blocks:"#cc:all"}]},enchantments={efficiency:255}]
-give @a[tag=stage] minecraft:netherite_shovel[unbreakable={},can_break={predicates:[{blocks:"#cc:all"}]},enchantments={efficiency:255}]
-give @a[tag=stage] minecraft:netherite_hoe[unbreakable={},can_break={predicates:[{blocks:"#cc:all"}]},enchantments={efficiency:255}]
+give @a[tag=stage] minecraft:netherite_pickaxe[unbreakable={},can_break={blocks:"#cc:all"},tooltip_display={hidden_components:["can_break"]},enchantments={efficiency:255}]
+give @a[tag=stage] minecraft:netherite_axe[unbreakable={},can_break={blocks:"#cc:all"},tooltip_display={hidden_components:["can_break"]},enchantments={efficiency:255}]
+give @a[tag=stage] minecraft:netherite_shovel[unbreakable={},can_break={blocks:"#cc:all"},tooltip_display={hidden_components:["can_break"]},enchantments={efficiency:255}]
+give @a[tag=stage] minecraft:netherite_hoe[unbreakable={},can_break={blocks:"#cc:all"},tooltip_display={hidden_components:["can_break"]},enchantments={efficiency:255}]
 loot give @a[tag=stage] loot cc:improv
