@@ -68,8 +68,6 @@ execute if score @s placeholder matches 1 run function shb:give/carrot/sniper_ba
 # xp timers
 execute as @s[scores={Kit_ID=7}] run function xp:demolitionist
 execute as @s[scores={Kit_ID=27}] run function xp:gravity
-execute as @s[scores={Kit_ID=25}] run function xp:copycat
-#execute as @s[scores={Kit_ID=24}] run function xp:rpg_full
 execute as @s[scores={Kit_ID=32}] run function xp:teleporter
 execute as @s[scores={Kit_ID=36}] run function xp:trump
 execute as @s[scores={Kit_ID=39}] run function xp:engineer_lean
