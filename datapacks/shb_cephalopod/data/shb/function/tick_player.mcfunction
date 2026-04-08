@@ -7,7 +7,7 @@ execute if entity @s[advancements={shb:killed_by_bomb=true}] run function shb:ki
 
 ### [CEPHALOPOD CONTEST] offhand carrot stick check
 execute if score @s offhand_carrot matches 1 unless predicate shb:carrot_stick_in_offhand run function shb:offhand_correct
-execute if score @s offhand_carrot matches 1 store result score #tmp offhand_carrot run clear @s carrot_on_a_stick[item_model="shb:item/invisible"] 0
+execute if score @s offhand_carrot matches 1 store result score #tmp offhand_carrot run clear @s carrot_on_a_stick[item_model="shb:invisible"] 0
 execute if score @s offhand_carrot matches 1 if score #tmp offhand_carrot matches 2.. run function shb:offhand_correct
 
 ### load nbt

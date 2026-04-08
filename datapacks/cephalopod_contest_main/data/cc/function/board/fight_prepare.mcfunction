@@ -4,7 +4,7 @@ scoreboard players reset item.bat game
 scoreboard players reset item.shotgun game
 scoreboard players reset item.backstab game
 execute store result score item.bat game run clear @s wooden_sword[item_model="cc:item/bat"] 1
-execute store result score item.shotgun game run clear @s carrot_on_a_stick[item_model="shb:item/shotgun"] 1
+execute store result score item.shotgun game run clear @s carrot_on_a_stick[item_model="shb:shotgun"] 1
 execute store result score item.backstab game run clear @s iron_sword[item_model="cc:item/dagger"] 1
 
 # save and clear inventory

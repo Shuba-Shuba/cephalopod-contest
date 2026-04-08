@@ -1,4 +1,4 @@
-data modify block 0 -64 0 Items append value {Slot:0b,id:"minecraft:ender_eye",count:1b,components:{"minecraft:attribute_modifiers":[{type:"attack_speed",slot:"mainhand",id:"attack_speed",amount:-1000000,operation:"add_value"}],"minecraft:tooltip_display":{hidden_components:["attribute_modifiers"]},"minecraft:item_model":"shb:item/burst_rifle","minecraft:custom_data":{shb:1b}}}
+data modify block 0 -64 0 Items append value {Slot:0b,id:"minecraft:ender_eye",count:1b,components:{"minecraft:attribute_modifiers":[{type:"attack_speed",slot:"mainhand",id:"attack_speed",amount:-1000000,operation:"add_value"}],"minecraft:tooltip_display":{hidden_components:["attribute_modifiers"]},"minecraft:item_model":"shb:burst_rifle","minecraft:custom_data":{shb:1b}}}
 
 data modify storage shb:gun stats set value {id:0,cd:16,autodelay:2,autofire:2,drawtime:16,semiauto:0,ammo:{count:18,type:1b},reload:{time:4,per:1,mag:18},sfx:{shoot:1,reload:1},name:{text:"Burst Rifle",italic:false},range:400,dmg:7,falloff:{buffer:60,divisor:2}}
 execute store result storage shb:gun stats.id int 1 run scoreboard players add #gun-id stats 1
