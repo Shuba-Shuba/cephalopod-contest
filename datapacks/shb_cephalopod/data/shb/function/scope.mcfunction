@@ -1,5 +1,4 @@
-data modify storage shb:scope model set string entity @s SelectedItem.components.minecraft:item_model 9
-function shb:scope_macro with storage shb:scope
+item modify entity @s weapon.mainhand shb:scope
 scoreboard players set @s scope 1
 
 #execute unless predicate shb:swift_sneak run clear @s chainmail_leggings[custom_data={shb:1b}]
