@@ -8,7 +8,8 @@
           "nbt": "stats.dmg",
           "storage": "shb:gun",
           "color": "white",
-          "italic": false
+          "italic": false,
+          "plain": true
         },
         {
           "text"  : " damage"
@@ -44,14 +45,16 @@
       },
       {
         "nbt": "stats.ammo.count",
-        "storage": "shb:gun"
+        "storage": "shb:gun",
+        "plain": true
       },
       {
         "text": "/"
       },
       {
         "nbt": "stats.reload.mag",
-        "storage": "shb:gun"
+        "storage": "shb:gun",
+        "plain": true
       }
     ]
   },
@@ -68,5 +71,13 @@
         "op": "replace"
       }
     ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 2000,
+      "minecraft:max_stack_size": 1,
+      "minecraft:damage": 0
+    }
   }
 ]
