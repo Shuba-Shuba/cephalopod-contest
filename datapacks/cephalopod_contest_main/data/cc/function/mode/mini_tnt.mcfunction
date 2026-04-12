@@ -81,7 +81,7 @@ item replace entity @a[scores={class=2}] hotbar.4 with minecraft:golden_pickaxe[
 
 # architect
 item replace entity @a[scores={class=3}] hotbar.0 with minecraft:crossbow[custom_name={text:"Crystal Crafter",italic:false},enchantments={quick_charge:2}]
-item replace entity @a[scores={class=3}] hotbar.1 with minecraft:bow[custom_name={text:"Triangulator",italic:false},item_model="cc:item/holy_bow",damage=383,enchantments={infinity:1}]
+item replace entity @a[scores={class=3}] hotbar.1 with minecraft:bow[custom_name={text:"Triangulator",italic:false},item_model="cc:holy_bow",damage=383,enchantments={infinity:1}]
 item replace entity @a[scores={class=3}] hotbar.2 with minecraft:silence_armor_trim_smithing_template[custom_name={text:"Cloak",italic:false},custom_data={tnt:17b}]
 #item replace entity @a[scores={class=3}] hotbar.2 with minecraft:echo_shard[custom_name={text:"Dagger",italic:false},custom_data={tnt:16b}]
 item replace entity @a[scores={class=3}] hotbar.3 with minecraft:eye_armor_trim_smithing_template[custom_name={text:"Decrystalize",italic:false},custom_data={tnt:15b}]

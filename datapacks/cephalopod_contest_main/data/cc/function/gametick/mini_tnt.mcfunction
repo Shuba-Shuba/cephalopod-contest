@@ -158,7 +158,7 @@ scoreboard players remove @a[scores={build_creeper_cd=1..}] build_creeper_cd 1
 execute as @a[advancements={cc:shoot_triangulator=true}] at @s run function cc:shoot_triangulator
 execute as @e[type=arrow,tag=init_triangulator,nbt={LeftOwner:1b}] run data modify entity @s Owner set value [I;0,0,0,0]
 execute as @e[type=arrow,tag=init_triangulator,nbt={LeftOwner:1b}] run tag @s remove init_triangulator
-item replace entity @a[scores={triangulator_cd=1}] hotbar.1 with minecraft:bow[custom_name={text:"Triangulator",italic:false},item_model="cc:item/holy_bow",damage=383,enchantments={"minecraft:infinity":1}]
+item replace entity @a[scores={triangulator_cd=1}] hotbar.1 with minecraft:bow[custom_name={text:"Triangulator",italic:false},item_model="cc:holy_bow",damage=383,enchantments={"minecraft:infinity":1}]
 scoreboard players remove @a[scores={triangulator_cd=1..}] triangulator_cd 1
 item replace entity @a[scores={class=3,arrow_count=0},nbt={SelectedItemSlot:1}] container.35 with arrow
 item replace entity @a[scores={class=3},nbt=!{SelectedItemSlot:1,SelectedItem:{id:"minecraft:bow"}}] container.35 with air

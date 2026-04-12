@@ -210,7 +210,7 @@ scoreboard players set @a evoker_click 0
 scoreboard players remove @a[scores={evoker_cd=1..}] evoker_cd 1
 
 # throwable fireball
-execute as @a[scores={fireball_click=1..},nbt={SelectedItem:{components:{"minecraft:item_model":"minecraft:item/fire_charge"}}}] at @s run function cc:fireball
+execute as @a[scores={fireball_click=1..},nbt={SelectedItem:{components:{"minecraft:item_model":"minecraft:fire_charge"}}}] at @s run function cc:fireball
 scoreboard players set @a fireball_click 0
 execute as @e[type=fireball,tag=fireball,tag=save] run function cc:motion_fix
 scoreboard players add @e[type=fireball,tag=fireball,tag=save] life 1

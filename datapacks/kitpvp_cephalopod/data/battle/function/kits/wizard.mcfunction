@@ -7,7 +7,7 @@ give @s minecraft:tipped_arrow[custom_name="Lightning Arrow",lore=["Smites all p
 #give @s minecraft:tipped_arrow[custom_name="Blindness Arrow",lore=["Blinds all players within 5.5 blocks upon impact"],potion_contents={custom_color:8650951,custom_effects:[{id:"minecraft:water_breathing",amplifier:34b,duration:2}]}] 4
 give @s minecraft:tipped_arrow[custom_name="TNT Arrow",lore=["Explodes upon impact"],potion_contents={custom_color:16711680,custom_effects:[{id:"minecraft:water_breathing",amplifier:30b,duration:2}]},tooltip_display={hidden_components:["potion_contents"]}] 2
 give @s minecraft:wooden_sword[unbreakable={}]
-give @s minecraft:bow[unbreakable={},item_model="cc:item/holy_bow"]
+give @s minecraft:bow[unbreakable={},item_model="cc:holy_bow"]
 #give @s minecraft:carrot_on_a_stick[custom_model_data=11008,custom_name={text:"Poison Ball",italic:false},lore=[{text:"Short Range",color:"white",italic:false},{text:"Slow Fire Rate",color:"white",italic:false},{text:"Delivers Poison II Upon Impact",color:"gray",italic:true},{text:"6 Magic Damage",color:"white",italic:false}],custom_data={DamageRPG:6}]
 execute at @s run summon item ~ ~ ~ {Item:{id:"splash_potion",count:3,components:{"minecraft:potion_contents":{potion:"strong_poison"},"minecraft:tooltip_display":{hidden_components:["potion_contents"]}}}}
 give @s cooked_beef 64
