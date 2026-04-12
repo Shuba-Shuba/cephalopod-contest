@@ -13,8 +13,9 @@ playsound minecraft:custom.bensound_full record @a[tag=!out] 0 201 0 1 1 1
 
 # armor stand
 kill @e[type=mannequin,tag=end_screen]
+kill @e[type=marker,tag=end_screen_mannequin_bug_workaround]
 execute if score %winners game matches 2.. in cc:void as @a[tag=winner] run function cc:end_screen_stack
-execute if score %winners game matches 1 in cc:void run summon mannequin 0 200 0 {Rotation:[45f,0f],Tags:["end_screen"],NoGravity:true}
+execute if score %winners game matches 1 in cc:void run summon mannequin 0 200 0 {Rotation:[45f,0f],Tags:["end_screen"],immovable:true}
 execute if score %winners game matches 1 as @a[tag=winner] run data modify entity @n[type=mannequin,tag=end_screen] profile.id set from entity @s UUID
 execute if score %winners game matches 1.. in cc:void run setblock 0 200 0 air
 execute if score %winners game matches 0 in cc:void run setblock 0 200 0 birch_sign[rotation=2]{front_text:{messages:["",{text:"Unexpected item"},{text:"in bagging area"},""]}}
