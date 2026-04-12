@@ -6,5 +6,5 @@ function cc:board/init_player_marker
 function cc:board/add_name_to_list
 
 # announce
-tellraw @a ["Added ",{"selector":"@s"}," to the board"]
+tellraw @a ["Added ",{selector:"@s"}," to the board"]
 tellraw @s ["You've been added to board game mode. "]

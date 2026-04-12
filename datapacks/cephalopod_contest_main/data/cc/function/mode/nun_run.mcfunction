@@ -47,7 +47,7 @@ tag @r[tag=!out,tag=!ded] add nun
 team join nun @a[tag=nun]
 execute in cc:void if score %map game matches 0 run tp @a[tag=nun] -154.0 83 690.0
 execute in cc:void if score %map game matches 1 run tp @a[tag=nun] -683.0 110 809.0 0 0
-tellraw @a [{"selector":"@a[tag=nun]",color:"red"}," is the nun"]
+tellraw @a [{selector:"@a[tag=nun]",color:"red"}," is the nun"]
 scoreboard players set @a[tag=nun] ability 0
 scoreboard players set @a[tag=nun] offhand_carrot 1
 schedule function cc:nun_spawn_start 10s

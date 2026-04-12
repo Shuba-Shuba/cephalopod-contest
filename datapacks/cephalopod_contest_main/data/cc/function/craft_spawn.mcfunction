@@ -1,7 +1,7 @@
 # generate area
 place template cc:craft ~ ~ ~
 tag @s remove tmp_unteleported
-tellraw @a ["[DEBUG] created crafting area for ",{"selector":"@s"}]
+tellraw @a ["[DEBUG] created crafting area for ",{selector:"@s"}]
 
 # other
 scoreboard players add .s craft_index 1
@@ -28,7 +28,7 @@ tag @e[type=marker,tag=shelf] remove shelf5_red
 tag @e[type=marker,tag=shelf] remove shelf6_red
 
 # tp
-execute if entity @e[type=marker,limit=1,tag=tmp_craft_tp] run tellraw @a ["[DEBUG] found tp point for ",{"selector":"@s"}]
+execute if entity @e[type=marker,limit=1,tag=tmp_craft_tp] run tellraw @a ["[DEBUG] found tp point for ",{selector:"@s"}]
 execute positioned as @e[type=marker,tag=tmp_craft_tp,limit=1] run tp @s ~ ~ ~ 90 0
 execute positioned as @e[type=marker,tag=tmp_craft_tp,limit=1] run scoreboard players operation @e[tag=craft_storage,limit=1,sort=nearest] craft_index = @s craft_index
 kill @e[type=marker,tag=tmp_craft_tp]

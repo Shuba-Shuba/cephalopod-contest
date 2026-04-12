@@ -6,10 +6,10 @@ execute if score %tick game matches 20.. run function cc:clock_sec
 
 # quick blocks stuff
 execute as @a[gamemode=adventure] at @s if block ~ ~-1 ~ barrier run function cc:landed_no_kb
-execute at @e[type=marker,tag=tmp_blocks_copy] unless blocks ~ ~ ~ ~ ~2 ~2 200 164 1023 masked run tellraw @a ["LOL! ",{"selector":"@p[distance=..8,tag=!out,tag=!ded]"}," fucked the pattern up! :cold_face: :rofl: :sweating:"]
+execute at @e[type=marker,tag=tmp_blocks_copy] unless blocks ~ ~ ~ ~ ~2 ~2 200 164 1023 masked run tellraw @a ["LOL! ",{selector:"@p[distance=..8,tag=!out,tag=!ded]"}," fucked the pattern up! :cold_face: :rofl: :sweating:"]
 execute at @e[type=marker,tag=tmp_blocks_copy] unless blocks ~ ~ ~ ~ ~2 ~2 200 164 1023 masked as @p[distance=..8,tag=!out,tag=!ded] run function cc:blocks_fall
 execute at @e[type=marker,tag=tmp_blocks_copy] unless blocks ~ ~ ~ ~ ~2 ~2 200 164 1023 masked run fill ~ ~ ~ ~ ~2 ~2 air
-execute at @e[type=marker,tag=tmp_blocks_copy] if blocks ~ ~ ~ ~ ~2 ~2 200 164 1023 all run tellraw @a [{"selector":"@p[distance=..8,tag=!out,tag=!ded,tag=!winner]"}," has finished."]
+execute at @e[type=marker,tag=tmp_blocks_copy] if blocks ~ ~ ~ ~ ~2 ~2 200 164 1023 all run tellraw @a [{selector:"@p[distance=..8,tag=!out,tag=!ded,tag=!winner]"}," has finished."]
 execute at @e[type=marker,tag=tmp_blocks_copy] if blocks ~ ~ ~ ~ ~2 ~2 200 164 1023 all run tag @p[distance=..8,tag=!out,tag=!ded,tag=!winner] add winner
 execute at @e[type=marker,tag=tmp_blocks_copy] if blocks ~ ~ ~ ~ ~2 ~2 200 164 1023 all run scoreboard players remove %second game 10
 execute at @e[type=marker,tag=tmp_blocks_copy] if blocks ~ ~ ~ ~ ~2 ~2 200 164 1023 all run fill ~ ~ ~ ~ ~2 ~2 air

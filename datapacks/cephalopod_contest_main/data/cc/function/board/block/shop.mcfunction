@@ -2,7 +2,7 @@
 # wait for player's choice
 function cc:board/await_start {time:10}
 scoreboard players enable @s board_shop
-tellraw @a ["",{"selector":"@s"}," be shopping"]
+tellraw @a ["",{selector:"@s"}," be shopping"]
 
 # shop UI
 tellraw @s "buy something fucker"

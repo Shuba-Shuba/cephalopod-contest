@@ -13,9 +13,9 @@ tag @a[tag=!winner,tag=!ded,tag=!out] add ded
 
 # announce winner(s)
 execute store result score %winners game if entity @a[tag=winner]
-execute if score cc.one config matches 0 if score %winners game matches 2.. run tellraw @a [{"selector":"@a[tag=winner]",color:"aqua"}," will go to the next round. Players will be teleported in 5 seconds."]
-execute if score cc.one config matches 1 if score %winners game matches 2.. run tellraw @a [{"selector":"@a[tag=winner]",color:"green"}," have won the game!"]
-execute if score %winners game matches 1 run tellraw @a [{"selector":"@a[tag=winner,limit=1]",color:"green"}," has won the game!"]
+execute if score cc.one config matches 0 if score %winners game matches 2.. run tellraw @a [{selector:"@a[tag=winner]",color:"aqua"}," will go to the next round. Players will be teleported in 5 seconds."]
+execute if score cc.one config matches 1 if score %winners game matches 2.. run tellraw @a [{selector:"@a[tag=winner]",color:"green"}," have won the game!"]
+execute if score %winners game matches 1 run tellraw @a [{selector:"@a[tag=winner,limit=1]",color:"green"}," has won the game!"]
 # PRESIDENT'S DAY IN MAY EVENT
 execute if score cc.one config matches 0 if score %winners game matches 1 run scoreboard players add @a[tag=winner,limit=1] event_money 1
 execute if score cc.one config matches 1 if score %winners game matches 1.. run scoreboard players add @a[tag=winner] event_money 1
@@ -35,8 +35,8 @@ execute if score %board game matches 1 run scoreboard players operation #floor c
 execute if score %board game matches 1 run scoreboard players operation #floor calc /= 100 calc
 execute if score %board game matches 1 run scoreboard players operation #dec calc %= 100 calc
 execute if score %board game matches 1 run scoreboard players operation @a[tag=winner] board_rewards += #tmp calc
-execute if score %board game matches 1 if score #dec calc matches 10.. if entity @a[tag=winner] run tellraw @a [{"selector":"@a[tag=winner]",color:"green"}," earned +$",{score:{name:"#floor",objective:"calc"}},".",{score:{name:"#dec",objective:"calc"}}]
-execute if score %board game matches 1 if score #dec calc matches ..9 if entity @a[tag=winner] run tellraw @a [{"selector":"@a[tag=winner]",color:"green"}," earned +$",{score:{name:"#floor",objective:"calc"}},".0",{score:{name:"#dec",objective:"calc"}}]
+execute if score %board game matches 1 if score #dec calc matches 10.. if entity @a[tag=winner] run tellraw @a [{selector:"@a[tag=winner]",color:"green"}," earned +$",{score:{name:"#floor",objective:"calc"}},".",{score:{name:"#dec",objective:"calc"}}]
+execute if score %board game matches 1 if score #dec calc matches ..9 if entity @a[tag=winner] run tellraw @a [{selector:"@a[tag=winner]",color:"green"}," earned +$",{score:{name:"#floor",objective:"calc"}},".0",{score:{name:"#dec",objective:"calc"}}]
 
 # schedule reset
 schedule clear cc:mode/lights_out

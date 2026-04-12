@@ -1,6 +1,6 @@
 # winner
 tag @a[tag=sumo] add winner
-tellraw @a [{"selector":"@a[tag=sumo]"}," is safe."]
+tellraw @a [{selector:"@a[tag=sumo]"}," is safe."]
 execute if score %map game matches 0 run tp @a[tag=sumo] -241 118 993 180 0
 tag @a[tag=winner] remove sumo
 

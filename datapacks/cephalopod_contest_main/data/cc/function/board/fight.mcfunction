@@ -1,7 +1,7 @@
 # @s = player who most recently landed on the occupied space
 # stop ending turn because it's fight time
 schedule clear cc:board/end_turn
-tellraw @a ["[FIGHT ALERT] ",{"selector":"@s"}," landed on a space occupied by someone else! TIME TO FIGHT!"]
+tellraw @a ["[FIGHT ALERT] ",{selector:"@s"}," landed on a space occupied by someone else! TIME TO FIGHT!"]
 
 # teleport all players who landed on this space back here
 execute as @e[type=marker,tag=board_player,distance=..1] at @a[tag=!out] if score @p board_turn = @s board_turn run tag @p add fight

@@ -21,7 +21,7 @@ execute if score %winners game matches 0 in cc:void run setblock 0 200 0 birch_s
 
 # titles
 execute if score %winners game matches 2.. run title @a[tag=!out] title [{score:{name:"%winners",objective:"game"},color:"green"}," people"]
-execute if score %winners game matches 1 run title @a[tag=!out] title [{"selector":"@a[tag=winner,limit=1]"}]
+execute if score %winners game matches 1 run title @a[tag=!out] title [{selector:"@a[tag=winner,limit=1]"}]
 execute if score %winners game matches 0 run title @a[tag=!out] title "Fucking nobody"
 execute if score %winners game matches 0..1 run title @a[tag=!out] subtitle "has won the game!"
 execute if score %winners game matches 2.. run title @a[tag=!out] subtitle "have won the game!"

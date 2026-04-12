@@ -1,1 +1,1 @@
-tellraw @a ["<",{"selector":"@s"},"> bro i got the bad space"]
+tellraw @a ["<",{selector:"@s"},"> bro i got the bad space"]

@@ -13,7 +13,7 @@ execute unless score %replay game matches 1.. if score %second game matches ..0 
 execute if score %replay game matches 2 run function cc:end
 
 # nun run stuff
-execute as @a[tag=!out,tag=!winner,tag=!ded] if score @s prayers >= #win prayers run tellraw @a [{"selector":"@s",color:"aqua"}," is safe."]
+execute as @a[tag=!out,tag=!winner,tag=!ded] if score @s prayers >= #win prayers run tellraw @a [{selector:"@s",color:"aqua"}," is safe."]
 execute as @a[tag=!out,tag=!winner,tag=!ded] if score @s prayers >= #win prayers run tag @s add winner
 gamemode spectator @a[tag=winner,team=global,tag=!out,tag=!nun]
 kill @a[tag=!out,predicate=cc:trap1]

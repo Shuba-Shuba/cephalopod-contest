@@ -1,6 +1,6 @@
 # called when the player we're waiting for takes too long to choose something, this makes a default choice on their behalf
 # @s = player about to lose their autonomy
-tellraw @a ["",{"selector":"@s"}," lost their autonomy becasue they took too long!"]
+tellraw @a ["",{selector:"@s"}," lost their autonomy becasue they took too long!"]
 execute as @a at @s run playsound block.beacon.deactivate master @s ~ ~ ~ 1 2
 
 # start - roll dice

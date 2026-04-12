@@ -14,7 +14,7 @@ execute as @p[tag=copy] if items entity @s weapon.mainhand book run tag @s add c
 
 # copy item if possible, or do no_copy function if not possible
 item replace entity @s hotbar.0 from entity @p[tag=copy,tag=!copy_ar,tag=!copy_rocket,tag=!copy_crafting,tag=!copy_anvil,tag=!copy_beacon,tag=!copy_book] weapon.mainhand
-execute if entity @p[tag=copy] unless score @s gravity matches 2 run title @s actionbar ["Copied selected item from ",{"selector":"@p[tag=copy]"}]
+execute if entity @p[tag=copy] unless score @s gravity matches 2 run title @s actionbar ["Copied selected item from ",{selector:"@p[tag=copy]"}]
 execute unless entity @p[tag=copy] run function battle:copycat/no_copy
 
 # replace certain items

@@ -1,5 +1,5 @@
 # tellraw BEFORE adding because armor_level score is 1 higher than prot level
-tellraw @a[team=blue] ["",{"selector":"@s"}," purchased permanent protection ",{score:{name:"%blue",objective:"armor_level"}}," upgrade"]
+tellraw @a[team=blue] ["",{selector:"@s"}," purchased permanent protection ",{score:{name:"%blue",objective:"armor_level"}}," upgrade"]
 scoreboard players add %blue armor_level 1
 execute if score %blue armor_level matches 2 run clear @s diamond 5
 execute if score %blue armor_level matches 2 run scoreboard players set %blue armor_check 10

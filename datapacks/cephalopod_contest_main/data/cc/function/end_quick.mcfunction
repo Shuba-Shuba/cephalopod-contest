@@ -5,4 +5,4 @@ function cc:end
 schedule clear cc:end_screen_schedule
 schedule clear cc:lobby
 function cc:lobby
-tellraw @a [{"selector":"@s"}," ended the game instantly"]
+tellraw @a [{selector:"@s"}," ended the game instantly"]

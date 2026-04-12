@@ -6,4 +6,4 @@ tag @e[type=oak_chest_boat] remove jail_saver
 # humiliate player
 title @s title "YOU ARE FOOLISH"
 title @s subtitle "DO NOT EXIT THE BOAT"
-tellraw @a ["@everyone ",{"selector":"@s"}," is extremely STUPID and LEFT THE BOAT"]
+tellraw @a ["@everyone ",{selector:"@s"}," is extremely STUPID and LEFT THE BOAT"]

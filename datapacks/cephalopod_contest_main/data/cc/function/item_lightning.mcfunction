@@ -4,4 +4,4 @@ fill ~3 ~ ~3 ~3 ~ ~-3 glass keep
 fill ~3 ~ ~3 ~-3 ~ ~3 glass keep
 fill ~-3 ~ ~-3 ~-3 ~ ~3 glass keep
 fill ~-3 ~ ~-3 ~3 ~ ~-3 glass keep
-tellraw @s ["",{"selector":"@a[tag=this]"}," struck everyone with lightning"]
+tellraw @s ["",{selector:"@a[tag=this]"}," struck everyone with lightning"]

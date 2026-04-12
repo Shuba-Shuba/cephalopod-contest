@@ -4,7 +4,7 @@ clear @a[tag=!out]
 
 # winner
 tag @a[tag=skywars] add winner
-tellraw @a [{"selector":"@a[tag=skywars]"}," is safe."]
+tellraw @a [{selector:"@a[tag=skywars]"}," is safe."]
 execute if score %map game matches 0 run tp @a[tag=skywars] 977 71.5 264 -90 0
 tag @a remove skywars
 

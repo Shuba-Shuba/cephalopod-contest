@@ -1,4 +1,4 @@
-tellraw @a ["Current match: ",{"selector":"@a[tag=sumo]","separator":" vs "},"\nOn deck: ",{"selector":"@a[tag=on_deck]"}]
+tellraw @a ["Current match: ",{selector:"@a[tag=sumo]","separator":" vs "},"\nOn deck: ",{selector:"@a[tag=on_deck]"}]
 execute if score %map game matches 0 run tp @a[tag=sumo] -215 116 1034
 execute if score %map game matches 1 run tp @a[tag=sumo] -215 116 1152
 execute if score sumo_hazards.enabled config matches ..-1 run scoreboard players set sumo_hazards.enabled config 0

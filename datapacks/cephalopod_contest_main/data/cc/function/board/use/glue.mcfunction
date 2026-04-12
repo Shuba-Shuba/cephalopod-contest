@@ -1,4 +1,4 @@
-tellraw @a ["",{"selector":"@s"}," placed a glue trap"]
+tellraw @a ["",{selector:"@s"}," placed a glue trap"]
 clear @s orange_dye[custom_data={board:200}] 1
 function cc:board/await_start {time:10}
 

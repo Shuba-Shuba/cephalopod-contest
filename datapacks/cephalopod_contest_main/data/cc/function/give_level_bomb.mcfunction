@@ -17,4 +17,4 @@
 item replace entity @s hotbar.2 with minecraft:creeper_spawn_egg[can_place_on={blocks:"#cc:all"},entity_data={id:"minecraft:marker",Tags:["bomb_level_init"],data:{level:0}},custom_name={text:"Creeper Bomb",italic:false},custom_data={tnt:2b}]
 
 # tell spectators
-tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Creeper Bomb"]
+tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Creeper Bomb"]

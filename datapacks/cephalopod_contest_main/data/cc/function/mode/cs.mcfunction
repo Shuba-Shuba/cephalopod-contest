@@ -21,7 +21,7 @@ item replace entity @a[team=blue] armor.feet with minecraft:leather_boots[unbrea
 effect give @a[tag=!out,tag=!ded] regeneration infinite 0 true
 tag @r[team=blue] add tmp_bomb
 give @a[tag=tmp_bomb] minecraft:tnt[can_place_on={blocks:"minecraft:ochre_froglight"}]
-tellraw @a[team=blue] [{"selector":"@a[tag=tmp_bomb]"}," has the bomb"]
+tellraw @a[team=blue] [{selector:"@a[tag=tmp_bomb]"}," has the bomb"]
 tag @a remove tmp_bomb
 scoreboard players set @a defuse 0
 xp set @a 0 points

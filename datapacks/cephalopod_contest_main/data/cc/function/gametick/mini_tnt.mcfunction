@@ -72,12 +72,12 @@ item replace entity @a[scores={class=0,gardener_jump=0}] hotbar.1 with minecraft
 execute as @e[type=splash_potion,tag=!freeze,nbt={Item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:32b}]}}}}] run function cc:freeze_potion
 execute as @e[type=splash_potion,tag=freeze] run function shb:vis_fix
 item replace entity @a[scores={freeze_cd=1}] hotbar.3 with minecraft:splash_potion[custom_name={text:"Freeze Potion",italic:false},potion_contents={custom_color:8911871,custom_effects:[{id:"minecraft:water_breathing",amplifier:32b,duration:500}]}]
-execute as @a[scores={freeze_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Freeze Potion"]
+execute as @a[scores={freeze_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Freeze Potion"]
 scoreboard players remove @a[scores={freeze_cd=1..}] freeze_cd 1
 
 # GAR super jump
 item replace entity @a[scores={jump_cd=1}] hotbar.3 with minecraft:blaze_powder[custom_name={text:"Super Jump",italic:false},custom_data={tnt:3b}]
-execute as @a[scores={jump_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Super Jump"]
+execute as @a[scores={jump_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Super Jump"]
 execute at @a[scores={jump_time=1..}] run particle minecraft:small_flame ~ ~ ~ 0 0 0 0 1 normal @a
 scoreboard players remove @a[scores={jump_cd=1..}] jump_cd 1
 scoreboard players remove @a[scores={jump_time=2..}] jump_time 1
@@ -85,7 +85,7 @@ scoreboard players remove @a[scores={jump_time=1},nbt={OnGround:1b}] jump_time 1
 
 # NUL laser cooldown
 #execute as @a[scores={laser_cd=1}] run item replace entity @s hotbar.3 with minecraft:carrot_on_a_stick[custom_name={text:"Laser",italic:false},custom_data={stats:{ammo:{type:7b}}}]
-#execute as @a[scores={laser_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Laser"]
+#execute as @a[scores={laser_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Laser"]
 #scoreboard players remove @a[scores={laser_cd=1..}] laser_cd 1
 
 # TEC broken modem
@@ -97,7 +97,7 @@ execute as @a[scores={broken_modem=1..}] at @s run tp @s @e[type=marker,limit=1,
 execute as @a[scores={broken_modem=1}] at @s run kill @e[type=marker,limit=1,sort=nearest,tag=broken_modem_tether]
 scoreboard players remove @a[scores={broken_modem=1..}] broken_modem 1
 item replace entity @a[scores={broken_modem_cd=1}] hotbar.1 with minecraft:stick[custom_name={text:"Broken Modem",italic:false},custom_data={tnt:1b}]
-execute as @a[scores={broken_modem_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Broken Modem"]
+execute as @a[scores={broken_modem_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Broken Modem"]
 scoreboard players remove @a[scores={broken_modem_cd=1..}] broken_modem_cd 1
 
 # NUL recovery minecart
@@ -111,12 +111,12 @@ execute as @a[scores={minecart_time=1}] at @s run function cc:explode_minecart
 
 # NUL quick bomb
 item replace entity @a[scores={quick_bomb_cd=1}] hotbar.3 with minecraft:tnt_minecart[custom_name={text:"Quick Bomb",italic:false},custom_data={tnt:5b}]
-execute as @a[scores={quick_bomb_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Quick Bomb"]
+execute as @a[scores={quick_bomb_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Quick Bomb"]
 scoreboard players remove @a[scores={quick_bomb_cd=1..}] quick_bomb_cd 1
 
 # TEC drill
 item replace entity @a[scores={drill_cd=1}] hotbar.3 with minecraft:hopper[custom_name={text:"Drill",italic:false},custom_data={tnt:13b}]
-execute as @a[scores={drill_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Drill"]
+execute as @a[scores={drill_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Drill"]
 scoreboard players remove @a[scores={drill_cd=1..}] drill_cd 1
 execute as @e[type=marker,tag=tnt_drill] at @s run function cc:move_drill
 
@@ -184,22 +184,22 @@ kill @e[type=marker,tag=focus_glass,scores={focus_time=7..}]
 execute as @a[scores={focus_time=1..}] at @s run tp @s @e[type=marker,limit=1,sort=nearest,tag=focus_tether]
 execute as @a[scores={focus_time=1}] at @s run kill @e[type=marker,limit=1,sort=nearest,tag=focus_tether]
 scoreboard players remove @a[scores={focus_time=1..}] focus_time 1
-execute as @a[scores={shift_cd=1,class=3}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Focus (shift ability)"]
+execute as @a[scores={shift_cd=1,class=3}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Focus (shift ability)"]
 
 # ARC decrystalize
 item replace entity @a[scores={reatomize_cd=1}] hotbar.3 with minecraft:eye_armor_trim_smithing_template[custom_name={text:"Decrystalize",italic:false},custom_data={tnt:15b}]
-execute as @a[scores={reatomize_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Decrystalize"]
+execute as @a[scores={reatomize_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Decrystalize"]
 scoreboard players remove @a[scores={reatomize_cd=1..}] reatomize_cd 1
 
 # ARC dagger
 item replace entity @a[scores={dagger_cd=1}] hotbar.2 with minecraft:echo_shard[custom_name={text:"Dagger",italic:false},custom_data={tnt:16b}]
-execute as @a[scores={dagger_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Dagger"]
+execute as @a[scores={dagger_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Dagger"]
 scoreboard players remove @a[scores={dagger_cd=1..}] dagger_cd 1
 execute as @e[type=marker,tag=arc_dagger] at @s positioned ^ ^ ^ facing ^ ^ ^-5.5 run function cc:dagger_tick
 
 # ARC cloak cooldown
 item replace entity @a[scores={cloak_cd=1}] hotbar.2 with minecraft:silence_armor_trim_smithing_template[custom_name={text:"Cloak",italic:false},custom_data={tnt:17b}]
-execute as @a[scores={cloak_cd=1}] run tellraw @a[tag=ded] ["",{"selector":"@s"}," reloaded Cloak"]
+execute as @a[scores={cloak_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Cloak"]
 scoreboard players remove @a[scores={cloak_cd=1..}] cloak_cd 1
 execute as @e[type=marker,tag=arc_cloak] at @s positioned ^ ^ ^ run function cc:cloak_tick
 

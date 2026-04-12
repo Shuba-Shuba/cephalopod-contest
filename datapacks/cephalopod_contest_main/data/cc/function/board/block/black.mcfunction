@@ -1,1 +1,1 @@
-tellraw @a ["<",{"selector":"@s"},"> I HAVE A BOMB!!!"]
+tellraw @a ["<",{selector:"@s"},"> I HAVE A BOMB!!!"]

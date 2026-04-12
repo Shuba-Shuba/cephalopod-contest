@@ -16,7 +16,7 @@ effect give @a[scores={boss_fight_class=0}] jump_boost infinite 1 false
 
 # announce classes
 execute as @a[tag=!out,tag=!ded] run function cc:boss_class_say
-execute if entity @a[tag=ded] run tellraw @a ["",{"selector":"@a[tag=ded]"}," spectating (LOL)"]
+execute if entity @a[tag=ded] run tellraw @a ["",{selector:"@a[tag=ded]"}," spectating (LOL)"]
 
 # teleport players
 spreadplayers 0 0 20 30 under 70 false @a[tag=!out,tag=!ded]

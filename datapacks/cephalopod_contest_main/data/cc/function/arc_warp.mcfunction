@@ -12,4 +12,4 @@ execute at @s run playsound minecraft:entity.enderman.teleport master @a ~ ~ ~
 
 # tell spectators
 execute store result score #tmp game run clear @s netherite_upgrade_smithing_template[custom_data={tnt:14b}] 0
-tellraw @a[tag=ded] ["",{"selector":"@s"}," used Warp (",{score:{name:"#tmp",objective:"game"}}," remaining)"]
+tellraw @a[tag=ded] ["",{selector:"@s"}," used Warp (",{score:{name:"#tmp",objective:"game"}}," remaining)"]
