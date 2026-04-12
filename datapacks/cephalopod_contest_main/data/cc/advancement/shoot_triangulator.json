@@ -9,7 +9,7 @@
             "minecraft:bow"
           ],
           "components": {
-            "minecraft:item_model": "cc:item/holy_bow/bow"
+            "minecraft:item_model": "cc:holy_bow/bow"
           }
         }
       }

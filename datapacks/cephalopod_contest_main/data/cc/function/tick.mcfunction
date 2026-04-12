@@ -227,11 +227,3 @@ execute if score %spin_generator game matches 60.. run scoreboard players set %s
 execute if score %spin_generator game matches 0 as @e[type=minecraft:block_display,tag=spin] run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{right_rotation:{angle:0.0f,axis:[0.57735027f,0.57735027f,0.57735027f]}}}
 execute if score %spin_generator game matches 20 as @e[type=minecraft:block_display,tag=spin] run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{right_rotation:{angle:2.0943951024f,axis:[0.57735027f,0.57735027f,0.57735027f]}}}
 execute if score %spin_generator game matches 40 as @e[type=minecraft:block_display,tag=spin] run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{right_rotation:{angle:4.1887902048f,axis:[0.57735027f,0.57735027f,0.57735027f]}}}
-
-# auto respawn dummies
-execute if score autospawn.enabled config matches 1 unless entity Steve positioned 0 69 0 in cc:void as Shuba_Shuba run function cc:carpet_player_spawn
-execute if score autospawn.enabled config matches 1 unless entity Steve1 positioned 0 69 0 in cc:void as Shuba_Shuba run function cc:carpet_player_spawn
-execute if score autospawn.enabled config matches 1 unless entity Steve2 positioned 0 69 0 in cc:void as Shuba_Shuba run function cc:carpet_player_spawn
-execute if score autospawn.enabled config matches 1 unless entity steve3 positioned 0 69 0 in cc:void as Shuba_Shuba run function cc:carpet_player_spawn
-
-# bruh rbuhr bruh

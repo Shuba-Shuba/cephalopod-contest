@@ -20,6 +20,7 @@ scoreboard objectives add calc dummy
 scoreboard players set integers.-1 calc -1
 scoreboard players set integers.8 calc 8
 scoreboard players set integers.180 calc 180
+scoreboard players set integers.16 calc 16
 scoreboard objectives add koth dummy
 scoreboard objectives add rotation dummy
 scoreboard objectives add night_vision trigger
