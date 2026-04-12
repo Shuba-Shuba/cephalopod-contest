@@ -1,6 +1,5 @@
 ## choose map
-#execute store result score %map game run random value 0..7
-scoreboard players set %map game 6
+execute store result score %map game run random value 0..7
 execute if score %map game matches 0 run tp @a[tag=!out] 117 100 -9
 execute if score %map game matches 1 run tp @a[tag=!out] 343 140 620
 execute if score %map game matches 2 run tp @a[tag=!out] 396 105 600
