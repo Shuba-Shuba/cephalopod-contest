@@ -5,8 +5,8 @@
 			"conditions": {
 				"item": {
 					"items": [
-            "minecraft:ender_eye"
-          ],
+						"minecraft:ender_eye"
+					],
 					"predicates": {
 						"minecraft:custom_data": "{shb:1b}"
 					}

@@ -1,4 +1,4 @@
-data modify block 0 -64 0 Items append value {Slot:0b,id:"minecraft:carrot_on_a_stick",count:1b,components:{"minecraft:attribute_modifiers":[{type:"attack_speed",slot:"mainhand",id:"attack_speed",amount:-1000000,operation:"add_value"}],"minecraft:tooltip_display":{hidden_components:["attribute_modifiers"]},"minecraft:item_model":"shb:pistol","minecraft:custom_data":{shb:1b}}}
+data modify block 0 -64 0 Items append value {Slot:0b,id:"minecraft:carrot_on_a_stick",count:1b,components:{"minecraft:item_model":"shb:pistol"}}
 
 data modify storage shb:gun stats set value {id:0,cd:8,autodelay:0,autofire:0,drawtime:10,semiauto:1,ammo:{count:12,type:1b},reload:{time:5,per:1,mag:12},sfx:{shoot:1,reload:1},name:{text:"Pistol",italic:false},range:200,dmg:6,falloff:{buffer:40,divisor:1}}
 execute store result storage shb:gun stats.id int 1 run scoreboard players add #gun-id stats 1

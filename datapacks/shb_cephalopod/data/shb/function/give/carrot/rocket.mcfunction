@@ -1,4 +1,4 @@
-data modify block 0 -64 0 Items append value {Slot:0b,id:"minecraft:carrot_on_a_stick",count:1b,components:{"minecraft:attribute_modifiers":[{type:"attack_speed",slot:"mainhand",id:"attack_speed",amount:-1000000,operation:"add_value"}],"minecraft:tooltip_display":{hidden_components:["attribute_modifiers"]},"minecraft:item_model":"shb:rocket_launcher","minecraft:custom_data":{shb:1b}}}
+data modify block 0 -64 0 Items append value {Slot:0b,id:"minecraft:carrot_on_a_stick",count:1b,components:{"minecraft:item_model":"shb:rocket_launcher"}}
 
 data modify storage shb:gun stats set value {id:0,cd:40,autodelay:0,autofire:0,drawtime:40,semiauto:1,ammo:{count:3,type:2b},reload:{time:15,per:1,mag:3},sfx:{shoot:2,reload:2},name:{text:"Rocket Launcher",italic:false}}
 execute store result storage shb:gun stats.id int 1 run scoreboard players add #gun-id stats 1
