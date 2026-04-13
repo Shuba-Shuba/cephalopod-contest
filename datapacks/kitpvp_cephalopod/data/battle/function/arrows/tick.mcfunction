@@ -42,7 +42,7 @@ execute if score %in game matches 1 if score %mode game matches 21 run clear @a 
 #spawnpoint @a 87 23 -76 0.0
 execute if score %in game matches 1 if score %mode game matches 21 as @a at @s if block ~ ~-1 ~ minecraft:chiseled_quartz_block run effect give @s minecraft:levitation 5 1 true
 execute if score %in game matches 1 if score %mode game matches 26 as @a at @s if block ~ ~-1 ~ minecraft:chiseled_quartz_block run effect give @s minecraft:levitation 5 1 true
-execute if score %in game matches 1 if score %mode game matches 21 as @a at @s if block ~ ~-1 ~ minecraft:tnt run function battle:pyro/launch_no_cd
+execute if score %in game matches 1 if score %mode game matches 21 as @a at @s if block ~ ~-1 ~ minecraft:tnt run function cc:launchpad
 #execute as @a[gamemode=adventure] at @s if block ~ ~-0.75 ~ barrier unless score @s gravity matches 1 unless score @s barrier_bounce matches 1 run kill @s
 execute as @a[scores={axe_break=1..,Kit_ID=4}] run advancement grant @s only battle:lumberjack
 execute as @a[scores={axe_break=1..}] run scoreboard players set @s axe_break 0

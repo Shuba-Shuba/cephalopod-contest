@@ -13,7 +13,7 @@ execute at @a[tag=!out,tag=!ded] as @e[type=item,distance=..10] run data modify 
 execute at @a[tag=!out,tag=!ded] as @e[type=item,distance=..10] at @s on origin run tp @e[type=item,sort=nearest,limit=1] @s
 
 # kitpvp stuff
-execute as @a[tag=!out,tag=!ded] at @s if block ~ ~-0.5 ~ tnt run function battle:pyro/launch_no_cd
+execute as @a[tag=!out,tag=!ded] at @s if block ~ ~-0.5 ~ tnt run function cc:launchpad
 execute as @a[tag=!out,tag=!ded] at @s if block ~ ~-0.5 ~ barrier run kill @s
 execute if score %map game matches 7 run effect give @a[tag=!out,tag=!ded] slow_falling infinite 0 true
 execute if score %map game matches 7 run effect give @a[tag=!out,tag=!ded] jump_boost infinite 1 true

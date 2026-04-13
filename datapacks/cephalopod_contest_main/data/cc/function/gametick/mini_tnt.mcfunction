@@ -207,7 +207,7 @@ execute as @e[type=marker,tag=arc_cloak] at @s positioned ^ ^ ^ run function cc:
 ## KEEP AT BOTTOM
 # explosion processing
 execute as @e[type=tnt,nbt={fuse:1s},tag=!processed] at @s run function cc:process_explosion
-execute as @e[type=creeper,tag=!delta.launcher,tag=!fuse_processed,nbt={ignited:1b}] at @s run function cc:process_creeper
+execute as @e[type=creeper,tag=!fuse_processed,nbt={ignited:1b}] at @s run function cc:process_creeper
 scoreboard players remove @e[type=creeper,tag=fuse_processed] fuse 1
 execute as @e[type=creeper,tag=fuse_processed,scores={fuse=1}] at @s run function cc:process_explosion
 execute as @e[type=creeper,tag=fuse_processed,scores={fuse=1}] at @s run fill ~-.5 ~-.5 ~-.5 ~.5 ~.5 ~.5 air replace #shb:blast_resistant

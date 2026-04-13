@@ -20,7 +20,7 @@ execute if score %replay game matches 2 run function cc:end
 gamemode spectator @a[tag=winner]
 execute unless entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{gungame:1b}}}}] run function cc:gun_game_pickup
 clear @a[tag=!out] glass_bottle
-execute as @a[tag=!out,tag=!ded] at @s if block ~ ~-0.5 ~ tnt run function battle:pyro/launch_no_cd
+execute as @a[tag=!out,tag=!ded] at @s if block ~ ~-0.5 ~ tnt run function cc:launchpad
 execute as @a[tag=!out,tag=!ded] at @s if block ~ ~-0.5 ~ barrier run kill @s
 execute if score %map game matches 7 run effect give @a[tag=!out,tag=!ded] slow_falling infinite 0 true
 execute if score %map game matches 7 run effect give @a[tag=!out,tag=!ded] jump_boost infinite 1 true

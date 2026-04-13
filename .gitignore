@@ -10,7 +10,6 @@ level.dat_old
 data/fabric*
 data/tmp
 data/shb
-data/delta
 session.lock
 scoreboard_destroyed.dat
 resourcepacks/cephalopod_contest
