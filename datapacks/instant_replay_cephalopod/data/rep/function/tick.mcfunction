@@ -3,7 +3,7 @@ execute as @a unless score @s anchor_id = @s anchor_id run scoreboard players ad
 execute as @a unless score @s anchor_id = @s anchor_id run scoreboard players operation @s anchor_id = .global anchor_id
 
 # follow replay path
-execute as @e[type=armor_stand,tag=replay,scores={anchor_index=1..}] at @s run function rep:path
+execute as @e[type=mannequin,tag=replay,scores={anchor_index=1..}] at @s run function rep:path
 
 # movement recording system
 execute if score rep.recording config matches 0 run scoreboard players remove @a[scores={rep_record=1..}] rep_record 1
