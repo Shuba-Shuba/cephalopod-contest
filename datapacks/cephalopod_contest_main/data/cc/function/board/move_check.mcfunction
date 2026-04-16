@@ -1,4 +1,4 @@
-# @s = player's board marker
+# @s = player's board item_display
 # @p[tag=this] = player
 tag @a remove this
 tag @s add this
@@ -23,7 +23,7 @@ execute if score .steps board_roll matches 0 if block ~ ~-2 ~ purple_concrete as
 execute if score .steps board_roll matches 0 if block ~ ~-2 ~ lime_concrete as @p[tag=this] run function cc:board/block/green
 execute if score .steps board_roll matches 0 if block ~ ~-2 ~ black_concrete as @p[tag=this] run function cc:board/block/black
 execute if score .steps board_roll matches 0 run schedule function cc:board/end_turn 2s
-execute if score .steps board_roll matches 0 if entity @e[type=marker,distance=..1,tag=!this] as @p[tag=this] run function cc:board/fight
+execute if score .steps board_roll matches 0 if entity @e[type=item_display,distance=..1,tag=!this] as @p[tag=this] run function cc:board/fight
 
 # step
 execute if score .steps board_roll matches 1.. run function cc:board/move_step

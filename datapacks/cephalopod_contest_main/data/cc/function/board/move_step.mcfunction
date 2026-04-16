@@ -1,4 +1,4 @@
-# @s = board marker
+# @s = board item_display
 scoreboard players remove .steps board_roll 1
 
 # move

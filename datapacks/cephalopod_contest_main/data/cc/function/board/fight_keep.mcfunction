@@ -11,5 +11,5 @@ function cc:board/get_items
 execute if score .item game matches 1.. run give @s minecraft:iron_sword[item_model="cc:dagger",unbreakable={},custom_name={text:"Backstabber",italic:false}]
 
 # save inv and clear
-data modify entity @e[type=marker,tag=this,limit=1] data.Inventory set from entity @s Inventory
+data modify entity @e[type=item_display,tag=this,limit=1] data.Inventory set from entity @s Inventory
 clear

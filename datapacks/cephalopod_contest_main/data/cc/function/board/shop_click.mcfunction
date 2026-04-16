@@ -1,7 +1,7 @@
 # @s = player
-# @e[type=marker,tag=this] player's board marker
-tag @e[type=marker] remove this
-execute as @e[type=marker,tag=board_player] if score @s board_turn = .i board_turn run tag @s add this
+# @e[type=item_display,tag=this] player's board item_display
+tag @e[type=item_display] remove this
+execute as @e[type=item_display,tag=board_player] if score @s board_turn = .i board_turn run tag @s add this
 
 # items
 execute if score @s board_shop matches 1 run function cc:board/buy/star
@@ -13,10 +13,10 @@ execute if score @s board_shop matches 300 run function cc:board/buy/shotgun
 execute if score @s board_shop matches 301 run function cc:board/buy/backstab
 
 # leave shop
-execute if score .steps board_roll matches 0 as @e[type=marker,tag=this] at @s unless entity @e[type=marker,tag=!this,tag=board_player,distance=..1] run function cc:board/end_turn
-execute if score .steps board_roll matches 0 at @e[type=marker,tag=this] if entity @e[type=marker,tag=!this,tag=board_player,distance=..1] run function cc:board/fight
-execute if score .steps board_roll matches 1.. as @e[type=marker,tag=this] at @s run function cc:board/move_step
+execute if score .steps board_roll matches 0 as @e[type=item_display,tag=this] at @s unless entity @e[type=item_display,tag=!this,tag=board_player,distance=..1] run function cc:board/end_turn
+execute if score .steps board_roll matches 0 at @e[type=item_display,tag=this] if entity @e[type=item_display,tag=!this,tag=board_player,distance=..1] run function cc:board/fight
+execute if score .steps board_roll matches 1.. as @e[type=item_display,tag=this] at @s run function cc:board/move_step
 scoreboard players reset @s board_await
 scoreboard players reset @s board_shop
 
-tag @e[type=marker] remove this
+tag @e[type=item_display] remove this

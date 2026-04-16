@@ -1,5 +1,5 @@
 # reset board
-kill @e[type=marker,tag=board_player]
+kill @e[type=item_display,tag=board_player]
 kill @e[type=zombie,tag=board_player_placeholder]
 kill @e[type=armor_stand,tag=board_player]
 data remove storage cc:board players

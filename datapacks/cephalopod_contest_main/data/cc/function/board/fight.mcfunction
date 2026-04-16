@@ -4,7 +4,7 @@ schedule clear cc:board/end_turn
 tellraw @a ["[FIGHT ALERT] ",{selector:"@s"}," landed on a space occupied by someone else! TIME TO FIGHT!"]
 
 # teleport all players who landed on this space back here
-execute as @e[type=marker,tag=board_player,distance=..1] at @a[tag=!out] if score @p board_turn = @s board_turn run tag @p add fight
+execute as @e[type=item_display,tag=board_player,distance=..1] at @a[tag=!out] if score @p board_turn = @s board_turn run tag @p add fight
 execute as @a[tag=fight] run function cc:board/fight_prepare
 effect clear @s glowing
 

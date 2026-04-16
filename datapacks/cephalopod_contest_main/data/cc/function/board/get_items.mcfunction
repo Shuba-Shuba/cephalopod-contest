@@ -1,13 +1,13 @@
 # @s = player
-# copies player's items stored on their board marker to their inventory
+# copies player's items stored on their board item_display to their inventory
 
 # idk if macro magic could speed this up, but performance is unimportant so whatever
 # also just saying, having direct player NBT editing would make this entire function possible in ONE SHORT COMMAND
 
 ## hotbar + first 2 rows of inventory
-# copy marker's data to shulker box
+# copy item_display's data to shulker box
 data remove block 0 -64 0 Items
-execute as @e[type=marker,tag=board_player] if score @s board_turn = .i board_turn run data modify block 0 -64 0 Items set from entity @s data.Inventory
+execute as @e[type=item_display,tag=board_player] if score @s board_turn = .i board_turn run data modify block 0 -64 0 Items set from entity @s data.Inventory
 # copy items from shulker box into inventory
 item replace entity @s container.0 from block 0 -64 0 container.0
 item replace entity @s container.1 from block 0 -64 0 container.1
@@ -39,8 +39,8 @@ item replace entity @s container.26 from block 0 -64 0 container.26
 
 ## 3rd row of inventory + armor
 # we need to do more work to get the last inventory row and armor because their slot numbers are above 26, which don't exist in containers
-# copy marker's data onto storage
-execute as @e[type=marker,tag=board_player] if score @s board_turn = .i board_turn run data modify storage tmp Inventory set from entity @s data.Inventory
+# copy item_display's data onto storage
+execute as @e[type=item_display,tag=board_player] if score @s board_turn = .i board_turn run data modify storage tmp Inventory set from entity @s data.Inventory
 # translate slot numbers so that they'll fit in the box
 data modify storage tmp Inventory[{Slot:27b}].Slot set value 0b
 data modify storage tmp Inventory[{Slot:28b}].Slot set value 1b

@@ -8,7 +8,7 @@ execute store result score item.shotgun game run clear @s carrot_on_a_stick[item
 execute store result score item.backstab game run clear @s iron_sword[item_model="cc:dagger"] 1
 
 # save and clear inventory
-data modify entity @e[type=marker,tag=this,limit=1] data.Inventory set from entity @a[tag=this,limit=1] Inventory
+data modify entity @e[type=item_display,tag=this,limit=1] data.Inventory set from entity @a[tag=this,limit=1] Inventory
 clear
 
 # give usable versions of weapons
