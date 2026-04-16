@@ -30,5 +30,5 @@ execute if score %board game matches 1 run scoreboard objectives setdisplay side
 execute if score %board game matches 1 run scoreboard players set %in game 2
 execute if score %board game matches 1 run scoreboard players set .i board_turn -1
 execute if score %board game matches 1 run schedule function cc:board/end_turn 2s
-execute if score %board game matches 1 as @e[type=marker,tag=board_player] at @s run function cc:board/retrieve_player
+execute if score %board game matches 1 as @e[type=item_display,tag=board_player] at @s run function cc:board/retrieve_player
 execute if score %board game matches 1 run gamemode spectator @a[tag=!out]

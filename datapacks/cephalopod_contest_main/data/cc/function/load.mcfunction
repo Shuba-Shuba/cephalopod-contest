@@ -158,7 +158,6 @@ scoreboard objectives add arrow_cd dummy
 scoreboard objectives add level_bomb_place minecraft.used:minecraft.creeper_spawn_egg
 scoreboard objectives add level_bomb_cd dummy
 scoreboard objectives add fuse dummy
-scoreboard objectives add distance dummy
 scoreboard objectives add broken_modem dummy
 scoreboard objectives add broken_modem_cd dummy
 execute unless entity 0000000d-0109-0097-0116-000000000104 run function cc:distance_setup

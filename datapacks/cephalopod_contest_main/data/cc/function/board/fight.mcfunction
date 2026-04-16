@@ -21,4 +21,4 @@ scoreboard players operation fight.bounty board_turn *= fight.bounty board_turn
 tellraw @a ["Last player alive steals $",{score:{name:"fight.bounty",objective: "board_turn"}}," from loser(s)"]
 
 # remove armor stands on this space
-kill @e[type=armor_stand,distance=..1]
+kill @e[type=mannequin,distance=..1]

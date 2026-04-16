@@ -15,7 +15,7 @@ execute if score @s board_shop matches 301 run function cc:board/buy/backstab
 # leave shop
 execute if score .steps board_roll matches 0 as @e[type=item_display,tag=this] at @s unless entity @e[type=item_display,tag=!this,tag=board_player,distance=..1] run function cc:board/end_turn
 execute if score .steps board_roll matches 0 at @e[type=item_display,tag=this] if entity @e[type=item_display,tag=!this,tag=board_player,distance=..1] run function cc:board/fight
-execute if score .steps board_roll matches 1.. as @e[type=item_display,tag=this] at @s run function cc:board/move_step
+execute if score .steps board_roll matches 1.. as @e[type=item_display,tag=this] at @s run function cc:board/move/step
 scoreboard players reset @s board_await
 scoreboard players reset @s board_shop
 

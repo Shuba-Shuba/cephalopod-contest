@@ -1,16 +1,17 @@
 # returns spectators to their item_display and spawn an armor stand there
-# @s, @e[type=item_display,tag=this,limit=1] = board item_display
+# @s = board item_display
 tag @s add this
 
 # teleport right player to item_display
-execute as @a[tag=!out] if score @s board_turn = @e[type=item_display,tag=this,limit=1] board_turn run tp @s ~ ~ ~
+execute as @a[tag=!out] if score @s board_turn = @n[type=item_display,tag=this] board_turn run tag @s add this
+tp @a[tag=this] ~ ~ ~
 
-# make armor stand
-summon armor_stand ~ ~ ~ {Tags:["init","board_player"],NoBasePlate:1b,NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,ShowArms:1b,CustomName:"OFFLINE",DisabledSlots:16191}
-data modify entity @e[type=armor_stand,limit=1,sort=nearest,tag=init] Rotation set from entity @s Rotation
-scoreboard players operation @e[type=armor_stand,limit=1,sort=nearest,tag=init] board_turn = @e[type=item_display,tag=this,limit=1] board_turn
-execute as @a[tag=!out] if score @s board_turn = @e[type=item_display,tag=this,limit=1] board_turn run loot replace entity @e[type=armor_stand,limit=1,sort=nearest,tag=init] armor.head loot cc:player_head
-execute as @e[type=armor_stand,limit=1,sort=nearest,tag=init] run data modify entity @s CustomName set from entity @s ArmorItems[3].components.minecraft:profile.name
-tag @e[type=armor_stand,limit=1,sort=nearest,tag=init] remove init
+# make mannequin
+summon mannequin ~ ~ ~ {Tags:["init","board_player"],immovable:1b,Invulnerable:1b}
+execute rotated as @s run rotate @n[type=mannequin,tag=init] ~ ~
+scoreboard players operation @n[type=mannequin,tag=init] board_turn = @n[type=item_display,tag=this] board_turn
+data modify entity @n[type=mannequin,tag=init] profile.id set from entity @p[tag=this] UUID
+tag @n[type=mannequin,tag=init] remove init
 
 tag @s remove this
+tag @a remove this
