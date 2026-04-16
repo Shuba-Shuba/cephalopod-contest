@@ -19,7 +19,7 @@ kill @e[type=ravager]
 
 # lucifer's dog
 execute in cc:void run forceload add -203 684
-execute in cc:void run summon minecraft:ravager -203 94 684 {CustomName:[{text:"Lucifer\'s Dog",bold:true,"underlined":true,italic:true,color:"dark_red"}],CustomNameVisible:1b,Health:100,Invulnerable:1b,active_effects:[{id:"minecraft:resistance",duration:100000,amplifier:3,show_particles:0b},{id:"minecraft:speed",duration:100,amplifier:4,show_particles:0b}],HandItems:[{id:"bow",count:1},{id:"spectral_arrow",count:1}],HandDropChances:[1.0f,1.0f],attributes:[{id:"max_health",base:100.0d},{id:"spawn_reinforcements",base:1.0d}]}
+execute in cc:void run summon minecraft:ravager -203 94 684 {CustomName:[{text:"Lucifer\'s Dog",bold:true,underlined:true,italic:true,color:"dark_red"}],CustomNameVisible:1b,Health:100,Invulnerable:1b,active_effects:[{id:"minecraft:resistance",duration:100000,amplifier:3,show_particles:0b},{id:"minecraft:speed",duration:100,amplifier:4,show_particles:0b}],HandItems:[{id:"bow",count:1},{id:"spectral_arrow",count:1}],HandDropChances:[1.0f,1.0f],attributes:[{id:"max_health",base:100.0d},{id:"spawn_reinforcements",base:1.0d}]}
 execute in cc:void run forceload add -243 697
 execute in cc:void positioned -243 91 697 run kill @e[type=glow_item_frame,distance=..1,tag=shard]
 execute in cc:void run summon minecraft:glow_item_frame -243 91 697 {Facing:5b,Invisible:1b,Item:{id:"minecraft:prismarine_shard",count:1,components:{"minecraft:custom_data":{shard:1b}}},Tags:["shard"]}

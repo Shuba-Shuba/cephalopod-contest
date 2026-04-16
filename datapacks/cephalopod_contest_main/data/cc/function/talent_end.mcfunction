@@ -12,7 +12,7 @@ tag @r[tag=!stage_done,tag=!ded,tag=!out] add stage
 execute if score %map game matches 0 in cc:void run tp @a[tag=stage] 601 108 534 180 0
 scoreboard players operation %second game = time.talent config
 scoreboard players set @a talent_vote 0
-tellraw @a ["Now on stage: ",{selector:"@a[tag=stage]"},{text:"\n[Downvote]",color:"red","underlined":true,click_event:{action:"run_command",command:"/trigger talent_vote set -1"},hover_event:{action:"show_text",value:"-1"}}," ",{text:"[Unvote]",color:"yellow","underlined":true,click_event:{action:"run_command",command:"/trigger talent_vote set 0"},hover_event:{action:"show_text",value:"0"}}," ",{text:"[Upvote]",color:"green","underlined":true,click_event:{action:"run_command",command:"/trigger talent_vote set 1"},hover_event:{action:"show_text",value:"+1"}}]
+tellraw @a ["Now on stage: ",{selector:"@a[tag=stage]"},{text:"\n[Downvote]",color:"red",underlined:true,click_event:{action:"run_command",command:"/trigger talent_vote set -1"},hover_event:{action:"show_text",value:"-1"}}," ",{text:"[Unvote]",color:"yellow",underlined:true,click_event:{action:"run_command",command:"/trigger talent_vote set 0"},hover_event:{action:"show_text",value:"0"}}," ",{text:"[Upvote]",color:"green",underlined:true,click_event:{action:"run_command",command:"/trigger talent_vote set 1"},hover_event:{action:"show_text",value:"+1"}}]
 place template minecraft:stage 576 81 502
 give @a[tag=stage] minecraft:netherite_pickaxe[unbreakable={},can_break={blocks:"#cc:all"},tooltip_display={hidden_components:["can_break"]},enchantments={efficiency:255}]
 give @a[tag=stage] minecraft:netherite_axe[unbreakable={},can_break={blocks:"#cc:all"},tooltip_display={hidden_components:["can_break"]},enchantments={efficiency:255}]
