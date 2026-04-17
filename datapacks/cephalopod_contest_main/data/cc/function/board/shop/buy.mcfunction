@@ -3,14 +3,16 @@
 tag @e[type=item_display] remove this
 execute as @e[type=item_display,tag=board_player] if score @s board_turn = .i board_turn run tag @s add this
 
+dialog clear @s
+
 # items
-execute if score @s board_shop matches 1 run function cc:board/buy/star
-execute if score @s board_shop matches 100 run function cc:board/buy/weed
-execute if score @s board_shop matches 101 run function cc:board/buy/coke
-execute if score @s board_shop matches 200 run function cc:board/buy/glue
-execute if score @s board_shop matches 201 run function cc:board/buy/bat
-execute if score @s board_shop matches 300 run function cc:board/buy/shotgun
-execute if score @s board_shop matches 301 run function cc:board/buy/backstab
+execute if score @s board_shop matches 1 run function cc:board/shop/buy/star
+execute if score @s board_shop matches 100 run function cc:board/shop/buy/weed
+execute if score @s board_shop matches 101 run function cc:board/shop/buy/coke
+execute if score @s board_shop matches 200 run function cc:board/shop/buy/glue
+execute if score @s board_shop matches 201 run function cc:board/shop/buy/bat
+execute if score @s board_shop matches 300 run function cc:board/shop/buy/shotgun
+execute if score @s board_shop matches 301 run function cc:board/shop/buy/backstab
 
 # leave shop
 execute if score .steps board_roll matches 0 as @e[type=item_display,tag=this] at @s unless entity @e[type=item_display,tag=!this,tag=board_player,distance=..1] run function cc:board/end_turn

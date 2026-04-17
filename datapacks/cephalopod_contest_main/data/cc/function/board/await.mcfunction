@@ -15,4 +15,5 @@ scoreboard players operation .clock board_await %= integers.20 calc
 # fork in path
 execute if score @s board_fork matches 1..3 run function cc:board/fork_pick
 # shop
-execute unless score @s board_shop matches 0 if score @s board_shop matches -1.. run function cc:board/shop_click
+execute if score @s board_shop matches -2 run function cc:board/shop/not_enough_money
+execute unless score @s board_shop matches 0 if score @s board_shop matches -1.. run function cc:board/shop/buy
