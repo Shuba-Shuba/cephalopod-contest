@@ -7,7 +7,7 @@
 
 # template
 $data modify storage cc:board tmp set value {\
-    label: [{text:""},$(name)," - $(price)"],\
+    label: [{text:""},$(name)," - $$(price)"],\
     tooltip: $(description),\
     width: 200,\
     action: {\
