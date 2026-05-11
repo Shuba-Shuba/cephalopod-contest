@@ -146,7 +146,7 @@ function cc:open/skyscraper
 function cc:open/hotel
 function cc:open/bank
 execute in cc:void run setblock 228 123 793 polished_blackstone_button[facing=north] destroy
-execute in cc:void run place template minecraft:gas_station 235 121 766
+execute in cc:void run place template cc:pothead/gas_station 235 121 766
 execute as @e[type=marker,tag=jigsaw] at @s run function cc:clear_building
 kill @e[type=marker,tag=jigsaw_mob]
 kill @e[type=marker,tag=jigsaw_tp]
@@ -208,7 +208,7 @@ tag @a remove bomb
 clear @a[tag=!out]
 
 # arena reset
-execute in cc:void run place template minecraft:arena 939 135 667
+execute in cc:void run place template cc:chunk/arena 939 135 667
 
 ## posthook
 # end game or start next round

@@ -1,4 +1,4 @@
-place template minecraft:blocks_player ~ ~ ~
+place template cc:blocks/player ~ ~ ~
 tag @s remove tmp_unteleported
 tellraw @a ["[DEBUG] created building area for ",{selector:"@s"}]
 execute if entity @e[type=marker,limit=1,tag=tmp_blocks_tp] run say TP EXISTS

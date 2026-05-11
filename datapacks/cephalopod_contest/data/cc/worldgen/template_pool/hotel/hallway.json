@@ -1,12 +1,12 @@
 {
-  "fallback": "cc:hotel/deadend",
+  "fallback": "cc:pothead/hotel/deadend",
   "elements": [
     {
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
-        "location": "cc:hotel/staircase",
+        "location": "cc:pothead/hotel/staircase",
         "processors": "minecraft:empty"
       }
     },
@@ -15,7 +15,7 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
-        "location": "cc:hotel/room",
+        "location": "cc:pothead/hotel/room",
         "processors": "minecraft:empty"
       }
     },
@@ -24,7 +24,7 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
-        "location": "cc:hotel/hallway_fork",
+        "location": "cc:pothead/hotel/hallway_fork",
         "processors": "minecraft:empty"
       }
     }

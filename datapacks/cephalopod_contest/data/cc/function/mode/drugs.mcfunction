@@ -51,7 +51,7 @@ scoreboard players operation .z heist %= 30 calc
 # place markers centered about the random position
 execute in cc:void positioned 0 -32 512 summon marker run function cc:prepare_heists
 # place jigsaw structures at corresponding build markers
-execute at @e[type=marker,tag=build_hotel] run place jigsaw cc:hotel/lobby minecraft:door 4 ~ ~ ~
+execute at @e[type=marker,tag=build_hotel] run place jigsaw cc:pothead/hotel/lobby minecraft:door 4 ~ ~ ~
 #execute at @e[type=marker,tag=build_bank] run place jigsaw cc:bank/root minecraft:door 3 ~ ~ ~
 #execute at @e[type=marker,tag=build_skyscraper] run place jigsaw cc:skyscraper/root minecraft:door 3 ~ ~ ~
 # spawn mobs

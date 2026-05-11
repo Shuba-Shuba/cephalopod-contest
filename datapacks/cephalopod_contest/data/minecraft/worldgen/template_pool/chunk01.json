@@ -1,5 +1,5 @@
 {
-  "name": "minecraft:chunk01",
+  "name": "cc:chunk/1",
   "fallback": "minecraft:empty",
   "elements": [
     {
@@ -7,7 +7,7 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
-        "location": "minecraft:chunk01",
+        "location": "cc:chunk/1",
         "processors": "minecraft:empty"
       }
     }
