@@ -9,7 +9,7 @@ particle minecraft:flame ~ ~.5 ~ 0 0 0 0.75 500 normal @a
 stopsound @a neutral minecraft:entity.minecart.riding
 
 # end
-execute as @a[tag=!ded,tag=!out] run function battle:kits/clear_kit
+execute as @a[tag=!ded,tag=!out] run function kitpvp:kits/clear_kit
 function cc:end
 
 # break loop

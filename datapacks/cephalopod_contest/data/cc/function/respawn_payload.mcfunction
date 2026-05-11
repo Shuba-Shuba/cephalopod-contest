@@ -31,4 +31,4 @@ execute if score %map game matches 0 if score .payload_checkpoint game matches 3
 
 
 ### give kit
-function battle:kits/random
+function kitpvp:kits/random

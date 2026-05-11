@@ -3,10 +3,10 @@
         "cc:load",
         "shb:load",
         "rep:load",
-        "battle:arrows/load",
-        "battle:eng/load",
-        "battle:copycat/load",
-        "battle:pyro/load",
+        "kitpvp:arrows/load",
+        "kitpvp:eng/load",
+        "kitpvp:copycat/load",
+        "kitpvp:pyro/load",
         "xp:load"
     ]
 }

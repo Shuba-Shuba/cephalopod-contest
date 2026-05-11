@@ -3,7 +3,7 @@ execute positioned ~ ~-1.5 ~ unless entity @a[tag=this,distance=..1] run particl
 scoreboard players remove .r raycast 1
 
 # place fire
-execute positioned ~ ~-0.25 ~ unless entity @a[tag=user,distance=..2] run function battle:pyro/fire/place
+execute positioned ~ ~-0.25 ~ unless entity @a[tag=user,distance=..2] run function kitpvp:pyro/fire/place
 
 # entity checks
 execute positioned ~-0.075 ~-0.075 ~-0.075 as @e[tag=!this,dx=0,type=!#shb:protect] positioned ~-0.85 ~-0.85 ~-0.85 if entity @s[dx=0] run function shb:raycast/hit

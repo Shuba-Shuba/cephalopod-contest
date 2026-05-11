@@ -3,10 +3,10 @@
         "cc:tick",
         "shb:tick",
         "rep:tick",
-        "battle:arrows/tick",
-        "battle:eng/tick",
-        "battle:copycat/tick",
-        "battle:pyro/tick",
-        "battle:build/tick"
+        "kitpvp:arrows/tick",
+        "kitpvp:eng/tick",
+        "kitpvp:copycat/tick",
+        "kitpvp:pyro/tick",
+        "kitpvp:build/tick"
     ]
 }

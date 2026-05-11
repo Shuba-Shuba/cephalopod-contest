@@ -24,4 +24,4 @@ scoreboard players reset * kitpvp_kills
 scoreboard players set @a kitpvp_kills 0
 scoreboard players set @a kills 0
 scoreboard objectives setdisplay sidebar kitpvp_kills
-execute as @a[tag=!out,tag=!ded] at @s run function battle:kits/random
+execute as @a[tag=!out,tag=!ded] at @s run function kitpvp:kits/random

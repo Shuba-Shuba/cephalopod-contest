@@ -8,6 +8,6 @@ execute if score %map game matches 4 in cc:void run spreadplayers -437 1045 15 4
 execute if score %map game matches 5 in cc:void run spreadplayers 582 611 5 18 under 103 false @s
 execute if score %map game matches 6 in cc:void run spreadplayers 639 613 10 20 under 106 false @s
 execute if score %map game matches 7 in cc:void run function cc:space_jumps_tp
-function battle:kits/random
+function kitpvp:kits/random
 
 #me died
