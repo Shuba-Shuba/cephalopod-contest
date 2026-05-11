@@ -1,0 +1,12 @@
+{
+    "values": [
+        "cc:load",
+        "shb:load",
+        "rep:load",
+        "battle:arrows/load",
+        "battle:eng/load",
+        "battle:copycat/load",
+        "battle:pyro/load",
+        "xp:load"
+    ]
+}
