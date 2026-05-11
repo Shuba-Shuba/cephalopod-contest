@@ -10,4 +10,4 @@ team join blue @a[tag=cop]
 tellraw @a [{selector:"@a[tag=cop]",color:"red"}," is the cop."]
 team modify red friendlyFire true
 team modify blue friendlyFire true
-schedule function cc:mode/drugs 5s
+schedule function cc:mode/pothead 5s

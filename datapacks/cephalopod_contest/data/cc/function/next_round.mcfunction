@@ -37,7 +37,7 @@ execute if score %premode game matches 10 in cc:void run function cc:intro/sumo
 execute if score %premode game matches 11 in cc:void run function cc:intro/blocks
 execute if score %premode game matches 12 in cc:void run function cc:intro/craft
 execute if score %premode game matches 13 in cc:void run function cc:intro/gun_game
-execute if score %premode game matches 14 in cc:void run function cc:intro/drugs
+execute if score %premode game matches 14 in cc:void run function cc:intro/pothead
 execute if score %premode game matches 15 in cc:void run function cc:intro/skywars
 execute if score %premode game matches 16 in cc:void run function cc:intro/nbk_camera
 execute if score %premode game matches 17 in cc:void run function cc:intro/spleef

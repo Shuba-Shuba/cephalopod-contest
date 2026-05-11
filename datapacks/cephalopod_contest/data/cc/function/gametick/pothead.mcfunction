@@ -14,7 +14,7 @@ execute store result score .count jail_time if entity @a[scores={jail_time=1..}]
 scoreboard players remove @a[scores={jail_time=1..}] jail_time 1
 spreadplayers 257 762 1 32 under 125 false @a[scores={jail_time=1}]
 
-execute if entity @a[predicate=cc:elevator_skyscraper3] if score .skyscraper heist matches ..1 run function cc:close/skyscraper
+execute if entity @a[predicate=cc:elevator_skyscraper3] if score .skyscraper heist matches ..1 run function cc:pothead/close/skyscraper
 execute as @a[predicate=cc:elevator_skyscraper3] at @s run tp ~-69 ~-22 ~8
 execute unless entity @e[type=#cc:heist,tag=heist,predicate=cc:mob_skyscraper] run fill 327 64 777 327 62 774 minecraft:bone_block[axis=y]
 execute unless entity @e[type=#cc:heist,tag=heist,predicate=cc:mob_skyscraper] run fill 327 64 776 327 62 775 minecraft:air

@@ -54,7 +54,7 @@ schedule clear cc:mode/sumo
 schedule clear cc:mode/blocks
 schedule clear cc:mode/craft
 schedule clear cc:mode/gun_game
-schedule clear cc:mode/drugs
+schedule clear cc:mode/pothead
 schedule clear cc:mode/skywars
 schedule clear cc:mode/nbk
 schedule clear cc:mode/spleef
@@ -142,9 +142,9 @@ scoreboard players set ammo_items.enabled config 0
 kill @e[type=#cc:heist,tag=heist]
 kill @e[type=item,nbt={Item:{id:"minecraft:emerald"}}]
 tag @a remove cop
-function cc:open/skyscraper
-function cc:open/hotel
-function cc:open/bank
+function cc:pothead/open/skyscraper
+function cc:pothead/open/hotel
+function cc:pothead/open/bank
 execute in cc:void run setblock 228 123 793 polished_blackstone_button[facing=north] destroy
 execute in cc:void run place template cc:pothead/gas_station 235 121 766
 execute as @e[type=marker,tag=jigsaw] at @s run function cc:clear_building

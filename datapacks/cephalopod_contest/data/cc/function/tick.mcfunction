@@ -76,7 +76,7 @@ execute if score %in game matches 1 if score %mode game matches 10 in cc:void ru
 execute if score %in game matches 1 if score %mode game matches 11 in cc:void run function cc:gametick/blocks
 execute if score %in game matches 1 if score %mode game matches 12 in cc:void run function cc:gametick/craft
 execute if score %in game matches 1 if score %mode game matches 13 in cc:void run function cc:gametick/gun_game
-execute if score %in game matches 1 if score %mode game matches 14 in cc:void run function cc:gametick/drugs
+execute if score %in game matches 1 if score %mode game matches 14 in cc:void run function cc:gametick/pothead
 execute if score %in game matches 1 if score %mode game matches 15 in cc:void run function cc:gametick/skywars
 execute if score %in game matches 1 if score %mode game matches 16 in cc:void run function cc:gametick/nbk
 execute if score %in game matches 1 if score %mode game matches 17 in cc:void run function cc:gametick/spleef
