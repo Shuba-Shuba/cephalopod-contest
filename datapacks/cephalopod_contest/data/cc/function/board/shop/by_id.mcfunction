@@ -1,0 +1,1 @@
+$function cc:board/shop/$(shop_id)
