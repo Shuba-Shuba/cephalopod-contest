@@ -1,7 +1,11 @@
-tellraw @s "Shady Shop - 17% star market share\nbuy something fucker"
-execute if score @s board_money matches 3.. run tellraw @s ["",{text:"\n[Weed]",underlined:true,click_event:{action:"run_command",command:"/trigger board_shop set 100"},hover_event:{action:"show_text",value:"When used, doubles your next roll"}}," - $3"]
-execute unless score @s board_money matches 3.. run tellraw @s [{text:"\n[Weed]",color:"red",hover_event:{action:"show_text",value:"When used, doubles your next roll\nYou can't afford this item"}}," - $3"]
-execute if score @s board_money matches 5.. run tellraw @s ["",{text:"\n[Coke]",underlined:true,click_event:{action:"run_command",command:"/trigger board_shop set 101"},hover_event:{action:"show_text",value:"When used, triples your next roll"}}," - $5"]
-execute unless score @s board_money matches 5.. run tellraw @s [{text:"\n[Coke]",color:"red",hover_event:{action:"show_text",value:"When used, triples your next roll\nYou can't afford this item"}}," - $5"]
+data modify storage cc:board shop_listings set value []
+data modify storage cc:board shop_title set value '"shady shop"'
 
-execute store result score #in_stock board_stars if score #pos board_stars matches 1
+data modify storage cc:board in_stock set value true
+function cc:board/shop/dialog/add_listing_star with storage cc:board
+data remove storage cc:board in_stock
+
+function cc:board/shop/dialog/add_listing {name:[{atlas:"items",sprite:"cc:item/weed"}," weed"], description:'"When used, doubles your next roll"', price:3, id:100}
+function cc:board/shop/dialog/add_listing {name:[{atlas:"items",sprite:"cc:item/sugar"}," coke"], description:'"When used, triples your next roll"', price:5, id:101}
+
+function cc:board/shop/dialog/show with storage cc:board
