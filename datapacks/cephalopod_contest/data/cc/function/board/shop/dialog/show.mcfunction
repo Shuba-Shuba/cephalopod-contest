@@ -1,7 +1,7 @@
 scoreboard players enable @s board_shop
 $dialog show @s {\
     type: "minecraft:multi_action",\
-    title: "shop",\
+    title: $(shop_title),\
     inputs: [],\
     can_close_with_escape: true,\
     after_action: "none",\

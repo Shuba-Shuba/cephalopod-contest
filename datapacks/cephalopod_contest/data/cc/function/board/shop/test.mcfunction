@@ -1,4 +1,5 @@
 data modify storage cc:board shop_listings set value []
+data modify storage cc:board shop_title set value '"test shop"'
 
 function cc:board/shop/dialog/add_listing_star {in_stock:false}
 function cc:board/shop/dialog/add_listing {name:"penis", description:'"it\'s just a dick bro"', price:10, id:300}
