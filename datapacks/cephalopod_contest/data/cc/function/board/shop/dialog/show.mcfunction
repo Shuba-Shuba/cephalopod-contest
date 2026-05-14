@@ -1,4 +1,3 @@
-scoreboard players enable @s board_shop
 $dialog show @s {\
     type: "minecraft:multi_action",\
     title: $(shop_title),\

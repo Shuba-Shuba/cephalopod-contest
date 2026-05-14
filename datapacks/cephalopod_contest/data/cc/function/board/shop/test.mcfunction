@@ -7,4 +7,5 @@ function cc:board/shop/dialog/add_listing {name:"vagina", description:'"it\'s ju
 function cc:board/shop/dialog/add_listing {name:{text:"text component test"}, description:'"it\'s just a diddy blud"', price:6, id:-1}
 function cc:board/shop/dialog/add_listing {name:[{atlas:"items",sprite:"cc:item/weed"}," weed"], description:'"it\'s just a joint kirk"', price:4, id:100}
 
+scoreboard players enable @s board_shop
 function cc:board/shop/dialog/show with storage cc:board
