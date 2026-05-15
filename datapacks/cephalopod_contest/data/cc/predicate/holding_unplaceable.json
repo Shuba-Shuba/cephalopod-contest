@@ -36,7 +36,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "tag": "cc:placeable"
+            "items": "#cc:placeable"
           }
         }
       }

@@ -34,7 +34,7 @@
     "predicate": {
       "equipment": {
         "mainhand": {
-          "tag": "cc:mineable"
+          "items": "#cc:mineable"
         }
       }
     }

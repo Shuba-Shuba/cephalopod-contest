@@ -5,7 +5,7 @@
     "predicate": {
       "equipment": {
         "mainhand": {
-          "tag": "minecraft:swords"
+          "items": "#minecraft:swords"
         }
       }
     }
@@ -18,7 +18,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "tag": "minecraft:swords",
+            "items": "#minecraft:swords",
             "predicates": {
               "minecraft:enchantments": [
                 {
