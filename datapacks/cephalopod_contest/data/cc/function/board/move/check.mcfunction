@@ -18,7 +18,7 @@ execute if block ~ ~-32 ~ pink_concrete run return run function cc:board/move/st
 execute if block ~ ~-32 ~ yellow_concrete as @p[tag=this] run return run function cc:board/block/shop
 
 # non-passable events
-execute if score .steps board_roll matches 0 run function cc:board/move/check_non_passable
+execute if score .steps board_roll matches 0 run function cc:board/move/check_last
 
 # step
 execute if score .steps board_roll matches 1.. run function cc:board/move/step
