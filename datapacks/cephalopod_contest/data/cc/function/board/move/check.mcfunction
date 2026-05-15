@@ -1,7 +1,6 @@
 # @s = player's board item_display
 # @p[tag=this] = player
 tag @a remove this
-tag @s add this
 execute as @a[tag=!out] if score @s board_turn = .i board_turn run tag @s add this
 
 # counting or not counting...?
@@ -24,5 +23,3 @@ execute if score .steps board_roll matches 0 run function cc:board/move/check_no
 
 # step
 execute if score .steps board_roll matches 1.. run function cc:board/move/step
-
-tag @e remove this
