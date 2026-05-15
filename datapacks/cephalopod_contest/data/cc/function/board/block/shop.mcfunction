@@ -1,5 +1,6 @@
 # @s = player
 # wait for player's choice
+tag @s remove this
 function cc:board/await_start {time:10}
 # scoreboard players enable @s board_shop
 tellraw @a ["",{selector:"@s"}," be shopping"]
