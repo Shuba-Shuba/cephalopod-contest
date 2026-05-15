@@ -8,8 +8,8 @@ $tellraw @a "$(name) left, finishing their turn automatically; their future turn
 scoreboard players set .auto board_turn 1
 
 # summon placeholder mannequin
-$summon mannequin ~ ~ ~ {Tags:["board_player_placeholder","init"],immovable:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:"$(name) (OFFLINE)",equipment:{head:{id:"zombie_head",count:1}}}
-$scoreboard players operation @e[type=mannequin,limit=1,sort=nearest,tag=init] board_turn = $(name) board_turn
+$execute at @n[type=item_display,tag=this] run summon mannequin ~ ~ ~ {Tags:["board_player_placeholder","init"],immovable:1b,Invulnerable:1b,profile:"$(name)",hide_description:1b,CustomName:"OFFLINE",CustomNameVisible:1b}
+$scoreboard players operation @n[type=mannequin,tag=init] board_turn = $(name) board_turn
 ride @n[type=mannequin,tag=init] mount @n[type=item_display,tag=this]
 tag @e[type=mannequin] remove init
 

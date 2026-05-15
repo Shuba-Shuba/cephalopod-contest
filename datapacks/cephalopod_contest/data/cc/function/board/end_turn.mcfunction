@@ -13,11 +13,13 @@ data modify entity @n[type=item_display,tag=this] data.Inventory set from entity
 execute as @a[tag=this] run function cc:board/update_display
 
 # make mannequin
-execute as @e[type=item_display,tag=this] at @s run summon mannequin ~ ~ ~ {Tags:["init","board_player"],immovable:1b,Invulnerable:1b}
-execute rotated as @n[type=item_display,tag=this] run rotate @n[type=mannequin,tag=init] ~ ~
-scoreboard players operation @n[type=mannequin,tag=init] board_turn = @p[tag=this] board_turn
-data modify entity @n[type=mannequin,tag=init] profile.id set from entity @p[tag=this] UUID
-tag @n[type=mannequin,tag=init] remove init
+# if turn was auto (player left), mannequin already exists
+execute unless score .auto board_turn matches 1 as @e[type=item_display,tag=this] at @s run summon mannequin ~ ~ ~ {Tags:["init","board_player"],immovable:1b,Invulnerable:1b}
+execute unless score .auto board_turn matches 1 rotated as @n[type=item_display,tag=this] run rotate @n[type=mannequin,tag=init] ~ ~
+execute unless score .auto board_turn matches 1 run scoreboard players operation @n[type=mannequin,tag=init] board_turn = @p[tag=this] board_turn
+execute unless score .auto board_turn matches 1 run data modify entity @n[type=mannequin,tag=init] profile.id set from entity @p[tag=this] UUID
+execute unless score .auto board_turn matches 1 run tag @n[type=mannequin,tag=init] remove init
+execute if score .auto board_turn matches 1 as @n[type=item_display,tag=this] on passengers run ride @s dismount
 
 # find the next player
 scoreboard players reset .found_player board_turn
