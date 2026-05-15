@@ -1,0 +1,1 @@
+$tellraw @a "<$(name) (OFFLINE)> I HAVE A BOMB!!!"

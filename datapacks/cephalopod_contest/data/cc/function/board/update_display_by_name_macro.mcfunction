@@ -1,0 +1,1 @@
+$scoreboard players display numberformat $(name) board_display fixed $(text)
