@@ -11,7 +11,7 @@ execute if block ~ ~-32 ~ lime_concrete as @p[tag=this] run function cc:board/bl
 execute if block ~ ~-32 ~ lime_concrete unless entity @p[tag=this] on passengers run function cc:board/block/auto/green with entity @s profile
 execute if block ~ ~-32 ~ black_concrete as @p[tag=this] run function cc:board/block/black
 execute if block ~ ~-32 ~ black_concrete unless entity @p[tag=this] on passengers run function cc:board/block/auto/black with entity @s profile
-execute if entity @e[type=item_display,distance=..1,tag=!this] as @p[tag=this] run function cc:board/fight
+#execute if entity @e[type=item_display,distance=..1,tag=!this] as @p[tag=this] run function cc:board/fight
 tag @s remove this
 
 schedule function cc:board/end_turn 2s
