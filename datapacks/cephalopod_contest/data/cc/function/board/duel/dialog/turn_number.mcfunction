@@ -1,0 +1,1 @@
+$data modify storage cc:board tmp.action.action.command set value "trigger board_duel_opponent set $(turn)"
