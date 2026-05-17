@@ -40,6 +40,9 @@ execute if score %camera game matches 28 in minecraft:the_end run function cc:ca
 execute if score %camera game matches 29 run function cc:camera/disco
 execute if score %camera game matches 420 in cc:chunk run function cc:camera/chunk
 
+# show dueling players
+execute if score %camera game matches 0.. if score %duel game matches 1 run title @a[tag=!out] actionbar {selector:"@a[tag=!out,tag=!ded]",separator:" vs "}
+
 # anchor player to camera
 execute if entity @e[type=#cc:camera,tag=camera,limit=1] as @a[tag=!out,predicate=!cc:is_riding_camera] run ride @s mount @e[type=#cc:camera,tag=camera,limit=1]
 #execute if entity @e[type=armor_stand,tag=camera,limit=1] as @a[tag=!out,predicate=!cc:is_riding_camera] run spectate @e[type=armor_stand,tag=camera,limit=1]

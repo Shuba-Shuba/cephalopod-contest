@@ -1,5 +1,6 @@
 # setup end screen
-schedule function cc:lobby 10s
+execute unless score %duel game matches 1 run schedule function cc:lobby 10s
+execute if score %duel game matches 1 run schedule function cc:board/duel/end 5s
 scoreboard players set %mode game -2
 scoreboard players set %end rotation 0
 gamemode spectator @a[tag=!out]
@@ -9,7 +10,8 @@ execute as @a[tag=!out] run ride @s mount @e[type=item_display,tag=camera,limit=
 effect clear @a[tag=!out]
 
 # sounds
-playsound minecraft:custom.bensound_full record @a[tag=!out] 0 201 0 1 1 1
+execute unless score %duel game matches 1 run playsound minecraft:custom.bensound_full record @a[tag=!out] 0 201 0 1 1 1
+execute if score %duel game matches 1 run playsound minecraft:custom.bensound_full record @a[tag=!out] 0 201 0 1 1.5 1
 
 # armor stand
 kill @e[type=mannequin,tag=end_screen]
@@ -24,6 +26,7 @@ execute if score %winners game matches 0 in cc:void run setblock 0 200 0 birch_s
 execute if score %winners game matches 2.. run title @a[tag=!out] title [{score:{name:"%winners",objective:"game"},color:"green"}," people"]
 execute if score %winners game matches 1 run title @a[tag=!out] title [{selector:"@a[tag=winner,limit=1]"}]
 execute if score %winners game matches 0 run title @a[tag=!out] title "Fucking nobody"
-execute if score %winners game matches 0..1 run title @a[tag=!out] subtitle "has won the game!"
+execute if score %winners game matches 0..1 unless score %duel game matches 1 run title @a[tag=!out] subtitle "has won the game!"
+execute if score %winners game matches 0..1 if score %duel game matches 1 run title @a[tag=!out] subtitle "has won the duel!"
 execute if score %winners game matches 2.. run title @a[tag=!out] subtitle "have won the game!"
-tag @a[tag=!out] remove winner
+execute unless score %duel game matches 1 run tag @a[tag=!out] remove winner

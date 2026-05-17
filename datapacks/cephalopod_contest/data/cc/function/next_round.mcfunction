@@ -22,7 +22,8 @@ scoreboard objectives setdisplay sidebar
 execute store result score .n calc if entity @a[tag=!out,tag=!ded]
 
 # mode rng
-function cc:next_round_rng
+execute unless score %duel game matches 1 run function cc:next_round_rng
+execute if score %duel game matches 1 run function cc:board/duel/mode_rng
 execute if score %premode game matches 0 in cc:void run function cc:intro/lights_out
 execute if score %premode game matches 1 in cc:void run function cc:intro/parkour
 execute if score %premode game matches 2 in cc:void run function cc:intro/bomb_tag

@@ -14,3 +14,6 @@ execute if score valid.right board_fork matches 1 run trigger board_fork set 3
 
 # shop - leave without buying anything
 trigger board_shop set -1
+
+# duel - pick random opponent option
+trigger board_duel_opponent set -1

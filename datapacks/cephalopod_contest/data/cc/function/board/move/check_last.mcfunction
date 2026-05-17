@@ -1,5 +1,6 @@
 # @s = player's board item_display
 # @p[tag=this] = player
+schedule function cc:board/end_turn 2s
 tag @s add this
 execute if block ~ ~-32 ~ blue_concrete as @p[tag=this] run function cc:board/block/blue
 execute if block ~ ~-32 ~ blue_concrete unless entity @p[tag=this] on passengers run function cc:board/block/auto/blue with entity @s profile
@@ -13,5 +14,3 @@ execute if block ~ ~-32 ~ black_concrete as @p[tag=this] run function cc:board/b
 execute if block ~ ~-32 ~ black_concrete unless entity @p[tag=this] on passengers run function cc:board/block/auto/black with entity @s profile
 #execute if entity @e[type=item_display,distance=..1,tag=!this] as @p[tag=this] run function cc:board/fight
 tag @s remove this
-
-schedule function cc:board/end_turn 2s
