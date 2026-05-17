@@ -1,4 +1,4 @@
-effect give @a[tag=!out,tag=!fight] resistance 3 255 true
+effect give @a[tag=!out] resistance 3 255 true
 scoreboard players set @a[tag=!out] offhand_carrot 1
 
 # await player action
@@ -22,14 +22,3 @@ execute unless score %board_players_online game < %board_players_online_prev gam
 execute at @a[tag=!out] as @e[type=item,distance=..10] at @s on origin run data modify entity @e[type=item,sort=nearest,limit=1] Owner set from entity @s UUID
 execute at @a[tag=!out] as @e[type=item,distance=..10] run data modify entity @s PickupDelay set value 0s
 execute at @a[tag=!out] as @e[type=item,distance=..10] at @s on origin run tp @e[type=item,sort=nearest,limit=1] @s
-
-# fight
-execute if score %fight game matches 1 run function cc:backstab_tick
-execute if score %fight game matches 1 as @a[scores={deaths=1..},tag=fight] run function cc:board/fight_death
-execute if score %fight game matches 1 if entity @a[tag=fight] run scoreboard players add %tick game 1
-execute if score %fight game matches 1 if score %tick game matches 20.. run scoreboard players add %second game 1
-execute if score %fight game matches 1 if score %tick game matches 20.. run bossbar set cc:time name {score:{objective:"game",name:"%second"}}
-execute if score %fight game matches 1 if score %tick game matches 20.. if score %second game matches 5 run tellraw @a "Resistance and weakness have worn off."
-execute if score %fight game matches 1 if score %tick game matches 20.. run scoreboard players set %tick game 0
-execute if score %fight game matches 1 store result score %players game if entity @a[tag=fight,tag=!fight_loser]
-execute if score %fight game matches 1 if score %players game matches ..1 run function cc:board/fight_end
