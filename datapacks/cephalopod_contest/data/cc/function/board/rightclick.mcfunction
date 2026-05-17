@@ -7,6 +7,6 @@ execute unless score .start board_roll matches 1 run tellraw @s {text:"You can't
 
 # item effect for corresponding item id
 execute if score .item game matches 1 run function cc:board/roll
-execute if score .item game matches 100 run function cc:board/use/weed
-execute if score .item game matches 101 run function cc:board/use/coke
-execute if score .item game matches 200 run function cc:board/use/glue
+execute if score .item game matches 100 run function cc:board/item/use/weed
+execute if score .item game matches 101 run function cc:board/item/use/coke
+execute if score .item game matches 200 run function cc:board/item/use/glue
