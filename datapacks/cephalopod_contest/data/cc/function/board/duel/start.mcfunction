@@ -1,6 +1,9 @@
 # @s = player who landed on duel space
 tag @s add duel
 
+# workaround for 0 not being detectable trigger input
+execute if score @s board_duel_opponent matches -2 run scoreboard players set @s board_duel_opponent 0
+
 # get opponent
 execute if score @s board_duel_opponent matches -1 run tag @r[tag=!duel] add duel
 execute if score @s board_duel_opponent matches 1.. as @a[tag=!out,tag=!duel] if score @s board_turn = @p[tag=duel] board_duel_opponent run tag @s add duel
