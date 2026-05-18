@@ -2,6 +2,7 @@
 execute as @a[scores={deaths=1..},predicate=cc:spawn] run function cc:death
 scoreboard players add %tick game 1
 execute if score %tick game matches 20.. run scoreboard players remove %second game 1
+execute if score %tick game matches 20.. if score %second game matches 1..15 unless score %second game matches 6..14 run tellraw @a[tag=!out] [{color:"red",text:"Sudden death in "},{score:{name:"%second",objective:"game"}}," seconds"]
 execute if score %tick game matches 20.. run function cc:clock_sec
 execute if score %second game matches 0 if score %tick game matches 0 run function cc:skywars_timer
 
