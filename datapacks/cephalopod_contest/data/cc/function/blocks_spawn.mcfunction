@@ -1,4 +1,4 @@
-place template cc:blocks/player ~ ~ ~
+place template cc:blocks/player ~ ~ ~ none none 1 0 strict
 tag @s remove tmp_unteleported
 tellraw @a ["[DEBUG] created building area for ",{selector:"@s"}]
 execute if entity @e[type=marker,limit=1,tag=tmp_blocks_tp] run say TP EXISTS

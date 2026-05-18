@@ -1,5 +1,5 @@
 # generate area
-place template cc:craft ~ ~ ~
+place template cc:craft ~ ~ ~ none none 1 0 strict
 tag @s remove tmp_unteleported
 tellraw @a ["[DEBUG] created crafting area for ",{selector:"@s"}]
 

@@ -6,11 +6,11 @@ tag @s remove tmp_unteleported
 
 # place chunk
 forceload add ~ ~ ~20 ~20
-execute if score %map game matches 0 run place template cc:chunk/0 ~ ~ ~
-execute if score %map game matches 1 run place template cc:chunk/1 ~ ~ ~
-execute if score %map game matches 2 run place template cc:chunk/2 ~ ~ ~
-execute if score %map game matches 3 run place template cc:chunk/3 ~ ~ ~
-execute if score %map game matches 4 run place template cc:chunk/4 ~ ~ ~
+execute if score %map game matches 0 run place template cc:chunk/0 ~ ~ ~ none none 1 0 strict
+execute if score %map game matches 1 run place template cc:chunk/1 ~ ~ ~ none none 1 0 strict
+execute if score %map game matches 2 run place template cc:chunk/2 ~ ~ ~ none none 1 0 strict
+execute if score %map game matches 3 run place template cc:chunk/3 ~ ~ ~ none none 1 0 strict
+execute if score %map game matches 4 run place template cc:chunk/4 ~ ~ ~ none none 1 0 strict
 
 # teleport to chunk
 spreadplayers ~8.5 ~8.5 0 8 under 300 false @s
