@@ -52,6 +52,10 @@ schedule clear cc:mode/genwars
 schedule clear cc:mode/dog_fight
 schedule clear cc:mode/mini_tnt
 schedule clear cc:mode/micro_battles
+schedule clear cc:mode/payload
+schedule clear cc:mode/cs
+schedule clear cc:mode/boss_fight
+schedule clear cc:mode/disco
 
 ## individual gamemode resets
 # board reset
