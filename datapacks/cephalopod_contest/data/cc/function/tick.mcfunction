@@ -57,6 +57,9 @@ execute unless score cameras.enabled config matches 1 run scoreboard players set
 execute unless score cameras.enabled config matches 1 run scoreboard players set %camera2 game -1
 execute if score %in game matches 1 if score cameras.enabled config matches 1 in cc:void run function cc:camera
 
+# reapply board game effects on death
+execute if score %board game matches 1 as @a[tag=!out,scores={deaths=1..}] run function cc:board/effect/apply
+
 # gameticks
 execute if score %in game matches 2 run function cc:board/tick
 execute if score %mode game matches -2 run function cc:end_animate

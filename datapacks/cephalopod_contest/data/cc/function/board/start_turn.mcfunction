@@ -13,6 +13,9 @@ gamemode adventure
 effect give @s glowing infinite 0 true
 tag @s remove this
 
+# revoke previous board effects
+function cc:board/effect/revoke
+
 # get items + dice
 scoreboard players set .multiplier board_roll 1
 function cc:board/get_items
