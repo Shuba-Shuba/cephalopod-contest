@@ -1,0 +1,1 @@
+$data modify storage cc:board tmp.tag set from storage cc:board tmp.effects[$(i)]
