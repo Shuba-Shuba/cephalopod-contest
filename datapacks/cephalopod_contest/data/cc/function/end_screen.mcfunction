@@ -11,7 +11,7 @@ effect clear @a[tag=!out]
 
 # sounds
 execute unless score %duel game matches 1 run playsound minecraft:custom.bensound_full record @a[tag=!out] 0 201 0 1 1 1
-execute if score %duel game matches 1 run playsound minecraft:custom.bensound_full record @a[tag=!out] 0 201 0 1 1.5 1
+execute if score %duel game matches 1 run playsound minecraft:custom.bensound_full record @a[tag=!out] 0 201 0 1 2 1
 
 # armor stand
 kill @e[type=mannequin,tag=end_screen]

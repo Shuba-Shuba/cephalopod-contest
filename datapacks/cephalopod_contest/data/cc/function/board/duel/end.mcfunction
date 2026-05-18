@@ -20,5 +20,6 @@ execute as @e[type=item_display,tag=board_player] at @s run function cc:board/re
 tellraw @a ["",{selector:"@a[tag=winner]"}," won duel"]
 tellraw @a ["",{selector:"@a[tag=duel,tag=!winner]"}," lost duel"]
 tag @a remove winner
+tag @a remove duel
 
 schedule function cc:board/end_turn 2s

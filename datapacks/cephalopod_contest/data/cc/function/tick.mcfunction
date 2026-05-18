@@ -63,6 +63,7 @@ execute if score %board game matches 1 as @a[tag=!out,scores={deaths=1..}] run f
 # gameticks
 execute if score %in game matches 2 run function cc:board/tick
 execute if score %mode game matches -2 run function cc:end_animate
+execute if score %mode game matches -2 if score %duel game matches 1 run function cc:end_animate
 execute if score %in game matches 1 if score %mode game matches -1 as @a[gamemode=!spectator,gamemode=!creative] at @s if block ~ ~-1 ~ barrier run function cc:landed_no_kb
 execute if score %in game matches 1 if score %mode game matches -1 run effect give @a resistance 1 255 true
 execute if score %in game matches 1 if score %mode game matches 0 in cc:void run function cc:gametick/lights_out
