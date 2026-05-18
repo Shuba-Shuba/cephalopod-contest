@@ -1,7 +1,7 @@
 execute if entity @s[type=!arrow] store result score %level arrow run data get entity @s active_effects[{id:"minecraft:water_breathing"}].amplifier 1
-execute if entity @s[type=arrow] store result score %level arrow run data get entity @s custom_potion_effects[0].amplifier
+execute if entity @s[type=arrow] store result score %level arrow run data get entity @s item.components.minecraft:potion_contents.custom_effects[0].amplifier
 
-execute if score %level arrow matches 69 at @s[type=!arrow] run function cc:dodgeball_hit
+execute if score %level arrow matches 69 at @s[type=!arrow] run function cc:landed_no_kb
 execute if score %level arrow matches 30 at @s run function kitpvp:arrows/tnt
 execute if score %level arrow matches 31 at @s run function kitpvp:arrows/lightning
 execute if score %level arrow matches 32 at @s[type=player] run function kitpvp:arrows/freeze

@@ -2,6 +2,7 @@
 #gamerule mob_griefing false
 summon creeper ~ ~ ~ {Fuse:0,ignited:1b,CustomName:"The Nuclear Option",ExplosionRadius:0b}
 #execute if score mobGriefing gamerule matches 1 run schedule function sp:mobs 2t
+effect clear
 kill @s[type=!player]
 gamemode spectator @s[type=player]
 tellraw @a [{selector:"@s",color:"red"}," has been eliminated!"]
