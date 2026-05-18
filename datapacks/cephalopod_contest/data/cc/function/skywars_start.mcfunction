@@ -1,6 +1,8 @@
 tellraw @a ["Current match: ",{selector:"@a[tag=skywars]","separator":" vs "},"\nOn deck: ",{selector:"@a[tag=on_deck]"}]
-execute if score %map game matches 0 run place template cc:skywars/original 984 40 219
-execute if score %map game matches 1 run place template cc:skywars/nether 677 28 148
+execute if score %map game matches 0 positioned 984 40 219 run fill ~ ~ ~ ~32 ~50 ~90 air strict
+execute if score %map game matches 0 run place template cc:skywars/original 984 40 219 none none 1 0 strict
+execute if score %map game matches 1 positioned 677 28 148 run fill ~ ~ ~ ~24 ~58 ~96 air strict
+execute if score %map game matches 1 run place template cc:skywars/nether 677 28 148 none none 1 0 strict
 execute positioned 1000 59 264 run kill @e[type=item,distance=..100]
 execute positioned 700 50 200 run kill @e[type=item,distance=..100]
 tag @r[tag=skywars] add tmp_separate
