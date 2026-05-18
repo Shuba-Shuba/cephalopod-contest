@@ -25,5 +25,5 @@ data modify entity 0000000d-0109-0097-0116-000000000104 transformation set from 
 execute store result score .anim board_roll store result entity @s teleport_duration int 1 run data get entity 0000000d-0109-0097-0116-000000000104 transformation.scale[0] 3
 
 # scheduled because teleport_duration desyncs otherwise
-tag @n[type=item_display,tag=board_player] add tmp_next_space_tp
+tag @s add tmp_next_space_tp
 schedule function cc:board/move/tp 2t
