@@ -12,3 +12,4 @@ execute if score %map game matches 0 run tp @a[tag=!out] -215 118 1034
 execute if score %map game matches 1 run tp @a[tag=!out] -215 118 1152
 execute if score %map game matches 2 run tp @a[tag=!out] -215 118 1270
 schedule function cc:mode/dog_fight 9s
+execute if score %duel game matches 1 run schedule function cc:mode/dog_fight 5s replace
