@@ -3,7 +3,7 @@ $dialog show @s {\
     title: "Choose a player to duel",\
     inputs: [],\
     can_close_with_escape: false,\
-    after_action: "wait_for_response",\
+    after_action: "none",\
     pause: false,\
     exit_action: {\
         label: "Choose random player",\
