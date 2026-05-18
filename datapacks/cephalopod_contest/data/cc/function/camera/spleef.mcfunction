@@ -6,6 +6,7 @@ execute if score %map game matches 0 if score %camera1 game matches 0 run summon
 scoreboard players add %camera1 game 1
 title @a[tag=!out] times 0 100 0
 title @a[tag=!out] title "Spleef"
-execute if score %camera1 game matches 0..60 run title @a[tag=!out] subtitle "2 people will fight a spleef match"
-execute if score %camera1 game matches 61..120 run title @a[tag=!out] subtitle "Winner is safe, loser has to fight again"
-execute if score %camera1 game matches 121..180 run title @a[tag=!out] subtitle "Whoever loses last gets eliminated"
+execute if score %camera1 game matches 0..60 unless score %duel game matches 1 run title @a[tag=!out] subtitle "2 people will fight a spleef match"
+execute if score %camera1 game matches 61..120 unless score %duel game matches 1 run title @a[tag=!out] subtitle "Winner is safe, loser has to fight again"
+execute if score %camera1 game matches 121..180 unless score %duel game matches 1 run title @a[tag=!out] subtitle "Whoever loses last gets eliminated"
+execute if score %duel game matches 1 run title @a[tag=!out] subtitle {selector:"@a[tag=!out,tag=!ded]",separator:" vs "}

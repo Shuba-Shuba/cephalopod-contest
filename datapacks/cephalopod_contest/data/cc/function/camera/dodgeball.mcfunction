@@ -8,6 +8,7 @@ execute if score %map game matches 1 if score %camera1 game matches 0 run summon
 scoreboard players add %camera1 game 1
 title @a[tag=!out] times 0 100 0
 title @a[tag=!out] title "Dodgeball"
-execute if score %camera1 game matches 0..60 run title @a[tag=!out] subtitle "Throw balls to kill the other team"
-execute if score %camera1 game matches 61..120 run title @a[tag=!out] subtitle "Get balls by rightclicking the ball sack"
-execute if score %camera1 game matches 121..180 run title @a[tag=!out] subtitle "Last team standing wins, including dead teammates"
+execute if score %camera1 game matches 0..60 unless score %duel game matches 1 run title @a[tag=!out] subtitle "Throw balls to kill the other team"
+execute if score %camera1 game matches 61..120 unless score %duel game matches 1 run title @a[tag=!out] subtitle "Get balls by rightclicking the ball sack"
+execute if score %camera1 game matches 121..180 unless score %duel game matches 1 run title @a[tag=!out] subtitle "Last team standing wins, including dead teammates"
+execute if score %duel game matches 1 run title @a[tag=!out] subtitle {selector:"@a[tag=!out,tag=!ded]",separator:" vs "}
