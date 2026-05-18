@@ -16,6 +16,7 @@ execute if score @s board_fork matches 2 as @e[type=item_display,tag=this] at @s
 execute if score @s board_fork matches 3 as @e[type=item_display,tag=this] at @s run rotate @s ~90 0
 scoreboard players reset @s board_fork
 
+scoreboard players remove .steps board_roll 1
 execute as @e[type=item_display,tag=this] at @s run function cc:board/move/go_forward
 
 tag @e[type=item_display] remove this
