@@ -18,4 +18,4 @@ team join yellow @a[tag=tmp_join_team]
 tag @a[tag=tmp_join_team] remove tmp_unteamed
 tag @a[tag=tmp_join_team] remove tmp_join_team
 
-execute if entity @a[tag=tmp_unteamed] run function cc:team_loop
+execute if entity @a[tag=tmp_unteamed] run function cc:team_loop4
