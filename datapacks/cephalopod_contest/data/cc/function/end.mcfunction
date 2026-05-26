@@ -67,6 +67,7 @@ scoreboard players set @a boss_damage 0
 scoreboard players set @a boss_kills 0
 scoreboard players reset @a boss_points
 scoreboard players set @a boss_lifetime 0
+tag @a remove ded_boss
 
 # cs reset
 bossbar set cc:time color blue
