@@ -1,11 +1,9 @@
 # custom arrow detection
-#execute as @e[type=arrow,nbt={custom_potion_effects:[{id:"minecraft:water_breathing"}],inGround:1b}] run function kitpvp:arrows/directory
-#execute as @e[type=!arrow,nbt={active_effects:[{id:"minecraft:water_breathing"}]}] run function kitpvp:arrows/directory
 scoreboard players remove @e[scores={freezetime=1..},type=marker,tag=freezer] freezetime 1
 execute as @e[scores={freezetime=0},type=marker,tag=freezer] at @s run function kitpvp:arrows/unfreeze
 #execute as @a[tag=!uuid] run function kitpvp:arrows/uuid
-execute as @e[type=arrow,tag=!revolver,nbt={custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:29b}]}] run function kitpvp:arrows/revolver_init
-execute as @e[type=arrow,tag=!revolver,nbt={custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:28b}]}] run function kitpvp:arrows/revolver_init_big
+execute as @e[type=arrow,tag=!revolver,nbt={item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:29b}]}}}}] run function kitpvp:arrows/revolver_init
+execute as @e[type=arrow,tag=!revolver,nbt={item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:28b}]}}}}] run function kitpvp:arrows/revolver_init_big
 scoreboard players remove @a[scores={tp_cd=1..}] tp_cd 1
 
 # the tomb doe
@@ -57,10 +55,10 @@ scoreboard players add @a freezetime 0
 
 # ender arrow
 #execute if score %mode game matches 21 run gamemode adventure @a[gamemode=spectator,predicate=!cc:is_riding_ender_arrow]
-execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] at @s on origin unless predicate cc:is_riding_ender_arrow run tp @s ~ ~ ~
-execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] at @s on origin unless predicate cc:is_riding_ender_arrow run ride @s mount @e[type=arrow,limit=1,sort=nearest]
-execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] on origin run gamemode spectator @s[predicate=cc:is_riding_ender_arrow]
-execute as @e[type=arrow,nbt={inGround:0b,custom_potion_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}] on origin run tag @s add ender_tp
+execute as @e[type=arrow,nbt={inGround:0b,item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}}}}] at @s on origin unless predicate cc:is_riding_ender_arrow run tp @s ~ ~ ~
+execute as @e[type=arrow,nbt={inGround:0b,item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}}}}] at @s on origin unless predicate cc:is_riding_ender_arrow run ride @s mount @e[type=arrow,limit=1,sort=nearest]
+execute as @e[type=arrow,nbt={inGround:0b,item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}}}}] on origin run gamemode spectator @s[predicate=cc:is_riding_ender_arrow]
+execute as @e[type=arrow,nbt={inGround:0b,item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:33b}]}}}}] on origin run tag @s add ender_tp
 execute if score %mode game matches 21 run gamemode adventure @a[gamemode=spectator,tag=!ded,tag=!out,tag=!ender_tp]
 tag @a remove ender_tp
 

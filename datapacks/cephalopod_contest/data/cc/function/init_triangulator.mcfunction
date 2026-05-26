@@ -1,4 +1,4 @@
-data merge entity @s {custom_potion_effects:[{id:"minecraft:water_breathing",duration:2,amplifier:35b,show_particles:0b,show_ambient:0b}]}
+data merge entity @s {item:{id:"minecraft:arrow",components:{potion_contents:{custom_effects:[{id:"minecraft:water_breathing",amplifier:35b,duration:2}]}}}}
 tag @s add this
 execute summon marker run ride @s mount @e[type=arrow,tag=this,limit=1,sort=nearest]
 execute on passengers store result score @s ownerUUID0 run data get entity @e[type=arrow,tag=this,limit=1,sort=nearest] Owner[0]

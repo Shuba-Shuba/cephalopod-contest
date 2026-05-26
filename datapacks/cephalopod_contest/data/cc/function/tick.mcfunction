@@ -48,7 +48,7 @@ execute unless score %team game matches 1 run team join global @a[tag=!out,team=
 #execute if score %in game matches 0 run effect give @a regeneration 1 255 true
 
 # custom arrows (imported from RPG)
-execute as @e[type=arrow,nbt={custom_potion_effects:[{id:"minecraft:water_breathing"}],inGround:1b}] run function cc:directory
+execute as @e[type=arrow,nbt={item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing"}]}}},inGround:1b}] run function cc:directory
 execute as @e[type=!arrow,nbt={active_effects:[{id:"minecraft:water_breathing"}]}] run function cc:directory
 
 # cameras
