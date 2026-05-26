@@ -37,9 +37,6 @@ scoreboard players operation .global visfix *= .-1 visfix
 # join game
 execute as @a unless score @s join matches 0 in cc:void run function shb:join
 
-# entity UUIDs
-execute as @e[type=!player,tag=!uuid_verified] run function shb:uuid
-
 # players
 #execute as @a[scores={return=1}] run function shb:dmg/return_health
 #execute as @a[gamemode=!creative,gamemode=!spectator,scores={hp_dmg=1..,stack=0}] run function shb:dmg/deal_damage

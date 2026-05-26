@@ -1,7 +1,6 @@
 # custom arrow detection
 scoreboard players remove @e[scores={freezetime=1..},type=marker,tag=freezer] freezetime 1
 execute as @e[scores={freezetime=0},type=marker,tag=freezer] at @s run function kitpvp:arrows/unfreeze
-#execute as @a[tag=!uuid] run function kitpvp:arrows/uuid
 execute as @e[type=arrow,tag=!revolver,nbt={item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:29b}]}}}}] run function kitpvp:arrows/revolver_init
 execute as @e[type=arrow,tag=!revolver,nbt={item:{components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:water_breathing",amplifier:28b}]}}}}] run function kitpvp:arrows/revolver_init_big
 scoreboard players remove @a[scores={tp_cd=1..}] tp_cd 1
