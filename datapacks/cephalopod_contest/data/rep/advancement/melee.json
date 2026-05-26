@@ -9,6 +9,16 @@
             "name": "rep:recording"
           }
         ],
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_player_attack",
+                "expected": true
+              }
+            ]
+          }
+        },
         "entity": [
           {
             "condition": "minecraft:entity_properties",
