@@ -10,5 +10,5 @@ execute if score rep.recording config matches 0 run scoreboard players remove @a
 execute if score rep.recording config matches 0 as @a[scores={rep_record=2..}] at @s run function rep:place
 execute if score rep.recording config matches 0 if entity @a[scores={rep_record=1}] run function rep:play
 execute if score rep.recording config matches 1 run scoreboard players remove @e[type=marker,tag=anchor] anchor_index 1
-execute if score rep.recording config matches 1 run kill @e[type=marker,tag=anchor,scores={anchor_index=..0}]
+execute if score rep.recording config matches 1 as @e[type=marker,tag=anchor,scores={anchor_index=..0}] run function rep:record/oldest_state
 execute if score rep.recording config matches 1 as @a[tag=!out] at @s run function rep:place

@@ -1,6 +1,7 @@
 scoreboard objectives add anchor_id dummy
 scoreboard objectives add anchor_index dummy
 scoreboard objectives add rep_record dummy
+scoreboard objectives add rep_selected_slot dummy
 scoreboard objectives add UUID0 dummy
 scoreboard objectives add UUID1 dummy
 scoreboard objectives add UUID2 dummy
