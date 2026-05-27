@@ -10,6 +10,8 @@ execute store result score @s rep_selected_slot run data get entity @s SelectedI
 execute unless score #previous_tick rep_selected_slot = @s rep_selected_slot run advancement grant @s only rep:equipment_update
 execute if entity @s[advancements={rep:equipment_update=true}] run function rep:record/equipment
 advancement revoke @s only rep:equipment_update
+execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_sneaking:1b}}} run tag @n[type=marker,tag=init] add sneaking
+execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_swimming:1b}}} run tag @n[type=marker,tag=init] add swimming
 scoreboard players operation @n[type=marker,tag=init] anchor_id = @s anchor_id
 execute if score rep.recording config matches 0 run scoreboard players add @s anchor_index 1
 execute if score rep.recording config matches 0 run scoreboard players operation @n[type=marker,tag=init] anchor_index = @s anchor_index
