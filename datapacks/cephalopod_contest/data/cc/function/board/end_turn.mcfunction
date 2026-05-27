@@ -7,7 +7,7 @@ gamemode spectator @a[tag=this]
 effect clear @a[tag=this] glowing
 
 # copy inventory onto item_display
-data modify entity @n[type=item_display,tag=this] data.Inventory set from entity @a[tag=this,limit=1] Inventory
+execute as @p[tag=this] run function cc:board/save_items
 
 # update score display
 execute as @a[tag=this] run function cc:board/update_display
