@@ -7,7 +7,5 @@ tag @r[tag=!out,tag=!ded,tag=!safe,tag=!tmp_safe] add button
 tp @a[tag=button] 177 88 106
 tp @a[tag=tmp_safe] 158 87 106
 tag @a remove tmp_safe
-execute store result bossbar cc:time max run scoreboard players get time.buttons config
-execute store result bossbar cc:time value run scoreboard players get time.buttons config
-scoreboard players operation %second game = time.buttons config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.buttons config
 execute if score %choices button matches 1 run function cc:button_reset

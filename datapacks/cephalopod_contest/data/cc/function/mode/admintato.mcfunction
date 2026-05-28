@@ -3,9 +3,7 @@ function cc:camera_end
 scoreboard players set %mode game 19
 
 # clock
-execute store result bossbar cc:time max run scoreboard players get time.admintato config
-execute store result bossbar cc:time value run scoreboard players get time.admintato config
-scoreboard players operation %second game = time.admintato config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.admintato config
 
 # setup
 effect give @a[tag=!out] resistance infinite 255 true

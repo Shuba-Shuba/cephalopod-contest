@@ -36,9 +36,7 @@ scoreboard objectives setdisplay sidebar prayers
 #tellraw @a "\nNun Run:\nSomeone is the nun, and they are teamed against everyone else. Everyone else needs to pray, and whoever prays the least loses. You can do this by repeatedly sneaking/unsneaking on green froglights. However, this will make you glow and the nun will see you. The nun's job is to MURDER EVERYONE. If you get killed, you also lose.\n"
 execute unless score time.nun_run config matches 11.. run tellraw @a "Reset nun run time to 180 seconds because it was set to under 11 seconds"
 execute unless score time.nun_run config matches 11.. run scoreboard players set time.nun_run config 180
-execute store result bossbar cc:time max run scoreboard players get time.nun_run config
-execute store result bossbar cc:time value run scoreboard players get time.nun_run config
-scoreboard players operation %second game = time.nun_run config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.nun_run config
 scoreboard players set rep.recording config 1
 
 # choose nun

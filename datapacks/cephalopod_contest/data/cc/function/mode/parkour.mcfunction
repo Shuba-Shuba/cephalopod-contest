@@ -3,9 +3,7 @@ function cc:camera_end
 execute if score %map game matches 0 in cc:void run tp @a[tag=!out] -49 84 141 0 0
 execute if score %map game matches 1 in cc:void run tp @a[tag=!out] -8 87 238 90 0
 execute if score %map game matches 2 in cc:void run tp @a[tag=!out] -13 86 286 -90 0
-execute store result bossbar cc:time max run scoreboard players get time.glass_jumps config
-execute store result bossbar cc:time value run scoreboard players get time.glass_jumps config
-scoreboard players operation %second game = time.glass_jumps config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.glass_jumps config
 effect give @a[tag=!out] resistance infinite 255 true
 gamerule fall_damage false
 

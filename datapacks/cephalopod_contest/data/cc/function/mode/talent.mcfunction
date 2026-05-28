@@ -2,8 +2,7 @@
 function cc:camera_end
 
 # clock
-execute store result bossbar cc:time max run scoreboard players get time.talent config
-execute store result bossbar cc:time value run scoreboard players get time.talent config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players get time.talent config
 
 # setup
 scoreboard players set %mode game 20

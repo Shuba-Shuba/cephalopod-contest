@@ -12,9 +12,7 @@ execute if score %map game matches 6 in cc:void run spreadplayers 639 613 10 20 
 execute if score %map game matches 7 as @a[tag=!out] at @s in cc:void run function cc:space_jumps_tp
 
 # clock
-execute store result bossbar cc:time max run scoreboard players get time.kitpvp config
-execute store result bossbar cc:time value run scoreboard players get time.kitpvp config
-scoreboard players operation %second game = time.kitpvp config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.kitpvp config
 
 # setup
 clear @a[tag=!out]

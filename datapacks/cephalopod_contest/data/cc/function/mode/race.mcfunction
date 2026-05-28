@@ -5,9 +5,7 @@ function cc:camera_end
 # start round
 effect give @a[tag=!out] resistance infinite 255 true
 gamerule fall_damage false
-execute store result bossbar cc:time max run scoreboard players get time.race config
-execute store result bossbar cc:time value run scoreboard players get time.race config
-scoreboard players operation %second game = time.race config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.race config
 execute in cc:void run setblock 100 61 -214 redstone_block
 execute in cc:void run setblock 100 62 -214 minecraft:iron_door[facing=south,hinge=right,half=lower,open=true,powered=true] replace
 execute in cc:void run setblock 100 63 -214 minecraft:iron_door[facing=south,hinge=right,half=upper,open=true,powered=true] replace

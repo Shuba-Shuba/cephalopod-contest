@@ -3,9 +3,7 @@ function cc:camera_end
 
 # start round
 scoreboard players set %mode game 5
-execute store result bossbar cc:time max run scoreboard players get time.buttons config
-execute store result bossbar cc:time value run scoreboard players get time.buttons config
-scoreboard players operation %second game = time.buttons config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.buttons config
 tag @a remove button
 scoreboard players set @a button 0
 tag @r[tag=!out,tag=!ded] add button

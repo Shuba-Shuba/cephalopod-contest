@@ -1,9 +1,7 @@
 # begin
 function cc:camera_end
 scoreboard players set %mode game 0
-execute store result bossbar cc:time max run scoreboard players get time.lights_out config
-execute store result bossbar cc:time value run scoreboard players get time.lights_out config
-scoreboard players operation %second game = time.lights_out config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.lights_out config
 playsound minecraft:music_disc.ward music @a[tag=!out,tag=!ded] 0 69 0 1 0 1
 effect give @a[tag=!out,tag=!ded] blindness infinite 0 true
 effect give @a[tag=!out,tag=!ded] regeneration 5 255 true

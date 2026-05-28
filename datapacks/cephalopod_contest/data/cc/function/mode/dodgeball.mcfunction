@@ -4,9 +4,7 @@ function cc:camera_end
 # start round
 #tellraw @a "\nDodgeball:\nThrow balls at each other. If you get hit you die. Get your ball supply at the local gay bar.\n"
 scoreboard players set %mode game 8
-execute store result bossbar cc:time max run scoreboard players get time.dodgeball config
-execute store result bossbar cc:time value run scoreboard players get time.dodgeball config
-scoreboard players operation %second game = time.dodgeball config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.dodgeball config
 effect give @a[tag=!out] resistance infinite 255 true
 gamerule fall_damage false
 

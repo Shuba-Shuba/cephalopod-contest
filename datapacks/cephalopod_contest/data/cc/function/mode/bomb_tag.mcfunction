@@ -2,9 +2,7 @@ scoreboard players set %mode game 2
 function cc:camera_end
 execute unless score time.bomb_tag config matches 6.. run tellraw @a "Reset bomb tag time to 25 seconds because it was set to under 6 seconds"
 execute unless score time.bomb_tag config matches 6.. run scoreboard players set time.bomb_tag config 25
-execute store result bossbar cc:time max run scoreboard players get time.bomb_tag config
-execute store result bossbar cc:time value run scoreboard players get time.bomb_tag config
-scoreboard players operation %second game = time.bomb_tag config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.bomb_tag config
 execute if score %map game matches 0 in cc:void run spreadplayers 167 -3 1 5 under 120 false @a[tag=!out]
 execute if score %map game matches 1 in cc:void run spreadplayers 173 -73 1 5 under 120 false @a[tag=!out]
 execute if score %map game matches 2 in cc:void run spreadplayers 186 -197 1 5 under 125 false @a[tag=!out]

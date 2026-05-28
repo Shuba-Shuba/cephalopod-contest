@@ -6,9 +6,7 @@ function cc:camera_end
 
 ## round setup
 scoreboard players set %mode game 11
-execute store result bossbar cc:time max run scoreboard players get time.blocks config
-execute store result bossbar cc:time value run scoreboard players get time.blocks config
-scoreboard players operation %second game = time.blocks config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.blocks config
 item replace entity @a[tag=!out] hotbar.0 with minecraft:oak_planks[can_place_on={blocks:"minecraft:glass"}] 1
 item replace entity @a[tag=!out] hotbar.1 with minecraft:cobblestone[can_place_on={blocks:"minecraft:glass"}] 1
 item replace entity @a[tag=!out] hotbar.2 with minecraft:dirt[can_place_on={blocks:"minecraft:glass"}] 1

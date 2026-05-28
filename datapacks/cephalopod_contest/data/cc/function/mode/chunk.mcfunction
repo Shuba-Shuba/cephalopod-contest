@@ -19,9 +19,7 @@ scoreboard objectives setdisplay sidebar
 scoreboard players set %arena game 0
 scoreboard players set %mode game 420
 #tellraw @a "\nChunk Guy:\nEveryone has spawned in their own chunk, but everyone's chunk is identical. You have 10 minutes to gather resources, then you will be sent to the arena to fight each other.\n"
-execute store result bossbar cc:time max run scoreboard players get time.chunk config
-execute store result bossbar cc:time value run scoreboard players get time.chunk config
-scoreboard players operation %second game = time.chunk config
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.chunk config
 
 # end timer
 execute store result score #dwb game run worldborder get
