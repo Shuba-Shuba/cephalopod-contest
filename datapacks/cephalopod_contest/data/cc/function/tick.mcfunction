@@ -61,7 +61,7 @@ execute if score %in game matches 1 if score cameras.enabled config matches 1 in
 execute if score %board game matches 1 as @a[tag=!out,scores={deaths=1..}] run function cc:board/effect/apply
 
 # gameticks
-execute if score %in game matches 2 run function cc:board/tick
+execute if score %in game matches 2 in cc:void run function cc:board/tick
 execute if score %mode game matches -2 run function cc:end_animate
 execute if score %mode game matches -2 if score %duel game matches 1 run function cc:end_animate
 execute if score %in game matches 1 if score %mode game matches -1 as @a[gamemode=!spectator,gamemode=!creative] at @s if block ~ ~-1 ~ barrier run function cc:landed_no_kb

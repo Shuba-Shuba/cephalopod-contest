@@ -22,12 +22,7 @@ scoreboard players reset * board_display
 scoreboard players set @a deaths 0
 
 # player setup
-gamemode spectator @a[tag=!out]
-scoreboard players set .i board_turn -1
-execute as @a[tag=!out,sort=random] store result score @s board_turn run scoreboard players add .i board_turn 1
-tp @a[tag=!out] -476 9 -1154 0 0
-execute as @a[tag=!out] at @s in cc:void run function cc:board/init_player_marker
-execute as @a[tag=!out] in cc:void run function cc:board/add_name_to_list
+execute as @a[tag=!out,sort=random] at @s in cc:void run function cc:board/init_player
 execute in cc:void run function cc:board/place_star
 
 # start
@@ -36,5 +31,4 @@ tellraw @a "TURN 1"
 scoreboard players set .i board_turn -1
 schedule function cc:board/end_turn 2s
 
-execute as @a[tag=!out] run function cc:board/update_display
 scoreboard objectives setdisplay sidebar board_display

@@ -4,7 +4,6 @@
 # end start phase
 scoreboard players reset .start board_roll
 scoreboard players reset @s board_await
-clear @s magenta_glazed_terracotta[custom_data={board:1}]
 
 # roll
 tag @s add this

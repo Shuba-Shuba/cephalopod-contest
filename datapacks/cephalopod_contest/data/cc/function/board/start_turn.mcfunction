@@ -16,7 +16,6 @@ tag @s remove this
 # revoke previous board effects
 function cc:board/effect/revoke
 
-# get items + dice
+# get items
 scoreboard players set .multiplier board_roll 1
 function cc:board/get_items
-give @s minecraft:magenta_glazed_terracotta[custom_name={text:"Roll Dice",italic:false},custom_data={board:1}]
