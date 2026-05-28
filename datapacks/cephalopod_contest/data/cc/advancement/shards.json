@@ -8,7 +8,7 @@
       "obfuscated": true
     },
     "description": "Collect all 3 hidden shards (Amethyst, prismarine, and echo)",
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

@@ -1,3 +1,4 @@
+advancement grant @s only cc:kitpvp
 execute if score %mode game matches 21 store result score .out prng run random value 0..31
 execute if score %mode game matches 26 store result score .out prng run random value 0..29
 function kitpvp:kits/clear_kit

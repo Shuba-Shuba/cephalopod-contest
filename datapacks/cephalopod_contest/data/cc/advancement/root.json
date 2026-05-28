@@ -1,12 +1,14 @@
 {
   "display": {
     "icon": {
-      "profile": "Shuba_Shuba",
-      "id": "minecraft:player_head"
+      "id": "minecraft:green_dye",
+      "components": {
+        "minecraft:item_model": "cc:weed"
+      }
     },
     "title": "Cephalopod Contest",
     "description": "Easter egg advancements",
-    "background": "minecraft:textures/misc/enchanted_item_glint.png",
+    "background": "minecraft:misc/enchanted_glint_item",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,

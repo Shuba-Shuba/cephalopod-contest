@@ -9,7 +9,7 @@
     "show_toast": true,
     "announce_to_chat": true
   },
-  "parent": "minecraft:story/root",
+  "parent": "cc:root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
