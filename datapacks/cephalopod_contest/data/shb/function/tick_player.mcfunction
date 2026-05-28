@@ -49,17 +49,17 @@ execute if score .save stats matches 1 run function shb:gun/set_stats
 scoreboard players set .loaded stats 0
 
 ### [CEPHALOPOD CONTEST] placeholder items
-execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:1b}]
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:1b}] 1
 execute if score @s placeholder matches 1 run function shb:give/carrot/pistol
-execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:2b}]
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:2b}] 1
 execute if score @s placeholder matches 1 run function shb:give/carrot/shotgun
-execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:3b}]
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:3b}] 1
 execute if score @s placeholder matches 1 run function shb:give/carrot/rocket
-execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:4b}]
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:4b}] 1
 execute if score @s placeholder matches 1 run function shb:give/carrot/assault_rifle
-execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:5b}]
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:5b}] 1
 execute if score @s placeholder matches 1 run function shb:give/carrot/pistol_bad
-execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:6b}]
+execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:6b}] 1
 execute if score @s placeholder matches 1 run function shb:give/carrot/sniper_bad
 
 # xp timers
