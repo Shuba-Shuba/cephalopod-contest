@@ -5,7 +5,7 @@ gamemode spectator @a[tag=!out,tag=!ded]
 # clock
 scoreboard objectives setdisplay sidebar
 scoreboard players set %mode game 23
-scoreboard players set %second game 0
+execute store result bossbar cc:time max store result bossbar cc:time value run scoreboard players operation %second game = time.dog_fight config
 kill @e[type=wolf]
 execute if score %map game matches 0 as @a[tag=!out,tag=!ded] positioned -215 116 1034 in cc:void run function cc:dog_fight_start
 execute if score %map game matches 1 as @a[tag=!out,tag=!ded] positioned -215 116 1152 in cc:void run function cc:dog_fight_start

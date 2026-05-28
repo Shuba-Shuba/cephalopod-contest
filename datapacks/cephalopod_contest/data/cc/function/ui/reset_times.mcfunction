@@ -16,7 +16,7 @@ trigger skywars_time set 90
 trigger admintato_time set 120
 trigger talent_time set 30
 trigger kitpvp_time set 60
-trigger dog_fight_time set 15
+trigger dog_fight_time set 10
 trigger respawn_time set 5
 trigger payload_time set 180
 trigger payload_respawn_time set 10
