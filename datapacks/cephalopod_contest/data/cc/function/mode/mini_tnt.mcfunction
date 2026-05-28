@@ -34,7 +34,7 @@ team join no_pvp @a[tag=!out,tag=!ded]
 team join global @a[tag=!out,tag=!ded,scores={class=0}]
 scoreboard players set @a freeze_cd 0
 scoreboard players set @a quick_bomb_cd 0
-scoreboard players set @a dispenser_build 0
+scoreboard players set @a build_dispenser 0
 scoreboard players set @a build_dispenser_cd 0
 scoreboard players set @a build_sentry_cd 0
 scoreboard players set @a build_creeper_cd 0
