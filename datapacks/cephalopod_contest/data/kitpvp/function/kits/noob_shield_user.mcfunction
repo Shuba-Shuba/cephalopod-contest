@@ -9,5 +9,5 @@ item replace entity @s armor.legs with minecraft:leather_leggings[unbreakable={}
 item replace entity @s armor.feet with minecraft:iron_boots[unbreakable={}]
 item replace entity @s weapon.offhand with shield
 give @s minecraft:cooked_beef 64
-give @s minecraft:stone_sword
+give @s minecraft:stone_sword[custom_data={config_exempt:true}]
 advancement revoke @s only kitpvp:shield
