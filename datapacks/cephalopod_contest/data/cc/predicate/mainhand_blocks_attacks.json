@@ -4,7 +4,6 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "items": "#minecraft:swords",
         "predicates": {
           "minecraft:blocks_attacks": {}
         }
