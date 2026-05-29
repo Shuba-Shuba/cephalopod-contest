@@ -31,7 +31,7 @@ execute unless data entity @s Inventory[{Slot:1b,id:"minecraft:bow"}] unless ent
 execute if score @s crystal_count matches 0 run scoreboard players set @e[type=#cc:triangulator_tags,tag=arc_tagged] tag_time 0
 scoreboard players operation #tmp crystal_count = @s crystal_count
 execute if score @s crystal_count matches 1.. as @e[type=#cc:triangulator_tags,tag=arc_tagged] at @s run function cc:crystal_beam
-execute if score @s crystal_count matches 1.. unless entity @e[type=#cc:triangulator_tags,tag=arc_tagged] as @e[type=end_crystal,tag=owned_crystal] if data entity @s BeamTarget at @s run function cc:crystal_antibeam
+execute if score @s crystal_count matches 1.. unless entity @e[type=#cc:triangulator_tags,tag=arc_tagged] as @e[type=end_crystal,tag=owned_crystal] if data entity @s beam_target at @s run function cc:crystal_antibeam
 execute as @e[type=slime,tag=arc_tagged] at @s if block ~ ~ ~ air run tp 0 -200 0
 
 # warp

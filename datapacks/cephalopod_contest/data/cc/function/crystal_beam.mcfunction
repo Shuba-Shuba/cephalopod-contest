@@ -1,9 +1,10 @@
 # point crystal beam at position
-execute store result storage cc:crystal pos.X int 1 run data get entity @s Pos[0]
+data modify storage cc:crystal pos set value [I;0,0,0]
+execute store result storage cc:crystal pos[0] int 1 run data get entity @s Pos[0]
 # ok so this 0.99 scalar essentially subtracts 1 from the Y value 2 times, this is because the crystal beam is skewed 2 blocks above the data point for some reason
-execute store result storage cc:crystal pos.Y int 0.99 run data get entity @s Pos[1] 0.99
-execute store result storage cc:crystal pos.Z int 1 run data get entity @s Pos[2]
-execute as @e[type=end_crystal,tag=owned_crystal] run data modify entity @s BeamTarget set from storage cc:crystal pos
+execute store result storage cc:crystal pos[1] int 0.99 run data get entity @s Pos[1] 0.99
+execute store result storage cc:crystal pos[2] int 1 run data get entity @s Pos[2]
+execute as @e[type=end_crystal,tag=owned_crystal] run data modify entity @s beam_target set from storage cc:crystal pos
 
 # count ticks to explode
 scoreboard players add @s tag_time 1
