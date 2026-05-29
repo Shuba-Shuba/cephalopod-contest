@@ -1,7 +1,7 @@
 advancement revoke @s only shb:reload_gun
 advancement revoke @s only shb:reload_gun_carrot
 
-data modify storage shb:gun stats set from entity @s Inventory[{Slot:-106b}].components.minecraft:custom_data.stats
+data modify storage shb:gun stats set from entity @s equipment.offhand.components.minecraft:custom_data.stats
 execute store result score @s gunid run data get storage shb:gun stats.id
 function shb:gun/get_stats
 
