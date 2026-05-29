@@ -8,7 +8,7 @@
           "items": [
             "minecraft:bow"
           ],
-          "components": {
+          "predicates": {
             "minecraft:item_model": "cc:holy_bow/bow"
           }
         }

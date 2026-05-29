@@ -23,7 +23,7 @@
             "items": [
               "minecraft:amethyst_shard"
             ],
-            "components": {
+            "predicates": {
               "minecraft:custom_data": {"shard":1}
             }
           }
@@ -38,7 +38,7 @@
             "items": [
               "minecraft:prismarine_shard"
             ],
-            "components": {
+            "predicates": {
               "minecraft:custom_data": {"shard":1}
             }
           }
@@ -53,7 +53,7 @@
             "items": [
               "minecraft:echo_shard"
             ],
-            "components": {
+            "predicates": {
               "minecraft:custom_data": {"shard":1}
             }
           }

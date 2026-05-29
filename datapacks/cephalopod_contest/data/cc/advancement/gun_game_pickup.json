@@ -4,7 +4,7 @@
       "trigger": "minecraft:thrown_item_picked_up_by_player",
       "conditions": {
         "item": {
-          "components": {
+          "predicates": {
             "minecraft:custom_data": {"gungame":1}
           }
         }

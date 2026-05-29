@@ -5,7 +5,7 @@
     "predicate": {
       "equipment": {
         "offhand": {
-          "components": {
+          "predicates": {
             "minecraft:custom_data": {"nbk":1}
           }
         }
