@@ -155,7 +155,7 @@ item replace entity @a[scores={build_creeper_cd=1}] hotbar.3 with minecraft:wild
 scoreboard players remove @a[scores={build_creeper_cd=1..}] build_creeper_cd 1
 
 # ARC triangulator
-execute as @a[advancements={cc:shoot_triangulator=true}] at @s run function cc:shoot_triangulator
+execute as @a[scores={class=3,shoot_bow=1}] at @s run function cc:shoot_triangulator
 execute as @e[type=arrow,tag=init_triangulator,nbt={LeftOwner:1b}] run data modify entity @s Owner set value [I;0,0,0,0]
 execute as @e[type=arrow,tag=init_triangulator,nbt={LeftOwner:1b}] run tag @s remove init_triangulator
 item replace entity @a[scores={triangulator_cd=1}] hotbar.1 with minecraft:bow[custom_name={text:"Triangulator",italic:false},item_model="cc:holy_bow",damage=383,enchantments={"minecraft:infinity":1}]

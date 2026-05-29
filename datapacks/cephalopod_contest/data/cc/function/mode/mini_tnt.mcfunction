@@ -47,6 +47,7 @@ scoreboard players set @a drill_cd 0
 scoreboard players set @a load_crossbow 0
 scoreboard players set @a crossbow_time 0
 scoreboard players set @a shoot_crossbow 0
+scoreboard players set @a shoot_bow 0
 scoreboard players set @a crystal_count 0
 scoreboard players set @a triangulator_cd 0
 scoreboard players set @a warp_cd 0

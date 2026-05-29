@@ -184,6 +184,7 @@ scoreboard objectives add drill_time dummy
 scoreboard objectives add load_crossbow dummy
 scoreboard objectives add crossbow_time dummy
 scoreboard objectives add shoot_crossbow minecraft.used:minecraft.crossbow
+scoreboard objectives add shoot_bow minecraft.used:minecraft.bow
 scoreboard objectives add crystal_count dummy
 scoreboard objectives add tnt_arrow dummy
 scoreboard objectives add triangulator_cd dummy
