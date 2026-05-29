@@ -1,6 +1,9 @@
 # gamerules
-execute unless score %mode game matches 420 if score 1.8pvp config matches 1 as @a run attribute @s minecraft:attack_speed base set 69
-execute unless score %mode game matches 420 if score 1.8pvp config matches 0 as @a run attribute @s minecraft:attack_speed base set 4
+# execute unless score %mode game matches 420 if score 1.8pvp config matches 1 as @a run attribute @s minecraft:attack_speed base set 69
+# execute unless score %mode game matches 420 if score 1.8pvp config matches 0 as @a run attribute @s minecraft:attack_speed base reset
+execute unless score %mode game matches 420 as @a run attribute @s minecraft:attack_speed base set 69
+execute unless score %mode game matches 420 if score 1.8pvp config matches 1 as @a[predicate=!cc:sword_blocks_attacks,predicate=cc:weapon_follows_config] run item modify entity @s weapon.mainhand cc:block_attacks
+execute unless score %mode game matches 420 if score 1.8pvp config matches 0 as @a[predicate=cc:sword_blocks_attacks,predicate=cc:weapon_follows_config] run item modify entity @s weapon.mainhand cc:no_blocking
 execute unless score %mode game matches 420 unless score %mode game matches 15 unless score %mode game matches 25 unless score %mode game matches 28 run gamemode adventure @a[gamemode=survival,tag=!out]
 execute unless score %mode game matches 420 unless score %mode game matches 21 unless score %mode game matches 25 unless score %mode game matches 26 unless score %mode game matches 28 run effect give @a saturation infinite 255 true
 execute unless score %mode game matches 420 unless score %mode game matches 12 unless score %mode game matches 25 unless score %mode game matches 28 run gamerule block_drops false
