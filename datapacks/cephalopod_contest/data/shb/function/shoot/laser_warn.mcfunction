@@ -13,6 +13,6 @@ kill @e[type=marker,tag=tmp_raycast]
 tag @p[tag=this] remove this
 tag @e remove hit
 
-execute as @a[distance=..80] at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 .7
-execute as @a[distance=..80] at @s run playsound minecraft:item.trident.riptide_1 master @s ~ ~ ~ 1 0
-execute as @a[distance=..80] at @s run playsound minecraft:block.conduit.deactivate master @s
+execute as @a[distance=..80] at @s run playsound minecraft:item.trident.thunder player @s ~ ~ ~ 1 .7
+execute as @a[distance=..80] at @s run playsound minecraft:item.trident.riptide_1 player @s ~ ~ ~ 1 0
+execute as @a[distance=..80] at @s run playsound minecraft:block.conduit.deactivate player @s

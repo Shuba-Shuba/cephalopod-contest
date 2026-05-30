@@ -1,2 +1,2 @@
 # subject to change
-playsound shb:hit master @s
+playsound shb:hit player @s
