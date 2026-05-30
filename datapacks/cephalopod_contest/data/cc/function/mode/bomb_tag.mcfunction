@@ -10,6 +10,7 @@ execute if score %map game matches 3 in cc:void run spreadplayers 105 57 1 5 und
 execute if score %map game matches 4 in cc:void run tp @a[tag=!out] 36 111.5 401
 execute if score %map game matches 5 in cc:void run spreadplayers 247 609 5 10 under 150 false @a[tag=!out]
 execute if score %map game matches 6 in cc:void run spreadplayers 261 39 5 10 under 110 false @a[tag=!out]
+execute if score %map game matches 7 in cc:void run spreadplayers 423.5 820.5 5 16 under 168 false @a[tag=!out]
 scoreboard players set rep.recording config 1
 effect give @a[tag=!out] resistance infinite 255 true
 gamerule fall_damage false
@@ -20,3 +21,4 @@ tag @a remove bomb
 tag @r[tag=!out,tag=!ded] add bomb
 item replace entity @a[tag=bomb] armor.head with minecraft:tnt[enchantments={knockback:2,binding_curse:1}]
 tellraw @a {text:"Bomb has been planted",color:"red"}
+scoreboard players reset * levitation_jump_time

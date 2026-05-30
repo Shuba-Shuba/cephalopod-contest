@@ -231,5 +231,6 @@ scoreboard objectives add board_rewards dummy
 scoreboard objectives add board_display dummy
 execute unless score board.turns config = board.turns config run scoreboard players set board.turns config 20
 scoreboard objectives add board_duel_opponent trigger
+scoreboard objectives add levitation_jump_time dummy
 # put this comment and command at the bottom
 tellraw @a "Reloaded Cephalopod Contest."

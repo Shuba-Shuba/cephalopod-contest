@@ -197,6 +197,7 @@ scoreboard players reset #players_check game
 scoreboard players set %bomb game 0
 tag @a remove bomb
 clear @a[tag=!out]
+scoreboard players reset * levitation_jump_time
 
 # arena reset
 execute in cc:void run place template cc:chunk/arena 939 135 667 none none 1 0 strict
