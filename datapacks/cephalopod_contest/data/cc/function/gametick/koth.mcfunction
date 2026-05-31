@@ -11,4 +11,4 @@ execute if score %replay game matches 2 run function cc:end
 execute if score %map game matches 0 as @a[tag=!out,tag=!ded] at @s if block ~ ~-1 ~ orange_terracotta run scoreboard players add @s koth 1
 execute if score %map game matches 1 as @a[tag=!out,tag=!ded] at @s if block ~ ~-1 ~ bricks run scoreboard players add @s koth 1
 execute if score %map game matches 2 as @a[tag=!out,tag=!ded] at @s if block ~ ~-1 ~ cyan_concrete run scoreboard players add @s koth 1
-item replace entity @a[tag=!out,tag=!ded] armor.feet with minecraft:netherite_boots[enchantments={"minecraft:depth_strider":3},unbreakable={},custom_name={text:"Super Boots",italic:false},custom_data={super_boots:1b}]
+item replace entity @a[tag=!out,tag=!ded] armor.feet with minecraft:netherite_boots[enchantments={"minecraft:depth_strider":3},unbreakable={},item_name={text:"Super Boots",italic:false},custom_data={super_boots:1b}]

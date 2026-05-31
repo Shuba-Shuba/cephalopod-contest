@@ -15,7 +15,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "shb:pistol",
-                "minecraft:custom_name": "{\"text\":\"shoddy shotty\",\"italic\":false}"
+                "minecraft:item_name": "{\"text\":\"shoddy shotty\",\"italic\":false}"
               }
             }
           ]
@@ -38,7 +38,7 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:custom_name": "{\"text\":\"Bullet\",\"italic\":false}"
+            "minecraft:item_name": "{\"text\":\"Bullet\",\"italic\":false}"
           }
         },
         {

@@ -37,5 +37,5 @@ tag @e[type=arrow,tag=!arrow_verified] add arrow_verified
 
 clear @a glass_bottle
 spreadplayers 257 762 1 32 under 125 false @a[tag=cop,scores={potion=1..}]
-give @a[tag=cop,scores={potion=1..}] minecraft:potion[custom_name={text:"Go To Spawn",italic:false}]
+give @a[tag=cop,scores={potion=1..}] minecraft:potion[item_name={text:"Go To Spawn",italic:false}]
 scoreboard players set @a potion 0

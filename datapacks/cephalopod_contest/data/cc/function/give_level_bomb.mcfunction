@@ -9,12 +9,12 @@
 #scoreboard players operation @s bomb_level %= 3 calc
 #execute unless score @s bomb_level matches 3 store result score #tmp bomb_level store result block 0 -64 0 Items[0].components.minecraft:entity_data.data.level int 1 run scoreboard players add @s bomb_level 1
 #data modify block 0 -63 0 front_text.messages[0] set value [{text:"Level ",italic:false},{score:{name:"#tmp",objective:"bomb_level"}}," Bomb"]
-#data modify block 0 -64 0 Items[0].components."minecraft:custom_name" set from block 0 -63 0 front_text.messages[0]
+#data modify block 0 -64 0 Items[0].components."minecraft:item_name" set from block 0 -63 0 front_text.messages[0]
 #data modify block 0 -64 0 Items[0].components.minecraft:entity_data.CustomName set from block 0 -63 0 front_text.messages[0]
 
 # give spawn egg
 #item replace entity @s hotbar.2 from block 0 -64 0 container.0
-item replace entity @s hotbar.2 with minecraft:creeper_spawn_egg[can_place_on={blocks:"#cc:all"},entity_data={id:"minecraft:marker",Tags:["bomb_level_init"],data:{level:0}},custom_name={text:"Creeper Bomb",italic:false},custom_data={tnt:2b}]
+item replace entity @s hotbar.2 with minecraft:creeper_spawn_egg[can_place_on={blocks:"#cc:all"},entity_data={id:"minecraft:marker",Tags:["bomb_level_init"],data:{level:0}},item_name={text:"Creeper Bomb",italic:false},custom_data={tnt:2b}]
 
 # tell spectators
 tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Creeper Bomb"]
