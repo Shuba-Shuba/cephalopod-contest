@@ -3,9 +3,7 @@ scoreboard players set @s Kit_ID 39
 tellraw @s "Now Using: Tainted Engineer"
 
 # give the player the kit contents
-give @s minecraft:furnace[item_name=[{text:"[",color:"white",italic:false},{keybind:"key.use"},"] Build Tainted Sentry"],custom_data={nbk:1b}]
+give @s minecraft:carrot_on_a_stick[item_model=furnace,item_name=[{text:"[",color:"white",italic:false},{keybind:"key.use"},"] Build Tainted Sentry"]]
 give @s minecraft:iron_pickaxe[unbreakable={}]
 give @s cooked_beef 64
 item replace entity @s armor.head with minecraft:netherite_helmet[unbreakable={}]
-
-scoreboard players set @s offhand_carrot 1

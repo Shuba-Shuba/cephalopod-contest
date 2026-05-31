@@ -12,6 +12,4 @@ scoreboard players operation @s reload.time = .reload.time stats
 scoreboard players operation @s reload.repeat = .reload.mag stats
 scoreboard players operation @s reload.repeat /= .reload.per stats
 
-execute unless score @s offhand_carrot matches 1 run function cc:swap_hands
-
 #say reload

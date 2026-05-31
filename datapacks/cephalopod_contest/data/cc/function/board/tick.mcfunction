@@ -1,5 +1,4 @@
 effect give @a[tag=!out] resistance 3 255 true
-scoreboard players set @a[tag=!out] offhand_carrot 1
 
 # await player action
 execute as @a[scores={board_await=1}] at @s run function cc:board/await_fallback

@@ -41,9 +41,8 @@ scoreboard objectives add calc dummy
 scoreboard objectives add protection dummy
 scoreboard objectives add carrot_click minecraft.used:minecraft.carrot_on_a_stick
 
-# [CEPHALOPOD CONTEST] laser for mini tnt + offhand carrot
+# [CEPHALOPOD CONTEST] laser for mini tnt
 scoreboard objectives add laser dummy
-scoreboard objectives add offhand_carrot dummy
 
 scoreboard objectives add raycast dummy
 scoreboard players set 100 raycast 100

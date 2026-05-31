@@ -4,11 +4,6 @@ execute if entity @a[tag=debug] run say p
 execute if entity @s[advancements={shb:reload_gun=true}] run function shb:reload/start
 execute if entity @s[advancements={shb:reload_gun_carrot=true}] run function shb:reload/start
 
-### [CEPHALOPOD CONTEST] offhand carrot stick check
-execute if score @s offhand_carrot matches 1 unless predicate shb:carrot_stick_in_offhand run function shb:offhand_correct
-execute if score @s offhand_carrot matches 1 store result score #tmp offhand_carrot run clear @s carrot_on_a_stick[item_model="air"] 0
-execute if score @s offhand_carrot matches 1 if score #tmp offhand_carrot matches 2.. run function shb:offhand_correct
-
 ### load nbt
 data remove storage shb:gun stats
 data modify storage shb:gun stats set from entity @s SelectedItem.components.minecraft:custom_data.stats

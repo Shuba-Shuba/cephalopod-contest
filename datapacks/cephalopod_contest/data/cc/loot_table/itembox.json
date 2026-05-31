@@ -9,16 +9,9 @@
           "name": "minecraft:nether_star",
           "functions": [
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{nbk_id:0b}"
-            },
-            {
               "function": "minecraft:set_name",
-              "entity": "this",
-              "name": {
-                "text": "Lightning - Stops all other players",
-                "italic": false
-              }
+              "name": "Lightning - Stops all other players",
+              "target": "item_name"
             }
           ]
         },
@@ -27,16 +20,9 @@
           "name": "minecraft:ink_sac",
           "functions": [
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{nbk_id:1b}"
-            },
-            {
               "function": "minecraft:set_name",
-              "entity": "this",
-              "name": {
-                "text": "Blooper - Gives all others darkness",
-                "italic": false
-              }
+              "name": "Blooper - Gives all others darkness",
+              "target": "item_name"
             }
           ]
         },
@@ -45,24 +31,11 @@
           "name": "minecraft:sugar",
           "functions": [
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{nbk_id:2b}"
-            },
-            {
               "function": "minecraft:set_name",
-              "entity": "this",
-              "name": {
-                "text": "Coke - Gives random player nausea",
-                "italic": false
-              }
+              "name": "Coke - Gives random player nausea",
+              "target": "item_name"
             }
           ]
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:set_custom_data",
-          "tag": {"nbk":1}
         }
       ]
     }

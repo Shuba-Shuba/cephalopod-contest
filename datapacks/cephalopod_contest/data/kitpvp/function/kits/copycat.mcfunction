@@ -9,5 +9,3 @@ give @s minecraft:bow[unbreakable={}]
 give @s arrow 3
 item replace entity @s armor.chest with minecraft:leather_chestplate[unbreakable={}]
 item replace entity @s armor.feet with minecraft:diamond_boots[unbreakable={}]
-
-scoreboard players set @s offhand_carrot 1

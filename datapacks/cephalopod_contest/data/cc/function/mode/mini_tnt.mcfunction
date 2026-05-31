@@ -27,7 +27,6 @@ tp @e[type=slime] 0 -160 0
 ## initialize classes
 xp set @a[tag=!out,tag=!ded] 0 levels
 xp set @a[tag=!out,tag=!ded] 0 points
-scoreboard players set @a[tag=!out,tag=!ded] offhand_carrot 1
 scoreboard players set @a[tag=!out,tag=!ded] lives 3
 scoreboard players set %team game 1
 team join no_pvp @a[tag=!out,tag=!ded]

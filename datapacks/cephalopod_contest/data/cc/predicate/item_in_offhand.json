@@ -1,15 +1,13 @@
-[
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "equipment": {
-        "offhand": {
-          "predicates": {
-            "minecraft:custom_data": {"nbk":1}
-          }
-        }
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "offhand": {
+        "items": [
+          "carrot_on_a_stick"
+        ]
       }
     }
   }
-]
+}

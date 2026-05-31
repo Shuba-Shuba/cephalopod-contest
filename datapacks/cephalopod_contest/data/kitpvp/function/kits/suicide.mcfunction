@@ -9,9 +9,7 @@ tellraw @s "Now Using: Suicide Bomber"
 
 # give the player the kit contents
 
-give @s minecraft:tnt[item_name={text:"Self Destruct",italic:false},custom_data={nbk:1b}]
+give @s minecraft:carrot_on_a_stick[item_model=tnt,item_name={text:"Self Destruct",italic:false}]
 give @s minecraft:wooden_sword[damage=58]
 effect give @s speed infinite 0 true
 effect give @s minecraft:instant_damage 1 0
-
-scoreboard players set @s offhand_carrot 1

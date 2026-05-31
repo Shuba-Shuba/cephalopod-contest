@@ -7,7 +7,6 @@ attribute @s minecraft:max_health base set 20
 effect give @s minecraft:saturation 80 255 true
 #tellraw @s "Successfully cleared kit."
 
-scoreboard players set @s offhand_carrot 0
 scoreboard players set @s max_arrow_time 0
 scoreboard players set @s max_arrows 0
 scoreboard players set @s arrow_time 0
