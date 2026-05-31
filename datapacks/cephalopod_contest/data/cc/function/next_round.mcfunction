@@ -42,7 +42,6 @@ execute if score %premode game matches 14 in cc:void run function cc:intro/pothe
 execute if score %premode game matches 15 in cc:void run function cc:intro/skywars
 execute if score %premode game matches 16 in cc:void run function cc:intro/nbk_camera
 execute if score %premode game matches 17 in cc:void run function cc:intro/spleef
-execute if score %premode game matches 18 in cc:void run function cc:intro/uno
 execute if score %premode game matches 19 in cc:void run function cc:intro/admintato
 execute if score %premode game matches 20 in cc:void run function cc:intro/talent
 execute if score %premode game matches 21 in cc:void run function cc:intro/kitpvp

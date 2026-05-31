@@ -12,12 +12,9 @@ bossbar add cc:time "null"
 bossbar set cc:time color blue
 scoreboard objectives add walk dummy
 scoreboard objectives add join minecraft.custom:minecraft.leave_game
-scoreboard objectives add integers dummy
-scoreboard players set 10 integers 10
 scoreboard objectives add button dummy
 scoreboard objectives add map dummy
 scoreboard objectives add calc dummy
-scoreboard players set integers.-1 calc -1
 scoreboard players set integers.8 calc 8
 scoreboard players set integers.180 calc 180
 scoreboard objectives add koth dummy
@@ -36,16 +33,10 @@ team modify green color green
 team add yellow
 team modify yellow nametagVisibility hideForOtherTeams
 team modify yellow color yellow
-scoreboard objectives add launchtime dummy
-scoreboard objectives add gravity dummy
 scoreboard objectives add UUID0 dummy
 scoreboard objectives add UUID1 dummy
 scoreboard objectives add UUID2 dummy
 scoreboard objectives add UUID3 dummy
-scoreboard objectives add gravityUUID0 dummy
-scoreboard objectives add gravityUUID1 dummy
-scoreboard objectives add gravityUUID2 dummy
-scoreboard objectives add gravityUUID3 dummy
 scoreboard objectives add sneak dummy
 scoreboard objectives add prayers dummy
 scoreboard objectives add fake_prayers dummy
@@ -70,7 +61,6 @@ scoreboard objectives add chunk_time trigger
 scoreboard objectives add blocks_time trigger
 scoreboard objectives add sumo_time trigger
 scoreboard objectives add skywars_time trigger
-scoreboard objectives add sumo_hazards trigger
 scoreboard objectives add admintato_time trigger
 scoreboard objectives add talent_time trigger
 scoreboard objectives add dog_fight_time trigger
@@ -91,19 +81,8 @@ scoreboard objectives add potion minecraft.used:minecraft.potion
 scoreboard objectives add laps dummy
 scoreboard objectives add itembox_cd dummy
 execute unless score cameras.enabled config matches 1.. run scoreboard players set cameras.enabled config 1
-scoreboard objectives add deck dummy
-scoreboard players add .id deck 0
-scoreboard players add .color deck 0
-scoreboard players set 3 calc 3
 scoreboard objectives add turn dummy
 scoreboard players set -1 calc -1
-scoreboard players set 2 calc 2
-scoreboard objectives add drop_card minecraft.custom:minecraft.drop
-scoreboard objectives add wild_color trigger
-scoreboard objectives add jailUUID0 dummy
-scoreboard objectives add jailUUID1 dummy
-scoreboard objectives add jailUUID2 dummy
-scoreboard objectives add jailUUID3 dummy
 scoreboard objectives add talent_vote trigger
 scoreboard objectives add talent_rating dummy
 scoreboard objectives add motion0 dummy
@@ -112,6 +91,7 @@ scoreboard objectives add motion2 dummy
 scoreboard objectives add life dummy
 scoreboard objectives add kitpvp_kills dummy
 scoreboard objectives add kitpvp_time trigger
+scoreboard objectives add tp_cd dummy
 scoreboard players set 60 calc 60
 scoreboard objectives add iron dummy
 scoreboard objectives add gold dummy
@@ -130,8 +110,6 @@ scoreboard objectives add steal_emerald dummy
 scoreboard objectives add armor_level dummy
 scoreboard objectives add armor_check dummy
 scoreboard objectives add upgrade_bool dummy
-scoreboard objectives add dog_vote trigger
-scoreboard objectives add dog_fight_vote dummy
 scoreboard objectives add death_time dummy
 scoreboard objectives add event_money dummy
 scoreboard objectives add gunclear dummy
@@ -151,7 +129,6 @@ scoreboard objectives add backstab_break minecraft.broken:minecraft.iron_sword
 scoreboard objectives add backstab_cd dummy
 scoreboard objectives add laser_cd dummy
 scoreboard objectives add freeze_cd dummy
-scoreboard objectives add arrow_cd dummy
 scoreboard objectives add level_bomb_place minecraft.used:minecraft.creeper_spawn_egg
 scoreboard objectives add level_bomb_cd dummy
 scoreboard objectives add fuse dummy
@@ -167,6 +144,7 @@ team modify no_pvp friendlyFire false
 team modify no_pvp nametagVisibility never
 scoreboard objectives add minecart_time dummy
 scoreboard objectives add quick_bomb_cd dummy
+scoreboard objectives add build_cd dummy
 scoreboard objectives add build_dispenser minecraft.used:minecraft.stray_spawn_egg
 scoreboard objectives add build_dispenser_cd dummy
 scoreboard objectives add build_sentry_cd dummy

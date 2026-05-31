@@ -44,7 +44,6 @@ schedule clear cc:mode/pothead
 schedule clear cc:mode/skywars
 schedule clear cc:mode/nbk
 schedule clear cc:mode/spleef
-schedule clear cc:mode/uno
 schedule clear cc:mode/admintato
 schedule clear cc:mode/talent
 schedule clear cc:mode/kitpvp

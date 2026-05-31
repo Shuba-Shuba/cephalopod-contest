@@ -1,7 +1,6 @@
 # get player rotation
-execute as @a store result score @s tmp_yaw run data get entity @s Rotation[0] 1
-scoreboard players add @a tmp_yaw 180
-execute as @a run scoreboard players operation @s yaw = @s tmp_yaw
+execute as @a store result score @s yaw run data get entity @s Rotation[0] 1
+scoreboard players add @a yaw 180
 
 # decay builds
 scoreboard players add @e[type=marker,tag=tmp_build] buildtime 1

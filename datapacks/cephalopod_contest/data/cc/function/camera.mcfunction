@@ -26,7 +26,6 @@ execute if score %camera game matches 13 run function cc:camera/gun_game
 execute if score %camera game matches 15 run function cc:camera/skywars
 execute if score %camera game matches 16 run function cc:camera/nbk
 execute if score %camera game matches 17 run function cc:camera/spleef
-execute if score %camera game matches 18 run function cc:camera/uno
 execute if score %camera game matches 19 run function cc:camera/admintato
 execute if score %camera game matches 20 run function cc:camera/talent
 execute if score %camera game matches 21 run function cc:camera/kitpvp

@@ -1,17 +1,13 @@
 scoreboard objectives add config dummy
 
 ## player damage
-scoreboard objectives add return dummy
 scoreboard objectives add join minecraft.custom:minecraft.leave_game
-scoreboard objectives add hp_dmg dummy
-scoreboard players set #2 hp_dmg 2
 scoreboard objectives add hp health
 scoreboard objectives add hp_old dummy
 scoreboard objectives add prng dummy
 scoreboard players set .2 prng 16383
 scoreboard players set .3 prng 131071
 scoreboard objectives add hit dummy
-scoreboard objectives add stack dummy
 scoreboard objectives add UUID0 dummy
 scoreboard objectives add UUID1 dummy
 scoreboard objectives add UUID2 dummy
@@ -26,12 +22,9 @@ scoreboard objectives add ownerUUID2 dummy
 scoreboard objectives add ownerUUID3 dummy
 scoreboard objectives add kills playerKillCount
 
-scoreboard players add .minimum_damage config 0
 scoreboard players add .i_ticks config 0
 scoreboard players add .headshot_multiplier*100 config 0
 scoreboard players add ammo_items.enabled config 0
-scoreboard players add dmg_indicators.enabled config 0
-scoreboard players add dmg_stacking.enabled config 0
 scoreboard players add auto_reload.enabled config 0
 
 ## guns

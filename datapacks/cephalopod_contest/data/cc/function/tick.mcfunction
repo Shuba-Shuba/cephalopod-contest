@@ -87,7 +87,6 @@ execute if score %in game matches 1 if score %mode game matches 14 in cc:void ru
 execute if score %in game matches 1 if score %mode game matches 15 in cc:void run function cc:gametick/skywars
 execute if score %in game matches 1 if score %mode game matches 16 in cc:void run function cc:gametick/nbk
 execute if score %in game matches 1 if score %mode game matches 17 in cc:void run function cc:gametick/spleef
-execute if score %in game matches 1 if score %mode game matches 18 in cc:void run function cc:gametick/uno
 execute if score %in game matches 1 if score %mode game matches 19 in cc:void run function cc:gametick/admintato
 execute if score %in game matches 1 if score %mode game matches 20 in cc:void run function cc:gametick/talent
 execute if score %in game matches 1 if score %mode game matches 21 in cc:void run function cc:gametick/kitpvp
@@ -146,7 +145,6 @@ scoreboard players enable @a chunk_time
 scoreboard players enable @a blocks_time
 scoreboard players enable @a sumo_time
 scoreboard players enable @a skywars_time
-scoreboard players enable @a sumo_hazards
 scoreboard players enable @a admintato_time
 scoreboard players enable @a talent_time
 scoreboard players enable @a kitpvp_time
@@ -172,7 +170,6 @@ execute as @a[scores={chunk_time=1..}] run scoreboard players operation time.chu
 execute as @a[scores={blocks_time=1..}] run scoreboard players operation time.blocks config = @s blocks_time
 execute as @a[scores={sumo_time=1..}] run scoreboard players operation time.sumo config = @s sumo_time
 execute as @a[scores={skywars_time=1..}] run scoreboard players operation time.skywars config = @s skywars_time
-execute as @a[scores={sumo_hazards=0..1}] run scoreboard players operation sumo_hazards.enabled config = @s sumo_hazards
 execute as @a[scores={admintato_time=1..}] run scoreboard players operation time.admintato config = @s admintato_time
 execute as @a[scores={talent_time=1..}] run scoreboard players operation time.talent config = @s talent_time
 execute as @a[scores={kitpvp_time=1..}] run scoreboard players operation time.kitpvp config = @s kitpvp_time
@@ -197,7 +194,6 @@ scoreboard players set @a chunk_time 0
 scoreboard players set @a blocks_time 0
 scoreboard players set @a sumo_time 0
 scoreboard players set @a skywars_time 0
-scoreboard players set @a sumo_hazards -1
 scoreboard players set @a admintato_time 0
 scoreboard players set @a talent_time 0
 scoreboard players set @a kitpvp_time 0

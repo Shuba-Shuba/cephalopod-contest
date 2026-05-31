@@ -11,7 +11,6 @@ trigger nun_run_time set 180
 trigger chunk_time set 450
 trigger sumo_time set 15
 trigger blocks_time set 90
-trigger sumo_hazards set 0
 trigger skywars_time set 90
 trigger admintato_time set 120
 trigger talent_time set 30

@@ -11,5 +11,3 @@ execute as @e[type=marker,tag=fire_light] unless score @s fire_time matches 1.. 
 execute as @a[scores={Kit_ID=26}] at @s if data entity @s {SelectedItem:{id:"minecraft:blaze_rod"}} run particle minecraft:glow ~ ~1 ~ 1 1 1 10 1 normal @a
 # launch_cd repurposed
 scoreboard players remove @a[scores={launch_cd=1..}] launch_cd 1
-#scoreboard players remove @a[scores={fire_cd=1..}] fire_cd 1
-#execute as @a[scores={launch_cd=1}] at @s run function kitpvp:pyro/ping

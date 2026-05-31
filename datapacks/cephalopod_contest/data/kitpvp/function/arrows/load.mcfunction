@@ -1,6 +1,8 @@
+scoreboard objectives add Kit_ID dummy
+scoreboard objectives add buildtime dummy
+scoreboard objectives add yaw dummy
 scoreboard objectives add arrow dummy
 scoreboard objectives add freezetime dummy
-scoreboard objectives add tombtime dummy
 scoreboard objectives add axe_break minecraft.broken:minecraft.wooden_axe
 scoreboard objectives add shield_break minecraft.broken:minecraft.shield
 scoreboard objectives add gapple minecraft.used:minecraft.golden_apple

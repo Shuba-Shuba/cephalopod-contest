@@ -15,6 +15,7 @@ execute if score %level arrow matches 35 at @s[type=player] run function cc:tag_
 execute if score %level arrow matches 35 at @s[type=arrow] if data entity @s {inBlockState:{Name:"minecraft:barrier"}} on passengers run function cc:tag_invalid
 execute if score %level arrow matches 35 at @s[type=arrow] unless data entity @s {inBlockState:{Name:"minecraft:barrier"}} run data modify storage tmp inBlockState.name set from entity @s inBlockState.Name
 execute if score %level arrow matches 35 at @s[type=arrow] unless data entity @s {inBlockState:{Name:"minecraft:barrier"}} on passengers run function cc:tag_block_search with storage tmp inBlockState
+execute if score %level arrow matches 35 run data remove storage tmp inBlockState
 
 kill @s[type=arrow]
 execute if score %level arrow matches 35 run kill @e[type=marker,tag=tnt_triangulator,predicate=!cc:is_riding_arrow]

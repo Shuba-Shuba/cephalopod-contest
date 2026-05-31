@@ -2,7 +2,6 @@ advancement grant @s only cc:kitpvp
 execute if score %mode game matches 21 store result score .out prng run random value 0..31
 execute if score %mode game matches 26 store result score .out prng run random value 0..29
 function kitpvp:kits/clear_kit
-#execute if score .out prng matches 1 if score enabled? op_kits matches 1.. run function kitpvp:kits/kit_guard
 execute if score .out prng matches 0 run function kitpvp:kits/gravity_master
 #execute if score .out prng matches 1 run function kitpvp:kits/suicide
 execute if score .out prng matches 1 run function kitpvp:kits/scout
@@ -13,8 +12,6 @@ execute if score .out prng matches 5 run function kitpvp:kits/kit_armor
 #execute if score .out prng matches 6 run function kitpvp:kits/kit_armor_plus
 execute if score .out prng matches 6 run function kitpvp:kits/trump
 execute if score .out prng matches 7 run function kitpvp:kits/kit_demolitionist
-#execute if score .out prng matches 8 if score enabled? op_kits matches 1.. run function kitpvp:kits/kit_gapple
-#execute if score .out prng matches 9 if score enabled? op_kits matches 1.. run function kitpvp:kits/op_pot_pvp
 execute if score .out prng matches 8 run function kitpvp:kits/baseball
 execute if score .out prng matches 9 run function kitpvp:kits/brick_thrower
 execute if score .out prng matches 11 run function kitpvp:kits/legalized_pots
@@ -30,7 +27,6 @@ execute if score .out prng matches 20 run function kitpvp:kits/cowboy
 execute if score .out prng matches 21 run function kitpvp:kits/gunslinger
 execute if score .out prng matches 22 run function kitpvp:kits/spy
 execute if score .out prng matches 23 run function kitpvp:kits/engineer
-#execute if score .out prng matches 24 if score enabled? op_kits matches 1.. run function kitpvp:kits/rpg_full
 execute if score .out prng matches 25 run function kitpvp:kits/copycat
 execute if score .out prng matches 26 run function kitpvp:kits/pyro
 execute if score .out prng matches 27 run function kitpvp:kits/lumberjack_lean
