@@ -106,9 +106,6 @@ scoreboard objectives add jailUUID2 dummy
 scoreboard objectives add jailUUID3 dummy
 scoreboard objectives add talent_vote trigger
 scoreboard objectives add talent_rating dummy
-scoreboard objectives add evoker_click minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add evoker_cd dummy
-scoreboard objectives add fireball_click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add motion0 dummy
 scoreboard objectives add motion1 dummy
 scoreboard objectives add motion2 dummy

@@ -34,7 +34,6 @@ execute if score .out prng matches 23 run function kitpvp:kits/engineer
 execute if score .out prng matches 25 run function kitpvp:kits/copycat
 execute if score .out prng matches 26 run function kitpvp:kits/pyro
 execute if score .out prng matches 27 run function kitpvp:kits/lumberjack_lean
-#execute if score .out prng matches 28 run function kitpvp:kits/evoker
 execute if score .out prng matches 28 run function kitpvp:kits/engineer_lean
 #execute if score .out prng matches 29 run function kitpvp:kits/sussy_balls
 execute if score .out prng matches 29 run function kitpvp:kits/gladiator

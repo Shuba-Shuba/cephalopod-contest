@@ -211,14 +211,7 @@ scoreboard players set @a cs_setup_time 0
 scoreboard players set @a cs_bomb_time 0
 scoreboard players enable @a mini_tnt_class
 
-# evoker weapon
-execute as @a[scores={evoker_click=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{evoker:1b}}}}] at @s run function cc:evoker
-scoreboard players set @a evoker_click 0
-scoreboard players remove @a[scores={evoker_cd=1..}] evoker_cd 1
-
 # throwable fireball
-execute as @a[scores={fireball_click=1..},nbt={SelectedItem:{components:{"minecraft:item_model":"minecraft:fire_charge"}}}] at @s run function cc:fireball
-scoreboard players set @a fireball_click 0
 execute as @e[type=fireball,tag=fireball,tag=save] run function cc:motion_fix
 scoreboard players add @e[type=fireball,tag=fireball,tag=save] life 1
 kill @e[type=fireball,tag=fireball,tag=save,scores={life=300..}]

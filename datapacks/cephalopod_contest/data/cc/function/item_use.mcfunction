@@ -17,7 +17,6 @@ execute if score %mode game matches 9 if items entity @s weapon.offhand turtle_e
 # kitpvp weapons
 execute if score @s Kit_ID matches 29 if items entity @s weapon.offhand tnt run function cc:landed
 execute if score @s Kit_ID matches 32 unless score @s tp_cd matches 1.. if items entity @s weapon.offhand book run function cc:teleporter_use
-execute if items entity @s weapon.offhand evoker_spawn_egg run function cc:evoker
 execute if score @s Kit_ID matches 36 unless score @s build_cd matches 1.. if items entity @s weapon.offhand oak_planks run function kitpvp:build/wall
 execute if score @s Kit_ID matches 36 unless score @s build_cd matches 1.. if items entity @s weapon.offhand petrified_oak_slab run function kitpvp:build/floor
 # go through other kitpvp rightclicks as well
@@ -29,6 +28,8 @@ execute if score @s Kit_ID matches 25 if score @s sentry_count matches 0 unless 
 # mini tnt
 #execute if score %mode game matches 24 run function cc:swap_hands
 execute if score %mode game matches 24 run function cc:tnt_rightclick
+# fireball
+execute if items entity @s weapon.offhand *[item_model="fire_charge"] run function cc:fireball
 # board game
 execute if score %in game matches 2 run function cc:board/rightclick
 
