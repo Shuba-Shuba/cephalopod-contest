@@ -3,7 +3,6 @@ execute if entity @a[tag=debug] run say p
 ### ammo reload
 execute if entity @s[advancements={shb:reload_gun=true}] run function shb:reload/start
 execute if entity @s[advancements={shb:reload_gun_carrot=true}] run function shb:reload/start
-execute if entity @s[advancements={shb:killed_by_bomb=true}] run function shb:killed_by_bomb
 
 ### [CEPHALOPOD CONTEST] offhand carrot stick check
 execute if score @s offhand_carrot matches 1 unless predicate shb:carrot_stick_in_offhand run function shb:offhand_correct

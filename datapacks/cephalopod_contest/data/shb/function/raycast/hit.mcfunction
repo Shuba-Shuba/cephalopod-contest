@@ -42,4 +42,4 @@ scoreboard players operation .dmg raycast /= .r3 raycast
 scoreboard players operation #after_falloff raycast = .dmg raycast
 
 ## apply damage
-function shb:dmg/apply/root
+function shb:dmg/root
