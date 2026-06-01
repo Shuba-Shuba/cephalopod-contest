@@ -3,6 +3,20 @@
     "requirement": {
       "trigger": "minecraft:consume_item",
       "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%mode"
+              },
+              "score": "game"
+            },
+            "range": 24
+          }
+        ],
         "item": {
           "items": "minecraft:golden_pickaxe"
         }

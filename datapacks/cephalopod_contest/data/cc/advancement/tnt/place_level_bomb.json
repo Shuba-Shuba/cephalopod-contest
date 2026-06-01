@@ -5,6 +5,18 @@
       "conditions": {
         "player": [
           {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%mode"
+              },
+              "score": "game"
+            },
+            "range": 24
+          },
+          {
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
