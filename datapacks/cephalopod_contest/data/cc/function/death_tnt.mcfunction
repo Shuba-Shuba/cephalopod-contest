@@ -1,7 +1,6 @@
 # @s = person who died
 scoreboard players remove @s lives 1
 execute if score @s lives matches 0 at @s anchored eyes run function cc:landed_no_kb
-execute if score @s lives matches 1.. run fill ~-1 33 ~-1 ~1 33 ~1 water replace air strict
 execute if score @s lives matches 1.. run fill ~-1 32 ~-1 ~1 32 ~1 frosted_ice replace air strict
 execute if score @s lives matches 1.. run summon marker ~ 32 ~ {Tags:["spawn_platform"]}
 execute if score @s lives matches 1.. run tp ~ 33 ~

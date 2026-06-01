@@ -15,9 +15,10 @@ execute at @a[tag=!out,tag=!ded] as @e[type=item,distance=..10] at @s on origin 
 execute at @a[tag=!out,tag=!ded] as @e[type=item,distance=..10] run data modify entity @s PickupDelay set value 0s
 execute at @a[tag=!out,tag=!ded] as @e[type=item,distance=..10] at @s on origin run tp @e[type=item,sort=nearest,limit=1] @s
 
-# antiwater
-execute at @e[type=marker,tag=spawn_platform] run fill ~-4 ~-4 ~-4 ~4 ~4 ~4 air replace water strict
+# water management
 execute at @a[tag=!out,tag=!ded] run fill ~-4 ~-4 ~-4 ~4 ~4 ~4 air replace water strict
+execute at @e[type=marker,tag=spawn_platform,scores={game=2..}] run fill ~-4 ~-4 ~-4 ~4 ~4 ~4 air replace water strict
+execute at @e[type=marker,tag=spawn_platform,scores={game=..1}] run fill ~-1 ~1 ~-1 ~1 ~1 ~1 water replace air strict
 
 # respawn platforms
 scoreboard players add @e[type=marker,tag=spawn_platform] game 1
