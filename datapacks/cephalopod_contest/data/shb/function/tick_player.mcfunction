@@ -2,7 +2,6 @@ execute if entity @a[tag=debug] run say p
 
 ### ammo reload
 execute if entity @s[advancements={shb:reload_gun=true}] run function shb:reload/start
-execute if entity @s[advancements={shb:reload_gun_carrot=true}] run function shb:reload/start
 
 ### load nbt
 data remove storage shb:gun stats

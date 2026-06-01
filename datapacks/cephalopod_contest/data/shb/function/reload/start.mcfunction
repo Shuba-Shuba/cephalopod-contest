@@ -1,7 +1,11 @@
-advancement revoke @s only shb:reload_gun
-advancement revoke @s only shb:reload_gun_carrot
+data remove block 0 -64 0 Items
+item replace block 0 -64 0 container.0 from entity @s weapon.mainhand
+item replace entity @s weapon.mainhand from entity @s weapon.offhand
+item replace entity @s weapon.offhand from block 0 -64 0 container.0
 
-data modify storage shb:gun stats set from entity @s equipment.offhand.components.minecraft:custom_data.stats
+advancement revoke @s only shb:reload_gun
+
+data modify storage shb:gun stats set from entity @s equipment.mainhand.components.minecraft:custom_data.stats
 execute store result score @s gunid run data get storage shb:gun stats.id
 function shb:gun/get_stats
 
