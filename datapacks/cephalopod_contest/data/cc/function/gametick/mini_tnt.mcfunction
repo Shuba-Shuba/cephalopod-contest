@@ -75,7 +75,7 @@ execute as @a[scores={freeze_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"},
 scoreboard players remove @a[scores={freeze_cd=1..}] freeze_cd 1
 
 # GAR super jump
-item replace entity @a[scores={jump_cd=1}] hotbar.3 with minecraft:blaze_powder[item_name={text:"Super Jump",italic:false},custom_data={tnt:3b}]
+item replace entity @a[scores={jump_cd=1}] hotbar.3 with minecraft:carrot_on_a_stick[item_model=blaze_powder,item_name="Super Jump",custom_data={tnt:3b}]
 execute as @a[scores={jump_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Super Jump"]
 execute at @a[scores={jump_time=1..}] run particle minecraft:small_flame ~ ~ ~ 0 0 0 0 1 normal @a
 scoreboard players remove @a[scores={jump_cd=1..}] jump_cd 1
@@ -95,7 +95,7 @@ execute as @a[scores={broken_modem=1..}] at @s run tp @s @e[type=marker,limit=1,
 #execute as @a[scores={broken_modem=2}] at @s run tp @e[type=marker,limit=1,sort=nearest,tag=broken_modem_tether] ^ ^ ^-10
 execute as @a[scores={broken_modem=1}] at @s run kill @e[type=marker,limit=1,sort=nearest,tag=broken_modem_tether]
 scoreboard players remove @a[scores={broken_modem=1..}] broken_modem 1
-item replace entity @a[scores={broken_modem_cd=1}] hotbar.1 with minecraft:stick[item_name={text:"Broken Modem",italic:false},custom_data={tnt:1b}]
+item replace entity @a[scores={broken_modem_cd=1}] hotbar.1 with minecraft:carrot_on_a_stick[item_model=stick,item_name="Broken Modem",custom_data={tnt:1b}]
 execute as @a[scores={broken_modem_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Broken Modem"]
 scoreboard players remove @a[scores={broken_modem_cd=1..}] broken_modem_cd 1
 
@@ -109,12 +109,12 @@ execute as @a[scores={minecart_time=1..},predicate=cc:is_riding_recovery] rotate
 execute as @a[scores={minecart_time=1}] at @s run function cc:explode_minecart
 
 # NUL quick bomb
-item replace entity @a[scores={quick_bomb_cd=1}] hotbar.3 with minecraft:tnt_minecart[item_name={text:"Quick Bomb",italic:false},custom_data={tnt:5b}]
+item replace entity @a[scores={quick_bomb_cd=1}] hotbar.3 with minecraft:carrot_on_a_stick[item_model=tnt_minecart,item_name="Quick Bomb",custom_data={tnt:5b}]
 execute as @a[scores={quick_bomb_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Quick Bomb"]
 scoreboard players remove @a[scores={quick_bomb_cd=1..}] quick_bomb_cd 1
 
 # TEC drill
-item replace entity @a[scores={drill_cd=1}] hotbar.3 with minecraft:hopper[item_name={text:"Drill",italic:false},custom_data={tnt:13b}]
+item replace entity @a[scores={drill_cd=1}] hotbar.3 with minecraft:carrot_on_a_stick[item_model=hopper,item_name="Drill",custom_data={tnt:13b}]
 execute as @a[scores={drill_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Drill"]
 scoreboard players remove @a[scores={drill_cd=1..}] drill_cd 1
 execute as @e[type=marker,tag=tnt_drill] at @s run function cc:move_drill
@@ -132,14 +132,14 @@ scoreboard players set @a[scores={class=2,metal_mine=2..}] metal_mine 0
 scoreboard players set @a[scores={class=2,break_pick=1..}] metal_mine_cd 60
 scoreboard players set @a[scores={class=2,break_pick=1..}] break_pick 0
 execute as @a[scores={break_pick=1..}] unless score @s class matches 2 run scoreboard players set @s break_pick 0
-item replace entity @a[scores={class=2,metal_mine_cd=1}] hotbar.4 with minecraft:golden_pickaxe[item_name={text:"Metal Miner",italic:false},enchantments={efficiency:255},can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
+item replace entity @a[scores={class=2,metal_mine_cd=1}] hotbar.4 with minecraft:carrot_on_a_stick[item_model=golden_pickaxe,tool={rules:[{blocks:"#cc:all"}],default_mining_speed:1000f},damage=0,max_damage=32,max_stack_size=1,item_name="Metal Miner",can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
 scoreboard players remove @a[scores={metal_mine_cd=1..}] metal_mine_cd 1
 
 # ENG sentry
 scoreboard players remove @e[type=skeleton,tag=tnt_sentry,scores={gardener_jump=2..}] gardener_jump 1
 scoreboard players remove @e[type=skeleton,tag=tnt_sentry,scores={gardener_jump=1},nbt={OnGround:1b}] gardener_jump 1
 execute as @e[type=skeleton,tag=tnt_sentry,tag=!grounded,scores={gardener_jump=0},nbt={OnGround:1b}] run function cc:sentry_landed
-item replace entity @a[scores={build_sentry_cd=1}] hotbar.2 with minecraft:ward_armor_trim_smithing_template[item_name={text:"[12] Throw Sentry",italic:false},custom_data={tnt:9b}]
+item replace entity @a[scores={build_sentry_cd=1}] hotbar.2 with minecraft:carrot_on_a_stick[item_model=ward_armor_trim_smithing_template,item_name={text:"[12] Throw Sentry",italic:false},custom_data={tnt:9b}]
 scoreboard players remove @a[scores={build_sentry_cd=1..}] build_sentry_cd 1
 scoreboard players remove @e[type=skeleton,tag=tnt_sentry,scores={shoot_sentry_cd=1..}] shoot_sentry_cd 1
 execute as @e[type=skeleton,tag=tnt_sentry,scores={shoot_sentry_cd=0}] at @s if entity @a[tag=!out,tag=!ded,distance=..10] run function cc:sentry_shoot
@@ -150,7 +150,7 @@ execute as @e[type=skeleton,tag=tnt_sentry,scores={game=120..}] at @s run functi
 scoreboard players remove @e[type=creeper,tag=tnt_eng,scores={gardener_jump=2..}] gardener_jump 1
 scoreboard players remove @e[type=creeper,tag=tnt_eng,scores={gardener_jump=1},nbt={OnGround:1b}] gardener_jump 1
 execute as @e[type=creeper,tag=tnt_eng,tag=!grounded,scores={gardener_jump=0},nbt={OnGround:1b}] run function cc:sentry_landed
-item replace entity @a[scores={build_creeper_cd=1}] hotbar.3 with minecraft:wild_armor_trim_smithing_template[item_name={text:"[12] Throw Creeper",italic:false},custom_data={tnt:11b}]
+item replace entity @a[scores={build_creeper_cd=1}] hotbar.3 with minecraft:carrot_on_a_stick[item_model=wild_armor_trim_smithing_template,item_name={text:"[12] Throw Creeper",italic:false},custom_data={tnt:11b}]
 scoreboard players remove @a[scores={build_creeper_cd=1..}] build_creeper_cd 1
 
 # ARC triangulator
@@ -186,18 +186,18 @@ scoreboard players remove @a[scores={focus_time=1..}] focus_time 1
 execute as @a[scores={shift_cd=1,class=3}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Focus (shift ability)"]
 
 # ARC decrystalize
-item replace entity @a[scores={reatomize_cd=1}] hotbar.3 with minecraft:eye_armor_trim_smithing_template[item_name={text:"Decrystalize",italic:false},custom_data={tnt:15b}]
+item replace entity @a[scores={reatomize_cd=1}] hotbar.3 with minecraft:carrot_on_a_stick[item_model=eye_armor_trim_smithing_template,item_name={text:"Decrystalize",italic:false},custom_data={tnt:15b}]
 execute as @a[scores={reatomize_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Decrystalize"]
 scoreboard players remove @a[scores={reatomize_cd=1..}] reatomize_cd 1
 
 # ARC dagger
-item replace entity @a[scores={dagger_cd=1}] hotbar.2 with minecraft:echo_shard[item_name={text:"Dagger",italic:false},custom_data={tnt:16b}]
+item replace entity @a[scores={dagger_cd=1}] hotbar.2 with minecraft:carrot_on_a_stick[item_model=echo_shard,item_name={text:"Dagger",italic:false},custom_data={tnt:16b}]
 execute as @a[scores={dagger_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Dagger"]
 scoreboard players remove @a[scores={dagger_cd=1..}] dagger_cd 1
 execute as @e[type=marker,tag=arc_dagger] at @s positioned ^ ^ ^ facing ^ ^ ^-5.5 run function cc:dagger_tick
 
 # ARC cloak cooldown
-item replace entity @a[scores={cloak_cd=1}] hotbar.2 with minecraft:silence_armor_trim_smithing_template[item_name={text:"Cloak",italic:false},custom_data={tnt:17b}]
+item replace entity @a[scores={cloak_cd=1}] hotbar.2 with minecraft:carrot_on_a_stick[item_model=silence_armor_trim_smithing_template,item_name={text:"Cloak",italic:false},custom_data={tnt:17b}]
 execute as @a[scores={cloak_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Cloak"]
 scoreboard players remove @a[scores={cloak_cd=1..}] cloak_cd 1
 execute as @e[type=marker,tag=arc_cloak] at @s positioned ^ ^ ^ run function cc:cloak_tick
