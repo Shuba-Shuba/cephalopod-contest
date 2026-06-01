@@ -1,5 +1,5 @@
 tag @s remove casting_dagger
-playsound minecraft:block.piston.extend master @a ~ ~ ~ 1 0.75
+playsound minecraft:block.piston.extend player @a ~ ~ ~ 1 0.75 1
 
 # spawn dagger
 tag @a remove dagger_hit
