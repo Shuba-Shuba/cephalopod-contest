@@ -194,6 +194,7 @@ item replace entity @a[scores={dagger_cd=1}] hotbar.2 with minecraft:carrot_on_a
 execute as @a[scores={dagger_cd=1}] run tellraw @a[tag=ded] ["",{selector:"@s"}," reloaded Dagger"]
 scoreboard players remove @a[scores={dagger_cd=1..}] dagger_cd 1
 execute as @e[type=marker,tag=arc_dagger] at @s positioned ^ ^ ^ facing ^ ^ ^-5.5 run function cc:dagger_tick
+execute as @a[tag=casting_dagger,scores={focus_time=22}] at @s run function cc:dagger_cast_start
 
 # ARC cloak cooldown
 item replace entity @a[scores={cloak_cd=1}] hotbar.2 with minecraft:carrot_on_a_stick[item_model=silence_armor_trim_smithing_template,item_name={text:"Cloak",italic:false},custom_data={tnt:17b}]

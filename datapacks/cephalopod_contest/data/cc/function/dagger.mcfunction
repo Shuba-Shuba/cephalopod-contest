@@ -1,26 +1,17 @@
-# spawn dagger
-tag @a remove dagger_hit
-execute positioned ^ ^ ^2 run function cc:dagger_cast
-execute positioned ^1 ^ ^2 facing ^-1 ^ ^5.5 run function cc:dagger_cast
-execute positioned ^-1 ^ ^2 facing ^1 ^ ^5.5 run function cc:dagger_cast
-execute positioned ^ ^1 ^2 facing ^ ^-1 ^5.5 run function cc:dagger_cast
-execute positioned ^ ^-1 ^2 facing ^ ^1 ^5.5 run function cc:dagger_cast
-
-# launch hit players
-execute positioned ^ ^ ^9.5 run tp @a[tag=dagger_hit] ~ ~-2 ~
-summon tnt ^ ^ ^8.5
+# sounds similar to laser
+playsound item.trident.thunder player @a ~ ~-1.6 ~ 1 0.7
+execute positioned ^ ^ ^2 run function cc:dagger_cast_warn
+execute positioned ^1 ^ ^2 facing ^-1 ^ ^5.5 run function cc:dagger_cast_warn
+execute positioned ^-1 ^ ^2 facing ^1 ^ ^5.5 run function cc:dagger_cast_warn
+execute positioned ^ ^1 ^2 facing ^ ^-1 ^5.5 run function cc:dagger_cast_warn
+execute positioned ^ ^-1 ^2 facing ^ ^1 ^5.5 run function cc:dagger_cast_warn
 
 # hover
 summon marker ~ ~-1.6 ~ {Tags:["focus_tether","init"]}
-data modify entity @e[type=marker,tag=init,limit=1,sort=nearest] Rotation set from entity @s Rotation
+rotate @n[type=marker,tag=init] ~ ~
 tag @e[type=marker] remove init
-scoreboard players set @s focus_time 22
-
-# place marker to retract dagger
-summon marker ^ ^ ^7.5 {Tags:["arc_dagger","init"]}
-execute positioned ^ ^ ^7.5 run data modify entity @e[type=marker,tag=init,limit=1,sort=nearest] Rotation set from entity @s Rotation
-tag @e[type=marker] remove init
-playsound minecraft:block.piston.extend master @a ~ ~ ~ 1 0.75
+scoreboard players set @s focus_time 37
+tag @s add casting_dagger
 
 # item on cooldown (alternates to cloak)
 clear @s carrot_on_a_stick[custom_data={tnt:16b}]
