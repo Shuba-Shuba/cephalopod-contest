@@ -15,9 +15,8 @@ execute if score @s Kit_ID matches 25 run function kitpvp:eng/rightclick
 execute if score @s Kit_ID matches 39 if score @s sentry_count matches 0 unless score @s build_cd matches 1.. if items entity @s weapon.mainhand *[item_model=furnace] at @s run function kitpvp:eng/sentry/build_lean
 execute if score @s Kit_ID matches 25 if score @s sentry_count matches 0 unless score @s build_cd matches 1.. if items entity @s weapon.mainhand *[item_model=furnace] at @s run function kitpvp:eng/sentry/build_lean
 # mini tnt
-#execute if score %mode game matches 24 run function cc:swap_hands
 execute if score %mode game matches 24 run function cc:tnt_rightclick
 # fireball
-execute if items entity @s weapon.offhand *[item_model=fire_charge] run function cc:fireball
+execute if items entity @s weapon.mainhand *[item_model=fire_charge] run function cc:fireball
 # board game
 execute if score %in game matches 2 run function cc:board/rightclick
