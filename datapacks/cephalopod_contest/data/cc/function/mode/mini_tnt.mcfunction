@@ -60,7 +60,7 @@ item replace entity @a[scores={class=0}] hotbar.0 with dirt
 item replace entity @a[scores={class=0}] hotbar.1 with dirt
 item replace entity @a[scores={class=0}] hotbar.2 with minecraft:bow[item_name="Basic Ass TNT Bow",enchantments={punch:1},unbreakable={}]
 scoreboard players set @a[scores={class=0}] jump_cd 1
-item replace entity @a[scores={class=0}] hotbar.4 with minecraft:carrot_on_a_stick[item_model=golden_pickaxe,tool={rules:[{blocks:"#cc:all"}],default_mining_speed:1000f},damage=0,max_damage=32,max_stack_size=1,item_name="Metal Miner",can_break={blocks:"#cc:all"}]
+item replace entity @a[scores={class=0}] hotbar.4 with minecraft:golden_pickaxe[tool={rules:[{blocks:"#cc:all"}],default_mining_speed:1000f},item_name="Penis Pickaxe",can_break={blocks:"#cc:all"},tooltip_display={hidden_components:["can_break"]}]
 
 # technician
 item replace entity @a[scores={class=1}] hotbar.0 with minecraft:crossbow[item_name="Golden Gun",enchantments={punch:1,quick_charge:1},unbreakable={}]
@@ -76,7 +76,7 @@ item replace entity @a[scores={class=2}] hotbar.0 with minecraft:carrot_on_a_sti
 item replace entity @a[scores={class=2}] hotbar.1 with minecraft:carrot_on_a_stick[item_model=tide_armor_trim_smithing_template,item_name="[10] Spawn Platform",custom_data={tnt:8b}]
 item replace entity @a[scores={class=2}] hotbar.2 with minecraft:carrot_on_a_stick[item_model=ward_armor_trim_smithing_template,item_name="[12] Throw Sentry",custom_data={tnt:9b}]
 item replace entity @a[scores={class=2}] hotbar.3 with minecraft:carrot_on_a_stick[item_model=wild_armor_trim_smithing_template,item_name="[12] Throw Creeper",custom_data={tnt:11b}]
-item replace entity @a[scores={class=2}] hotbar.4 with minecraft:carrot_on_a_stick[item_model=golden_pickaxe,tool={rules:[{blocks:"#cc:all"}],default_mining_speed:1000f},damage=0,max_damage=32,max_stack_size=1,item_name="Metal Miner",can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
+item replace entity @a[scores={class=2}] hotbar.4 with minecraft:golden_pickaxe[consumable={consume_seconds:0f,animation:none,sound:"intentionally_empty",has_consume_particles:false},tool={rules:[{blocks:"#cc:all"}],default_mining_speed:1e38f},item_name="Metal Miner",can_break={blocks:"#cc:all"},tooltip_display={hidden_components:["can_break"]}]
 
 # architect
 item replace entity @a[scores={class=3}] hotbar.0 with minecraft:crossbow[item_name="Crystal Crafter",enchantments={quick_charge:2}]

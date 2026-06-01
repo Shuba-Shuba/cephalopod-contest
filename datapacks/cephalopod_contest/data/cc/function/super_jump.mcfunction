@@ -1,6 +1,6 @@
 # cooldown & remove item
 scoreboard players set @s jump_cd 120
-clear @s blaze_powder[custom_data={tnt:3b}]
+clear @s carrot_on_a_stick[custom_data={tnt:3b}]
 
 # launch forward
 tp @s @s

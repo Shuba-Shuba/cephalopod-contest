@@ -1,3 +1,3 @@
 execute on vehicle run kill
-summon tnt ~ ~ ~
-summon tnt ~ ~ ~
+summon tnt ~ ~ ~ {fuse:0s}
+summon tnt ~ ~ ~ {fuse:0s}

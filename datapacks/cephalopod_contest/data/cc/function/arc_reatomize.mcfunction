@@ -5,7 +5,7 @@
 #scoreboard players operation @s tagUUID3 = @s UUID3
 
 # item on cooldown
-clear @s eye_armor_trim_smithing_template[custom_data={tnt:15b}]
+clear @s carrot_on_a_stick[custom_data={tnt:15b}]
 scoreboard players set @s reatomize_cd 160
 
 # sound

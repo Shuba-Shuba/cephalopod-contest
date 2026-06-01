@@ -1,4 +1,4 @@
-item replace entity @s weapon.mainhand with air
+clear @s carrot_on_a_stick[custom_data={tnt:1b}]
 
 # stop player movement and setup
 execute as @a[tag=!out,tag=!ded,distance=0.01..10] at @s run summon marker ~ ~ ~ {Tags:["broken_modem_tether"]}

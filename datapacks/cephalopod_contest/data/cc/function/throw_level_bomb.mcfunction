@@ -1,3 +1,4 @@
+advancement revoke @s only cc:tnt/throw_level_bomb
 scoreboard players set @s level_bomb_cd 140
 execute anchored eyes run summon snowball ^ ^ ^ {Tags:["level_bomb_carrier","shb"],Item:{id:"minecraft:creeper_spawn_egg",count:1},Passengers:[{id:"minecraft:marker",Tags:["bomb_level_init"],data:{level:0}}]}
 execute as @e[type=snowball,limit=1,sort=nearest,tag=level_bomb_carrier] run function shb:launch {vel:1}
@@ -8,5 +9,4 @@ data modify entity @e[type=snowball,limit=1,sort=nearest,tag=level_bomb_carrier]
 #data modify block 0 -63 0 front_text.messages[0] set value [{text:"Level ",italic:false},{score:{name:"#tmp",objective:"bomb_level"}}," Bomb"]
 #data modify entity @e[type=marker,tag=init,limit=1] CustomName set from block 0 -63 0 front_text.messages[0]
 #tag @e[type=marker] remove init
-clear @s creeper_spawn_egg
 playsound minecraft:entity.snowball.throw master @a[distance=..80] ~ ~ ~ 1 0

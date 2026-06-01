@@ -14,5 +14,5 @@ tag @e[type=marker] remove init
 playsound minecraft:block.piston.extend master @a ~ ~ ~ 1 0.75
 
 # item on cooldown (alternates to dagger)
-clear @s silence_armor_trim_smithing_template[custom_data={tnt:17b}]
+clear @s carrot_on_a_stick[custom_data={tnt:17b}]
 scoreboard players set @s dagger_cd 220

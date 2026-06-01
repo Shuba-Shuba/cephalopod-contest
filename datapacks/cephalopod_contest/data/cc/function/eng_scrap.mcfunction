@@ -1,3 +1,4 @@
+advancement revoke @s only cc:tnt/scrap_metal_miner
 execute store result score .durability calc run data get entity @s SelectedItem.components.minecraft:damage
 scoreboard players set .metal calc 35
 scoreboard players operation .metal calc -= .durability calc
@@ -9,5 +10,4 @@ execute if score @s arrow_count matches 0 run item replace entity @s hotbar.8 wi
 execute if score @s arrow_count matches 0 run scoreboard players remove .metal calc 1
 execute if score @s arrow_count matches 40.. run scoreboard players set .metal calc 0
 function cc:eng_scrap_metal
-clear @s golden_pickaxe[custom_data={tnt:18b}]
 scoreboard players set @s metal_mine_cd 100

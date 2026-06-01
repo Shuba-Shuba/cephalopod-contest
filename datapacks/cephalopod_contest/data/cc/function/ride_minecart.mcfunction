@@ -1,3 +1,4 @@
+clear @s carrot_on_a_stick[custom_data={tnt:4b}]
 scoreboard players set @s minecart_time 50
 summon minecart ~ ~ ~ {Tags:["recovery"],Invulnerable:1b,NoGravity:1b}
 data modify entity @e[type=minecart,tag=recovery,limit=1,sort=nearest] Rotation set from entity @s Rotation

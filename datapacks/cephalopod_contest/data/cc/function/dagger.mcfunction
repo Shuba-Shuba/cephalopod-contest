@@ -23,5 +23,5 @@ tag @e[type=marker] remove init
 playsound minecraft:block.piston.extend master @a ~ ~ ~ 1 0.75
 
 # item on cooldown (alternates to cloak)
-clear @s echo_shard[custom_data={tnt:16b}]
+clear @s carrot_on_a_stick[custom_data={tnt:16b}]
 scoreboard players set @s cloak_cd 180

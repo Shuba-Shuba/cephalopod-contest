@@ -132,7 +132,7 @@ scoreboard players set @a[scores={class=2,metal_mine=2..}] metal_mine 0
 scoreboard players set @a[scores={class=2,break_pick=1..}] metal_mine_cd 60
 scoreboard players set @a[scores={class=2,break_pick=1..}] break_pick 0
 execute as @a[scores={break_pick=1..}] unless score @s class matches 2 run scoreboard players set @s break_pick 0
-item replace entity @a[scores={class=2,metal_mine_cd=1}] hotbar.4 with minecraft:carrot_on_a_stick[item_model=golden_pickaxe,tool={rules:[{blocks:"#cc:all"}],default_mining_speed:1000f},damage=0,max_damage=32,max_stack_size=1,item_name="Metal Miner",can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
+item replace entity @a[scores={class=2,metal_mine_cd=1}] hotbar.4 with minecraft:golden_pickaxe[consumable={consume_seconds:0f,animation:none,sound:"intentionally_empty",has_consume_particles:false},tool={rules:[{blocks:"#cc:all"}],default_mining_speed:1e38f},item_name="Metal Miner",can_break={blocks:"#cc:all"},tooltip_display={hidden_components:["can_break"]}]
 scoreboard players remove @a[scores={metal_mine_cd=1..}] metal_mine_cd 1
 
 # ENG sentry
