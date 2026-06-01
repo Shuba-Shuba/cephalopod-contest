@@ -16,14 +16,14 @@ execute at @a[tag=!out,tag=!ded] as @e[type=item,distance=..10] run data modify 
 execute at @a[tag=!out,tag=!ded] as @e[type=item,distance=..10] at @s on origin run tp @e[type=item,sort=nearest,limit=1] @s
 
 # antiwater
-execute at @e[type=marker,tag=spawn_platform] run fill ~-4 ~-4 ~-4 ~4 ~4 ~4 air replace water
-execute at @a[tag=!out,tag=!ded] run fill ~-4 ~-4 ~-4 ~4 ~4 ~4 air replace water
+execute at @e[type=marker,tag=spawn_platform] run fill ~-4 ~-4 ~-4 ~4 ~4 ~4 air replace water strict
+execute at @a[tag=!out,tag=!ded] run fill ~-4 ~-4 ~-4 ~4 ~4 ~4 air replace water strict
 
 # respawn platforms
 scoreboard players add @e[type=marker,tag=spawn_platform] game 1
-execute as @e[type=marker,tag=spawn_platform,scores={game=10}] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 frosted_ice[age=1] replace frosted_ice[age=0]
-execute as @e[type=marker,tag=spawn_platform,scores={game=20}] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 frosted_ice[age=2] replace frosted_ice[age=1]
-execute as @e[type=marker,tag=spawn_platform,scores={game=30}] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 frosted_ice[age=3] replace frosted_ice[age=2]
+execute as @e[type=marker,tag=spawn_platform,scores={game=10}] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 frosted_ice[age=1] replace frosted_ice[age=0] strict
+execute as @e[type=marker,tag=spawn_platform,scores={game=20}] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 frosted_ice[age=2] replace frosted_ice[age=1] strict
+execute as @e[type=marker,tag=spawn_platform,scores={game=30}] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 frosted_ice[age=3] replace frosted_ice[age=2] strict
 execute as @e[type=marker,tag=spawn_platform,scores={game=40..}] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air destroy
 kill @e[type=marker,tag=spawn_platform,scores={game=40..}]
 
