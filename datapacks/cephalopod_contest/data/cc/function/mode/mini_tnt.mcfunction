@@ -83,5 +83,5 @@ item replace entity @a[scores={class=3}] hotbar.0 with minecraft:crossbow[item_n
 item replace entity @a[scores={class=3}] hotbar.1 with minecraft:bow[item_name="Triangulator",item_model="cc:holy_bow",damage=383,enchantments={infinity:1}]
 item replace entity @a[scores={class=3}] hotbar.2 with minecraft:carrot_on_a_stick[item_model=silence_armor_trim_smithing_template,item_name="Cloak",custom_data={tnt:17b}]
 item replace entity @a[scores={class=3}] hotbar.3 with minecraft:carrot_on_a_stick[item_model=eye_armor_trim_smithing_template,item_name="Decrystalize",custom_data={tnt:15b}]
-item replace entity @a[scores={class=3}] hotbar.4 with minecraft:carrot_on_a_stick[item_model=netherite_upgrade_smithing_template,item_name="Warp",custom_data={tnt:14b}] 3
+item replace entity @a[scores={class=3}] hotbar.4 with minecraft:carrot_on_a_stick[item_model=netherite_upgrade_smithing_template,item_name="Warp",custom_data={tnt:14b},max_stack_size=3,!max_damage] 3
 item replace entity @a[scores={class=3}] hotbar.8 with arrow 2
