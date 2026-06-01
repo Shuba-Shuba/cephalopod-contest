@@ -19,6 +19,5 @@ execute at @a[tag=!out,tag=!ded] as @e[type=item,distance=..10] at @s on origin 
 # payload stuff
 execute as @a[tag=!out,tag=!ded,gamemode=adventure] at @s if block ~ ~-0.5 ~ barrier run kill @s
 execute as @a unless score @s Kit_ID matches 2..3 unless score @s Kit_ID matches 15 unless score @s Kit_ID matches 25 unless score @s Kit_ID matches 42 run clear @s trident
-execute as @a[predicate=cc:item_in_offhand] at @s run function cc:item_use
 execute as @e[type=armor_stand,tag=payload] at @s run function cc:payload_tick
 execute if score .payload_sound game matches 1.. run scoreboard players remove .payload_sound game 1

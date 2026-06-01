@@ -35,4 +35,3 @@ execute as @a[predicate=cc:trap2] at @s run tp @s ~-19 ~60 ~-39
 effect give @a[predicate=cc:trap3] blindness 3 0 true
 effect give @a[predicate=cc:trap3] resistance 3 255 true
 execute in cc:void run tp @a[predicate=cc:trap5] -238.0 99 697.0
-execute as @a[tag=!out,predicate=cc:item_in_offhand] at @s run function cc:item_use

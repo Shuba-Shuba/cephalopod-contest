@@ -18,4 +18,3 @@ execute as @a[tag=!out,tag=!ded] at @s if block ~ ~-0.5 ~ barrier run kill @s
 execute if score %map game matches 7 run effect give @a[tag=!out,tag=!ded] slow_falling infinite 0 true
 execute if score %map game matches 7 run effect give @a[tag=!out,tag=!ded] jump_boost infinite 1 true
 execute as @a unless score @s Kit_ID matches 2..3 unless score @s Kit_ID matches 15 unless score @s Kit_ID matches 25 unless score @s Kit_ID matches 42 run clear @s trident
-execute as @a[predicate=cc:item_in_offhand] at @s run function cc:item_use

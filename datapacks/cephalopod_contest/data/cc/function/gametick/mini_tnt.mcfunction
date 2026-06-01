@@ -8,7 +8,6 @@ execute if score %tick game matches 20.. run function cc:clock_min
 # miscellaneous mini tnt stuff
 execute as @a[tag=!out,tag=!ded] at @s if block ~ ~-1.5 ~ barrier run function cc:death_tnt
 execute as @a[tag=!out,tag=!ded] at @s if block ~ ~-0.5 ~ barrier run function cc:death_tnt
-execute as @a[predicate=cc:item_in_offhand] at @s run function cc:item_use
 #execute if score tnt.track_blocks config matches 1 unless blocks 600 0 -600 632 7 -568 600 0 -550 all run function cc:blocks_changed
 
 # no item dropping

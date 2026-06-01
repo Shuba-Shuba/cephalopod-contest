@@ -7,7 +7,6 @@ execute if score %tick game matches 20.. run function cc:clock_cs
 # cs stuff
 execute as @a[tag=!out,tag=!ded,gamemode=adventure] at @s if block ~ ~-0.5 ~ barrier run kill @s
 execute as @a unless score @s Kit_ID matches 2..3 unless score @s Kit_ID matches 15 unless score @s Kit_ID matches 25 unless score @s Kit_ID matches 42 run clear @s trident
-execute as @a[predicate=cc:item_in_offhand] at @s run function cc:item_use
 execute as @e[type=marker,tag=cs] at @s if block ~ ~ ~ tnt run function cc:planted_bomb
 execute as @e[type=tnt,tag=cs] at @s run scoreboard players add @a[team=red,predicate=cc:sneaking,distance=..2] defuse 1
 execute as @e[type=tnt,tag=cs] at @s run scoreboard players set @a[team=red,predicate=!cc:sneaking,distance=..2] defuse 0
