@@ -129,7 +129,6 @@ scoreboard objectives add backstab_break minecraft.broken:minecraft.iron_sword
 scoreboard objectives add backstab_cd dummy
 scoreboard objectives add laser_cd dummy
 scoreboard objectives add freeze_cd dummy
-scoreboard objectives add level_bomb_place minecraft.used:minecraft.creeper_spawn_egg
 scoreboard objectives add level_bomb_cd dummy
 scoreboard objectives add fuse dummy
 scoreboard objectives add broken_modem dummy

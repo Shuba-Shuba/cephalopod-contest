@@ -51,8 +51,6 @@ execute as @e[type=marker,tag=bomb_level_init,predicate=!cc:is_riding_bomb_egg] 
 execute as @e[type=creeper,tag=bomb_level] at @s if entity @a[distance=..3] run data merge entity @s {ignited:1b}
 execute as @e[type=creeper,tag=bomb_level,scores={level_bomb_cd=100}] run data merge entity @s {ignited:1b}
 scoreboard players add @e[type=creeper,tag=bomb_level] level_bomb_cd 1
-scoreboard players set @a[scores={level_bomb_place=1}] level_bomb_cd 100
-scoreboard players set @a[scores={level_bomb_place=1}] level_bomb_place 0
 execute as @a[scores={level_bomb_cd=1}] run function cc:give_level_bomb
 scoreboard players remove @a[scores={level_bomb_cd=1..}] level_bomb_cd 1
 
