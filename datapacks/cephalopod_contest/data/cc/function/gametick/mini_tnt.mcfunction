@@ -122,7 +122,7 @@ execute as @e[type=marker,tag=tnt_drill] at @s run function cc:move_drill
 # NUL dispenser - accelerates arrow reload, prioritizes engineers
 execute as @a[scores={build_dispenser=1}] run function cc:build_dispenser
 execute as @e[type=skeleton,tag=dispenser] at @s as @a[tag=!out,tag=!ded,distance=..6] run function cc:dispense
-item replace entity @a[scores={build_dispenser_cd=1}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Passengers:[{id:"minecraft:arrow"}],Invulnerable:1b,CustomName:{text:"Dispenser"},ArmorItems:[{},{},{},{id:"minecraft:furnace",count:1b}],Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]},can_place_on={blocks:"#cc:all"},item_name={text:"Build Dispenser",italic:false}]
+item replace entity @a[scores={build_dispenser_cd=1}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Passengers:[{id:"minecraft:arrow"}],Invulnerable:1b,CustomName:{text:"Dispenser"},equipment:{head:{id:"minecraft:furnace",count:1b}},Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",drop_chances:{mainhand:0f,offhand:0f,head:0f,chest:0f,body:0f,feet:0f}},can_place_on={blocks:"#cc:all"},item_name={text:"Build Dispenser",italic:false}]
 scoreboard players remove @a[scores={build_dispenser_cd=1..}] build_dispenser_cd 1
 
 # ENG metal miner

@@ -1,11 +1,11 @@
 execute anchored eyes run summon creeper ^ ^ ^ {Team:"no_pvp",Tags:["tnt_eng","build"],Invulnerable:1b,DeathLootTable:"",attributes:[{id:"follow_range",base:0},{id:"movement_speed",base:0}],powered:1b,Fuse:32767s}
-execute as @e[type=creeper,limit=1,sort=nearest,tag=build] run function shb:launch {"vel":"2"}
-scoreboard players set @e[type=creeper,limit=1,sort=nearest,tag=build] gardener_jump 10
-scoreboard players operation @e[type=creeper,limit=1,sort=nearest,tag=build] ownerUUID0 = @s UUID0
-scoreboard players operation @e[type=creeper,limit=1,sort=nearest,tag=build] ownerUUID1 = @s UUID1
-scoreboard players operation @e[type=creeper,limit=1,sort=nearest,tag=build] ownerUUID2 = @s UUID2
-scoreboard players operation @e[type=creeper,limit=1,sort=nearest,tag=build] ownerUUID3 = @s UUID3
+execute as @n[type=creeper,tag=build] run function shb:launch {vel:2}
+scoreboard players set @n[type=creeper,tag=build] gardener_jump 10
+scoreboard players operation @n[type=creeper,tag=build] ownerUUID0 = @s UUID0
+scoreboard players operation @n[type=creeper,tag=build] ownerUUID1 = @s UUID1
+scoreboard players operation @n[type=creeper,tag=build] ownerUUID2 = @s UUID2
+scoreboard players operation @n[type=creeper,tag=build] ownerUUID3 = @s UUID3
 tag @e[type=creeper,tag=build] remove build
 clear @s iron_ingot 12
-item replace entity @s hotbar.3 with minecraft:rib_armor_trim_smithing_template[item_name={text:"Explode Creeper",italic:false},custom_data={tnt:12b}]
+item replace entity @s hotbar.3 with minecraft:rib_armor_trim_smithing_template[item_name="Explode Creeper",custom_data={tnt:12b}]
 playsound minecraft:entity.snowball.throw master @a[distance=..80] ~ ~ ~ 1 0

@@ -76,7 +76,7 @@ item replace entity @a[scores={class=2}] hotbar.0 with minecraft:spire_armor_tri
 item replace entity @a[scores={class=2}] hotbar.1 with minecraft:tide_armor_trim_smithing_template[item_name={text:"[10] Spawn Platform",italic:false},custom_data={tnt:8b}]
 item replace entity @a[scores={class=2}] hotbar.2 with minecraft:ward_armor_trim_smithing_template[item_name={text:"[12] Throw Sentry",italic:false},custom_data={tnt:9b}]
 item replace entity @a[scores={class=2}] hotbar.3 with minecraft:wild_armor_trim_smithing_template[item_name={text:"[12] Throw Creeper",italic:false},custom_data={tnt:11b}]
-#item replace entity @a[scores={class=2}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Invulnerable:1b,CustomName:{text:"Dispenser"},ArmorItems:[{},{},{},{id:"minecraft:furnace",count:1b}],HandItems:[{},{}],Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]},can_place_on={blocks:"#cc:all"},item_name={text:"[FREE] Build Dispenser",italic:false}]
+#item replace entity @a[scores={class=2}] hotbar.3 with minecraft:stray_spawn_egg[entity_data={id:"minecraft:skeleton",Invulnerable:1b,CustomName:{text:"Dispenser"},equipment:{head:{id:"minecraft:furnace",count:1b}},Tags:["dispenser","build"],NoAI:1b,DeathLootTable:"",drop_chances:{mainhand:0f,offhand:0f,head:0f,chest:0f,body:0f,feet:0f}},can_place_on={blocks:"#cc:all"},item_name={text:"[FREE] Build Dispenser",italic:false}]
 item replace entity @a[scores={class=2}] hotbar.4 with minecraft:golden_pickaxe[item_name={text:"Metal Miner",italic:false},enchantments={efficiency:255},can_break={blocks:"#cc:all"},custom_data={tnt:18b}]
 
 # architect
