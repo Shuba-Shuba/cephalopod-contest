@@ -21,6 +21,6 @@ execute as @a[tag=!out] at @s unless block ~ ~-0.5 ~ netherite_block run tag @s 
 execute as @a[tag=!out] at @s if entity @e[type=armor_stand,tag=itembox,distance=..1,scores={itembox_cd=0}] run function cc:itembox
 scoreboard players remove @e[type=armor_stand,tag=itembox,scores={itembox_cd=1..}] itembox_cd 1
 item replace entity @e[type=armor_stand,tag=itembox,scores={itembox_cd=1}] armor.head with minecraft:player_head[profile="MHF_Question"]
-execute as @a[tag=!out,predicate=cc:item_in_offhand] at @s run function cc:item_use
-execute as @e[type=minecraft:oak_chest_boat] run data merge entity @s {FallDistance:0.0f}
+execute as @a[tag=!out,predicate=cc:jump] at @s run function cc:item_nbk
+execute as @e[type=minecraft:oak_chest_boat] run data modify entity @s fall_distance set value 0d
 execute as @a[tag=!out,tag=!ded,tag=!winner,predicate=!cc:is_riding_boat] at @s run function cc:jail_nbk

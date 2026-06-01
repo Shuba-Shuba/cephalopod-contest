@@ -1,12 +1,4 @@
 ## use item
-# nitro boat karts
-# TODO: CHANGE NBK ITEMS TO ACTIVATE BY JUMP KEY
-# execute if score %mode game matches 16 if items entity @s weapon.mainhand *[custom_data~{}] run schedule function cc:lightning_remove 1s
-# execute if score %mode game matches 16 if score .id itembox_cd matches 0 run tellraw @s "Struck everyone with lightning"
-# execute if score %mode game matches 16 if score .id itembox_cd matches 0 as @a[tag=!out,distance=0.01..] at @s positioned ~ ~0.5 ~ run function cc:item_lightning
-# execute if score %mode game matches 16 if score .id itembox_cd matches 1 run function cc:item_blooper
-# execute if score %mode game matches 16 if score .id itembox_cd matches 2 run function cc:item_coke
-# execute if score %mode game matches 16 run item replace entity @s weapon.offhand with air
 # nun run
 execute if score %mode game matches 9 if items entity @s weapon.mainhand *[item_model=sugar] run function cc:super_nun
 execute if score %mode game matches 9 if items entity @s weapon.mainhand *[item_model=nether_star] run function cc:stun_the_sinful
