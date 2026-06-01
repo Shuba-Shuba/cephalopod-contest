@@ -1,5 +1,5 @@
 # camera movement
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display -100 69 -100 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display -100 69 -100 {view_range:0.0f,Tags:["camera"]}
 function cc:gametick/disco
 
 # titles (ends at 240)

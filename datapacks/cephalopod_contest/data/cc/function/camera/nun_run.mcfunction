@@ -10,18 +10,18 @@
 #execute if score %map game matches 1 if score %camera1 game matches 121..180 run tp @a[tag=!out] -656 113 762
 #execute if score %map game matches 1 if score %camera1 game matches 181..240 run tp @a[tag=!out] -658.0 112 825.0
 #execute if score %map game matches 1 if score %camera1 game matches 241..300 run tp @a[tag=!out] -610 118 795
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display -238.0 100 687.0 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display -238.0 100 687.0 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 0 if score %camera1 game matches 58 run function cc:camera_move {duration:0,to:"-260 108 695"}
 execute if score %map game matches 0 if score %camera1 game matches 117 run function cc:camera_move {duration:0,to:"-238.0 91 707.0"}
 execute if score %map game matches 0 if score %camera1 game matches 175 run function cc:camera_move {duration:0,to:"-203 95 685"}
 execute if score %map game matches 0 if score %camera1 game matches 233 run function cc:camera_move {duration:0,to:"-232 91 717"}
 execute if score %map game matches 0 if score %camera1 game matches 292 run function cc:camera_move {duration:0,to:"-240.0 53 694.0"}
-#execute if score %map game matches 1 if score %camera1 game matches 0 run summon armor_stand -683.0 111 711.0 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+#execute if score %map game matches 1 if score %camera1 game matches 0 run summon armor_stand -683.0 111 711.0 {view_range:0.0f,Tags:["camera"]}
 #execute if score %map game matches 1 if score %camera1 game matches 70 run tp @e[type=armor_stand,tag=camera,limit=1] -682 111 762
 #execute if score %map game matches 1 if score %camera1 game matches 140 run tp @e[type=armor_stand,tag=camera,limit=1] -656 113 762
 #execute if score %map game matches 1 if score %camera1 game matches 210 run tp @e[type=armor_stand,tag=camera,limit=1] -658.0 112 825.0
 #execute if score %map game matches 1 if score %camera1 game matches 280 run tp @e[type=armor_stand,tag=camera,limit=1] -610 118 795
-execute if score %map game matches 1 if score %camera1 game matches 0 run summon item_display -956 114 633 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 1 if score %camera1 game matches 0 run summon item_display -956 114 633 {view_range:0.0f,Tags:["camera"]}
 
 # titles (ends at 350)
 scoreboard players add %camera1 game 1

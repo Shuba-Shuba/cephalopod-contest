@@ -1,6 +1,6 @@
 # camera movement
 #execute if score %map game matches 0 run tp @a[tag=!out] 437.0 93 472
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon minecraft:item_display 427 90 472 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon minecraft:item_display 427 90 472 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 0 if score %camera1 game matches 5 run function cc:camera_move {duration:29,to:"456 90 472"}
 execute if score %map game matches 0 if score %camera1 game matches 34 run function cc:camera_move {duration:17,to:"456 90 489"}
 execute if score %map game matches 0 if score %camera1 game matches 51 run function cc:camera_move {duration:24,to:"480 90 489"}

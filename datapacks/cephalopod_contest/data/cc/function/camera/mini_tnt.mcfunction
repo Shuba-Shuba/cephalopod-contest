@@ -1,6 +1,6 @@
 # camera movement
 #tp @a[tag=!out] 616 20 -584
-execute if score %camera1 game matches 0 run summon minecraft:item_display 616 20 -584 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %camera1 game matches 0 run summon minecraft:item_display 616 20 -584 {view_range:0.0f,Tags:["camera"]}
 
 # fill map
 execute if score %camera1 game matches 10 run function cc:tnt_map

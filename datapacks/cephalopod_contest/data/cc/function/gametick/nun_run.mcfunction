@@ -30,10 +30,7 @@ execute as @a at @s if block ~ ~-0.5 ~ chiseled_quartz_block run function cc:asc
 scoreboard players remove @a[scores={ascending=1..}] ascending 1
 execute as @a[scores={ascending=16},predicate=!cc:trap4] run scoreboard players set @s ascending 0
 execute as @a[scores={ascending=16},predicate=cc:trap4] at @s run tp ~2 ~28 ~9
-effect clear @a[scores={ascending=1}] levitation
-execute as @a[scores={ascending=1}] at @s run tp @s ~ ~ ~ 180 -20
-effect give @a[scores={ascending=1}] resistance 3 255 true
-execute as @a[scores={ascending=1}] at @s run function cc:gravity_launch
+execute as @a[scores={ascending=1}] at @s run function cc:ascend_launch
 execute as @a[predicate=cc:trap2] at @s run tp @s ~-19 ~60 ~-39
 effect give @a[predicate=cc:trap3] blindness 3 0 true
 effect give @a[predicate=cc:trap3] resistance 3 255 true

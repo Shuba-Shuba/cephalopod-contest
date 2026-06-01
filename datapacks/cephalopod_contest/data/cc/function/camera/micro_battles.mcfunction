@@ -1,6 +1,6 @@
 # camera movement
 #execute if score %map game matches 0 run tp @a[tag=!out] 279 10 -821
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon minecraft:item_display 279 10 -821 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon minecraft:item_display 279 10 -821 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 0 if score %camera1 game matches 0 run forceload add 250 -850 310 -790
 execute if score %map game matches 0 if score %camera1 game matches 0 run fill 250 -15 -850 308 47 -791 air strict
 execute if score %map game matches 0 if score %camera1 game matches 0 run place template cc:micro_battles 250 0 -850 none none 1 0 strict

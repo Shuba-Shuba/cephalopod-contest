@@ -1,6 +1,6 @@
 # camera movement
 #execute in cc:chunk run tp @a[tag=!out] 6 -43 26
-execute if score %camera1 game matches 0 run summon minecraft:item_display 6 -43 26 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %camera1 game matches 0 run summon minecraft:item_display 6 -43 26 {view_range:0.0f,Tags:["camera"]}
 
 # titles (ends at 180)
 scoreboard players add %camera1 game 1

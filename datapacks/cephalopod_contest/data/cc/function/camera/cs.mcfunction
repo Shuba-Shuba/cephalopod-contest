@@ -1,7 +1,7 @@
 # camera movement
 #execute if score %map game matches 0 if score %camera1 game matches 0..120 run tp @a[tag=!out] 412 91 444
 #execute if score %map game matches 0 if score %camera1 game matches 121..240 run tp @a[tag=!out] 365 93 475
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon minecraft:item_display 412 91 444 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon minecraft:item_display 412 91 444 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 0 if score %camera1 game matches 120 run function cc:camera_move {duration:0,to:"365 93 475"}
 
 # titles (ends at 240)

@@ -1,6 +1,6 @@
 # camera movement
 #tp @a[tag=!out] 175 89 106
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display 175 89 106 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display 175 89 106 {view_range:0.0f,Tags:["camera"]}
 
 
 # titles (ends at 200)

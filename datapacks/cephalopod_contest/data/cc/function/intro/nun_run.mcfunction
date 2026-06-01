@@ -1,5 +1,6 @@
 # maps
-execute store result score %map game run random value 0..1
+# execute store result score %map game run random value 0..1
+scoreboard players set %map game 0
 
 # chunk load fix
 execute if score %map game matches 0 run tp @a[tag=!out] -238.0 100 687.0

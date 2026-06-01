@@ -2,9 +2,9 @@
 #execute if score %map game matches 0 run tp @a[tag=!out] 41 82 79
 #execute if score %map game matches 1 run tp @a[tag=!out] 114 88 209
 #execute if score %map game matches 2 run tp @a[tag=!out] -25 88 72
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display 41 82 79 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
-execute if score %map game matches 1 if score %camera1 game matches 0 run summon item_display 114 88 209 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
-execute if score %map game matches 2 if score %camera1 game matches 0 run summon item_display -25 88 72 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display 41 82 79 {view_range:0.0f,Tags:["camera"]}
+execute if score %map game matches 1 if score %camera1 game matches 0 run summon item_display 114 88 209 {view_range:0.0f,Tags:["camera"]}
+execute if score %map game matches 2 if score %camera1 game matches 0 run summon item_display -25 88 72 {view_range:0.0f,Tags:["camera"]}
 
 # titles (ends at 160)
 scoreboard players add %camera1 game 1

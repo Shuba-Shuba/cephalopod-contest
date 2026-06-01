@@ -2,7 +2,7 @@
 scoreboard players add %camera1 game 1
 
 execute if score %map game matches 0 if score %camera1 game matches 0 run forceload add -4 -176
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display -4.0 75 -176 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display -4.0 75 -176 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 0 if score %camera1 game matches 0 run function cc:camera_move {duration:35,to:"-4.0 75 -207.75"}
 execute if score %map game matches 0 if score %camera1 game matches 35 run function cc:camera_move {duration:35,to:"-4.0 75 -240.0"}
 execute if score %map game matches 0 if score %camera1 game matches 70 run function cc:camera_move {duration:20,to:"10.0 75 -240.0"}
@@ -18,7 +18,7 @@ execute if score %map game matches 0 if score %camera1 game matches 165 run func
 #execute if score %map game matches 0 if score %camera1 game matches 1..180 as @e[type=armor_stand,tag=camera,limit=1] at @s run tp @s ^ ^ ^.75
 
 execute if score %map game matches 1 if score %camera1 game matches 0 run forceload add 73 -162
-execute if score %map game matches 1 if score %camera1 game matches 0 run summon item_display 73 66 -162 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 1 if score %camera1 game matches 0 run summon item_display 73 66 -162 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 1 if score %camera1 game matches 0 run function cc:camera_move {duration:59,to:"73 62 -209"}
 execute if score %map game matches 1 if score %camera1 game matches 59 run function cc:camera_move {duration:36,to:"91 62 -209"}
 execute if score %map game matches 1 if score %camera1 game matches 95 run function cc:camera_move {duration:10,to:"91 62 -214"}
@@ -36,7 +36,7 @@ execute if score %map game matches 1 if score %camera1 game matches 121 run func
 #execute if score %map game matches 1 if score %camera1 game matches 101..180 as @e[type=armor_stand,tag=camera,limit=1] at @s run tp @s ^ ^ ^.375
 
 execute if score %map game matches 2 if score %camera1 game matches 0 run forceload add 9 -342
-execute if score %map game matches 2 if score %camera1 game matches 0 run summon item_display 9 73 -342 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 2 if score %camera1 game matches 0 run summon item_display 9 73 -342 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 2 if score %camera1 game matches 0 run function cc:camera_move {duration:45,to:"9 71.5 -370.25"}
 execute if score %map game matches 2 if score %camera1 game matches 45 run function cc:camera_move {duration:45,to:"9 70 -399.0"}
 execute if score %map game matches 2 if score %camera1 game matches 90 run function cc:camera_move {duration:45,to:"9 68.5 -427.75"}
@@ -45,7 +45,7 @@ execute if score %map game matches 2 if score %camera1 game matches 135 run func
 #execute if score %map game matches 2 if score %camera1 game matches 1..180 as @e[type=armor_stand,tag=camera,limit=1] at @s run tp @s ^ ^ ^.64
 
 execute if score %map game matches 3 if score %camera1 game matches 0 run forceload add 153 -261
-execute if score %map game matches 3 if score %camera1 game matches 0 run summon item_display 153.0 67 -261 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 3 if score %camera1 game matches 0 run summon item_display 153.0 67 -261 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 3 if score %camera1 game matches 0 run function cc:camera_move {duration:40,to:"153.0 64.5 -289.25"}
 execute if score %map game matches 3 if score %camera1 game matches 40 run function cc:camera_move {duration:40,to:"153.0 62 -318.0"}
 execute if score %map game matches 3 if score %camera1 game matches 80 run function cc:camera_move {duration:20,to:"153.0 46 -318.0"}
@@ -59,7 +59,7 @@ execute if score %map game matches 3 if score %camera1 game matches 135 run func
 #execute if score %map game matches 3 if score %camera1 game matches 101..180 as @e[type=armor_stand,tag=camera,limit=1] at @s run tp @s ^ ^ ^.625
 
 execute if score %map game matches 4 if score %camera1 game matches 0 run forceload add -307 333
-execute if score %map game matches 4 if score %camera1 game matches 0 run summon item_display -307 65 333 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 4 if score %camera1 game matches 0 run summon item_display -307 65 333 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 4 if score %camera1 game matches 0 run function cc:camera_move {duration:59,to:"-234 65 332"}
 execute if score %map game matches 4 if score %camera1 game matches 60 run function cc:camera_move {duration:59,to:"-234 160 332"}
 execute if score %map game matches 4 if score %camera1 game matches 120 run function cc:camera_move {duration:59,to:"-102.0 150 339.0"}
@@ -71,7 +71,7 @@ execute if score %map game matches 4 if score %camera1 game matches 120 run func
 #execute if score %map game matches 4 if score %camera1 game matches 81..180 as @e[type=armor_stand,tag=camera,limit=1] at @s run tp @s ^ ^ ^1.3
 
 execute if score %map game matches 5 if score %camera1 game matches 0 run forceload add 256 -293
-execute if score %map game matches 5 if score %camera1 game matches 0 run summon item_display 256 111 -293 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"],Rotation:[-140.0f,15.0f]}
+execute if score %map game matches 5 if score %camera1 game matches 0 run summon item_display 256 111 -293 {view_range:0.0f,Tags:["camera"],Rotation:[-140.0f,15.0f]}
 execute if score %map game matches 5 if score %camera1 game matches 0 run function cc:camera_move {duration:30,to:"247 109 -313"}
 execute if score %map game matches 5 if score %camera1 game matches 30 run function cc:camera_move {duration:25,to:"263 101 -324"}
 execute if score %map game matches 5 if score %camera1 game matches 55 run function cc:camera_move {duration:15,to:"263 94 -336"}

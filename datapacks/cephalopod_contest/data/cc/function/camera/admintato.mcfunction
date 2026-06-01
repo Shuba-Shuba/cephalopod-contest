@@ -1,6 +1,6 @@
 # camera movement
 #tp @a[tag=!out] -228 102 834
-execute if score %camera1 game matches 0 run summon item_display -228 102 834 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %camera1 game matches 0 run summon item_display -228 102 834 {view_range:0.0f,Tags:["camera"]}
 
 # titles (ends at 200)
 scoreboard players add %camera1 game 1

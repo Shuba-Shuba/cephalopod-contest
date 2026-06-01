@@ -2,7 +2,7 @@
 scoreboard players add %camera1 game 1
 
 execute if score %map game matches 0 if score %camera1 game matches 0 run forceload add 1515 336
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display 1515 72 336 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display 1515 72 336 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 0 if score %camera1 game matches 10 run function cc:camera_move {duration:50,to:"1515 72 241"}
 execute if score %map game matches 0 if score %camera1 game matches 60 run function cc:camera_move {duration:50,to:"1515 72 146"}
 execute if score %map game matches 0 if score %camera1 game matches 110 run function cc:camera_move {duration:45,to:"1531 72 57"}
@@ -14,7 +14,7 @@ execute if score %map game matches 0 if score %camera1 game matches 180 run func
 #execute if score %map game matches 0 if score %camera1 game matches 170 run data merge entity @e[type=armor_stand,tag=camera,limit=1] {Rotation:[13.0f,0.0f]}
 #execute if score %map game matches 0 if score %camera1 game matches 5..200 as @e[type=armor_stand,tag=camera,limit=1] at @s run tp @s ^ ^ ^2
 execute if score %map game matches 1 if score %camera1 game matches 0 run forceload add 1719 87
-execute if score %map game matches 1 if score %camera1 game matches 0 run summon item_display 1719 100 87 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 1 if score %camera1 game matches 0 run summon item_display 1719 100 87 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 1 if score %camera1 game matches 10 run function cc:camera_move {duration:35,to:"1644 100 87"}
 execute if score %map game matches 1 if score %camera1 game matches 45 run function cc:camera_move {duration:35,to:"1569 100 87"}
 execute if score %map game matches 1 if score %camera1 game matches 80 run function cc:camera_move {duration:13,to:"1569 76 87"}

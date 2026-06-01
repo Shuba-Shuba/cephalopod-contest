@@ -2,7 +2,7 @@
 scoreboard players add %camera1 game 1
 
 execute if score %map game matches 0 if score %camera1 game matches 0 run forceload add -163 16
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display -163 53 16 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display -163 53 16 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 0 if score %camera1 game matches 0 run function cc:green_light
 execute if score %map game matches 0 if score %camera1 game matches 0 run function cc:camera_move {duration:59,to:"-163 53 44"}
 execute if score %map game matches 0 if score %camera1 game matches 60 run function cc:red_sound

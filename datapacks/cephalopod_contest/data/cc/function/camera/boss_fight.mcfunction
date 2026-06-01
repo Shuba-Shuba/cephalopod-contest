@@ -3,7 +3,7 @@ scoreboard players add %camera1 game 1
 
 # map loading
 execute if score %map game matches 0 if score %camera1 game matches 0 run forceload add 15 0
-execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display 15 80 0 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %map game matches 0 if score %camera1 game matches 0 run summon item_display 15 80 0 {view_range:0.0f,Tags:["camera"]}
 execute if score %map game matches 0 if score %camera1 game matches 0 run function cc:camera_move {duration:59,to:"0 80 15"}
 execute if score %map game matches 0 if score %camera1 game matches 20 run place template cc:boss_fight/0 -72 0 -72 none none 1 0 strict
 execute if score %map game matches 0 if score %camera1 game matches 22 run place template cc:boss_fight/1 -72 0 -24 none none 1 0 strict

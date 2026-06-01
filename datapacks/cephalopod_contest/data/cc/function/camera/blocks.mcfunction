@@ -1,6 +1,6 @@
 # camera movement
 #tp @a[tag=!out] 214 153 1054
-execute if score %camera1 game matches 0 run summon item_display 214 153 1054 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+execute if score %camera1 game matches 0 run summon item_display 214 153 1054 {view_range:0.0f,Tags:["camera"]}
 execute if score %camera1 game matches 0 run fill 211 153 1055 211 155 1053 air
 execute if score %camera1 game matches 0 run clone 200 164 1026 208 172 1026 210 152 1045
 execute if score %camera1 game matches 20 run clone 200 164 1025 200 164 1025 211 153 1055

@@ -5,7 +5,7 @@ scoreboard players set %mode game -2
 scoreboard players set %end rotation 0
 gamemode spectator @a[tag=!out]
 tp @a[tag=!out] -3 201 3 -135 25
-summon item_display -3 201 3 {view_range:0.0f,item:{id:"minecraft:air",count:1b},Tags:["camera"]}
+summon item_display -3 201 3 {view_range:0.0f,Tags:["camera"]}
 execute as @a[tag=!out] run ride @s mount @e[type=item_display,tag=camera,limit=1]
 effect clear @a[tag=!out]
 
