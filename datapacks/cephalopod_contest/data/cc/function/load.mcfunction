@@ -155,7 +155,6 @@ scoreboard objectives add build_creeper_cd dummy
 execute unless score tnt.force_class config matches -2147483648..2147483647 run scoreboard players set tnt.force_class config -1
 scoreboard objectives add drill_cd dummy
 scoreboard objectives add drill_time dummy
-scoreboard objectives add load_crossbow dummy
 scoreboard objectives add crossbow_time dummy
 scoreboard objectives add shoot_crossbow minecraft.used:minecraft.crossbow
 scoreboard objectives add shoot_bow minecraft.used:minecraft.bow

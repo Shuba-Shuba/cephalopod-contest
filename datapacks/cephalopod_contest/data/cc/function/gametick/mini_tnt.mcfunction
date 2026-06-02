@@ -164,8 +164,7 @@ execute as @e[type=marker,tag=tnt_triangulator,predicate=!cc:is_riding_arrow] ru
 execute as @e[type=marker,tag=tnt_triangulator,predicate=cc:is_riding_arrow] run function cc:tag_midair
 
 # ARC crystal crafter
-execute as @a[scores={class=3,crossbow_time=0}] store success score @s load_crossbow run clear @s crossbow 0
-execute as @a[scores={class=3,load_crossbow=1}] run function cc:load_crystal_bow
+execute as @a[scores={class=3,crossbow_time=0}] if items entity @s weapon.mainhand crossbow unless items entity @s weapon.mainhand crossbow[charged_projectiles=[]] run function cc:load_crystal_bow
 execute as @a[scores={class=3,crossbow_time=1}] run function cc:unload_crystal_bow
 scoreboard players remove @a[scores={class=3,crossbow_time=1..}] crossbow_time 1
 execute as @a[scores={class=3,crossbow_time=1..}] run item modify entity @s hotbar.0 cc:crystal_bow

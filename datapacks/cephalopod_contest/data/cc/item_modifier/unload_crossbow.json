@@ -1,6 +1,7 @@
-[
-  {
-    "function": "minecraft:set_custom_data",
-    "tag": "{ChargedProjectiles:[],Charged:0b,Damage:0}"
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:damage": 0,
+    "minecraft:charged_projectiles": []
   }
-]
+}
