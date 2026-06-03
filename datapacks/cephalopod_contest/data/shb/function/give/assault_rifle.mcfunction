@@ -7,4 +7,4 @@ execute store result score #range calc run data get storage shb:gun stats.range 
 
 item modify block 0 -64 0 container.0 shb:set_nbt
 
-loot give @s mine 0 -64 0 stick[custom_data={drop_contents:1}]
+loot give @s mine 0 -64 0

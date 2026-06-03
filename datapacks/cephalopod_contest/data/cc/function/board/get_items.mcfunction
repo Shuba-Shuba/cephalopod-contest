@@ -7,10 +7,10 @@ data remove block 0 -64 0 Items
 data modify block 0 -64 0 Items set from storage tmp data.hotbar
 item replace entity @s weapon.offhand from block 0 -64 0 container.26
 item replace block 0 -64 0 container.26 with air
-loot give @s mine 0 -64 0 air[custom_data={drop_contents:1}]
+loot give @s mine 0 -64 0
 # inventory
 data remove block 0 -64 0 Items
 data modify block 0 -64 0 Items set from storage tmp data.inventory
-loot give @s mine 0 -64 0 air[custom_data={drop_contents:1}]
+loot give @s mine 0 -64 0
 # clean up
 data remove storage tmp data

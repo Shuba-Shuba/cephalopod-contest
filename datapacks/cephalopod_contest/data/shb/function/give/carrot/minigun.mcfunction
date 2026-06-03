@@ -7,6 +7,6 @@ execute store result score #range calc run data get storage shb:gun stats.range 
 
 item modify block 0 -64 0 container.0 shb:set_nbt
 
-loot give @s mine 0 -64 0 stick[custom_data={drop_contents:1}]
+loot give @s mine 0 -64 0
 
 tellraw @s {text:"[WARNING]: The minigun fire rate is too high for carrot stick weapons to repeat fire as rapidly as it should, please use the ender eye version instead (function shb:give/minigun).",color:"yellow"}
