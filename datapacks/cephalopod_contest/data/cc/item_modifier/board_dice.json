@@ -1,0 +1,40 @@
+[
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "cc:board"
+    },
+    "ops": [
+      {
+        "source": "tmp_rolls",
+        "target": "rolls",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      "",
+      {
+        "text": "Possible rolls:",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "storage": "cc:board",
+        "nbt": "tmp_rolls[]",
+        "separator": {
+          "text": ", ",
+          "color": "gray",
+          "italic": false
+        },
+        "color": "gold",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]
