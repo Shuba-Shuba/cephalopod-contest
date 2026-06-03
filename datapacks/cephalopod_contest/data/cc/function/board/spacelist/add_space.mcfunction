@@ -2,10 +2,10 @@
 execute store result storage cc:board tmp.x int 1 run data get entity @s Pos[0]
 execute store result storage cc:board tmp.y int 1 run data get entity @s Pos[1]
 execute store result storage cc:board tmp.z int 1 run data get entity @s Pos[2]
-execute if block ~ ~ ~ yellow_concrete if block ~ ~ ~1 oak_wall_sign run data modify storage cc:board tmp.shop set from block ~ ~ ~1 front_text.messages[1]
-execute if block ~ ~ ~ yellow_concrete if block ~1 ~ ~ oak_wall_sign run data modify storage cc:board tmp.shop set from block ~1 ~ ~ front_text.messages[1]
-execute if block ~ ~ ~ yellow_concrete if block ~ ~ ~-1 oak_wall_sign run data modify storage cc:board tmp.shop set from block ~ ~ ~-1 front_text.messages[1]
-execute if block ~ ~ ~ yellow_concrete if block ~-1 ~ ~ oak_wall_sign run data modify storage cc:board tmp.shop set from block ~-1 ~ ~ front_text.messages[1]
+execute if block ~ ~ ~ yellow_concrete positioned ~ ~ ~1 if block ~ ~ ~ oak_wall_sign run function cc:board/spacelist/add_shop
+execute if block ~ ~ ~ yellow_concrete positioned ~1 ~ ~ if block ~ ~ ~ oak_wall_sign run function cc:board/spacelist/add_shop
+execute if block ~ ~ ~ yellow_concrete positioned ~ ~ ~-1 if block ~ ~ ~ oak_wall_sign run function cc:board/spacelist/add_shop
+execute if block ~ ~ ~ yellow_concrete positioned ~-1 ~ ~ if block ~ ~ ~ oak_wall_sign run function cc:board/spacelist/add_shop
 execute unless block ~ ~ ~ #cc:noncounting_board_space run data modify storage cc:board spacelist append from storage cc:board tmp
 data remove storage cc:board tmp
 
