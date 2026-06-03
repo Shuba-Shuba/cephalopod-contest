@@ -8,6 +8,7 @@
 # template
 $data modify storage cc:board tmp set value {\
     label: [{text:""},$(name)," - $$(price)"],\
+    tooltip: [$(description),"\n"],\
     width: 200,\
     action: {\
         type: "run_command",\
@@ -24,8 +25,8 @@ execute unless score #bool calc matches 1 run data modify storage cc:board tmp.l
 $data modify storage cc:board tmp_rolls set value $(rolls)
 item replace block 0 -64 0 container.0 with carrot_on_a_stick
 item modify block 0 -64 0 container.0 cc:board_dice
-data modify storage cc:board tmp.tooltip set from block 0 -64 0 Items[0].components.minecraft:lore
-data modify storage cc:board tmp.tooltip insert 2 value "\n"
+data modify storage cc:board tmp.tooltip append from block 0 -64 0 Items[0].components.minecraft:lore[]
+data modify storage cc:board tmp.tooltip insert -2 value "\n"
 
 # add dialog action to list
 data modify storage cc:board shop_listings append from storage cc:board tmp
