@@ -21,8 +21,11 @@ scoreboard players reset * board_shop
 scoreboard players reset * board_display
 scoreboard players set @a deaths 0
 
+# create board space list - this defines start space
+execute in cc:void positioned -476 -23 -1154 summon marker run function cc:board/spacelist/create
+
 # player setup
-execute as @a[tag=!out,sort=random] at @s in cc:void run function cc:board/init_player
+execute as @a[tag=!out,sort=random] run function cc:board/init_player with storage cc:board spacelist[0]
 execute in cc:void run function cc:board/place_star
 
 # start
