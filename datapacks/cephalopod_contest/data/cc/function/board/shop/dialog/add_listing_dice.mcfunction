@@ -5,6 +5,9 @@
 # price: int >= 0
 # id: int > 0
 
+# do not show listing if player already has this die
+$execute if items entity @s container.* *[custom_data~{rolls:$(rolls)}] run return fail
+
 # template
 $data modify storage cc:board tmp set value {\
     label: [{text:""},$(name)," - $$(price)"],\
