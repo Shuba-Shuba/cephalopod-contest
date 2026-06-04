@@ -17,10 +17,12 @@ data modify storage cc:board tmp set value {\
 }
 
 # star in stock?
-$execute store success score #in_stock board_stars if score integers.1 calc matches $(in_stock)
-execute if score #in_stock board_stars matches 0 run data modify storage cc:board shop_listings append from storage cc:board tmp
-execute if score #in_stock board_stars matches 0 run data remove storage cc:board tmp
-execute if score #in_stock board_stars matches 0 run return -1
+$data modify storage cc:board tmp_str set value $(shop)
+execute store success score #bool calc run data modify storage cc:board tmp_str set from storage cc:board star_shop.shop
+data remove storage cc:board tmp_str
+execute if score #bool calc matches 1 run data modify storage cc:board shop_listings append from storage cc:board tmp
+execute if score #bool calc matches 1 run data remove storage cc:board tmp
+execute if score #bool calc matches 1 run return -1
 data modify storage cc:board tmp.label.text set value "Star - $10"
 
 # can player afford star?

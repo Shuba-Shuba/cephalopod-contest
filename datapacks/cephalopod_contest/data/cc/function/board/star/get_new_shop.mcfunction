@@ -1,0 +1,1 @@
+$data modify storage cc:board tmp.shop set from storage cc:board tmp.shops_filtered[$(i)]

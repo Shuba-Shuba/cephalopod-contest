@@ -7,3 +7,5 @@ tellraw @a ["",{selector:"@s"},{text:" bought a star!",color:"green"}]
 playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~
 
 function cc:board/update_display
+
+function cc:board/star/move

@@ -26,7 +26,9 @@ execute in cc:void positioned -476 -23 -1154 summon marker run function cc:board
 
 # player setup
 execute as @a[tag=!out,sort=random] run function cc:board/init_player with storage cc:board spacelist[0]
-execute in cc:void run function cc:board/place_star
+
+# place first star
+execute in cc:void run function cc:board/star/place with storage cc:board spacelist[{shop:shady}]
 
 # start
 scoreboard players set .count board_turn 1

@@ -1,0 +1,1 @@
+$function cc:board/star/place with storage cc:board spacelist[{shop:$(shop)}]
