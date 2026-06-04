@@ -7,7 +7,7 @@ scoreboard players reset @s board_await
 
 # roll
 tag @s add this
-data modify storage cc:board tmp.rolls set from entity @s SelectedItem.components.minecraft:custom_data.rolls
+$data modify storage cc:board tmp.rolls set value $(rolls)
 execute store result score #length calc run data get storage cc:board tmp.rolls
 execute store result score #tmp calc run random value 1..
 execute store result storage cc:board tmp.index int 1 run scoreboard players operation #tmp calc %= #length calc

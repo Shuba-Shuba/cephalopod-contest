@@ -14,7 +14,7 @@ ride @n[type=mannequin,tag=init] mount @n[type=item_display,tag=this]
 tag @e[type=mannequin] remove init
 
 # auto-roll
-execute if score .start board_roll matches 1 run function cc:board/roll
+execute if score .start board_roll matches 1 run function cc:board/roll {rolls:[I;1,2,3,4,5,6]}
 
 # auto-pick fork path
 $execute if score $(name) board_await matches 1.. if score $(name) board_fork = $(name) board_fork run function cc:board/leave/fork {name:"$(name)"}

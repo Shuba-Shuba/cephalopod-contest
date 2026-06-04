@@ -5,7 +5,7 @@ execute as @a at @s run playsound block.beacon.deactivate master @s ~ ~ ~ 1 2
 
 # start - roll dice
 execute if score .start board_roll matches 1 run function cc:board/await
-execute if score .start board_roll matches 1 run function cc:board/roll
+execute if score .start board_roll matches 1 run function cc:board/roll {rolls:[I;1,2,3,4,5,6]}
 
 # fork - pick first available path
 execute if score valid.left board_fork matches 1 run trigger board_fork set 1
