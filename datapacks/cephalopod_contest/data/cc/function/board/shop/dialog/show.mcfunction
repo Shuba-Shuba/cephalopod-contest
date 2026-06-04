@@ -6,7 +6,7 @@ $dialog show @s {\
     after_action: "none",\
     pause: false,\
     exit_action: {\
-        label: "Exit shop without buying anything",\
+        label: ["Exit Shop (",{keybind:key.keyboard.escape},")"],\
         width: 300,\
         action: {\
             type: "minecraft:run_command",\

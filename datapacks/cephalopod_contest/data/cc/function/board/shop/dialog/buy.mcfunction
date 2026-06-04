@@ -5,9 +5,9 @@ execute as @e[type=item_display,tag=board_player] if score @s board_turn = .i bo
 
 # items
 execute if score @s board_shop matches 1 run function cc:board/item/buy/star
-execute if score @s board_shop matches 100 run function cc:board/item/buy/weed
-execute if score @s board_shop matches 101 run function cc:board/item/buy/coke
-execute if score @s board_shop matches 200 run function cc:board/item/buy/glue
+execute if score @s board_shop matches 2 run function cc:board/item/buy/weed
+execute if score @s board_shop matches 3 run function cc:board/item/buy/coke
+execute if score @s board_shop matches 4 run function cc:board/item/buy/glue
 
 # leave shop
 dialog clear @s

@@ -1,3 +1,3 @@
 scoreboard players remove @s board_money 3
 tellraw @s "here's your weed. now get the fuck out"
-give @s minecraft:green_dye[item_model="cc:weed",item_name={text:"Weed",italic:false},custom_data={board:100}]
+give @s carrot_on_a_stick[item_model="cc:weed",item_name={text:"Weed",italic:false},custom_data={board:100}]
