@@ -1,4 +1,4 @@
-# constructs a dialog action for a dice listing to insert into an inline shop dialog
+# constructs a dice shop listing
 
 # rolls: int array
 # name: text component
@@ -21,8 +21,16 @@ $data modify storage cc:board tmp set value {\
 
 # can player afford it?
 $execute store success score #bool calc if score @s board_money matches $(price)..
-$execute if score #bool calc matches 1 run data modify storage cc:board tmp.action.command set value "trigger board_shop set $(id)"
 execute unless score #bool calc matches 1 run data modify storage cc:board tmp.label[0].color set value "red"
+
+# add shop item to list
+$execute if score #bool calc matches 1 run data modify storage cc:board shop.items append value {\
+    name: [$(name)],\
+    description: [$(description)],\
+    price: $(price),\
+    rolls: $(rolls)\
+}
+execute if score #bool calc matches 1 run function cc:board/shop/dialog/set_trigger_num
 
 # rolls
 $data modify storage cc:board tmp_rolls set value $(rolls)
@@ -32,7 +40,7 @@ data modify storage cc:board tmp.tooltip append from block 0 -64 0 Items[0].comp
 data modify storage cc:board tmp.tooltip insert -2 value "\n"
 
 # add dialog action to list
-data modify storage cc:board shop_listings append from storage cc:board tmp
+data modify storage cc:board shop.actions append from storage cc:board tmp
 
 # clean up
 data remove storage cc:board tmp_rolls

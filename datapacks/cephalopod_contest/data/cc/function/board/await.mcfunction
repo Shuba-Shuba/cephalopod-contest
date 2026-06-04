@@ -16,6 +16,7 @@ scoreboard players operation .clock board_await %= integers.20 calc
 execute if score @s board_fork matches 1..3 run function cc:board/fork_pick
 # shop
 execute if score @s board_shop matches -2 run function cc:board/shop/dialog/cannot_buy
-execute unless score @s board_shop matches 0 if score @s board_shop matches -1.. run function cc:board/shop/dialog/buy
+execute if score @s board_shop matches -1 run function cc:board/shop/dialog/exit
+execute if score @s board_shop matches 1.. run function cc:board/shop/dialog/buy
 # duel opponent
 execute unless score @s board_duel_opponent matches 0 if score @s board_duel_opponent matches -2.. run function cc:board/duel/start

@@ -1,0 +1,1 @@
+$data modify storage cc:board tmp.action.command set value "trigger board_shop set $(tmp_trigger)"

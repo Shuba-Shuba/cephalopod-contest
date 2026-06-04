@@ -1,0 +1,1 @@
+$data modify storage cc:board tmp set from storage cc:board shop.items[$(tmp)]

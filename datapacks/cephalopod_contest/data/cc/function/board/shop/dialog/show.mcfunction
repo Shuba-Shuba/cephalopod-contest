@@ -1,6 +1,6 @@
 $dialog show @s {\
     type: "minecraft:multi_action",\
-    title: $(shop_title),\
+    title: $(title),\
     inputs: [],\
     can_close_with_escape: true,\
     after_action: "none",\
@@ -14,5 +14,5 @@ $dialog show @s {\
         }\
     },\
     columns: 1,\
-    actions: $(shop_listings)\
+    actions: $(actions)\
 }
