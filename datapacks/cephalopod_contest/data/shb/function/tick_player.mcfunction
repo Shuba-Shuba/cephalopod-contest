@@ -15,12 +15,10 @@ scoreboard players operation @s gunid = .id stats
 scoreboard players remove @s[scores={cd=1..}] cd 1
 scoreboard players remove @s[scores={autodelay=1..}] autodelay 1
 
-execute if predicate shb:carrot_fix run scoreboard players set @s rightclick 0
 scoreboard players operation .rightclick gun = @s rightclick
 scoreboard players set @s rightclick 0
 execute as @s[scores={autodelay=0,autofire=1..}] run function shb:shoot/burst
 execute if entity @s[advancements={shb:rightclick=true}] run function shb:shoot/start
-execute if entity @s[scores={carrot_click=1..}] run function shb:shoot/start
 
 ### scope/sights
 execute store result score @s cmd if items entity @s weapon.mainhand *[minecraft:custom_model_data={flags:[true]}]
@@ -43,17 +41,17 @@ scoreboard players set .loaded stats 0
 
 ### [CEPHALOPOD CONTEST] placeholder items
 execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:1b}] 1
-execute if score @s placeholder matches 1 run function shb:give/carrot/pistol
+execute if score @s placeholder matches 1 run function shb:give/pistol
 execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:2b}] 1
-execute if score @s placeholder matches 1 run function shb:give/carrot/shotgun
+execute if score @s placeholder matches 1 run function shb:give/shotgun
 execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:3b}] 1
-execute if score @s placeholder matches 1 run function shb:give/carrot/rocket
+execute if score @s placeholder matches 1 run function shb:give/rocket
 execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:4b}] 1
-execute if score @s placeholder matches 1 run function shb:give/carrot/assault_rifle
+execute if score @s placeholder matches 1 run function shb:give/assault_rifle
 execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:5b}] 1
-execute if score @s placeholder matches 1 run function shb:give/carrot/pistol_bad
+execute if score @s placeholder matches 1 run function shb:give/pistol_bad
 execute store result score @s placeholder run clear @s carrot_on_a_stick[custom_data={placeholder:6b}] 1
-execute if score @s placeholder matches 1 run function shb:give/carrot/sniper_bad
+execute if score @s placeholder matches 1 run function shb:give/sniper_bad
 
 # xp timers
 execute as @s[scores={Kit_ID=7}] run function xp:demolitionist

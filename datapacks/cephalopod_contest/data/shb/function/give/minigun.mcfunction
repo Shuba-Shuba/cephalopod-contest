@@ -7,4 +7,7 @@ execute store result score #range calc run data get storage shb:gun stats.range 
 
 item modify block 0 -64 0 container.0 shb:set_nbt
 
+# minigun-specific: remove no-slow
+item modify block 0 -64 0 container.0 {function:"minecraft:set_components",components:{"!minecraft:use_effects":{}}}
+
 loot give @s mine 0 -64 0

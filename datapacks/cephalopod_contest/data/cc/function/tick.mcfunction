@@ -223,3 +223,6 @@ execute if score %spin_generator game matches 60.. run scoreboard players set %s
 execute if score %spin_generator game matches 0 as @e[type=minecraft:block_display,tag=spin] run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{right_rotation:{angle:0.0f,axis:[0.57735027f,0.57735027f,0.57735027f]}}}
 execute if score %spin_generator game matches 20 as @e[type=minecraft:block_display,tag=spin] run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{right_rotation:{angle:2.0943951024f,axis:[0.57735027f,0.57735027f,0.57735027f]}}}
 execute if score %spin_generator game matches 40 as @e[type=minecraft:block_display,tag=spin] run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{right_rotation:{angle:4.1887902048f,axis:[0.57735027f,0.57735027f,0.57735027f]}}}
+
+# rightclick
+execute as @a[scores={carrot_click=1..}] at @s run function cc:item_use

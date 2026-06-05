@@ -12,7 +12,7 @@
           "plain": true
         },
         {
-          "text"  : " damage"
+          "text": " damage"
         }
       ],
       [
@@ -79,8 +79,13 @@
           "slot": "mainhand",
           "id": "attack_speed",
           "amount": -1000000,
-          "operation": "add_value"}
-      ]
+          "operation": "add_value"
+        }
+      ],
+      "minecraft:use_effects": {
+        "can_sprint": true,
+        "speed_multiplier": 1
+      }
     }
   },
   {

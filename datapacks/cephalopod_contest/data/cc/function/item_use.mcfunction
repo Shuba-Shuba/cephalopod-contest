@@ -1,4 +1,5 @@
 ## use item
+scoreboard players reset @s carrot_click
 # nun run
 execute if score %mode game matches 9 if items entity @s weapon.mainhand *[item_model=sugar] run function cc:super_nun
 execute if score %mode game matches 9 if items entity @s weapon.mainhand *[item_model=nether_star] run function cc:stun_the_sinful

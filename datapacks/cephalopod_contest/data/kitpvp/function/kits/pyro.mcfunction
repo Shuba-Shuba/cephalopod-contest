@@ -3,7 +3,7 @@ scoreboard players set @s Kit_ID 26
 tellraw @s "Now Using: Pyro"
 
 # give the player the kit contents
-function shb:give/carrot/flamethrower
+function shb:give/flamethrower
 give @s minecraft:blaze_rod[item_name={text:"Sparkler",italic:false},lore=[{text:"wow it actually sparkles thats crazy dude",color:"gray"}],enchantments={knockback:1,fire_aspect:2,sharpness:4}]
 item replace entity @s armor.head with tinted_glass
 item replace entity @s armor.chest with minecraft:iron_chestplate[unbreakable={}]

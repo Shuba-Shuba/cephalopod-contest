@@ -10,5 +10,4 @@ execute if score .ammo.type stats matches 7 unless score @s laser matches 1.. ru
 execute unless score .ammo.type stats matches 1.. run function cc:item_use
 
 advancement revoke @s only shb:rightclick
-scoreboard players set @s carrot_click 0
 scoreboard players set @s rightclick 1

@@ -5,7 +5,7 @@ clear @s carrot_on_a_stick
 clear @s ender_eye
 clear @s iron_nugget[item_name={text:"Bullet",italic:false},custom_data={ammo:{type:1b}}] 32
 give @s iron_nugget[item_name={text:"Bullet",italic:false},custom_data={ammo:{type:1b}}] 32
-function shb:give/carrot/pistol_bad
+function shb:give/pistol_bad
 scoreboard players set 4 jail_time 4
 scoreboard players operation .count jail_time %= 4 jail_time
 execute if score .count jail_time matches 0 run tp @s 285 144 789

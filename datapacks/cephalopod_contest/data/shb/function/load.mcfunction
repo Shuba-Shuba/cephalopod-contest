@@ -39,7 +39,6 @@ scoreboard objectives add cmd dummy
 scoreboard objectives add scope dummy
 scoreboard objectives add calc dummy
 scoreboard objectives add protection dummy
-scoreboard objectives add carrot_click minecraft.used:minecraft.carrot_on_a_stick
 
 # [CEPHALOPOD CONTEST] laser for mini tnt
 scoreboard objectives add laser dummy
