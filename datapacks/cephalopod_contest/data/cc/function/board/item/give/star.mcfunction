@@ -1,4 +1,3 @@
-scoreboard players remove @s board_money 10
 scoreboard players add @s board_stars 1
 give @s nether_star
 

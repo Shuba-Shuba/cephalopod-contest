@@ -32,7 +32,7 @@ execute if score #bool calc matches 1 run data remove storage cc:board tmp.label
 execute unless score #bool calc matches 1 run data modify storage cc:board tmp.tooltip set value "bro sucks"
 
 # add shop item to list
-execute if score #bool calc matches 1 run data modify storage cc:board shop.items append value {star: true}
+execute if score #bool calc matches 1 run data modify storage cc:board shop.items append value {star: true, price: 10}
 execute if score #bool calc matches 1 run function cc:board/shop/dialog/set_trigger_num
 
 # add dialog action to list
