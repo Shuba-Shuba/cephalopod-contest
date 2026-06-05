@@ -9,8 +9,8 @@ execute if score @s board_duel_opponent matches -1 run tag @r[tag=!duel] add due
 execute if score @s board_duel_opponent matches 1.. as @a[tag=!out,tag=!duel] if score @s board_turn = @p[tag=duel] board_duel_opponent run tag @s add duel
 
 # announce duel
-execute if score @s board_duel_opponent matches -1 run tellraw @a ["",{selector:"@a[tag=duel,sort=nearest]",separator:" vs "},]
-execute if score @s board_duel_opponent matches 1.. run tellraw @a ["",{selector:"@a[tag=duel,sort=nearest]",separator:" vs "}," (random)"]
+execute if score @s board_duel_opponent matches -1 run tellraw @a ["",{selector:"@a[tag=duel,sort=nearest]",separator:" vs "}," (random)"]
+execute if score @s board_duel_opponent matches 1.. run tellraw @a ["",{selector:"@a[tag=duel,sort=nearest]",separator:" vs "}]
 
 # begin
 scoreboard players reset @s board_duel_opponent
