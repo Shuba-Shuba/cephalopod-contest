@@ -1,0 +1,1 @@
+$return run data modify storage cc:board tmp set from storage cc:board spacelist[$(i)]
