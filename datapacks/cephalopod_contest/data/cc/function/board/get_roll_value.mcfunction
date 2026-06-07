@@ -1,1 +1,0 @@
-$return run data get storage cc:board tmp.rolls[$(index)]
