@@ -23,4 +23,6 @@ tag @s add tmp_next_space_tp
 schedule function cc:board/move/tp 2t
 
 # return ticks to move
-execute store result entity @s teleport_duration int 1 run return run data get entity 0000000d-0109-0097-0116-000000000104 transformation.scale[0] 3
+execute store result score .anim board_roll store result entity @s teleport_duration int 1 run data get entity 0000000d-0109-0097-0116-000000000104 transformation.scale[0] 3
+execute if score .anim board_roll matches 60.. run scoreboard players set .anim board_roll 59
+return run scoreboard players get .anim board_roll

@@ -7,4 +7,4 @@ execute unless data storage cc:board {dy:""} rotated as @s summon marker positio
 execute rotated as @s as @n[type=marker,tag=tmp_next_space] positioned as @s run function cc:board/move/find_next
 
 # move
-execute store result score .anim board_roll run function cc:board/move/to_marker
+function cc:board/move/to_marker
