@@ -2,6 +2,8 @@
 kill @e[type=item_display,tag=board_player]
 kill @e[type=mannequin,tag=board_player_placeholder]
 kill @e[type=mannequin,tag=board_player]
+kill @e[type=item_display,tag=board_oil_trap]
+kill @e[type=marker,tag=board_tnt_trap]
 data remove storage cc:board players
 data remove storage cc:board tmp
 scoreboard players set %board game 0
@@ -16,6 +18,7 @@ scoreboard players reset * board_fork
 scoreboard players reset * board_shop
 scoreboard players reset * board_display
 tag @a remove glued
+tag @a remove oiled
 
 # go to lobby
 function cc:lobby

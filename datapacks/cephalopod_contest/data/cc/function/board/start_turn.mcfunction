@@ -13,6 +13,10 @@ gamemode adventure
 effect give @s glowing infinite 0 true
 tag @s remove this
 
+# remove any oil traps this player stepped on last round
+execute if entity @s[tag=oiled] as @e[type=item_display,tag=board_oil_trap] if score @s board_turn = .i board_turn run kill @s
+tag @s remove oiled
+
 # revoke previous board effects
 function cc:board/effect/revoke
 

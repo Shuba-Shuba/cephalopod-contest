@@ -1,3 +1,7 @@
+# explode
+setblock ~ ~ ~ air strict
+summon creeper ~ ~ ~ {Fuse:0,ignited:1b,CustomName:"The Nuclear Option",ExplosionRadius:0b}
+
 # lose half
 $scoreboard players operation #tmp calc = $(name) board_money
 scoreboard players operation #tmp calc /= 2 calc
