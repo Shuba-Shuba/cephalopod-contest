@@ -12,6 +12,7 @@ execute unless block ~ ~-32 ~ #cc:noncounting_board_space run tellraw @a {score:
 # all events except forks get skipped w/o player because they have "as @p[tag=this]"; forks have separate auto function
 
 # passable events - return to cut off movement loop; returning requires removing "this" tag
+execute if entity @n[type=item_display,tag=board_oil_trap,distance=..1] run function cc:board/block/oil
 execute if block ~ ~ ~ honey_block run function cc:board/block/glue
 execute if block ~ ~-32 ~ pink_concrete as @p[tag=this] run return run function cc:board/block/fork
 execute if block ~ ~-32 ~ pink_concrete run return run function cc:board/move/step

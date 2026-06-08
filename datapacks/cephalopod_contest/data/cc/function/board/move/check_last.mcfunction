@@ -2,6 +2,8 @@
 # @p[tag=this] = player
 schedule function cc:board/end_turn 2s
 tag @s add this
+execute if block ~ ~ ~ tnt as @p[tag=this] run function cc:board/block/tnt
+execute if block ~ ~ ~ tnt unless entity @p[tag=this] on passengers run function cc:board/block/auto/tnt with entity @s profile
 execute if block ~ ~-32 ~ blue_concrete as @p[tag=this] run function cc:board/block/blue
 execute if block ~ ~-32 ~ blue_concrete unless entity @p[tag=this] on passengers run function cc:board/block/auto/blue with entity @s profile
 execute if block ~ ~-32 ~ red_concrete as @p[tag=this] run function cc:board/block/red
