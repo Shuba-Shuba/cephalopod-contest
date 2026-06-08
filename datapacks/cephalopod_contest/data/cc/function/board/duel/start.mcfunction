@@ -1,16 +1,14 @@
 # @s = player who landed on duel space
-tag @s add duel
+# @a[tag=duel] = dueling players (@s + opponent)
 
-# workaround for 0 not being detectable trigger input
-execute if score @s board_duel_opponent matches -2 run scoreboard players set @s board_duel_opponent 0
-
-# get opponent
-execute if score @s board_duel_opponent matches -1 run tag @r[tag=!duel] add duel
-execute if score @s board_duel_opponent matches 1.. as @a[tag=!out,tag=!duel] if score @s board_turn = @p[tag=duel] board_duel_opponent run tag @s add duel
+# wager
+scoreboard players operation @a[tag=duel] board_money -= #wager board_duel_opponent
+tellraw @a[tag=duel] [{text:"Paid $",color:red},{score:{name:"#wager",objective:"board_duel_opponent"}}," duel wager"]
+scoreboard players operation #wager board_duel_opponent *= 2 calc
 
 # announce duel
-execute if score @s board_duel_opponent matches -1 run tellraw @a ["",{selector:"@a[tag=duel,sort=nearest]",separator:" vs "}," (random)"]
-execute if score @s board_duel_opponent matches 1.. run tellraw @a ["",{selector:"@a[tag=duel,sort=nearest]",separator:" vs "}]
+execute if score @s board_duel_opponent matches -1 run tellraw @a ["",{selector:"@a[tag=duel,sort=nearest]",separator:" vs "}," (random) for ",{text:"$",color:gold},{score:{name:"#wager",objective:"board_duel_opponent"},color:gold}," pot"]
+execute unless score @s board_duel_opponent matches -1 run tellraw @a ["",{selector:"@a[tag=duel,sort=nearest]",separator:" vs "}," for ",{text:"$",color:gold},{score:{name:"#wager",objective:"board_duel_opponent"},color:gold}," pot"]
 
 # begin
 scoreboard players reset @s board_duel_opponent

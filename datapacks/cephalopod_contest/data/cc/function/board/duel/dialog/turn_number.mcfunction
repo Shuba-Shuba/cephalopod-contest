@@ -1,1 +1,1 @@
-$data modify storage cc:board tmp.action.action.command set value "trigger board_duel_opponent set $(turn)"
+$data modify storage cc:board tmp.action.action.template set value "trigger board_duel_opponent set $(wager_str)9876$(turn)"

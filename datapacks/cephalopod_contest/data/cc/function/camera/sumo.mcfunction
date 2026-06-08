@@ -13,4 +13,4 @@ title @a[tag=!out] title "Sumo"
 execute if score %camera1 game matches 0..60 unless score %duel game matches 1 run title @a[tag=!out] subtitle "2 people will fight a sumo match"
 execute if score %camera1 game matches 61..120 unless score %duel game matches 1 run title @a[tag=!out] subtitle "Winner is safe, loser has to fight again"
 execute if score %camera1 game matches 121..180 unless score %duel game matches 1 run title @a[tag=!out] subtitle "Whoever loses last gets eliminated"
-execute if score %duel game matches 1 run title @a[tag=!out] subtitle {selector:"@a[tag=!out,tag=!ded]",separator:" vs "}
+execute if score %duel game matches 1 run title @a[tag=!out] subtitle ["",{selector:"@a[tag=duel,sort=nearest]",separator:" vs "}," for ",{text:"$",color:gold},{score:{name:"#wager",objective:"board_duel_opponent"},color:gold}," pot"]

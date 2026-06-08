@@ -19,4 +19,5 @@ execute if score @s board_shop matches -2 run function cc:board/shop/dialog/cann
 execute if score @s board_shop matches -1 run function cc:board/shop/dialog/exit
 execute if score @s board_shop matches 1.. run function cc:board/shop/dialog/buy
 # duel opponent
-execute unless score @s board_duel_opponent matches 0 if score @s board_duel_opponent matches -2.. run function cc:board/duel/start
+execute if score @s board_duel_opponent matches ..-1 run function cc:board/duel/dialog/choose_random
+execute if score @s board_duel_opponent matches 1.. run function cc:board/duel/dialog/choose_opponent

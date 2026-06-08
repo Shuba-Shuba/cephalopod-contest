@@ -206,6 +206,7 @@ execute unless score board.turns config = board.turns config run scoreboard play
 scoreboard objectives add board_duel_opponent trigger
 scoreboard objectives add levitation_jump_time dummy
 scoreboard objectives add carrot_click minecraft.used:minecraft.carrot_on_a_stick
+scoreboard players set 10000 calc 10000
 gamerule locator_bar false
 # put this comment and command at the bottom
 tellraw @a "Reloaded Cephalopod Contest."
