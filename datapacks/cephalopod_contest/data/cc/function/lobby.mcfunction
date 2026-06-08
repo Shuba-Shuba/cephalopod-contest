@@ -15,6 +15,8 @@ tag @a remove winner
 tag @a remove button
 schedule clear cc:red_sound
 schedule clear cc:red_light
+scoreboard players set rep.recording config 0
+function rep:reset
 
 # PRESIDENT'S DAY IN MAY EVENT
 execute if score %board game matches 0 run scoreboard objectives setdisplay sidebar event_money
