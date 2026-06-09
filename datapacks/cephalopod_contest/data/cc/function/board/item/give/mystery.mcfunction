@@ -1,0 +1,9 @@
+execute store result score #tmp calc run random value 1..8
+execute if score #tmp calc matches 1 run function cc:board/item/give/chorus
+execute if score #tmp calc matches 2 run function cc:board/item/give/coke
+execute if score #tmp calc matches 3 run function cc:board/item/give/glue
+execute if score #tmp calc matches 4 run function cc:board/item/give/oil
+execute if score #tmp calc matches 5 run function cc:board/item/give/shop_tp
+execute if score #tmp calc matches 6 run function cc:board/item/give/star_tp
+execute if score #tmp calc matches 7 run function cc:board/item/give/tnt
+execute if score #tmp calc matches 8 run function cc:board/item/give/weed
