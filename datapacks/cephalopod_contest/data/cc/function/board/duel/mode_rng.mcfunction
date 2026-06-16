@@ -1,5 +1,4 @@
-# execute store result score #tmp game run random value 1..5
-scoreboard players set #tmp game 2
+execute store result score #tmp game run random value 1..5
 
 # dodgeball
 execute if score #tmp game matches 1 run scoreboard players set %premode game 8
